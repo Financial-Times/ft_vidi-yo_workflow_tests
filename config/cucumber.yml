@@ -1,2 +1,3 @@
 ---
-html_report: "--format html"
+html_report: --format html
+example: --tag @example

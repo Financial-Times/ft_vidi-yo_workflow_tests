@@ -1,1 +1,3 @@
 require 'cucumber'
+
+REPORTS = '../../reports'

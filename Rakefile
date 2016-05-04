@@ -14,3 +14,8 @@ Cucumber::Rake::Task.new(:default, 'All completed features') do |t|
   t.cucumber_opts = "#{exclude_inactive_tags}"
   t.profile = 'html_report'
 end
+
+Cucumber::Rake::Task.new(:example, 'All completed features') do |t|
+  t.cucumber_opts = "#{exclude_inactive_tags}"
+  t.profile = 'example'
+end
