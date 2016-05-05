@@ -4,5 +4,5 @@ group :test do
   gem 'rake'
   gem 'cucumber'
   gem 'watir-webdriver'
-  gem 'selenium-webdriver'
+  gem 'rspec-expectations'
 end
