@@ -1,8 +1,9 @@
 browser = Watir::Browser.new
 
+ROOT_URL = 'https://ftdemo.dev.nativ-systems.com/'
+
 Before do
-  ROOT_URL = 'https://ftdemo.dev.nativ-systems.com/'
   @browser = browser
 end
 
-at_exit {browser.close}
+at_exit{browser.close}
