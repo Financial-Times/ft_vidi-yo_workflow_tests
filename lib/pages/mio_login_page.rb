@@ -1,0 +1,23 @@
+class MioLoginPage < MioBasePage
+
+  page_url 'https://master.dev.nativ-systems.com/'
+
+
+  @browser
+  text_field(:username_field, id: 'j_username')
+  text_field(:password_field, id: 'j_password')
+  button(:submit_button, id: 'submit_control-button')
+
+
+  def log_in(user=ADMIN_USER)
+
+    self.username_field = user[:mio_username]
+    self.password_field = user[:mio_password]
+    submit_button
+  end
+
+  def visible?
+    true
+  end
+
+end

@@ -1,6 +1,5 @@
 browser = Watir::Browser.new
 
-ROOT_URL = 'https://ftdemo.dev.nativ-systems.com/'
 
 Before do
   @browser = browser

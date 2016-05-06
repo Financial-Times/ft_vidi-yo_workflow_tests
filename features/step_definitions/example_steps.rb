@@ -7,7 +7,7 @@ Then(/^I know the test set is running without error$/) do
 end
 
 When(/^I use the application$/) do
-  @browser.goto ROOT_URL
+  (visit MioLoginPage)
 end
 
 Then(/^it is available to me$/) do

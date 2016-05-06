@@ -1,0 +1,6 @@
+---
+:dev:
+    :url: https://master.dev.nativ-systems.com
+    :admin_user:
+        :mio_username: masteruser
+        :mio_password: masteruser
