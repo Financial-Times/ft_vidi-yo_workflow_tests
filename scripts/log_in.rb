@@ -1,4 +1,4 @@
-require_relative('initialise')
+load('initialise.rb')
 
 USERNAME = 'masteruser'
 PASSWORD = 'masteruser'

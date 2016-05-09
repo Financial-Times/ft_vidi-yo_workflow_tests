@@ -1,5 +1,0 @@
-class MioTabDesktop < MioDashboard
-
-
-
-end

@@ -5,7 +5,7 @@ require 'page-object'
 require 'test-unit'
 require 'yaml'
 
-require_relative '../../lib/pages/page_requires'
+require_relative '../../lib/pages/mio_base_page'
 
 World(PageObject::PageFactory)
 

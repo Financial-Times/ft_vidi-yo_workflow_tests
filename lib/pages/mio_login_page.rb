@@ -1,3 +1,6 @@
+require_relative 'mio_login_page'
+require_relative 'mio_base_page'
+
 class MioLoginPage < MioBasePage
 
   page_url 'https://master.dev.nativ-systems.com/'
