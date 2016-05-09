@@ -5,15 +5,14 @@ require 'page-object'
 require 'test-unit'
 require 'yaml'
 
-require_relative '../../lib/pages/mio_base_page'
-require_relative '../../lib/pages/mio_login_page'
+require_relative '../../lib/pages/page_requires'
 
 World(PageObject::PageFactory)
 
 
 #TODO: Refactor all this.
 execution_environment ||= :dev
-
+$browser = ENV['SESSION_BROWSER'].to_sym
 REPORTS = '../../reports'
 CONFIG = YAML.load_file('config/master.yml')
 ENVIRONMENT_CONFIG = CONFIG[execution_environment]
