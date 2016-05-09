@@ -1,5 +1,11 @@
 Feature: Sanity test
 
-  Scenario: Workflow editor authenticates with Mio
+  Scenario: Workflow editor can access tabs
     When I log in to Mio
-    Then I can access editing features
+    * I can access desktop features
+    * I can access assets features
+    * I can access players features
+    * I can access tasks features
+    * I can access jobs features
+    * I can access workflows features
+    * I can access resources features
