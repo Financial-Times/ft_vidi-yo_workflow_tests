@@ -1,3 +1,4 @@
 ---
+default: --tag ~@skip
 html_report: --format html
 example: --tag @example
