@@ -1,4 +1,3 @@
-require_relative 'mio_login_page'
 require_relative 'mio_page'
 
 class MioLoginPage < MioPage
