@@ -5,7 +5,8 @@ require 'page-object'
 require 'test-unit'
 require 'yaml'
 
-require_relative '../../lib/pages/mio_base_page'
+require_relative '../../lib/pages/mio_page'
+require_relative '../../lib/exceptions/page_element_not_found_exception'
 
 World(PageObject::PageFactory)
 

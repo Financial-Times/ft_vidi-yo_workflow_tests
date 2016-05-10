@@ -1,6 +1,6 @@
-require_relative 'mio_base_page'
+require_relative 'mio_page'
 
-class MioDashboard < MioBasePage
+class MioDashboard < MioPage
 
   #TODO: DRY. Shift to dynamic method definitions
   link(:desktop_tab, id: 'desktop_section_tab')
