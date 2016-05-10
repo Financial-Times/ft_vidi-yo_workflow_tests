@@ -1,27 +1,31 @@
 require_relative '../lib/pages/mio_dashboard'
-require_relative '../lib/pages/mio_base_page'
 require 'test-unit'
+require_relative 'mio_test'
 
-class MioDashboardTest < Test::Unit::TestCase
+class MioDashboardTest < MioTest
 
   def setup
-    @browser = Watir::Browser.new(:phantomjs)
-    @dashboard = MioDashboard.new(@browser)
+    @browser = Watir::Browser.new :phantomjs
+    @dashboard = MioDashboard.new @browser
     @tabs=%i{desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab resources_tab}
   end
 
+  def test_is_a_mio_page
+    raise ObjectIsNotAPageException unless @dashboard.is_a?(MioPage)
+  end
+
   def test_displayed
-    raise "MioDashboard can't be <:visible?>" unless @dashboard.respond_to? :displayed?
+    raise ExpectedCapabilityNotFound, :displayed? unless @dashboard.respond_to? :displayed?
   end
 
   def test_change_section
-    raise "MioDashboard can't <:change_section>" unless @dashboard.respond_to? :change_section
+    raise ExpectedCapabilityNotFound, :change_section unless @dashboard.respond_to? :change_section
   end
 
 
   def test_has_tabs
     @tabs.each do |tab|
-      raise "MioDashboard doesn't have #{tab}" unless @dashboard.respond_to? tab
+      raise PageElementSelectorNotFoundException, "Tab: #{tab}" unless @dashboard.respond_to? tab
     end
   end
 

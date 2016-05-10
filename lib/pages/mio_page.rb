@@ -1,7 +1,7 @@
 require 'page-object'
 
 
-class MioBasePage
+class MioPage
 
   include PageObject
   require_relative 'mio_login_page'
