@@ -15,15 +15,18 @@ class MioCreateVideoProjectPageTest < MioTest
   end
 
   def test_page_has_project_name_field
-    raise PageElementSelectorNotFoundException, 'project_name_field' unless @create_project_page.respond_to? :project_name_field
+    raise PageElementSelectorNotFoundException, 'project_name_field' unless
+        @create_project_page.respond_to? :project_name_field
   end
 
   def test_page_has_section_selector
-    raise PageElementSelectorNotFoundException, 'section_selector' unless @create_project_page.respond_to? :section_selector
+    raise PageElementSelectorNotFoundException, 'section_selector' unless
+        @create_project_page.respond_to? :section_selector
   end
 
   def test_page_has_brand_selectors
-    raise PageElementSelectorNotFoundException, 'brand_selectors' unless @create_project_page.respond_to? :brand_selectors_elements
+    raise PageElementSelectorNotFoundException, 'brand_selectors' unless
+        @create_project_page.respond_to? :brand_selectors_elements
   end
 
   def teardown

@@ -7,6 +7,6 @@ class MioPage
   require_relative 'mio_login_page'
   require_relative 'mio_dashboard'
 
-  element(:site_header, id: 'TBC')
+  element  :site_header, id: 'TBC'
 
 end

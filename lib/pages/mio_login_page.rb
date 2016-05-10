@@ -4,9 +4,9 @@ class MioLoginPage < MioPage
 
   page_url 'https://master.dev.nativ-systems.com/'
 
-  text_field(:username_field, id: 'j_username')
-  text_field(:password_field, id: 'j_password')
-  button(:submit_button, id: 'submit_control-button')
+  text_field  :username_field, id: 'j_username'
+  text_field  :password_field, id: 'j_password'
+  button      :submit_button, id: 'submit_control-button'
 
 
   def log_in(user=ADMIN_USER)

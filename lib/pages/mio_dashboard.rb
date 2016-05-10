@@ -3,16 +3,16 @@ require_relative 'mio_page'
 class MioDashboard < MioPage
 
   #TODO: DRY. Shift to dynamic method definitions
-  link(:desktop_tab, id: 'desktop_section_tab')
-  link(:assets_tab, id: 'assets_section_tab')
-  link(:players_tab, id: 'players_section_tab')
-  link(:tasks_tab, id: 'tasks_section_tab')
-  link(:jobs_tab, id: 'jobs_section_tab')
-  link(:workflows_tab, id: 'workflows_section_tab')
-  link(:resources_tab, id: 'resources_section_tab')
+  link  :desktop_tab, id: 'desktop_section_tab'
+  link  :assets_tab, id: 'assets_section_tab'
+  link  :players_tab, id: 'players_section_tab'
+  link  :tasks_tab, id: 'tasks_section_tab'
+  link  :jobs_tab, id: 'jobs_section_tab'
+  link  :workflows_tab, id: 'workflows_section_tab'
+  link  :resources_tab, id: 'resources_section_tab'
 
-  div(:dashboard_container, id: 'container')
-  div(:current_feature_container, id: 'left_col')
+  div   :dashboard_container, id: 'container'
+  div   :current_feature_container, id: 'left_col'
 
   def displayed?
     self.wait_until{dashboard_container?}

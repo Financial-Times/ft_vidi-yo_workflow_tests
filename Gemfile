@@ -7,4 +7,5 @@ group :test do
   gem 'rspec-expectations'
   gem 'page-object'
   gem 'test-unit'
+  gem 'factory_girl'
 end
