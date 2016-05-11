@@ -15,9 +15,9 @@ class MioIngestAssetsPage < MioPage
   element       :reporter_writer_1, id: 'TBC'
   element       :reporter_writer_2, id: 'TBC'
   element       :reporter_writer_3, id: 'TBC'
-  radio_button  :restrictions_yes_selector, id: 'TBC'
-  radio_button  :restrictions_no_selector, id: 'TBC'
-  text_field    :restrictions_description, id: 'TBC'
+  radio_button  :no_restrictions, id: 'TBC'
+  radio_button  :has_restrictions, id: 'TBC'
+  text_field    :restriction_description, id: 'TD'
   button        :ingest_button, id: 'TBC'
 
 

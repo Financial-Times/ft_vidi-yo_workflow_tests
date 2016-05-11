@@ -25,8 +25,8 @@ class MioCreateVideoProjectPageTest < MioTest
   end
 
   def test_page_has_brand_selectors
-    raise PageElementSelectorNotFoundException, 'brand_selectors' unless
-        @create_project_page.respond_to? :brand_selectors_elements
+    raise PageElementSelectorNotFoundException, 'brand_selector' unless
+        @create_project_page.respond_to? :brand_selector
   end
 
   def teardown

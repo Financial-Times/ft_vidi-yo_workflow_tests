@@ -10,9 +10,6 @@ class MioDashboardTest < MioTest
     @tabs=%i{desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab resources_tab}
   end
 
-  def test_is_a_mio_page
-    raise ObjectIsNotAPageException unless @dashboard.is_a?(MioPage)
-  end
 
   def test_displayed
     raise ExpectedCapabilityNotFound, :displayed? unless @dashboard.respond_to? :displayed?

@@ -39,8 +39,8 @@ class MioIngestAssetsPageTest < MioTest
   end
 
   def test_has_an_interviewee_field
-    raise PageElementSelectorNotFoundException, 'interviewee' unless
-        @ingest_assets_page.respond_to? :interviewee
+    raise PageElementSelectorNotFoundException, 'interviewee_selector' unless
+        @ingest_assets_page.respond_to? :interviewee_selector
   end
 
   def test_has_an_ft_office_selector
@@ -70,20 +70,20 @@ class MioIngestAssetsPageTest < MioTest
 
   def test_has_restrictions_selectors
     raise PageElementSelectorNotFoundException,
-          'restrictions_yes_selector' unless
-            @ingest_assets_page.respond_to? :restrictions_yes_selector
+          'has_restrictions' unless
+            @ingest_assets_page.respond_to? :select_has_restrictions
 
     raise PageElementSelectorNotFoundException,
-          'restrictions_no_selector' unless
-            @ingest_assets_page.respond_to? :restrictions_no_selector
+          'no_restrictions' unless
+            @ingest_assets_page.respond_to? :select_no_restrictions
 
   end
 
   def test_has_restrictions_description_field
 
     raise PageElementSelectorNotFoundException,
-          'restrictions_description_field' unless
-            @ingest_assets_page.respond_to? :restrictions_description
+          'restriction_description_field' unless
+            @ingest_assets_page.respond_to? :restriction_description
 
   end
 
