@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../lib/pages/in_development/mio_create_video_project_page'
+require_relative '../../lib/pages/in_development/mio_create_video_project_page'
 require_relative 'mio_test'
 
 class MioCreateVideoProjectPageTest < MioTest

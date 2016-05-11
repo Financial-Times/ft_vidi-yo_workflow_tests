@@ -1,6 +1,6 @@
 require 'test/unit'
-require_relative '../lib/mio_exceptions/mio_exceptions'
-require_relative '../lib/pages/mio_page'
+require_relative '../../lib/mio_exceptions/mio_exceptions'
+require_relative '../../lib/pages/mio_page'
 
 class MioTest < Test::Unit::TestCase;
   include MioExceptions
@@ -10,7 +10,7 @@ class MioTest < Test::Unit::TestCase;
     @mio_page = MioPage.new @browser
   end
 
-  def test_displays_common_header
+  def test_has_common_header
     raise PageElementSelectorNotFoundException, 'site_header' unless @mio_page.respond_to? :site_header
   end
 

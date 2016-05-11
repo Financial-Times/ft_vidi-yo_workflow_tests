@@ -1,6 +1,6 @@
 require 'factory_girl'
 require_relative '../lib/mio_exceptions/mio_exceptions'
 require_relative '../test/factories/mio_video_asset_factory'
-require_relative 'factories/mio_video_project_factory'
+require_relative '../test/factories/mio_video_project_factory'
 require_relative '../test/data/mio_video_asset'
-require_relative 'mio_test'
+require_relative '../test/pages/mio_test'

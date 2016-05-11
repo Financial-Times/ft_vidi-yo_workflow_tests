@@ -1,4 +1,4 @@
-require_relative '../lib/pages/mio_dashboard'
+require_relative '../../lib/pages/mio_dashboard'
 require 'test-unit'
 require_relative 'mio_test'
 

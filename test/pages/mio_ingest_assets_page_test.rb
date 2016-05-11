@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../lib/pages/in_development/mio_ingest_assets_page'
+require_relative '../../lib/pages/in_development/mio_ingest_assets_page'
 require_relative 'mio_test'
 
 class MioIngestAssetsPageTest < MioTest
@@ -72,11 +72,6 @@ class MioIngestAssetsPageTest < MioTest
     raise PageElementSelectorNotFoundException,
           'has_restrictions' unless
             @ingest_assets_page.respond_to? :select_has_restrictions
-
-    raise PageElementSelectorNotFoundException,
-          'no_restrictions' unless
-            @ingest_assets_page.respond_to? :select_no_restrictions
-
   end
 
   def test_has_restrictions_description_field
