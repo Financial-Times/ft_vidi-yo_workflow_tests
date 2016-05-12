@@ -1,6 +1,6 @@
 require_relative 'mio_metadata'
 
-class MioVideoAsset < MioMetadata
+class MioExportVideo < MioMetadata
 
 
 end

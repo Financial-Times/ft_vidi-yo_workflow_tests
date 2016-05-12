@@ -2,8 +2,9 @@ require 'test/unit'
 require_relative '../test_helper'
 require_relative 'mio_video_asset'
 
-
 class MioVideoAssetTest < MioTest
+
+  include MioExceptions
 
   def setup
     @full_video_asset = FactoryGirl.build :default_mio_video_asset
