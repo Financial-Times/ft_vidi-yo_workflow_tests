@@ -21,7 +21,4 @@ class WSUserTest < Test::Unit::TestCase
     raise StandardError unless @custom_test_user.password == 'DorisSecret'
   end
 
-  def teardown
-    # Do nothing
-  end
 end
