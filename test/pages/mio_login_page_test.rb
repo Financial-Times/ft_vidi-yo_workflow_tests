@@ -11,10 +11,6 @@ class MioLoginPageTest < MioTest
     @login_page = MioLoginPage.new @browser
   end
 
-  def test_is_a_mio_page
-    raise ObjectIsNotAPageException unless @login_page.is_a?(MioPage)
-  end
-
   def test_can_log_in
     raise ExpectedCapabilityNotFound, :log_in unless @login_page.respond_to? :log_in
   end

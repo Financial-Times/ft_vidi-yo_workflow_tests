@@ -2,7 +2,6 @@ require_relative 'mio_page'
 
 class MioDashboard < MioPage
 
-  #TODO: DRY. Shift to dynamic method definitions
   link  :desktop_tab, id: 'desktop_section_tab'
   link  :assets_tab, id: 'assets_section_tab'
   link  :players_tab, id: 'players_section_tab'

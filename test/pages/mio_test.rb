@@ -2,6 +2,8 @@ require 'test/unit'
 require_relative '../../lib/mio_exceptions/mio_exceptions'
 require_relative '../../lib/pages/mio_page'
 
+
+
 class MioTest < Test::Unit::TestCase;
   include MioExceptions
 

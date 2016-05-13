@@ -8,4 +8,5 @@ group :test do
   gem 'page-object'
   gem 'test-unit'
   gem 'factory_girl'
+  gem 'rest-client'
 end

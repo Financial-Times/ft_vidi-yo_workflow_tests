@@ -36,4 +36,5 @@ FactoryGirl.define do
     asset.restriction_description 'AT restriction description'
 
   end
+
 end

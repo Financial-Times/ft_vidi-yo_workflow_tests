@@ -1,28 +1,26 @@
 require 'page-object'
 require_relative '../mio_page'
+require_relative '../../../lib/pages/mio_metadata_entry_form'
 
-class MioIngestAssetsPage < MioPage
+class MioIngestAssetsPage < MioMetadataEntryForm
 
-  element       :page_heading, id: 'TBC'
-  text_field    :project_name, id: 'TBC'
-  select_list   :clip_type_selector, id: 'TBC'
-  text_field    :clip_description, id: 'TBC'
-  select_list   :location_selector, id: 'TBC'
-  select_list   :interviewee_selector, id: 'TBC'
-  select_list   :ft_office_selector, id: 'TBC'
-  select_list   :producer_selector, id: 'TBC'
-  select_list   :freelance_producer_selector, id: 'TBC'
-  element       :reporter_writer_1, id: 'TBC'
-  element       :reporter_writer_2, id: 'TBC'
-  element       :reporter_writer_3, id: 'TBC'
-  radio_button  :no_restrictions, id: 'TBC'
-  radio_button  :has_restrictions, id: 'TBC'
-  text_field    :restriction_description, id: 'TD'
   button        :ingest_button, id: 'TBC'
 
 
-  def ingest_asset(asset)
-
+  def create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))
+    self.project_name = asset.project_name
+    self.clip_type_selector = asset.clip_type
+    self.clip_description = asset.description
+    self.location_selector = asset.location_selector
+    self.interviewee_selector = asset.interviewee
+    self.ft_office_selector = asset.ft_office
+    self.producer_selector = asset.producer
+    self.freelance_producer_selector = self.freelance_producer
+    self.reporter_writer_1 = asset.reporter_writer_1
+    self.reporter_writer_2 = asset.reporter_writer_2
+    self.reporter_writer_3 = asset.reporter_writer_3
+    self.select_has_restrictions
+    self.ingest_button
   end
 
 end
