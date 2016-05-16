@@ -9,8 +9,8 @@ class MioExportVideoPageTest < MioTest
    def setup
      @browser = Watir::Browser.new :phantomjs
      @export_video_page = MioExportVideoPage.new @browser
-     @export_video_form_attributes = %i{section_selector brand_selector headline_field long_lead_field brand_selector
-                                        headline_field long_lead_field short_lead_field related_content_fields_elements
+     @export_video_form_attributes = %i{section brand headline_field long_lead_field headline_field long_lead_field
+                                        short_lead_field related_content_fields_elements
                                         credit ft_office_selector producer_selector thumbnail_previews_elements
                                         select_has_restrictions select_no_restrictions restriction_description
                                         add_thumbnails_drop_zone export_button}

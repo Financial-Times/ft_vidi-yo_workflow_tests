@@ -7,7 +7,7 @@ class MioIngestAssetsPageTest < MioTest
   def setup
     @browser = Watir::Browser.new :phantomjs
     @ingest_assets_page = MioIngestAssetsPage.new @browser
-    @ingest_assets_form_attributes = %i{ page_heading project_name clip_type_selector clip_description location_selector
+    @ingest_assets_form_attributes = %i{ page_heading project clip_type_selector clip_description location_selector
                                         interviewee_selector ft_office_selector producer_selector
                                         freelance_producer_selector reporter_writer_1 reporter_writer_2
                                         reporter_writer_3 select_has_restrictions select_no_restrictions ingest_button

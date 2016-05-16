@@ -1,3 +1,5 @@
+require_relative '../../lib/services/create_project_panel_service'
+
 class MioMetadataEntryForm < MioPage
 
   #TODO: Add real selector definitions
@@ -25,6 +27,13 @@ class MioMetadataEntryForm < MioPage
   text_field    :restriction_description, id: 'TD'
   select_list   :video_editor_selector, id: 'TBC'
   element       :add_thumbnails_drop_zone, id: 'TBC'
-  images           :thumbnail_previews, id: 'ID'
+  images        :thumbnail_previews, id: 'ID'
+
+
+  def define_text_field
+    @mio_client = CreateProjectPanelService.new
+
+
+  end
 
 end
