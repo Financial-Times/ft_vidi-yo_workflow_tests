@@ -3,18 +3,19 @@ require 'rest-client'
 
 class CreateProjectPanelService < MioWSClient
 
-  def get_create_project_panel_attributes
-    definitions = get_project_panel_definitions
-    attributes = []
-    definitions.each do |definition|
-      attributes << definition['name']
+
+  def get_create_project_panel_elements
+    definitions = {}
+    get_create_project_panel_definitions.each do |element|
+      definitions[element['name']] = element['type']
     end
-    attributes
+    definitions
   end
+
 
   private
 
-  def get_project_panel_definitions
+  def get_create_project_panel_definitions
     get_create_project_panel_metadata['definition']
   end
 

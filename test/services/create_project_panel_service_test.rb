@@ -7,20 +7,18 @@ class CreateProjectPanelServiceTest < Test::Unit::TestCase
 
   def setup
     @mio_client = CreateProjectPanelService.new(WSUser.new)
-    @create_project_panel_attributes = @mio_client.get_create_project_panel_attributes
+    @create_project_panel_elements = @mio_client.get_create_project_panel_elements
   end
 
 
-  def test_can_get_project_panel_attributes
-    fail "Project panel data fetch failed (#{@create_project_panel_attributes.class})" unless
-        @create_project_panel_attributes.class.equal?(Array)
+  def test_get_create_project_panel_elements
+    fail "Element #{@create_project_panel_elements.class} is not a Hash" unless
+        @create_project_panel_elements.class.equal? Hash
+
+
+    fail "Element @create_project_panel_elements #{@create_project_panel_elements}" unless
+         @create_project_panel_elements.has_key?('project') || @create_project_panel_elements.has_key?('text')
   end
 
-  def test_project_panel_attributes
-    #This might fail if the data definition changes
-    expected = 'project'
-    fail "Project panel data does not include '#{expected}' (#{@create_project_panel_attributes.inspect})" unless
-        @create_project_panel_attributes.include?(expected)
-  end
 
 end
