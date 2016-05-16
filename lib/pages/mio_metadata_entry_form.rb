@@ -1,17 +1,12 @@
-require_relative '../../lib/services/create_project_panel_service'
-
 class MioMetadataEntryForm < MioPage
 
   #TODO: Add real selector definitions
   text_field    :credit, id: 'TBC'
-  select_list   :section, id: 'TBC'
-  select_list   :brand, id: 'TBC'
   text_field    :headline_field, id: 'TBC'
   text_field    :long_lead_field, id: 'TBC'
   text_field    :short_lead_field, id: 'TBC'
   text_fields   :related_content_fields, id: 'TBC'
   element       :page_heading, id: 'TBC'
-  text_field    :project, id: 'TBC'
   select_list   :clip_type_selector, id: 'TBC'
   text_field    :clip_description, id: 'TBC'
   select_list   :location_selector, id: 'TBC'
@@ -30,10 +25,5 @@ class MioMetadataEntryForm < MioPage
   images        :thumbnail_previews, id: 'ID'
 
 
-  def define_text_field
-    @mio_client = CreateProjectPanelService.new
-
-
-  end
 
 end

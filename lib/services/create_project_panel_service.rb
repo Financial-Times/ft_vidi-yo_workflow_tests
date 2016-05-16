@@ -21,7 +21,7 @@ class CreateProjectPanelService < MioWSClient
     text_fields = {}
     get_create_project_panel_elements.each do |key, value|
       if value == 'text'
-        text_fields = {key => value}
+        text_fields[key] = value
       end
     end
     text_fields
@@ -31,8 +31,7 @@ class CreateProjectPanelService < MioWSClient
     selectors = {}
     get_create_project_panel_elements.each do |key, value|
       if value == 'single-option'
-        $stdout.puts key, value
-        selectors = {key => value}
+        selectors[key] = value
       end
     end
     selectors

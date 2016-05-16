@@ -1,7 +1,8 @@
 require 'test/unit'
-require_relative '../../lib/pages/in_development/mio_create_video_project_page'
 require_relative 'mio_test'
+require_relative '../../lib/pages/in_development/mio_create_video_project_page'
 require_relative '../../lib/services/create_project_panel_service'
+
 
 class MioCreateVideoProjectPageTest < MioTest
 
@@ -14,10 +15,10 @@ class MioCreateVideoProjectPageTest < MioTest
   end
 
   def fetch_expected_page_elements
-    @text_fields = @mio_client.get_create_project_panel_elements
-    @create_project_form_attributes = {}
-    @text_fields.each do |key, value|
-      @create_project_form_attributes = {key => value}
+    elements = @mio_client.get_create_project_panel_elements
+    @create_project_form_attributes ||= {}
+    elements.each do |key, value|
+      @create_project_form_attributes[key] = value
     end
   end
 
@@ -38,7 +39,6 @@ class MioCreateVideoProjectPageTest < MioTest
   def test_get_selectors
     selectors = @mio_client.get_selector_elements
     selectors.each do |key, value|
-      puts key, value
       fail "#{key} is not a selector (#{value}" unless value == 'single-option'
     end
   end
