@@ -1,7 +1,12 @@
 require_relative 'mio_ws_client.rb'
 require 'rest-client'
+require_relative '../../test/data/ws_user'
 
 class CreateProjectPanelService < MioWSClient
+
+  def initialize(user=WSUser.new)
+    super(user)
+  end
 
 
   def get_create_project_panel_elements
