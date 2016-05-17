@@ -7,7 +7,7 @@ class CreateProjectPanelServiceTest < Test::Unit::TestCase
 
   def setup
     @mio_client = CreateProjectPanelService.new(WSUser.new)
-    @create_project_panel_elements = @mio_client.get_create_project_panel_elements
+    @create_project_panel_elements = @mio_client.get_panel_elements
   end
 
 

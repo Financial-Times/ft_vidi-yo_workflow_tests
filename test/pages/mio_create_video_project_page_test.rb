@@ -15,7 +15,7 @@ class MioCreateVideoProjectPageTest < MioTest
   end
 
   def fetch_expected_page_elements
-    elements = @mio_client.get_create_project_panel_elements
+    elements = @mio_client.get_create_project_panel
     @create_project_form_attributes ||= {}
     elements.each do |key, value|
       @create_project_form_attributes[key] = value
@@ -25,6 +25,7 @@ class MioCreateVideoProjectPageTest < MioTest
 
   def test_has_attributes
     @create_project_form_attributes.each_key do |key|
+      puts key
       raise PageElementSelectorNotFoundException, key unless @create_project_page.respond_to? key
     end
   end

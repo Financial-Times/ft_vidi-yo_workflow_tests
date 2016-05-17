@@ -1,96 +1,43 @@
-require_relative 'mio_ws_client.rb'
 require 'rest-client'
 require_relative '../../test/data/ws_user'
+require_relative 'mio_fetch_panel_service'
 
-class CreateProjectPanelService < MioWSClient
+class CreateProjectPanelService < MioFetchPanelService
 
-  def initialize(user=WSUser.new)
-    super(user)
+  def initialize(user=WSUser.new, url=nil)
+    url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition' : url
+    super(user, url)
   end
 
   def cached_create_project_panel_elements
 
-    {
-        'definition' =>
-            [
-                {
-                    'name' => 'project',
-                    'type' => 'text'
-                },
+    JSON.parse(
+    '[
+   	      {
+            "name": "project",
+      	    "type": "text"
+          },
 
-                {
-                    'name' => 'brand',
-                    'type' => 'text'
-                },
+          {
+            "name": "section",
+            "type": "single-option"
+          },
 
-                {
-                    'name' => 'project',
-                    'type' => 'single-option'
-                }
-
-            ]
-    }
-
-  end
-
-
-  def get_create_project_panel_elements
-    definitions = {}
-    get_create_project_panel_definitions.each do |element|
-      definitions[element['name']] = element['type']
-    end
-    definitions
-  end
-
-  def get_text_field_elements
-    text_fields = {}
-    get_create_project_panel_elements.each do |key, value|
-      if value == 'text'
-        text_fields[key] = value
-      end
-    end
-    text_fields
-  end
-
-  def get_selector_elements
-    selectors = {}
-    get_create_project_panel_elements.each do |key, value|
-      if value == 'single-option'
-        selectors[key] = value
-      end
-    end
-    selectors
-  end
-
-
-  private
-
-  def get_create_project_panel_definitions
-    get_create_project_panel_metadata['definition']
-  end
-
-  def get_create_project_panel_metadata
-    begin
-    response = RestClient::Request.execute(method: :get,
-                                           url: 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition',
-                                           user: @username,
-                                           password: @password,
-                                           headers: @headers
+          {
+            "name": "brand",
+            "type": "single-option"
+          }
+    ]'
     )
-    JSON.parse(response)
-    rescue Exception => e
-      $stdout.puts <<ERROR
-                    Cannot connect to service
-                    #{e.message}
-                    Using cached field names
-                    #{cached_create_project_panel_elements}
-ERROR
-      return  cached_create_project_panel_elements
-
-    end
+  end
 
 
-    end
+
+  def get_create_project_panel
+     get_panel_elements
+  end
+
 
 
 end
+
