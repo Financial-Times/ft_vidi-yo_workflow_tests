@@ -2,6 +2,8 @@ class MioMetadataEntryForm < MioPage
 
   #TODO: Add real selector definitions
   text_field    :credit, id: 'TBC'
+  text_field    :project, id: 'TBC'
+  select_list   :brand, id: 'TBC'
   text_field    :headline_field, id: 'TBC'
   text_field    :long_lead_field, id: 'TBC'
   text_field    :short_lead_field, id: 'TBC'

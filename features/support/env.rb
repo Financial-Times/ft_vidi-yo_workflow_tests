@@ -11,11 +11,9 @@ require_relative '../../lib/mio_exceptions/mio_exceptions'
 World(PageObject::PageFactory)
 World(FactoryGirl::Syntax::Methods)
 
-
-#TODO: Refactor all this.
+# TODO: Refactor all this.
 execution_environment ||= :dev
-$browser = ENV['SESSION_BROWSER'].to_sym
-REPORTS = '../../reports'
+REPORTS = '../../reports'.freeze
 CONFIG = YAML.load_file('config/master.yml')
 ENVIRONMENT_CONFIG = CONFIG[execution_environment]
 ROOT_URL = ENVIRONMENT_CONFIG[:url]

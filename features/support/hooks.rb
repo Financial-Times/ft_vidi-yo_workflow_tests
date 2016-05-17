@@ -1,4 +1,4 @@
-browser = Watir::Browser.new $browser
+browser = Watir::Browser.new ENV['SESSION_BROWSER']
 
 
 Before do

@@ -1,7 +1,7 @@
 require 'test/unit'
 require_relative '../test_helper'
 
-class MioVideoProjectTest <  MioTest
+class MioVideoProjectTest < MioTest
 
 
   def setup
@@ -12,7 +12,6 @@ class MioVideoProjectTest <  MioTest
     raise AttributeNotFoundException unless @default_video_project.respond_to? :project_name
     raise AttributeNotFoundException unless @default_video_project.project_name.length > 0
   end
-
 
 
 end

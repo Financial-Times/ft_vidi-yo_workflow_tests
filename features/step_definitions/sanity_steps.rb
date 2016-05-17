@@ -4,5 +4,6 @@ When(/^I log in to Mio$/) do
 end
 
 When(/^I can access (\w+) features$/) do |section|
-  expect((on MioDashboard).change_section(section)).to be_truthy, "Failed to change to section #{section}"
+  expect((on MioDashboard).change_section(section)).to be_truthy,
+     "Failed to change to section #{section}"
 end

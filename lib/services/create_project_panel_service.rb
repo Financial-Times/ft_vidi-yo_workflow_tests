@@ -8,6 +8,31 @@ class CreateProjectPanelService < MioWSClient
     super(user)
   end
 
+  def cached_create_project_panel_elements
+
+    {
+        'definition' =>
+            [
+                {
+                    'name' => 'project',
+                    'type' => 'text'
+                },
+
+                {
+                    'name' => 'brand',
+                    'type' => 'text'
+                },
+
+                {
+                    'name' => 'project',
+                    'type' => 'single-option'
+                }
+
+            ]
+    }
+
+  end
+
 
   def get_create_project_panel_elements
     definitions = {}
@@ -45,6 +70,7 @@ class CreateProjectPanelService < MioWSClient
   end
 
   def get_create_project_panel_metadata
+    begin
     response = RestClient::Request.execute(method: :get,
                                            url: 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition',
                                            user: @username,
@@ -52,7 +78,19 @@ class CreateProjectPanelService < MioWSClient
                                            headers: @headers
     )
     JSON.parse(response)
-  end
+    rescue Exception => e
+      $stdout.puts <<ERROR
+                    Cannot connect to service
+                    #{e.message}
+                    Using cached field names
+                    #{cached_create_project_panel_elements}
+ERROR
+      return  cached_create_project_panel_elements
+
+    end
+
+
+    end
 
 
 end

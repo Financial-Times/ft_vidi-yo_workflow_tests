@@ -12,10 +12,11 @@ class MioExportVideoTest < MioTest
     @data_attributes=%i{:section :brand}
 
   end
+
   #TODO: Refactor to loop to avoid repetition - respond_to? argument doesn't work in iterator at present
 
   def test_has_section
-    raise AttributeNotFoundException  unless @mio_export_video.respond_to? :section
+    raise AttributeNotFoundException unless @mio_export_video.respond_to? :section
   end
 
   def test_has_brand
