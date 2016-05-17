@@ -13,7 +13,7 @@ World(FactoryGirl::Syntax::Methods)
 
 # TODO: Refactor all this.
 execution_environment ||= :dev
-REPORTS = '../../reports'.freeze
+REPORTS =('../../reports').freeze
 CONFIG = YAML.load_file('config/master.yml')
 ENVIRONMENT_CONFIG = CONFIG[execution_environment]
 ROOT_URL = ENVIRONMENT_CONFIG[:url]

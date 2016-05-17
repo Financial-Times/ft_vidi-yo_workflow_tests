@@ -4,9 +4,8 @@ require_relative '../../../lib/pages/mio_metadata_entry_form'
 
 class MioIngestAssetsPage < MioMetadataEntryForm
 
-  button :ingest_button,  id: 'TBC' #TODO: Replace with dynamic selector when service is ready
-  text_field :project,    id: 'TBC' #TODO: Replace with dynamic selector when service is ready
-
+  button :ingest_button,  id: 'TBC' # TODO: Replace with dynamic selector
+  text_field :project,    id: 'TBC' # TODO: Replace with dynamic selector
 
   def create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))
     self.project = asset.project_name
@@ -16,7 +15,7 @@ class MioIngestAssetsPage < MioMetadataEntryForm
     self.interviewee_selector = asset.interviewee
     self.ft_office_selector = asset.ft_office
     self.producer_selector = asset.producer
-    self.freelance_producer_selector = self.freelance_producer
+    self.freelance_producer_selector = asset.freelance_producer
     self.reporter_writer_1 = asset.reporter_writer_1
     self.reporter_writer_2 = asset.reporter_writer_2
     self.reporter_writer_3 = asset.reporter_writer_3

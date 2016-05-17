@@ -1,6 +1,7 @@
 class MioMetadataEntryForm < MioPage
 
-  #TODO: Add real selector definitions
+  # TODO: Add real selector definitions
+  select_list   :section, is: 'TBC'
   text_field    :credit, id: 'TBC'
   text_field    :project, id: 'TBC'
   select_list   :brand, id: 'TBC'
