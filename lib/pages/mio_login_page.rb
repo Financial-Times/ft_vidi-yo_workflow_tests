@@ -9,7 +9,7 @@ class MioLoginPage < MioPage
   button      :submit_button, id: 'submit_control-button'
 
 
-  def log_in(user=ADMIN_USER)
+  def log_in(user=MioConstants::ADMIN_USER)
     true if @browser.link(title: 'Logout').present?
     self.username_field = user[:mio_username]
     self.password_field = user[:mio_password]

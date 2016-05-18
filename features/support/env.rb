@@ -4,18 +4,15 @@ require 'rspec/expectations'
 require 'page-object'
 require 'test-unit'
 require 'yaml'
+require 'factory_girl'
 
 require_relative '../../lib/pages/mio_page'
 require_relative '../../lib/mio_exceptions/mio_exceptions'
-require_relative '../../test/test_helper'
+#require_relative '../../test/test_helper'
+require_relative '../../config/mio_constants'
 
 World(PageObject::PageFactory)
 World(FactoryGirl::Syntax::Methods)
+World(MioConstants)
 
-# TODO: Refactor all this.
-execution_environment ||= :dev
-REPORTS =('../../reports').freeze
-CONFIG = YAML.load_file('config/master.yml')
-ENVIRONMENT_CONFIG = CONFIG[execution_environment]
-ROOT_URL = ENVIRONMENT_CONFIG[:url]
-ADMIN_USER = ENVIRONMENT_CONFIG[:admin_user]
+
