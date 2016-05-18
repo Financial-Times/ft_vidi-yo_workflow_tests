@@ -7,6 +7,7 @@ require 'yaml'
 
 require_relative '../../lib/pages/mio_page'
 require_relative '../../lib/mio_exceptions/mio_exceptions'
+require_relative '../../test/test_helper'
 
 World(PageObject::PageFactory)
 World(FactoryGirl::Syntax::Methods)

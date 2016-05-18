@@ -9,4 +9,6 @@ group :test do
   gem 'test-unit'
   gem 'factory_girl'
   gem 'rest-client'
+  gem 'rest-client-components'
+  gem 'rack-cache'
 end
