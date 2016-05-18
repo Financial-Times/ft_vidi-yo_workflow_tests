@@ -11,23 +11,24 @@ class CreateProjectPanelService < MioFetchPanelService
 
   def cached_create_project_panel_elements
 
-    JSON.parse
-      '[
-          {
-            "name": "project",
-            "type": "text"
-          },
+    JSON.parse(
+        '[
+            {
+              "name": "project",
+              "type": "text"
+            },
 
-          {
-            "name": "section",
-            "type": "single-option"
-          },
+            {
+              "name": "section",
+              "type": "single-option"
+            },
 
-          {
-            "name": "brand",
-            "type": "single-option"
-          }
-        ]'
+            {
+              "name": "brand",
+              "type": "single-option"
+            }
+          ]'
+    )
   end
 
   def create_project_panel

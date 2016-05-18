@@ -1,5 +1,6 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
+require_relative '../pages/mio_test'
 require_relative '../../lib/services/create_project_panel_service'
 
 class CreateProjectPanelServiceTest < MioTest
@@ -14,7 +15,7 @@ class CreateProjectPanelServiceTest < MioTest
   end
 
 
-  def test_get_create_project_panel_elements
+  def test_extract_create_project_panel_elements
     fail "Element #{@create_project_panel_elements.class} is not a Hash" unless
         @create_project_panel_elements.class.equal? Hash
 
@@ -23,7 +24,7 @@ class CreateProjectPanelServiceTest < MioTest
          @create_project_panel_elements.has_key?('project') || @create_project_panel_elements.has_key?('text')
   end
 
-  def test_get_create_project_panel_definitions
+  def test_retrieve_create_project_panel_definitions
     fail "Element #{@create_project_panel_definitions.class} is not an Array" unless
         @create_project_panel_definitions.class.equal? Array
   end
