@@ -16,7 +16,6 @@ FactoryGirl.define do
     asset.interviewee 'Michael Bloomberg'
     asset.has_restrictions false
     asset.restriction_description 'AT restriction description'
-
   end
 
   factory :default_mio_video_asset, class: MioVideoAsset do |asset|
@@ -34,7 +33,5 @@ FactoryGirl.define do
     asset.interviewee 'Michael Bloomberg'
     asset.has_restrictions false
     asset.restriction_description 'AT restriction description'
-
   end
-
 end

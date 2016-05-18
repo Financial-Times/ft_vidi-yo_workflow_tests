@@ -3,9 +3,7 @@ require_relative 'mio_test'
 require_relative '../../lib/pages/in_development/mio_create_video_project_page'
 require_relative '../../lib/services/create_project_panel_service'
 
-
 class MioCreateVideoProjectPageTest < MioTest
-
 
   def setup
     @browser = Watir::Browser.new :phantomjs
@@ -27,8 +25,6 @@ class MioCreateVideoProjectPageTest < MioTest
       raise PageElementSelectorNotFoundException, key unless @create_project_page.respond_to? key
     end
   end
-
-
 
   def teardown
     @browser.close

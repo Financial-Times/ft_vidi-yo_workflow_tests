@@ -19,8 +19,8 @@ class MioIngestAssetsPage < MioMetadataEntryForm
     self.reporter_writer_1 = asset.reporter_writer_1
     self.reporter_writer_2 = asset.reporter_writer_2
     self.reporter_writer_3 = asset.reporter_writer_3
-    self.select_has_restrictions
-    self.ingest_button
+    select_has_restrictions
+    ingest_button
   end
 
 end

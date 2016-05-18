@@ -8,11 +8,11 @@ class WSUserTest < Test::Unit::TestCase
   end
 
   def test_user_has_default_username
-    raise StandardError unless @test_user.username.length > 0
+    raise StandardError if @test_user.username.empty?
   end
 
   def test_user_has_default_password
-    raise StandardError unless @test_user.password.length > 0
+    raise StandardError if @test_user.password.empty?
   end
 
   def test_username_and_password_can_be_set

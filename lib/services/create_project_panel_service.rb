@@ -10,24 +10,23 @@ class CreateProjectPanelService < MioFetchPanelService
   end
 
   def cached_create_project_panel_elements
-
     JSON.parse(
-        '[
-            {
-              "name": "project",
-              "type": "text"
-            },
+      '[
+          {
+            "name": "project",
+            "type": "text"
+          },
 
-            {
-              "name": "section",
-              "type": "single-option"
-            },
+          {
+            "name": "section",
+            "type": "single-option"
+          },
 
-            {
-              "name": "brand",
-              "type": "single-option"
-            }
-          ]'
+          {
+            "name": "brand",
+            "type": "single-option"
+          }
+        ]'
     )
   end
 
@@ -36,4 +35,3 @@ class CreateProjectPanelService < MioFetchPanelService
   end
 
 end
-

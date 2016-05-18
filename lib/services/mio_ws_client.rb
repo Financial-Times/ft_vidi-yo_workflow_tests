@@ -7,22 +7,18 @@ class MioWSClient
     @url = url
   end
 
-
   def retrieve_metadata
-    begin
+    RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers) do |response|
+      JSON.parse(response)
+    end
 
-      RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers) do |response|
-        JSON.parse(response)
-      end
-
-    rescue RestClient::Exception, JSON::JSONError, SocketError => e
-      $stderr.puts <<ERROR
+  rescue RestClient::Exception, JSON::JSONError, SocketError => e
+    $stderr.puts <<ERROR
                     Cannot connect to service
                     #{e.class}
                     Using cached field names
 ERROR
-      return nil
-    end
+    return nil
   end
 
 end

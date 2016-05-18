@@ -3,7 +3,6 @@ require_relative '../../lib/pages/mio_page'
 require_relative '../../lib/mio_exceptions/mio_exceptions'
 require_relative 'mio_test'
 
-
 class MioPageTest < MioTest
   include MioExceptions
 

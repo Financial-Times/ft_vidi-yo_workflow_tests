@@ -3,9 +3,7 @@ require_relative '../../lib/mio_exceptions/mio_exceptions'
 require_relative '../../lib/pages/mio_page'
 require_relative '../test_helper'
 
-
-
-class MioTest < Test::Unit::TestCase;
+class MioTest < Test::Unit::TestCase
   include MioExceptions
 
   def setup

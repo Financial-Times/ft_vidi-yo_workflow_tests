@@ -7,9 +7,8 @@ class MioDashboardTest < MioTest
   def setup
     @browser = Watir::Browser.new :phantomjs
     @dashboard = MioDashboard.new @browser
-    @tabs=%i{desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab resources_tab}
+    @tabs = %i(desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab resources_tab)
   end
-
 
   def test_displayed
     raise ExpectedCapabilityNotFound, :displayed? unless @dashboard.respond_to? :displayed?
@@ -18,7 +17,6 @@ class MioDashboardTest < MioTest
   def test_change_section
     raise ExpectedCapabilityNotFound, :change_section unless @dashboard.respond_to? :change_section
   end
-
 
   def test_has_tabs
     @tabs.each do |tab|

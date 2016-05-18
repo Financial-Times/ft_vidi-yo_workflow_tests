@@ -5,7 +5,6 @@ require_relative 'mio_test'
 
 class MioLoginPageTest < MioTest
 
-
   def setup
     @browser = Watir::Browser.new :phantomjs
     @login_page = MioLoginPage.new @browser

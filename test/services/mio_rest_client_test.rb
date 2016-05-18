@@ -13,9 +13,7 @@ class MioRestClientTest < MioTest
 
   def test_returns_hash
     metadata = @mio_client.retrieve_metadata
-    fail "No Hash returned (#{metadata.class})" unless metadata.is_a? Hash
+    raise "No Hash returned (#{metadata.class})" unless metadata.is_a? Hash
   end
-
-
 
 end

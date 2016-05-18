@@ -14,7 +14,7 @@ class MioDashboard < MioPage
   div :current_feature_container, id: 'left_col'
 
   def displayed?
-    self.wait_until { dashboard_container? }
+    wait_until { dashboard_container? }
   end
 
   def change_section(section)
@@ -25,7 +25,7 @@ class MioDashboard < MioPage
   end
 
   def select_tab(section)
-    self.send("#{section}_tab_element").when_present.click
+    send("#{section}_tab_element").when_present.click
   end
 
 end

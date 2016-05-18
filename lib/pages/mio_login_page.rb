@@ -8,7 +8,6 @@ class MioLoginPage < MioPage
   text_field  :password_field, id: 'j_password'
   button      :submit_button, id: 'submit_control-button'
 
-
   def log_in(user=MioConstants::ADMIN_USER)
     true if @browser.link(title: 'Logout').present?
     self.username_field = user[:mio_username]
