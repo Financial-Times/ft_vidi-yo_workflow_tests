@@ -7,13 +7,15 @@ class MioWSClient
     @url = url
   end
 
-  private
+
   def get_metadata
     begin
 
-      response = RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers)
+      RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers) do |response|
+        JSON.parse(response)
+      end
 
-      JSON.parse(response)
+
 
     rescue RestClient::Exception, JSON::JSONError, SocketError => e
       $stdout.puts <<ERROR

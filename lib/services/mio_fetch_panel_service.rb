@@ -1,5 +1,11 @@
+require 'rest-client'
 require_relative 'mio_ws_client'
 class MioFetchPanelService < MioWSClient
+
+  def initialize(user, url=nil)
+    url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition' : url
+    super(user, url)
+  end
 
   def get_panel_elements
     definitions = {}
@@ -30,12 +36,15 @@ class MioFetchPanelService < MioWSClient
   end
 
   def get_panel_definitions
-    if get_metadata.nil?
+
+    metadata = get_metadata
+
+    if metadata.nil?
       cached_data = cached_create_project_panel_elements
       puts "Cached data: #{cached_data}"
       cached_data
     else
-      live_data = get_metadata['definition']
+      live_data = metadata['definition']
       puts "Retrieved from WS #{Time.now} #{live_data}"
       live_data
     end

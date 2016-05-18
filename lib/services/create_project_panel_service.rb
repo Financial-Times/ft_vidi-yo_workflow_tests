@@ -4,7 +4,7 @@ require_relative 'mio_fetch_panel_service'
 
 class CreateProjectPanelService < MioFetchPanelService
 
-  def initialize(user=WSUser.new, url=nil)
+  def initialize(user, url=nil)
     url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition' : url
     super(user, url)
   end
