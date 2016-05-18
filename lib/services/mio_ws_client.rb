@@ -18,7 +18,7 @@ class MioWSClient
 
 
     rescue RestClient::Exception, JSON::JSONError, SocketError => e
-      $stdout.puts <<ERROR
+      $stderr.puts <<ERROR
                     Cannot connect to service
                     #{e.class}
                     Using cached field names
