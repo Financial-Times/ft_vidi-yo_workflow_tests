@@ -27,6 +27,4 @@ class MioMetadataEntryForm < MioPage
   element       :add_thumbnails_drop_zone, id: 'TBC'
   images        :thumbnail_previews, id: 'ID'
 
-
-
 end

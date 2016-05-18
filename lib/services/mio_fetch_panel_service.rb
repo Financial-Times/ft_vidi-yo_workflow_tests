@@ -7,37 +7,32 @@ class MioFetchPanelService < MioWSClient
     super(user, url)
   end
 
-  def get_panel_elements
+  def extract_panel_elements
     definitions = {}
-    get_panel_definitions.each do |element|
+    retrieve_panel_definitions.each do |element|
       definitions[element['name']] = element['type']
     end
     definitions
   end
 
-  def get_text_field_elements
+  def extract_text_field_elements
     text_fields = {}
-    get_panel_elements.each do |key, value|
-      if value == 'text'
-        text_fields[key] = value
-      end
+    extract_panel_elements.each do |key, value|
+      text_fields[key] = value if value == 'text'
     end
     text_fields
   end
 
-  def get_selector_elements
+  def extract_selector_elements
     selectors = {}
-    get_panel_elements.each do |key, value|
-      if value == 'single-option'
-        selectors[key] = value
-      end
+    extract_panel_elements.each do |key, value|
+      selectors[key] = value if value == 'single-option'
     end
     selectors
   end
 
-  def get_panel_definitions
-
-    metadata = get_metadata
+  def retrieve_panel_definitions
+    metadata = retrieve_metadata
 
     if metadata.nil?
       cached_data = cached_create_project_panel_elements

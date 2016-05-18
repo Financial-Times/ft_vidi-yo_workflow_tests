@@ -366,8 +366,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     </div>
     <div class="information">
       <div class="infobox">
-        42 files inspected,
-        263 offenses detected
+        43 files inspected,
+        132 offenses detected
       </div>
     </div>
     <div id="offenses">
@@ -377,7 +377,24 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
-      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>config/mio_constants.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #10</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>end<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
       
       
       
@@ -387,24 +404,17 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/mio_exceptions/mio_exceptions.rb - 9 offenses</h3></div>
+        <div class="box-title"><h3>features/support/env.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #2</span> –
+              <span class="location">Line #11</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at module body beginning.</span>
+              <span class="message">Missing space after #.</span>
             </div>
             
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #7</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
+            <pre><code><span class="highlight convention">#require_relative &#39;../../test/test_helper&#39;</span></code></pre>
             
           </div>
           
@@ -412,67 +422,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #17</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #22</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #38</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code>  <span class="highlight convention">class</span> ExpectedAttributeNotFoundError &lt; StandardError</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #39</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #40</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>    def initialize(expected_attribute<span class="highlight convention">=</span>&#39;Unknown&#39;, message=nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #40</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>    def initialize(expected_attribute=&#39;Unknown&#39;, message<span class="highlight convention">=</span>nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #50</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at module body end.</span>
+              <span class="message">2 trailing blank lines detected.</span>
             </div>
             
           </div>
@@ -486,35 +436,50 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/in_development/mio_export_video_page.rb - 3 offenses</h3></div>
+        <div class="box-title"><h3>lib/mio_exceptions/mio_exceptions.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #3</span> –
+              <span class="location">Line #8</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
+              <span class="message">Surrounding space detected in default value assignment.</span>
             </div>
             
-            <pre><code><span class="highlight convention">class</span> MioExportVideoPage &lt; MioMetadataEntryForm</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
+            <pre><code>    def initialize(missing_object<span class="highlight convention"> = </span>&#39;Unknown&#39;, message = nil)</code></pre>
             
           </div>
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #9</span> –
+              <span class="location">Line #8</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
+              <span class="message">Surrounding space detected in default value assignment.</span>
             </div>
+            
+            <pre><code>    def initialize(missing_object = &#39;Unknown&#39;, message<span class="highlight convention"> = </span>nil)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #23</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Surrounding space detected in default value assignment.</span>
+            </div>
+            
+            <pre><code>    def initialize(missing_capability<span class="highlight convention"> = </span>&#39;Unknown&#39;, message = nil)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #23</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Surrounding space detected in default value assignment.</span>
+            </div>
+            
+            <pre><code>    def initialize(missing_capability = &#39;Unknown&#39;, message<span class="highlight convention"> = </span>nil)</code></pre>
             
           </div>
           
@@ -523,30 +488,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
+      
+      
+      
+      
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/in_development/mio_ingest_assets_page.rb - 8 offenses</h3></div>
+        <div class="box-title"><h3>lib/pages/in_development/mio_ingest_assets_page.rb - 3 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioIngestAssetsPage &lt; MioMetadataEntryForm</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -556,28 +505,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>  <span class="highlight convention">def</span> create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #10</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Method has too many lines. [13/10]</span>
-            </div>
-            
-            <pre><code>  <span class="highlight convention">def create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #10</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>  def create_ingestion(asset<span class="highlight convention">=</span>FactoryGirl.build(:full_mio_video_asset))</code></pre>
             
           </div>
           
@@ -603,15 +530,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             
           </div>
           
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #25</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
         </div>
       </div>
       
@@ -619,28 +537,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/mio_dashboard.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>lib/pages/mio_dashboard.rb - 3 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #3</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioDashboard &lt; MioPage</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -666,15 +564,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #30</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #31</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Final newline missing.</span>
@@ -691,54 +580,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/mio_login_page.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>lib/pages/mio_login_page.rb - 2 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #3</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioLoginPage &lt; MioPage</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
               <span class="location">Line #11</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>  def log_in(user<span class="highlight convention">=</span>ADMIN_USER)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #18</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -761,28 +610,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/mio_metadata_entry_form.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>lib/pages/mio_metadata_entry_form.rb - 3 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioMetadataEntryForm &lt; MioPage</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #2</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -798,15 +627,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="location">Line #31</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #31</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -829,7 +649,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/pages/mio_page.rb - 5 offenses</h3></div>
+        <div class="box-title"><h3>lib/pages/mio_page.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -837,35 +657,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="location">Line #3</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioPage</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #11</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -888,61 +679,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/services/create_project_panel_service.rb - 15 offenses</h3></div>
+        <div class="box-title"><h3>lib/services/create_project_panel_service.rb - 9 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> CreateProjectPanelService &lt; MioFetchPanelService</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #7</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>  def initialize(user, url<span class="highlight convention">=</span>nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #8</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [106/80]</span>
-            </div>
-            
-            <pre><code>    url = url.nil? ? &#39;https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition&#39;<span class="highlight convention"> : url</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Method has too many lines. [16/10]</span>
-            </div>
-            
-            <pre><code>  <span class="highlight convention">def cached_create_project_panel_elements</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1024,15 +762,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #41</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #43</span> –
               <span class="severity convention">convention:</span>
               <span class="message">1 trailing blank lines detected.</span>
@@ -1047,50 +776,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/services/mio_fetch_panel_service.rb - 13 offenses</h3></div>
+        <div class="box-title"><h3>lib/services/mio_fetch_panel_service.rb - 8 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #3</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioFetchPanelService &lt; MioWSClient</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
-            </div>
-            
-            <pre><code>  def initialize(user, url<span class="highlight convention">=</span>nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [106/80]</span>
-            </div>
-            
-            <pre><code>    url = url.nil? ? &#39;https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition&#39;<span class="highlight convention"> : url</span></code></pre>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1169,15 +856,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #52</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #53</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Final newline missing.</span>
@@ -1194,61 +872,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>lib/services/mio_ws_client.rb - 14 offenses</h3></div>
+        <div class="box-title"><h3>lib/services/mio_ws_client.rb - 6 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing top-level class documentation comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">class</span> MioWSClient</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #2</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Space inside { missing.</span>
-            </div>
-            
-            <pre><code>    @headers = <span class="highlight convention">{</span>&#39;Accept&#39; =&gt; &#39;application/json&#39;, &#39;Content-Type&#39; =&gt; &#39;application/vnd.nativ.mio.v1+json&#39;}</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [102/80]</span>
-            </div>
-            
-            <pre><code>    @headers = {&#39;Accept&#39; =&gt; &#39;application/json&#39;, &#39;Content-Type&#39; =&gt; &#39;application/v<span class="highlight convention">nd.nativ.mio.v1+json&#39;}</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Space inside } missing.</span>
-            </div>
-            
-            <pre><code>    @headers = {&#39;Accept&#39; =&gt; &#39;application/json&#39;, &#39;Content-Type&#39; =&gt; &#39;application/vnd.nativ.mio.v1+json&#39;<span class="highlight convention">}</span></code></pre>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1256,17 +881,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
             </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #11</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Method has too many lines. [11/10]</span>
-            </div>
-            
-            <pre><code>  <span class="highlight convention">def get_metadata</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -1294,17 +908,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #14</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [129/80]</span>
-            </div>
-            
-            <pre><code>      RestClient::Request.execute(method: :get, url: @url, user: @username, pass<span class="highlight convention">word: @password, headers: @headers) do |response|</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #18</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
@@ -1326,15 +929,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="location">Line #28</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra empty line detected at method body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #30</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -1410,32 +1004,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_export_video.rb - 4 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_export_video.rb - 2 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
               <span class="location">Line #5</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -1458,17 +1034,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_export_video_test.rb - 22 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_export_video_test.rb - 7 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1523,161 +1090,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #16</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [104/80]</span>
-            </div>
-            
-            <pre><code>  #TODO: Refactor to loop to avoid repetition - respond_to? argument doesn&#39;t wor<span class="highlight convention">k in iterator at present</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [82/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :secti<span class="highlight convention">on</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #27</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [84/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :long_<span class="highlight convention">lead</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #31</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [85/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :short<span class="highlight convention">_lead</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #35</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [90/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :relat<span class="highlight convention">ed_content</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #39</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [81/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :credi<span class="highlight convention">t</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #43</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [87/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :video<span class="highlight convention">_editor</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #47</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [84/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :ft_of<span class="highlight convention">fice</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #51</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [83/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :produ<span class="highlight convention">cer</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #55</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [97/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :freel<span class="highlight convention">ance_video_editor</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #59</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [91/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :has_r<span class="highlight convention">estrictions</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #63</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [90/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :no_re<span class="highlight convention">strictions</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #67</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [98/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @mio_export_video.respond_to? :restr<span class="highlight convention">iction_description</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #70</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #70</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -1700,59 +1115,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_metadata.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_metadata.rb - 1 offense</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #2</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #3</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [122/80]</span>
-            </div>
-            
-            <pre><code>  attr_accessor :ft_office, :producer, :freelance_producer, :has_restrictions, :<span class="highlight convention">no_restrictions, :restriction_description,</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [111/80]</span>
-            </div>
-            
-            <pre><code>                :freelance_video_editor, :clip_type, :description, :location, :i<span class="highlight convention">nterviewee, :reporter_writer_1,</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [109/80]</span>
-            </div>
-            
-            <pre><code>                :reporter_writer_2, :reporter_writer_3, :section, :brand, :headl<span class="highlight convention">ine, :long_lead, :short_lead,</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #7</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1772,32 +1136,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_video_asset.rb - 4 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_video_asset.rb - 2 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
               <span class="location">Line #5</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -1820,17 +1166,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_video_asset_test.rb - 9 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_video_asset_test.rb - 3 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1845,65 +1182,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [84/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @full_video_asset.respond_to? :clip_<span class="highlight convention">type</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #20</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Use <code>!empty?</code> instead of <code>length > 0</code>.</span>
             </div>
             
             <pre><code>    raise AttributeNotFoundException unless <span class="highlight convention">@full_video_asset.clip_type.length &gt; 0</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #20</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [82/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @full_video_asset.clip_type.length &gt;<span class="highlight convention"> 0</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #24</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [100/80]</span>
-            </div>
-            
-            <pre><code>    raise ExpectedAttributeNotFoundError, :clip_type unless @full_video_asset.re<span class="highlight convention">spond_to? :clip_type</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #29</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [100/80]</span>
-            </div>
-            
-            <pre><code>    raise StandardError, &#39;Asset atribute not changed&#39; unless @full_video_asset.c<span class="highlight convention">lip_type == &#39;change&#39;</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #31</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
             
           </div>
           
@@ -1925,26 +1209,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_video_project.rb - 3 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_video_project.rb - 1 offense</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #2</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1964,17 +1230,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/mio_video_project_test.rb - 8 offenses</h3></div>
+        <div class="box-title"><h3>test/data/mio_video_project_test.rb - 4 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -1982,17 +1239,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
             </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [92/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @default_video_project.respond_to? :<span class="highlight convention">project_name</span></code></pre>
             
           </div>
           
@@ -2009,29 +1255,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #13</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [90/80]</span>
-            </div>
-            
-            <pre><code>    raise AttributeNotFoundException unless @default_video_project.project_name.<span class="highlight convention">length &gt; 0</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #16</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #16</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -2054,35 +1280,17 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/ws_user.rb - 4 offenses</h3></div>
+        <div class="box-title"><h3>test/data/ws_user.rb - 2 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #4</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
               <span class="location">Line #7</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Surrounding space missing in default value assignment.</span>
+              <span class="message">Surrounding space detected in default value assignment.</span>
             </div>
             
-            <pre><code>  def initialize(uname<span class="highlight convention">=</span>nil, pwd = nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #14</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
+            <pre><code>  def initialize(uname=nil, pwd<span class="highlight convention"> = </span>nil)</code></pre>
             
           </div>
           
@@ -2104,17 +1312,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/data/ws_user_test.rb - 5 offenses</h3></div>
+        <div class="box-title"><h3>test/data/ws_user_test.rb - 3 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #5</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -2135,15 +1334,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    raise StandardError unless <span class="highlight convention">@test_user.password.length &gt; 0</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #23</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
             
           </div>
           
@@ -2285,7 +1475,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_create_video_project_page_test.rb - 8 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_create_video_project_page_test.rb - 5 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -2299,30 +1489,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #8</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #9</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
             </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #27</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [97/80]</span>
-            </div>
-            
-            <pre><code>      raise PageElementSelectorNotFoundException, key unless @create_project_pag<span class="highlight convention">e.respond_to? key</span></code></pre>
             
           </div>
           
@@ -2346,15 +1516,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #36</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #37</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Final newline missing.</span>
@@ -2371,17 +1532,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_dashboard_test.rb - 11 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_dashboard_test.rb - 5 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -2407,17 +1559,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #10</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [95/80]</span>
-            </div>
-            
-            <pre><code>    @tabs=%i{desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab<span class="highlight convention"> resources_tab}</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #13</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
@@ -2427,51 +1568,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #15</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [91/80]</span>
-            </div>
-            
-            <pre><code>    raise ExpectedCapabilityNotFound, :displayed? unless @dashboard.respond_to? <span class="highlight convention">:displayed?</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [99/80]</span>
-            </div>
-            
-            <pre><code>    raise ExpectedCapabilityNotFound, :change_section unless @dashboard.respond_<span class="highlight convention">to? :change_section</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #22</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #25</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [97/80]</span>
-            </div>
-            
-            <pre><code>      raise PageElementSelectorNotFoundException, &quot;Tab: #{tab}&quot; unless @dashboar<span class="highlight convention">d.respond_to? tab</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #32</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -2494,17 +1593,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_export_video_page_test.rb - 14 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_export_video_page_test.rb - 7 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -2514,17 +1604,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>    @export_video_form_attributes = <span class="highlight convention">%i{section brand headline_field long_lead_field headline_field long_lead_field</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [114/80]</span>
-            </div>
-            
-            <pre><code>    @export_video_form_attributes = %i{section brand headline_field long_lead_fi<span class="highlight convention">eld headline_field long_lead_field</span></code></pre>
             
           </div>
           
@@ -2541,34 +1620,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #13</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [88/80]</span>
-            </div>
-            
-            <pre><code>                                        short_lead_field related_content_fields_<span class="highlight convention">elements</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #14</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Align the elements of an array literal if they span more than one line.</span>
             </div>
             
             <pre><code>                                        <span class="highlight convention">credit</span> ft_office_selector producer_selector thumbnail_previews_elements</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #14</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [111/80]</span>
-            </div>
-            
-            <pre><code>                                        credit ft_office_selector producer_selec<span class="highlight convention">tor thumbnail_previews_elements</span></code></pre>
             
           </div>
           
@@ -2585,17 +1642,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #15</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [110/80]</span>
-            </div>
-            
-            <pre><code>                                        select_has_restrictions select_no_restri<span class="highlight convention">ctions restriction_description</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #16</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Align the elements of an array literal if they span more than one line.</span>
@@ -2607,29 +1653,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #21</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [107/80]</span>
-            </div>
-            
-            <pre><code>      raise PageElementSelectorNotFoundException, attribute unless @export_video<span class="highlight convention">_page.respond_to? attribute</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #29</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #29</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -2652,17 +1678,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_ingest_assets_page_test.rb - 13 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_ingest_assets_page_test.rb - 6 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -2688,34 +1705,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #10</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [115/80]</span>
-            </div>
-            
-            <pre><code>    @ingest_assets_form_attributes = %i{ page_heading project clip_type_selector<span class="highlight convention"> clip_description location_selector</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #11</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Align the elements of an array literal if they span more than one line.</span>
             </div>
             
             <pre><code>                                        <span class="highlight convention">interviewee_selector</span> ft_office_selector producer_selector</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #11</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [97/80]</span>
-            </div>
-            
-            <pre><code>                                        interviewee_selector ft_office_selector <span class="highlight convention">producer_selector</span></code></pre>
             
           </div>
           
@@ -2732,54 +1727,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [103/80]</span>
-            </div>
-            
-            <pre><code>                                        freelance_producer_selector reporter_wri<span class="highlight convention">ter_1 reporter_writer_2</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #13</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Align the elements of an array literal if they span more than one line.</span>
             </div>
             
             <pre><code>                                        <span class="highlight convention">reporter_writer_3</span> select_has_restrictions select_no_restrictions ingest_button</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #13</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [118/80]</span>
-            </div>
-            
-            <pre><code>                                        reporter_writer_3 select_has_restriction<span class="highlight convention">s select_no_restrictions ingest_button</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [108/80]</span>
-            </div>
-            
-            <pre><code>      raise PageElementSelectorNotFoundException, attribute unless @ingest_asset<span class="highlight convention">s_page.respond_to? attribute</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #31</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
             
           </div>
           
@@ -2801,76 +1754,14 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_login_page_test.rb - 8 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_login_page_test.rb - 2 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #7</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
               <span class="location">Line #8</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #15</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [84/80]</span>
-            </div>
-            
-            <pre><code>    raise ExpectedCapabilityNotFound, :log_in unless @login_page.respond_to? :lo<span class="highlight convention">g_in</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [111/80]</span>
-            </div>
-            
-            <pre><code>    raise PageElementSelectorNotFoundException, &#39;username_field&#39; unless @login_p<span class="highlight convention">age.respond_to? :username_field</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #23</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [111/80]</span>
-            </div>
-            
-            <pre><code>    raise PageElementSelectorNotFoundException, &#39;password_field&#39; unless @login_p<span class="highlight convention">age.respond_to? :password_field</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #27</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [109/80]</span>
-            </div>
-            
-            <pre><code>    raise PageElementSelectorNotFoundException, &#39;submit button&#39; unless @login_pa<span class="highlight convention">ge.respond_to? :submit_button</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #33</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -2893,7 +1784,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_page_test.rb - 3 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_page_test.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -2901,15 +1792,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="location">Line #6</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #22</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -2932,7 +1814,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/pages/mio_test.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>test/pages/mio_test.rb - 4 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -2966,26 +1848,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #17</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [103/80]</span>
-            </div>
-            
-            <pre><code>    raise PageElementSelectorNotFoundException, &#39;site_header&#39; unless @mio_page.r<span class="highlight convention">espond_to? :site_header</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #19</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #20</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Final newline missing.</span>
@@ -3002,17 +1864,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/services/create_project_panel_service_test.rb - 21 offenses</h3></div>
+        <div class="box-title"><h3>test/services/create_project_panel_service_test.rb - 9 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -3020,17 +1873,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
             </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #12</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [81/80]</span>
-            </div>
-            
-            <pre><code>    @create_project_panel_elements_cached = @mio_cached_client.get_panel_element<span class="highlight convention">s</span></code></pre>
             
           </div>
           
@@ -3076,67 +1918,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #22</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [90/80]</span>
-            </div>
-            
-            <pre><code>    fail &quot;Element @create_project_panel_elements #{@create_project_panel_element<span class="highlight convention">s}&quot; unless</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #23</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message"><code>Hash#has_key?</code> is deprecated in favor of <code>Hash#key?</code>.</span>
-            </div>
-            
-            <pre><code>         @create_project_panel_elements.<span class="highlight convention">has_key?</span>(&#39;project&#39;) || @create_project_panel_elements.has_key?(&#39;text&#39;)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #23</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [110/80]</span>
-            </div>
-            
-            <pre><code>         @create_project_panel_elements.has_key?(&#39;project&#39;) || @create_project_p<span class="highlight convention">anel_elements.has_key?(&#39;text&#39;)</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #23</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message"><code>Hash#has_key?</code> is deprecated in favor of <code>Hash#key?</code>.</span>
-            </div>
-            
-            <pre><code>         @create_project_panel_elements.has_key?(&#39;project&#39;) || @create_project_panel_elements.<span class="highlight convention">has_key?</span>(&#39;text&#39;)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #27</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Always use <code>raise</code> to signal exceptions.</span>
             </div>
             
             <pre><code>    <span class="highlight convention">fail</span> &quot;Element #{@create_project_panel_definitions.class} is not an Array&quot; unless</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #27</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [84/80]</span>
-            </div>
-            
-            <pre><code>    fail &quot;Element #{@create_project_panel_definitions.class} is not an Array&quot; un<span class="highlight convention">less</span></code></pre>
             
           </div>
           
@@ -3153,62 +1940,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #32</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [97/80]</span>
-            </div>
-            
-            <pre><code>    fail &quot;Element @create_project_panel_elements #{@create_project_panel_element<span class="highlight convention">s_cached}&quot; unless</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #33</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message"><code>Hash#has_key?</code> is deprecated in favor of <code>Hash#key?</code>.</span>
-            </div>
-            
-            <pre><code>        @create_project_panel_elements_cached.<span class="highlight convention">has_key?</span>(&#39;project&#39;) || @create_project_panel_elements_cached.has_key?(&#39;text&#39;)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #33</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [123/80]</span>
-            </div>
-            
-            <pre><code>        @create_project_panel_elements_cached.has_key?(&#39;project&#39;) || @create_pro<span class="highlight convention">ject_panel_elements_cached.has_key?(&#39;text&#39;)</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #33</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message"><code>Hash#has_key?</code> is deprecated in favor of <code>Hash#key?</code>.</span>
-            </div>
-            
-            <pre><code>        @create_project_panel_elements_cached.has_key?(&#39;project&#39;) || @create_project_panel_elements_cached.<span class="highlight convention">has_key?</span>(&#39;text&#39;)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #36</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #36</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>
@@ -3231,28 +1965,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/services/mio_fetch_panel_service_test.rb - 8 offenses</h3></div>
+        <div class="box-title"><h3>test/services/mio_fetch_panel_service_test.rb - 5 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #6</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #9</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Line is too long. [89/80]</span>
-            </div>
-            
-            <pre><code>    @mio_cached_client = MioFetchPanelService.new(WSUser.new, &#39;https://www.google.co.uk<span class="highlight convention">&#39;)</span></code></pre>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -3300,15 +2014,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #37</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
               <span class="location">Line #38</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Final newline missing.</span>
@@ -3325,17 +2030,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>test/services/mio_rest_client_test.rb - 6 offenses</h3></div>
+        <div class="box-title"><h3>test/services/mio_rest_client_test.rb - 4 offenses</h3></div>
         <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #8</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body beginning.</span>
-            </div>
-            
-          </div>
           
           <div class="report">
             <div class="meta">
@@ -3362,15 +2058,6 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="location">Line #20</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #20</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at class body end.</span>
             </div>
             
           </div>

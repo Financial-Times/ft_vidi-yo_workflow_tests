@@ -15,7 +15,7 @@ class MioCreateVideoProjectPageTest < MioTest
   end
 
   def fetch_expected_page_elements
-    elements = @mio_client.get_create_project_panel
+    elements = @mio_client.create_project_panel
     @create_project_form_attributes ||= {}
     elements.each do |key, value|
       @create_project_form_attributes[key] = value

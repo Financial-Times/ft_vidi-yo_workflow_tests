@@ -8,9 +8,9 @@ class CreateProjectPanelServiceTest < MioTest
   def setup
     @mio_client = CreateProjectPanelService.new(WSUser.new)
     @mio_cached_client = CreateProjectPanelService.new(WSUser.new, 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definiti')
-    @create_project_panel_elements = @mio_client.get_panel_elements
-    @create_project_panel_elements_cached = @mio_cached_client.get_panel_elements
-    @create_project_panel_definitions = @mio_client.get_panel_definitions
+    @create_project_panel_elements = @mio_client.extract_panel_elements
+    @create_project_panel_elements_cached = @mio_cached_client.extract_panel_elements
+    @create_project_panel_definitions = @mio_client.retrieve_panel_definitions
   end
 
 

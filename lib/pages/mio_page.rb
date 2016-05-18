@@ -1,6 +1,5 @@
 require 'page-object'
 
-
 class MioPage
 
   include PageObject

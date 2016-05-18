@@ -9,11 +9,10 @@ class MioExportVideoTest < MioTest
 
   def setup
     @mio_export_video = FactoryGirl.build :mio_export_video
-    @data_attributes=%i{:section :brand}
-
+    @data_attributes = %i{:section :brand}
   end
 
-  #TODO: Refactor to loop to avoid repetition - respond_to? argument doesn't work in iterator at present
+  # TODO: Refactor to loop to avoid repetition - service not ready yet
 
   def test_has_section
     raise AttributeNotFoundException unless @mio_export_video.respond_to? :section
@@ -66,6 +65,5 @@ class MioExportVideoTest < MioTest
   def test_has_restrictions_description
     raise AttributeNotFoundException unless @mio_export_video.respond_to? :restriction_description
   end
-
 
 end

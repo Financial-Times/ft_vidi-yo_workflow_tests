@@ -5,7 +5,7 @@ module MioExceptions
   # Thrown when an expected page accessor is not found
   class PageElementSelectorNotFoundException < StandardError
 
-    def initialize(missing_object = 'Unknown', message = nil)
+    def initialize(missing_object='Unknown', message=nil)
       @message = message
       @missing_object = missing_object
       @default_message = "#{@missing_object} missing from page"
@@ -20,7 +20,7 @@ module MioExceptions
   # Thrown when an expected method is not found in a page object
   class ExpectedCapabilityNotFound < StandardError
 
-    def initialize(missing_capability = 'Unknown', message = nil)
+    def initialize(missing_capability='Unknown', message=nil)
       @missing_capability = missing_capability
       @message = message
       @default_message = "#{@missing_capability} expected, not found"

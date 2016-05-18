@@ -8,14 +8,12 @@ class MioWSClient
   end
 
 
-  def get_metadata
+  def retrieve_metadata
     begin
 
       RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers) do |response|
         JSON.parse(response)
       end
-
-
 
     rescue RestClient::Exception, JSON::JSONError, SocketError => e
       $stderr.puts <<ERROR
@@ -25,7 +23,6 @@ class MioWSClient
 ERROR
       return nil
     end
-
   end
 
 end
