@@ -15,10 +15,10 @@ class MioWSClient
 
       JSON.parse(response)
 
-    rescue Exception => e
+    rescue RestClient::Exception, JSON::JSONError, SocketError => e
       $stdout.puts <<ERROR
                     Cannot connect to service
-                    #{e.message}
+                    #{e.class}
                     Using cached field names
 ERROR
       return nil
