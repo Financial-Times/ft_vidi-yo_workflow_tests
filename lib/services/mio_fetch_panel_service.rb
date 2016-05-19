@@ -35,7 +35,7 @@ class MioFetchPanelService < MioWSClient
 
   def retrieve_panel_definitions
     metadata = retrieve_metadata
-    # TODO Replace with proper logging
+    # TODO: Replace with proper logging
     if metadata.nil?
       cached_data = cached_create_project_panel_elements
       puts "Cached data: #{cached_data}"
@@ -57,7 +57,5 @@ class MioFetchPanelService < MioWSClient
     @mio_metadata_service = MioMetadataDescriptionService.new
     fetch_panel_description_by_id(@mio_metadata_service.retrieve_id_with_name(name))
   end
-
-
 
 end

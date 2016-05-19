@@ -17,12 +17,12 @@ class MioMetadataDescriptionServiceTest < MioTest
 
   def test_can_retrieve_description_by_name
     description = @mio_metadata_service.retrieve_description_by_name('project-metadata')
-    assert((description['name'] == ('project-metadata')), "Name in response incorrect (#{description['name']})")
+    assert((description['name'] == 'project-metadata'), "Name in response incorrect (#{description['name']})")
   end
 
   def test_can_retrieve_id_with_name
     id = @mio_metadata_service.retrieve_id_with_name('project-metadata')
-    assert((id.respond_to? :+), )
+    assert((id.respond_to? :+))
   end
 
 end

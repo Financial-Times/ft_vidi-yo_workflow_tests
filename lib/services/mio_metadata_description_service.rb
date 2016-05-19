@@ -15,9 +15,7 @@ class MioMetadataDescriptionService < MioWSClient
   def retrieve_description_by_name(name)
     response = retrieve_metadata['metadataDefinitions']
     response.each do |description|
-      if description['name'] == name
-        return description
-      end
+      return description if description['name'] == name
     end
   end
 

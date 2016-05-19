@@ -10,4 +10,4 @@ require_relative '../test/data/mio_export_video'
 require 'restclient/components'
 require 'rack/cache'
 RestClient.enable Rack::CommonLogger, STDOUT
-RestClient.enable Rack::Cache, :verbose  => false
+RestClient.enable Rack::Cache, verbose: false

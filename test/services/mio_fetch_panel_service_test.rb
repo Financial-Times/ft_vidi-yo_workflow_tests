@@ -37,14 +37,14 @@ class MioFetchPanelServiceTest < MioTest
   end
 
   def test_fetch_panel_description_by_id
-    panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11518)
+    panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11_518)
     assert((panel_description.has_key? 'name'))
   end
 
   def test_fetch_panel_description_by_name
     panel_description = @mio_fetch_panels_client.fetch_panel_description_by_name('publish-metadata')
     assert((panel_description.has_key? 'definitionId'), 'Definition not returned')
-    assert((panel_description['definition'].length > 0), 'No definition data in definitions')
+    assert(!panel_description['definition'].empty?, 'No definition data in definitions')
     assert((panel_description['definition'].first.has_key? 'type'), 'No definition data in definitions')
   end
 
