@@ -6,11 +6,11 @@ require_relative '../../lib/services/create_project_panel_service'
 class CreateProjectPanelServiceTest < MioTest
 
   def setup
-    @mio_client = CreateProjectPanelService.new(WSUser.new)
+    @mio_fetch_panels_client = CreateProjectPanelService.new(WSUser.new)
     @mio_cached_client = CreateProjectPanelService.new(WSUser.new, 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definiti')
-    @create_project_panel_elements = @mio_client.extract_panel_elements
+    @create_project_panel_elements = @mio_fetch_panels_client.extract_panel_elements
     @create_project_panel_elements_cached = @mio_cached_client.extract_panel_elements
-    @create_project_panel_definitions = @mio_client.retrieve_panel_definitions
+    @create_project_panel_definitions = @mio_fetch_panels_client.retrieve_panel_definitions
   end
 
   def test_extract_create_project_panel_elements

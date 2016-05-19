@@ -8,12 +8,12 @@ class MioCreateVideoProjectPageTest < MioTest
   def setup
     @browser = Watir::Browser.new :phantomjs
     @create_project_page = MioCreateVideoProjectPage.new @browser
-    @mio_client = CreateProjectPanelService.new(WSUser.new)
+    @mio_fetch_panels_client = CreateProjectPanelService.new(WSUser.new)
     fetch_expected_page_elements
   end
 
   def fetch_expected_page_elements
-    elements = @mio_client.create_project_panel
+    elements = @mio_fetch_panels_client.create_project_panel
     @create_project_form_attributes ||= {}
     elements.each do |key, value|
       @create_project_form_attributes[key] = value
