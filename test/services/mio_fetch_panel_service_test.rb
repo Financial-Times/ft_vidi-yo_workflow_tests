@@ -10,6 +10,7 @@ class MioFetchPanelServiceTest < MioTest
     @mio_cached_client = MioFetchPanelService.new(WSUser.new, 'https://www.google.co.uk')
   end
 
+
   def test_get_panel_elements
     elements = @mio_fetch_panels_client.extract_panel_elements
     raise "Element #{elements.class} is not a Hash" unless
