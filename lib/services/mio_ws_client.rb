@@ -8,7 +8,7 @@ class MioWSClient
   end
 
   def retrieve_metadata
-    RestClient::Request.execute(method: :get, url: @url, user: @username, password: @password, headers: @headers) do |response|
+    RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password, headers: @headers) do |response|
       JSON.parse(response)
     end
 
