@@ -1,0 +1,352 @@
+{
+  "metadataDefinitions": [
+    {
+      "id": 11518,
+      "uuid": "10e94236-a53b-4168-89b3-8f07e6df7eee",
+      "name": "publish-metadata",
+      "displayName": "publish-metadata",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "description": "publish metadata",
+      "enabled": false,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11518",
+      "created": "18 May 2016 15:11:00 +0000",
+      "lastModified": "19 May 2016 09:29:22 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "1-21ac72e6137c11b878ab2984f46aa181ded71067"
+    },
+    {
+      "id": 11419,
+      "uuid": "b00ae81f-6601-40cc-8f5b-21682892ca95",
+      "name": "project-metadata-test-baby",
+      "displayName": "project-metadata-test-baby",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "enabled": true,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11419",
+      "created": "19 May 2016 16:24:43 +0000",
+      "lastModified": "20 May 2016 10:35:32 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "3-673125c38feba8fb11d8fcd2b9288c3c4bd89523"
+    },
+    {
+      "id": 11416,
+      "uuid": "bfabf004-3108-4b69-823f-986169ec9383",
+      "name": "project-metadata-test",
+      "displayName": "project-metadata-test",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "enabled": true,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11416",
+      "created": "19 May 2016 10:24:09 +0000",
+      "lastModified": "19 May 2016 11:02:13 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "1-73c964bcbc0d00b9a9b5938435b7053531a09777"
+    },
+    {
+      "id": 11312,
+      "uuid": "8b1c580d-a8ff-475e-bb6d-da3541093f9e",
+      "name": "project-metadata",
+      "displayName": "project-metadata",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "enabled": true,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11312",
+      "created": "13 May 2016 10:39:07 +0000",
+      "lastModified": "18 May 2016 14:38:18 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "2-80a03fb710ce10d3696637e5a461a49f1dff8a2e"
+    },
+    {
+      "id": 11415,
+      "uuid": "9b343554-01cc-46c2-9409-4e51cb604944",
+      "name": "multi-meta",
+      "displayName": "multi-meta",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "description": "",
+      "enabled": false,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11415",
+      "created": "18 May 2016 14:36:18 +0000",
+      "lastModified": "18 May 2016 14:50:19 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "1-75e6ee76577b42f6cbf5c3bae247fe69de29da95"
+    },
+    {
+      "id": 11517,
+      "uuid": "d29a4c52-c74b-4a74-aa1d-45edf8381592",
+      "name": "ingest-metadata",
+      "displayName": "ingest-metadata",
+      "objectType": {
+        "id": 12,
+        "name": "metadata-definition",
+        "href": "https://master.dev.nativ-systems.com/api/objectTypes/12",
+        "displayName": "Metadata Definition",
+        "pluralName": "Metadata Definitions",
+        "userDefined": false
+      },
+      "description": "ingest metadata",
+      "enabled": true,
+      "deleted": false,
+      "href": "https://master.dev.nativ-systems.com/api/metadataDefinitions/11517",
+      "created": "18 May 2016 14:44:17 +0000",
+      "lastModified": "18 May 2016 15:02:52 +0000",
+      "owner": {
+        "id": 5,
+        "name": "masteruser",
+        "displayName": "masteruser masteruser",
+        "href": "https://master.dev.nativ-systems.com/api/users/5",
+        "accountId": 4
+      },
+      "visibility": [
+        {
+          "id": 4,
+          "name": "Master Account",
+          "objectType": {
+            "id": 24,
+            "name": "master-account",
+            "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+            "displayName": "Master Account",
+            "pluralName": "Master Accounts",
+            "userDefined": false
+          },
+          "owner": "masteruser masteruser",
+          "accountId": 4
+        }
+      ],
+      "account": {
+        "id": 4,
+        "name": "Master Account",
+        "objectType": {
+          "id": 24,
+          "name": "master-account",
+          "href": "https://master.dev.nativ-systems.com/api/objectTypes/24",
+          "displayName": "Master Account",
+          "pluralName": "Master Accounts",
+          "userDefined": false
+        },
+        "owner": "masteruser masteruser",
+        "accountId": 4
+      },
+      "revision": "1-43677cf0e25ff0b85573c8155b7157114254980d"
+    }
+  ],
+  "totalCount": 6,
+  "offset": 0,
+  "limit": 100
+}

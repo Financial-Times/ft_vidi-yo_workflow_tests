@@ -1,7 +1,7 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
 require_relative '../../lib/services/mio_fetch_panel_service'
-require_relative '../pages/mio_test'
+require_relative '../test_helper'
 
 class MioFetchPanelServiceTest < MioTest
 

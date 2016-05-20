@@ -9,7 +9,11 @@ class MioMetadataDescriptionService < MioWSClient
   end
 
   def retrieve_descriptions
-    retrieve_metadata
+    backup_json = File.expand_path('../../test/json/backup_description_metadata_cache.json')
+    response = retrieve_metadata
+    return (response.has_key? 'metadataDefinitions') ?
+      response :
+        JSON.parse(File.read(backup_json))
   end
 
   def retrieve_description_by_name(name)
