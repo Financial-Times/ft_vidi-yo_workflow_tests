@@ -1,14 +1,14 @@
 require 'test/unit'
 require_relative '../mio_test'
 require_relative '../../lib/pages/in_development/mio_create_video_project_page'
-require_relative '../../lib/services/create_project_panel_service'
+require_relative '../../lib/web_service_clients/create_project_panel_webservice_client'
 
 class MioCreateVideoProjectPageTest < MioTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs
     @create_project_page = MioCreateVideoProjectPage.new @browser
-    @mio_fetch_panels_client = CreateProjectPanelService.new(WSUser.new)
+    @mio_fetch_panels_client = CreateProjectPanelWebserviceClient.new(WSUser.new)
     fetch_expected_page_elements
   end
 

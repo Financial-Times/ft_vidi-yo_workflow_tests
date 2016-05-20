@@ -1,14 +1,14 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
 require_relative '../test_helper'
-require_relative '../../lib/services/create_project_panel_service'
+require_relative '../../lib/web_service_clients/create_project_panel_webservice_client'
 
-class CreateProjectPanelServiceTest < MioTest
+class CreateProjectPanelClientTest < MioTest
 
 
   def setup
-    @mio_fetch_panels_client = CreateProjectPanelService.new(WSUser.new)
-    @mio_metadata_service = MioMetadataDescriptionService.new(WSUser.new)
+    @mio_fetch_panels_client = CreateProjectPanelWebserviceClient.new(WSUser.new)
+    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition
@@ -31,8 +31,8 @@ class CreateProjectPanelServiceTest < MioTest
   end
 
   def test_falls_back_to_cache_if_no_service
-    mio_cached_client = CreateProjectPanelService.new(WSUser.new,
-                          'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definiti')
+    mio_cached_client = CreateProjectPanelWebserviceClient.new(WSUser.new,
+                                                               'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definiti')
     create_project_panel_elements_cached = mio_cached_client.extract_panel_elements
     assert(create_project_panel_elements_cached.has_key?('project') ||
       create_project_panel_elements_cached.has_key?('text'),

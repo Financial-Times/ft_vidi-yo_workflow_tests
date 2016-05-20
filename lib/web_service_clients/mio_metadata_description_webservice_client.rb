@@ -1,7 +1,7 @@
-require_relative 'mio_ws_client'
+require_relative 'mio_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class MioMetadataDescriptionService < MioWSClient
+class MioMetadataDescriptionWebserviceClient < MioWebserviceClient
 
   def initialize(user=WSUser.new, url=nil)
     url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions' : url

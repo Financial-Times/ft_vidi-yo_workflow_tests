@@ -1,9 +1,9 @@
 require 'rest-client'
 require_relative '../../test/data/ws_user'
-require_relative 'mio_fetch_panel_service'
-require_relative 'mio_metadata_description_service'
+require_relative 'mio_fetch_panel_webservice_client'
+require_relative 'mio_metadata_description_webservice_client'
 
-class CreateProjectPanelService < MioFetchPanelService
+class CreateProjectPanelWebserviceClient < MioFetchPanelWebserviceClient
 
   def initialize(user, url=nil)
 
@@ -13,7 +13,7 @@ class CreateProjectPanelService < MioFetchPanelService
   end
 
   def build_url_for_data_definition
-    id = MioMetadataDescriptionService.new(WSUser.new).retrieve_id_with_name('project-metadata')
+    id = MioMetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name('project-metadata')
     "https://master.dev.nativ-systems.com/api/metadataDefinitions/#{id}/definition"
   end
 

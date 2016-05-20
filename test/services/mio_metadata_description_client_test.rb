@@ -1,13 +1,13 @@
 require 'test/unit'
 require_relative '../test_helper'
-require_relative '../../lib/services/mio_metadata_description_service'
+require_relative '../../lib/web_service_clients/mio_metadata_description_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class MioMetadataDescriptionServiceTest < MioTest
+class MioMetadataDescriptionClientTest < MioTest
 
   def setup
-    @mio_metadata_service = MioMetadataDescriptionService.new(WSUser.new)
-    @mio_metadata_service_failed = MioMetadataDescriptionService.new(WSUser.new, 'https://master.dev.nativ-systems.com/api/metadataDefinitons')
+    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
+    @mio_metadata_service_failed = MioMetadataDescriptionWebserviceClient.new(WSUser.new, 'https://master.dev.nativ-systems.com/api/metadataDefinitons')
   end
 
   def test_retrieves_description_config

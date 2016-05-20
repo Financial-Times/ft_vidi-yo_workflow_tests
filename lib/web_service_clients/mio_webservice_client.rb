@@ -1,4 +1,4 @@
-class MioWSClient
+class MioWebserviceClient
 
   def initialize(user, url)
     @username = user.username

@@ -1,13 +1,13 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
-require_relative '../../lib/services/mio_fetch_panel_service'
+require_relative '../../lib/web_service_clients/mio_fetch_panel_webservice_client'
 require_relative '../test_helper'
 
-class MioFetchPanelServiceTest < MioTest
+class MioFetchPanelClientTest < MioTest
 
   def setup
-    @mio_fetch_panels_client = MioFetchPanelService.new(WSUser.new)
-    @mio_cached_client = MioFetchPanelService.new(WSUser.new, 'https://www.google.co.uk')
+    @mio_fetch_panels_client = MioFetchPanelWebserviceClient.new(WSUser.new)
+    @mio_cached_client = MioFetchPanelWebserviceClient.new(WSUser.new, 'https://www.google.co.uk')
   end
 
 
