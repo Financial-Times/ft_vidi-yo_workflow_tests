@@ -1,7 +1,7 @@
 require 'test/unit'
 require_relative '../../lib/pages/mio_page'
 require_relative '../../lib/mio_exceptions/mio_exceptions'
-require_relative 'mio_test'
+require_relative '../test_helper'
 
 class MioPageTest < MioTest
   include MioExceptions
@@ -12,7 +12,7 @@ class MioPageTest < MioTest
   end
 
   def test_is_a_mio_page
-    raise ObjectIsNotAPageException unless @base_page.is_a?(MioPage)
+    assert_kind_of(MioPage, @base_page)
   end
 
   def teardown

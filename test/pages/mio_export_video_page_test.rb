@@ -1,6 +1,5 @@
 require_relative '../test_helper'
 require_relative '../../lib/pages/in_development/mio_export_video_page'
-require_relative 'mio_test'
 
 class MioExportVideoPageTest < MioTest
 
@@ -20,7 +19,7 @@ class MioExportVideoPageTest < MioTest
 
   def test_has_attributes
     @export_video_form_attributes.each do |attribute|
-      raise PageElementSelectorNotFoundException, attribute unless @export_video_page.respond_to? attribute
+      assert_respond_to(@export_video_page, attribute)
     end
   end
 

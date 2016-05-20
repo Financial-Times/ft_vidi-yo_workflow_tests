@@ -1,6 +1,6 @@
 require_relative '../../lib/pages/mio_dashboard'
 require 'test-unit'
-require_relative 'mio_test'
+require_relative '../mio_test'
 
 class MioDashboardTest < MioTest
 
@@ -11,16 +11,16 @@ class MioDashboardTest < MioTest
   end
 
   def test_displayed
-    raise ExpectedCapabilityNotFound, :displayed? unless @dashboard.respond_to? :displayed?
+    assert_respond_to(@dashboard, :displayed?)
   end
 
   def test_change_section
-    raise ExpectedCapabilityNotFound, :change_section unless @dashboard.respond_to? :change_section
+    assert_respond_to(@dashboard, :change_section)
   end
 
   def test_has_tabs
     @tabs.each do |tab|
-      raise PageElementSelectorNotFoundException, "Tab: #{tab}" unless @dashboard.respond_to? tab
+      assert_respond_to(@dashboard, tab)
     end
   end
 

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'mio_test'
+require_relative '../mio_test'
 require_relative '../../lib/pages/in_development/mio_create_video_project_page'
 require_relative '../../lib/services/create_project_panel_service'
 
@@ -22,7 +22,7 @@ class MioCreateVideoProjectPageTest < MioTest
 
   def test_has_attributes
     @create_project_form_attributes.each_key do |key|
-      raise PageElementSelectorNotFoundException, key unless @create_project_page.respond_to? key
+      assert_respond_to(@create_project_page, key)
     end
   end
 

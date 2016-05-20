@@ -14,55 +14,55 @@ class MioExportVideoTest < MioTest
   # TODO: Refactor to loop to avoid repetition - service not ready yet
 
   def test_has_section
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :section
+    assert_respond_to(@mio_export_video, :section)
   end
 
   def test_has_brand
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :brand
+    assert_respond_to(@mio_export_video, :brand)
   end
 
   def test_has_long_lead
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :long_lead
+    assert_respond_to(@mio_export_video, :long_lead)
   end
 
   def test_has_short_lead
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :short_lead
+    assert_respond_to(@mio_export_video, :short_lead)
   end
 
   def test_has_related_content
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :related_content
+    assert_respond_to(@mio_export_video, :related_content)
   end
 
   def test_has_credit
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :credit
+    assert_respond_to(@mio_export_video, :credit)
   end
 
   def test_has_video_editor
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :video_editor
+    assert_respond_to(@mio_export_video, :video_editor)
   end
 
   def test_has_ft_office
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :ft_office
+    assert_respond_to(@mio_export_video, :ft_office)
   end
 
   def test_has_producer
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :producer
+    assert_respond_to(@mio_export_video, :producer)
   end
 
   def test_has_freelance_video_editor
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :freelance_video_editor
+    assert_respond_to(@mio_export_video, :freelance_video_editor)
   end
 
   def test_has_has_restrictions
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :has_restrictions
+    assert_respond_to(@mio_export_video, :has_restrictions)
   end
 
   def test_has_no_restrictions
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :no_restrictions
+    assert_respond_to(@mio_export_video, :no_restrictions)
   end
 
-  def test_has_restrictions_description
-    raise AttributeNotFoundException unless @mio_export_video.respond_to? :restriction_description
+  def test_has_restriction_description
+    assert_respond_to(@mio_export_video, :restriction_description)
   end
 
 end

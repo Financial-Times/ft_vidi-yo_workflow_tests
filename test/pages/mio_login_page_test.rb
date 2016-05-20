@@ -1,7 +1,7 @@
 require_relative '../../lib/pages/mio_login_page'
 require_relative '../../lib/pages/mio_page'
 require 'test-unit'
-require_relative 'mio_test'
+require_relative '../test_helper'
 
 class MioLoginPageTest < MioTest
 
@@ -11,19 +11,19 @@ class MioLoginPageTest < MioTest
   end
 
   def test_can_log_in
-    raise ExpectedCapabilityNotFound, :log_in unless @login_page.respond_to? :log_in
+    assert_respond_to(@login_page, :log_in)
   end
 
   def test_has_username_field
-    raise PageElementSelectorNotFoundException, 'username_field' unless @login_page.respond_to? :username_field
+    assert_respond_to(@login_page, :username_field)
   end
 
   def test_has_password_field
-    raise PageElementSelectorNotFoundException, 'password_field' unless @login_page.respond_to? :password_field
+    assert_respond_to(@login_page, :password_field)
   end
 
   def test_has_submit_button
-    raise PageElementSelectorNotFoundException, 'submit button' unless @login_page.respond_to? :submit_button
+    assert_respond_to(@login_page, :submit_button)
   end
 
   def teardown

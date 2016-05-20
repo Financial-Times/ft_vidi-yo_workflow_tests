@@ -8,17 +8,17 @@ class WSUserTest < Test::Unit::TestCase
   end
 
   def test_user_has_default_username
-    raise StandardError if @test_user.username.empty?
+    assert_not_empty(@test_user.username)
   end
 
   def test_user_has_default_password
-    raise StandardError if @test_user.password.empty?
+    assert_not_empty(@test_user.password)
   end
 
   def test_username_and_password_can_be_set
     @custom_test_user = WSUser.new('Doris', 'DorisSecret')
-    raise StandardError unless @custom_test_user.username == 'Doris'
-    raise StandardError unless @custom_test_user.password == 'DorisSecret'
+    assert_equal(@custom_test_user.username,'Doris')
+    assert_equal(@custom_test_user.password, 'DorisSecret')
   end
 
 end

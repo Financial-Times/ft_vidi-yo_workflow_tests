@@ -8,8 +8,7 @@ class MioVideoProjectTest < MioTest
   end
 
   def test_attributes_present
-    raise AttributeNotFoundException unless @default_video_project.respond_to? :project_name
-    raise AttributeNotFoundException if @default_video_project.project_name.empty?
+    assert_respond_to(@default_video_project, :project_name)
   end
 
 end

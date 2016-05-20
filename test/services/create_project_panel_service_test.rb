@@ -1,6 +1,6 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
-require_relative '../pages/mio_test'
+require_relative '../test_helper'
 require_relative '../../lib/services/create_project_panel_service'
 
 class CreateProjectPanelServiceTest < MioTest
@@ -14,21 +14,18 @@ class CreateProjectPanelServiceTest < MioTest
   end
 
   def test_extract_create_project_panel_elements
-    raise "Element #{@create_project_panel_elements.class} is not a Hash" unless
-        @create_project_panel_elements.class.equal? Hash
-
-    raise "Element @create_project_panel_elements #{@create_project_panel_elements}" unless
-         @create_project_panel_elements.has_key?('project') || @create_project_panel_elements.has_key?('text')
+    assert_kind_of(Hash, @create_project_panel_elements)
+    assert(@create_project_panel_elements.has_key?('project') || @create_project_panel_elements.has_key?('text'),
+    'Does not have expected element (project => text)')
   end
 
   def test_retrieve_create_project_panel_definitions
-    raise "Element #{@create_project_panel_definitions.class} is not an Array" unless
-        @create_project_panel_definitions.class.equal? Array
+    assert_kind_of(Array, @create_project_panel_definitions)
   end
 
   def test_falls_back_to_cache_if_no_service
-    raise "Element @create_project_panel_elements #{@create_project_panel_elements_cached}" unless
-        @create_project_panel_elements_cached.has_key?('project') || @create_project_panel_elements_cached.has_key?('text')
+    assert(@create_project_panel_elements_cached.has_key?('project') || @create_project_panel_elements_cached.has_key?('text'),
+           'Does not have expected element (project => text)')
   end
 
 end
