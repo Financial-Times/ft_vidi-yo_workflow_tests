@@ -6,7 +6,8 @@ require_relative '../test_helper'
 class MioFetchPanelClientTest < MioTest
 
   def setup
-    @mio_fetch_panels_client = MioFetchPanelWebserviceClient.new(WSUser.new)
+    @mio_fetch_panels_client = MioFetchPanelWebserviceClient.new(WSUser.new,
+                                                                 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition')
     @mio_cached_client = MioFetchPanelWebserviceClient.new(WSUser.new, 'https://www.google.co.uk')
   end
 

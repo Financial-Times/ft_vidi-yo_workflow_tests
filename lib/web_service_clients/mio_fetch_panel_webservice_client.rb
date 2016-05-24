@@ -4,8 +4,7 @@ require_relative 'mio_metadata_description_webservice_client'
 
 class MioFetchPanelWebserviceClient < MioWebserviceClient
 
-  def initialize(user, url=nil)
-    url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition' : url
+  def initialize(user, url)
     super(user, url)
   end
 
