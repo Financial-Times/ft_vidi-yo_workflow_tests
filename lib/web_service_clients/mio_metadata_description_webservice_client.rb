@@ -1,16 +1,16 @@
 require_relative 'mio_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class MioMetadataDescriptionWebserviceClient < MioWebserviceClient
+class MioMetadataDescriptionWebserviceClient
 
-  def initialize(user=WSUser.new, url='https://master.dev.nativ-systems.com/api/metadataDefinitions')
+  def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/metadataDefinitions")
     @url = url
-    super(user, @url)
+    @user = user
   end
 
   def retrieve_description_metadata
     VCR.use_cassette('metadata_description') do
-      RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password, headers: @headers) do |response|
+      RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
         @response = response
         JSON.parse(response)
       end

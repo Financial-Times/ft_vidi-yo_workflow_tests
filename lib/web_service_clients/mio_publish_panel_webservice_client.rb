@@ -5,9 +5,7 @@ class MioPublishPanelWebserviceClient < MioFetchPanelWebserviceClient
   attr_reader :url
 
   def initialize(user, url=nil)
-    @url = build_url_for_data_definition 'publish-metadata'
-
-    super(user, @url)
+    super(user, build_url_for_data_definition('publish-metadata'))
   end
 
 end
