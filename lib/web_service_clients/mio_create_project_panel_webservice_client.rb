@@ -3,7 +3,7 @@ require_relative '../../test/data/ws_user'
 require_relative 'mio_fetch_panel_webservice_client'
 require_relative 'mio_metadata_description_webservice_client'
 
-class CreateProjectPanelWebserviceClient < MioFetchPanelWebserviceClient
+class MioCreateProjectPanelWebserviceClient < MioFetchPanelWebserviceClient
 
   def initialize(user, url=nil)
 
