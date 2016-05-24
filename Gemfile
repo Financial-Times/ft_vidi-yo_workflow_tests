@@ -11,4 +11,6 @@ group :test do
   gem 'rest-client'
   gem 'rest-client-components'
   gem 'rack-cache'
+  gem 'vcr'
+  gem 'webmock'
 end

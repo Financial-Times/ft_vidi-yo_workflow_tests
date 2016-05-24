@@ -3,21 +3,30 @@ require_relative '../../test/data/ws_user'
 
 class MioMetadataDescriptionWebserviceClient < MioWebserviceClient
 
-  def initialize(user=WSUser.new, url=nil)
-    url = url.nil? ? 'https://master.dev.nativ-systems.com/api/metadataDefinitions' : url
-    super(user, url)
+  def initialize(user=WSUser.new, url='https://master.dev.nativ-systems.com/api/metadataDefinitions')
+    @url = url
+    super(user, @url)
+  end
+
+  def retrieve_description_metadata
+    VCR.use_cassette('metadata_description') do
+      RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password, headers: @headers) do |response|
+        @response = response
+        JSON.parse(response)
+      end
+    end
   end
 
   def retrieve_descriptions
     backup_json = File.expand_path('test/json/backup_description_metadata_cache.json')
-    response = retrieve_metadata
+    response = retrieve_description_metadata
     return (response.has_key? 'metadataDefinitions') ?
       response :
         JSON.parse(File.read(backup_json))
   end
 
   def retrieve_description_by_name(name)
-    response = retrieve_metadata['metadataDefinitions']
+    response = retrieve_description_metadata['metadataDefinitions']
     response.each do |description|
       return description if description['name'] == name
     end

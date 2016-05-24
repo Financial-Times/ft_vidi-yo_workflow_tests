@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 May 2016 15:22:34 GMT
+      Server:
+      - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+      Pragma:
+      - No-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Set-Cookie:
+      - JSESSIONID=YHkFI1UlLxsPBaKtL4o7bFVW.-201388908; Path=/api; Secure
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"definitionId":107837,"name":"ingest-metadata","definition":[{"id":107838,"name":"clip-type","displayName":"Clip
+        Type","description":"Clip Type","type":"single-option","multiplicity":"1","searchable":false,"editable":true,"required":false,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107839,"name":"test","displayName":"test","default":false,"value":"test"}]},{"id":107840,"name":"clip-description","displayName":"Clip
+        Description","description":"Clip Description","type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107841,"name":"location","displayName":"Location","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107842,"name":"test","displayName":"test","default":false,"value":"test"}]},{"id":107843,"name":"interviewee","displayName":"Interviewee","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107844,"name":"office","displayName":"FT
+        Office","description":null,"type":"single-option","multiplicity":"1","searchable":false,"editable":true,"required":false,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107845,"name":"test","displayName":"test","default":false,"value":"test"}]},{"id":107846,"name":"producer","displayName":"Producer","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107847,"name":"test","displayName":"test","default":false,"value":"test"}]},{"id":107848,"name":"freelance-producer","displayName":"Freelance
+        Producer","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107849,"name":"reporter-1","displayName":"Reporter
+        Writer 1","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107850,"name":"reporter-2","displayName":"Reporter
+        Writer 2","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107851,"name":"reporter-3","displayName":"Reporter
+        Writer 3","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107852,"name":"restrictions","displayName":"Restrictions","description":null,"type":"boolean","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"checkbox","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107853,"name":"true","displayName":"true","default":false,"value":"true"},{"id":107854,"name":"false","displayName":"false","default":true,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
+        Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":400,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
+    http_version: 
+  recorded_at: Tue, 24 May 2016 15:22:36 GMT
+recorded_with: VCR 3.0.3

@@ -7,7 +7,7 @@ class MioCreateProjectPanelClientTest < MioTest
 
 
   def setup
-    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
+      @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition
@@ -30,10 +30,6 @@ class MioCreateProjectPanelClientTest < MioTest
     mio_fetch_panels_client = MioCreateProjectPanelWebserviceClient.new(WSUser.new)
     create_project_panel_definitions = mio_fetch_panels_client.retrieve_panel_definitions
     assert_kind_of(Array, create_project_panel_definitions)
-  end
-
-  def test_falls_back_to_cache_if_no_service
-    assert false, 'Caching not implemented'
   end
 
 end

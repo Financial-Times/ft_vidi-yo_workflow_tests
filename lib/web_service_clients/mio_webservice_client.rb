@@ -9,10 +9,16 @@ class MioWebserviceClient
 
   def retrieve_metadata
     puts @url
-    RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password, headers: @headers) do |response|
-      @response = response
-      JSON.parse(response)
+    begin
+      definition_id = @url.gsub(/[^0-9]/, '')
+      VCR.use_cassette("definition_request-#{definition_id}") do
+        RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password, headers: @headers) do |response|
+          @response = response
+          JSON.parse(response)
+      end
+
     end
+
 
   rescue RestClient::Exception, JSON::JSONError, SocketError => e
     $stderr.puts <<ERROR
@@ -22,6 +28,8 @@ class MioWebserviceClient
                     Using cached field names
 ERROR
     return nil
+    end
   end
+
 
 end

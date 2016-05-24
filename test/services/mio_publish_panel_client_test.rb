@@ -29,11 +29,4 @@ class MioPublishPanelClientTest < MioTest
     assert_kind_of(Array, ingest_panel_definitions)
   end
 
-
-  def test_falls_back_to_cache_if_no_service
-    assert false, 'Caching not implemented'
-  end
-
-
-
 end
