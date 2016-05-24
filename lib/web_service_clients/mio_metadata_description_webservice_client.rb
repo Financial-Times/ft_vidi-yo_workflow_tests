@@ -17,14 +17,6 @@ class MioMetadataDescriptionWebserviceClient
     end
   end
 
-  def retrieve_descriptions
-    backup_json = File.expand_path('test/json/backup_description_metadata_cache.json')
-    response = retrieve_description_metadata
-    return (response.has_key? 'metadataDefinitions') ?
-      response :
-        JSON.parse(File.read(backup_json))
-  end
-
   def retrieve_description_by_name(name)
     response = retrieve_description_metadata['metadataDefinitions']
     response.each do |description|

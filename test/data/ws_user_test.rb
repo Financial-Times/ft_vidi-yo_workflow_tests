@@ -17,7 +17,7 @@ class WSUserTest < Test::Unit::TestCase
 
   def test_username_and_password_can_be_set
     @custom_test_user = WSUser.new('Doris', 'DorisSecret')
-    assert_equal(@custom_test_user.username,'Doris')
+    assert_equal(@custom_test_user.username, 'Doris')
     assert_equal(@custom_test_user.password, 'DorisSecret')
   end
 

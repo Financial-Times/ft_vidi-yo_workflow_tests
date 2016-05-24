@@ -5,7 +5,6 @@ require_relative '../../test/data/ws_user'
 
 class MioIngestAssetsPanelClientTest < MioTest
 
-
   def setup
     @mio_ingest_assets_panel_client = MioCreateIngestAssetWebserviceClient.new(WSUser.new)
     @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
@@ -15,7 +14,7 @@ class MioIngestAssetsPanelClientTest < MioTest
     panel_name = 'ingest-metadata'
     id = @mio_metadata_service.retrieve_id_with_name(panel_name)
     url = @mio_ingest_assets_panel_client.build_url_for_data_definition panel_name
-    assert_match(/api\/metadataDefinitions\/#{id}\/definition/, url)
+    assert_match(%r{/api/metadataDefinitions/#{id}/definition}, url)
   end
 
   def test_extract_ingest_asset_panel_elements

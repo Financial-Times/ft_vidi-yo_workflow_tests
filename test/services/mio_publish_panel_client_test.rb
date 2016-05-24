@@ -12,8 +12,8 @@ class MioPublishPanelClientTest < MioTest
   def test_build_url_for_data_definition
     panel_name = 'publish-metadata'
     id = @mio_metadata_service.retrieve_id_with_name(panel_name)
-    url = @mio_publish_panel_client.build_url_for_data_definition (panel_name)
-    assert_match(/api\/metadataDefinitions\/#{id}\/definition/, url)
+    url = @mio_publish_panel_client.build_url_for_data_definition panel_name
+    assert_match(%r{/api/metadataDefinitions/#{id}/definition}, url)
   end
 
   def test_extract_publish_panel_elements

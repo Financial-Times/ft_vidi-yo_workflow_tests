@@ -20,12 +20,12 @@ class MioVideoAssetTest < MioTest
   end
 
   def test_asset_has_a_mandatory_attribute
-    assert_respond_to( @full_video_asset,:clip_type)
+    assert_respond_to(@full_video_asset, :clip_type)
   end
 
   def test_attributes_can_be_set
     @full_video_asset.clip_type = 'change'
-    assert_equal(@full_video_asset.clip_type,'change')
+    assert_equal(@full_video_asset.clip_type, 'change')
   end
 
 end

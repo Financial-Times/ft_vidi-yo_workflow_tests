@@ -10,7 +10,7 @@ class MioMetadataDescriptionClientTest < MioTest
   end
 
   def test_retrieves_description_config
-    response = @mio_metadata_service.retrieve_descriptions
+    response = @mio_metadata_service.retrieve_description_metadata
     assert((response.respond_to? :each_key), "Data returned in invalid format (#{response.class})")
     assert((response.has_key? 'metadataDefinitions'), 'data returned has no definitions')
   end

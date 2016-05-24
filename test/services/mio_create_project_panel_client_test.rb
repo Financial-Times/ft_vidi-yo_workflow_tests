@@ -5,9 +5,8 @@ require_relative '../../lib/web_service_clients/mio_create_project_panel_webserv
 
 class MioCreateProjectPanelClientTest < MioTest
 
-
   def setup
-      @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
+    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition
@@ -15,7 +14,7 @@ class MioCreateProjectPanelClientTest < MioTest
     panel_name = 'project-metadata'
     id = @mio_metadata_service.retrieve_id_with_name(panel_name)
     url = mio_fetch_panels_client.build_url_for_data_definition panel_name
-    assert_match(/api\/metadataDefinitions\/#{id}\/definition/, url)
+    assert_match(%r{/api/metadataDefinitions/#{id}/definition}, url)
   end
 
   def test_extract_create_project_panel_elements
@@ -23,7 +22,7 @@ class MioCreateProjectPanelClientTest < MioTest
     @create_project_panel_elements = mio_fetch_panels_client.extract_panel_elements
     assert_kind_of(Hash, @create_project_panel_elements)
     assert(@create_project_panel_elements.has_key?('project') || @create_project_panel_elements.has_key?('text'),
-    'Does not have expected element (project => text)')
+           'Does not have expected element (project => text)')
   end
 
   def test_retrieve_create_project_panel_definitions
