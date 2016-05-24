@@ -1,8 +1,9 @@
 require_relative 'mio_page'
+require_relative '../../config/mio_constants'
 
 class MioLoginPage < MioPage
 
-  page_url 'https://master.dev.nativ-systems.com/'
+  page_url MioConstants::ROOT_URL
 
   text_field  :username_field, id: 'j_username'
   text_field  :password_field, id: 'j_password'

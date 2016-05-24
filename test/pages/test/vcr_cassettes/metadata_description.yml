@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 May 2016 16:15:17 GMT
+      Server:
+      - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+      Pragma:
+      - No-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Set-Cookie:
+      - JSESSIONID=ySe7vLMaFKizXFjj1U0Y47ma.-201388908; Path=/api; Secure
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"metadataDefinitions":[{"id":11616,"uuid":"4b68859f-dacd-4b85-98c4-38628880e523","name":"publish-metadata-test-baby-two","displayName":"publish-metadata-test-baby-two","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11616","created":"20
+        May 2016 13:30:36 +0000","lastModified":"20 May 2016 13:30:37 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-ba9087576ad32ca8d28fa8decf8f4621c7e05207"},{"id":11617,"uuid":"d7985bcd-5aff-4834-ac45-adb88d30c3dd","name":"publish-metadata-test-baby-three","displayName":"publish-metadata-test-baby-three","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11617","created":"20
+        May 2016 13:35:15 +0000","lastModified":"20 May 2016 13:35:16 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-1ca516ccdc2e2257fac176bd8fddcc0b6b4ba233"},{"id":11615,"uuid":"d307e79a-842f-43d0-abb3-b34724f3ebf7","name":"publish-metadata-test-baby","displayName":"publish-metadata-test-baby","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":false,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11615","created":"20
+        May 2016 13:06:55 +0000","lastModified":"20 May 2016 13:28:27 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"0-4d1ed21c25bf2dc65003a54a2e388398535e57f2"},{"id":11518,"uuid":"10e94236-a53b-4168-89b3-8f07e6df7eee","name":"publish-metadata","displayName":"publish-metadata","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"description":"publish
+        metadata","enabled":false,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11518","created":"18
+        May 2016 15:11:00 +0000","lastModified":"19 May 2016 09:29:22 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-21ac72e6137c11b878ab2984f46aa181ded71067"},{"id":11419,"uuid":"b00ae81f-6601-40cc-8f5b-21682892ca95","name":"project-metadata-test-baby","displayName":"project-metadata-test-baby","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11419","created":"19
+        May 2016 16:24:43 +0000","lastModified":"20 May 2016 13:35:14 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"5-3e4c167fc9ab6ef32010164961333f4861d45a91"},{"id":11416,"uuid":"bfabf004-3108-4b69-823f-986169ec9383","name":"project-metadata-test","displayName":"project-metadata-test","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11416","created":"19
+        May 2016 10:24:09 +0000","lastModified":"19 May 2016 11:02:13 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-73c964bcbc0d00b9a9b5938435b7053531a09777"},{"id":11312,"uuid":"8b1c580d-a8ff-475e-bb6d-da3541093f9e","name":"project-metadata","displayName":"project-metadata","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11312","created":"13
+        May 2016 10:39:07 +0000","lastModified":"18 May 2016 14:38:18 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"2-80a03fb710ce10d3696637e5a461a49f1dff8a2e"},{"id":11415,"uuid":"9b343554-01cc-46c2-9409-4e51cb604944","name":"multi-meta","displayName":"multi-meta","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"description":"","enabled":false,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11415","created":"18
+        May 2016 14:36:18 +0000","lastModified":"18 May 2016 14:50:19 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-75e6ee76577b42f6cbf5c3bae247fe69de29da95"},{"id":11517,"uuid":"d29a4c52-c74b-4a74-aa1d-45edf8381592","name":"ingest-metadata","displayName":"ingest-metadata","objectType":{"id":12,"name":"metadata-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/12","displayName":"Metadata
+        Definition","pluralName":"Metadata Definitions","userDefined":false},"description":"ingest
+        metadata","enabled":true,"deleted":false,"href":"https://master.dev.nativ-systems.com/api/metadataDefinitions/11517","created":"18
+        May 2016 14:44:17 +0000","lastModified":"18 May 2016 15:02:52 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"revision":"1-43677cf0e25ff0b85573c8155b7157114254980d"}],"totalCount":9,"offset":0,"limit":100}'
+    http_version: 
+  recorded_at: Tue, 24 May 2016 16:15:20 GMT
+recorded_with: VCR 3.0.3

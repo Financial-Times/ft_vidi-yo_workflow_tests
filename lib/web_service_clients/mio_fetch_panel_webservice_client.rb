@@ -10,7 +10,7 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
 
   def build_url_for_data_definition(name)
     id = MioMetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
-    "https://master.dev.nativ-systems.com/api/metadataDefinitions/#{id}/definition"
+    "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition"
   end
 
   def extract_panel_elements
@@ -38,22 +38,12 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   end
 
   def retrieve_panel_definitions
-    metadata = retrieve_metadata
-    # TODO: Replace with proper logging
-    if metadata.nil?
-      cached_data = cached_create_project_panel_elements
-      puts "Cached data: #{cached_data}"
-      cached_data
-    else
-      live_data = metadata['definition']
-      puts "Retrieved from WS #{Time.now} #{live_data}"
-      live_data
-    end
+    retrieve_metadata['definition']
   end
 
   def fetch_panel_description_by_id(id)
     mio_client = MioWebserviceClient.new(WSUser.new,
-                                         "https://master.dev.nativ-systems.com/api/metadataDefinitions/#{id}/definition")
+                                         "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition")
     mio_client.retrieve_metadata
   end
 
