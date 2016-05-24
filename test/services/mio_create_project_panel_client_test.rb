@@ -12,9 +12,9 @@ class MioCreateProjectPanelClientTest < MioTest
 
   def test_build_url_for_data_definition
     mio_fetch_panels_client = MioCreateProjectPanelWebserviceClient.new(WSUser.new)
-    @panel_name = 'project-metadata'
-    id = @mio_metadata_service.retrieve_id_with_name(@panel_name)
-    url = mio_fetch_panels_client.build_url_for_data_definition
+    panel_name = 'project-metadata'
+    id = @mio_metadata_service.retrieve_id_with_name(panel_name)
+    url = mio_fetch_panels_client.build_url_for_data_definition panel_name
     assert_match(/api\/metadataDefinitions\/#{id}\/definition/, url)
   end
 

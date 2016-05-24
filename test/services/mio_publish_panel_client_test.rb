@@ -5,22 +5,21 @@ require_relative '../../lib/web_service_clients/mio_publish_panel_webservice_cli
 class MioPublishPanelClientTest < MioTest
 
   def setup
-    @mio_publish_panel_client = MioPublishPanelWebserviceClient.new(WSUser.new,
-                                'https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition')
+    @mio_publish_panel_client = MioPublishPanelWebserviceClient.new(WSUser.new)
     @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition
     panel_name = 'publish-metadata'
     id = @mio_metadata_service.retrieve_id_with_name(panel_name)
-    url = @mio_publish_panel_client.build_url_for_data_definition
+    url = @mio_publish_panel_client.build_url_for_data_definition (panel_name)
     assert_match(/api\/metadataDefinitions\/#{id}\/definition/, url)
   end
 
   def test_extract_publish_panel_elements
-    @mio_publish_panel_client = @mio_publish_panel_client.extract_panel_elements
-    assert_kind_of(Hash, @mio_publish_panel_client)
-    assert(@mio_publish_panel_client.has_key?('headline') || @mio_publish_panel_client.has_key?('text'),
+    elements = @mio_publish_panel_client.extract_panel_elements
+    assert_kind_of(Hash, elements)
+    assert(elements.has_key?('headline') || elements.has_key?('text'),
            'Does not have expected element (headline => text)')
   end
 

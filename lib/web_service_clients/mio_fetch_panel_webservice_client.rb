@@ -8,6 +8,11 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
     super(user, url)
   end
 
+  def build_url_for_data_definition(name)
+    id = MioMetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
+    "https://master.dev.nativ-systems.com/api/metadataDefinitions/#{id}/definition"
+  end
+
   def extract_panel_elements
     definitions = {}
     retrieve_panel_definitions.each do |element|
