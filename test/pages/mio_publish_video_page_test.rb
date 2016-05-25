@@ -23,7 +23,7 @@ class MioPublishVideoPageTest < MioTest
 
   def test_has_attributes
     @publish_video_project_form_attributes.each_key do |attribute|
-      assert_respond_to(@publish_video_page, attribute)
+      assert_respond_to(@publish_video_page, "#{attribute}_element")
     end
   end
 

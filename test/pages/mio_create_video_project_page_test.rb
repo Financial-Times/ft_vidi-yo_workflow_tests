@@ -21,7 +21,7 @@ class MioCreateVideoProjectPageTest < MioTest
 
   def test_has_attributes
     @create_project_form_attributes.each_key do |attribute|
-      assert_respond_to(@create_project_page, attribute)
+      assert_respond_to(@create_project_page, "#{attribute}_element")
     end
   end
 

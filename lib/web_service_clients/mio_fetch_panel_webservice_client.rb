@@ -17,7 +17,6 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
     definitions = {}
     retrieve_panel_definitions.each do |element|
       definitions[element['name']] = element['type']
-      puts "#{definitions[element['name']]}  #{element['type']}"
     end
     definitions
   end
@@ -39,27 +38,27 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   end
 
   def extract_url_elements
-    selectors = {}
+    urls = {}
     extract_panel_elements.each do |key, value|
-      selectors[key] = value if value == 'url'
+      urls[key] = value if value == 'url'
     end
-    selectors
+    urls
   end
 
   def extract_boolean_elements
-    selectors = {}
+    bools = {}
     extract_panel_elements.each do |key, value|
-      selectors[key] = value if value == 'boolean'
+      bools[key] = value if value == 'boolean'
     end
-    selectors
+    bools
   end
 
   def extract_image_elements
-    selectors = {}
+    images = {}
     extract_panel_elements.each do |key, value|
-      selectors[key] = value if value == 'image'
+      images[key] = value if value == 'image'
     end
-    selectors
+    images
   end
 
   def retrieve_panel_definitions
