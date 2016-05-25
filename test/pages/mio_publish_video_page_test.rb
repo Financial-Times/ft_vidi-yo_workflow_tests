@@ -1,13 +1,13 @@
 require_relative '../test_helper'
-require_relative '../../lib/pages/in_development/mio_export_video_page'
+require_relative '../../lib/pages/in_development/mio_publish_video_page'
 
-class MioExportVideoPageTest < MioTest
+class MioPublishVideoPageTest < MioTest
 
   include MioExceptions
 
   def setup
     @browser = Watir::Browser.new :phantomjs
-    @export_video_page = MioExportVideoPage.new @browser
+    @export_video_page = MioPublishVideoPage.new @browser
     @export_video_form_attributes =
       %i(
         section brand headline_field long_lead_field headline_field long_lead_field short_lead_field

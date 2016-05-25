@@ -3,7 +3,7 @@ require_relative '../test_helper'
 require_relative 'mio_export_video'
 require_relative '../../config/mio_constants'
 
-class MioExportVideoTest < MioTest
+class MioPublishVideoTest < MioTest
 
   include MioExceptions
 
