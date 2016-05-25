@@ -1,5 +1,7 @@
-require_relative '../test_helper'
+require 'test/unit'
+require_relative '../mio_test'
 require_relative '../../lib/pages/in_development/mio_publish_video_page'
+require_relative '../../lib/web_service_clients/mio_publish_panel_webservice_client'
 
 class MioPublishVideoPageTest < MioTest
 
@@ -7,19 +9,21 @@ class MioPublishVideoPageTest < MioTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs
-    @export_video_page = MioPublishVideoPage.new @browser
-    @export_video_form_attributes =
-      %i(
-        section brand headline_field long_lead_field headline_field long_lead_field short_lead_field
-        related_content_fields_elements credit ft_office_selector producer_selector thumbnail_previews_elements
-        select_has_restrictions  select_no_restrictions restriction_description add_thumbnails_drop_zone
-        export_button
-      )
+    @publish_video_page = MioPublishVideoPage.new @browser
+    @retrieve_publish_panels_client = MioPublishPanelWebserviceClient.new
+    fetch_expected_page_elements
+  end
+
+  def fetch_expected_page_elements
+    @publish_video_project_form_attributes = {}
+    @retrieve_publish_panels_client.extract_panel_elements.each do |key, value|
+      @publish_video_project_form_attributes[key] = value
+    end
   end
 
   def test_has_attributes
-    @export_video_form_attributes.each do |attribute|
-      assert_respond_to(@export_video_page, attribute)
+    @publish_video_project_form_attributes.each_key do |attribute|
+      assert_respond_to(@publish_video_page, attribute)
     end
   end
 
