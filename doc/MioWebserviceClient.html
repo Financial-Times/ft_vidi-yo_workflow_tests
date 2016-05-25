@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class MioWebserviceClient - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/web_service_clients/mio_webservice_client.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-retrieve_metadata">#retrieve_metadata</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./MioCreateIngestAssetWebserviceClient.html">MioCreateIngestAssetWebserviceClient</a>
+  
+    <li><a href="./MioCreateProjectPanelWebserviceClient.html">MioCreateProjectPanelWebserviceClient</a>
+  
+    <li><a href="./MioCreateVideoProjectPage.html">MioCreateVideoProjectPage</a>
+  
+    <li><a href="./MioDashboard.html">MioDashboard</a>
+  
+    <li><a href="./MioFetchPanelWebserviceClient.html">MioFetchPanelWebserviceClient</a>
+  
+    <li><a href="./MioIngestAssetsPage.html">MioIngestAssetsPage</a>
+  
+    <li><a href="./MioLoginPage.html">MioLoginPage</a>
+  
+    <li><a href="./MioLoginPage/MioConstants.html">MioLoginPage::MioConstants</a>
+  
+    <li><a href="./MioMetadataDescriptionWebserviceClient.html">MioMetadataDescriptionWebserviceClient</a>
+  
+    <li><a href="./MioPage.html">MioPage</a>
+  
+    <li><a href="./MioPublishPanelWebserviceClient.html">MioPublishPanelWebserviceClient</a>
+  
+    <li><a href="./MioPublishVideoPage.html">MioPublishVideoPage</a>
+  
+    <li><a href="./MioWebserviceClient.html">MioWebserviceClient</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class MioWebserviceClient</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(user, url)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_webservice_client.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">url</span>)
+  <span class="ruby-ivar">@username</span> = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">username</span>
+  <span class="ruby-ivar">@password</span> = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">password</span>
+  <span class="ruby-ivar">@headers</span> = {<span class="ruby-string">&#39;Accept&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;application/json&#39;</span>, <span class="ruby-string">&#39;Content-Type&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&#39;application/vnd.nativ.mio.v1+json&#39;</span>}
+  <span class="ruby-ivar">@url</span> = <span class="ruby-identifier">url</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-retrieve_metadata" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">retrieve_metadata</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Generic client for Mio Web Service</p>
+          
+          
+
+          
+          <div class="method-source-code" id="retrieve_metadata-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_webservice_client.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">retrieve_metadata</span>
+  <span class="ruby-identifier">definition_id</span> = <span class="ruby-ivar">@url</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/[^0-9]/</span>, <span class="ruby-string">&#39;&#39;</span>)
+  <span class="ruby-constant">VCR</span>.<span class="ruby-identifier">use_cassette</span>(<span class="ruby-node">&quot;definition_request-#{definition_id}&quot;</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-identifier">method</span><span class="ruby-operator">:</span> <span class="ruby-value">:get</span>, <span class="ruby-identifier">url</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@url</span>, <span class="ruby-identifier">timeout</span><span class="ruby-operator">:</span> <span class="ruby-value">10</span>, <span class="ruby-identifier">user</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@username</span>, <span class="ruby-identifier">password</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@password</span>, <span class="ruby-identifier">headers</span><span class="ruby-operator">:</span> <span class="ruby-ivar">@headers</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">response</span><span class="ruby-operator">|</span>
+      <span class="ruby-ivar">@response</span> = <span class="ruby-identifier">response</span>
+      <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">response</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- retrieve_metadata-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- retrieve_metadata-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,11 +1,16 @@
 require 'page-object'
 
+##
+# Base class for all Mio PageObjects
 class MioPage
 
   include PageObject
 
   element :site_header, id: 'TBC'
 
+  # Retrieves element descriptions from web service and defines them as
+  # PageObject::Accessors
+  # Takes a MioFetchPanelWebserviceClient object
   def self.define_page_elements(webservice_client)
     webservice_client.extract_text_field_elements.each_key do |name|
       text_field(name, id: 'TBC')

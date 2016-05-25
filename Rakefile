@@ -3,6 +3,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 require 'yaml'
 require 'watir-webdriver'
+require 'rake/testtask'
 
 def exclude_inactive_tags
   '--tags ~@wip'

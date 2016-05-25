@@ -1,7 +1,6 @@
 require 'factory_girl'
 require_relative '../config/mio_constants'
 require_relative '../vcr_setup'
-require_relative '../lib/mio_exceptions/mio_exceptions'
 require_relative '../test/factories/mio_video_asset_factory'
 require_relative '../test/factories/mio_video_project_factory'
 require_relative '../test/factories/export_video_factory'
