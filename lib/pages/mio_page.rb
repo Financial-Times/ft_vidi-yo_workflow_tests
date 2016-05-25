@@ -7,7 +7,6 @@ class MioPage
   element :site_header, id: 'TBC'
 
   def self.define_page_elements(webservice_client)
-
     webservice_client.extract_text_field_elements.each_key do |name|
       text_field(name, id: 'TBC')
     end
@@ -21,16 +20,12 @@ class MioPage
     end
 
     webservice_client.extract_boolean_elements.each_key do |name|
-      element(name, id: 'TBC') #TBC - depends on implementation
+      element(name, id: 'TBC') # TBC - depends on implementation
     end
 
-   webservice_client.extract_image_elements.each_key do |name|
-      $stdout.puts "IMAGE: " + name
+    webservice_client.extract_image_elements.each_key do |name|
       image(name, id: 'TBC')
-
     end
-
   end
-
 
 end

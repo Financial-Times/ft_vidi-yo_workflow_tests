@@ -19,7 +19,6 @@ class MioIngestAssetsPageTest < MioTest
     end
   end
 
-
   def test_has_attributes
     @ingest_assets_form_attributes.each_key do |attribute|
       assert_respond_to(@ingest_assets_page, "#{attribute}_element")

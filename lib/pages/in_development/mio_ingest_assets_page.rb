@@ -6,7 +6,7 @@ class MioIngestAssetsPage < MioPage
 
   button :ingest_button,  id: 'TBC' # TODO: Replace with dynamic selector
 
-   define_page_elements(MioCreateIngestAssetWebserviceClient.new)
+  define_page_elements(MioCreateIngestAssetWebserviceClient.new)
 
   def create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))
     self.project = asset.project_name
