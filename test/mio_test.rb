@@ -5,7 +5,7 @@ require_relative 'test_helper'
 class MioTest < Test::Unit::TestCase
 
   def random_string(length)
-    string = ""
+    string = ''
       length.times{string = string + ('a'..'z').to_a.sample}
     string
   end

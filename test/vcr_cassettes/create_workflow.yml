@@ -6,7 +6,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
-        \"rkouki\", \"section\": \"<section>\", \"brand\": \"<brand>\"}"}}'
+        \"dwhhnj\",\"<section>\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
     headers:
       Accept:
       - application/json
@@ -15,7 +16,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '140'
+      - '247'
       User-Agent:
       - Ruby
       Authorization:
@@ -26,7 +27,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Thu, 26 May 2016 15:35:23 GMT
+      - Thu, 26 May 2016 15:57:02 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -38,9 +39,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=gVqug1AwJ+kWeiezUXngq6nx.-201388932; Path=/api; Secure
+      - JSESSIONID=iDr95RENpM8-MMZ+GeJaJ0qT.-201388932; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/12664
+      - https://master.dev.nativ-systems.com/api/workflows/12680
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -49,8 +50,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":12664,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/12664","status":"Running","start":"26
-        May 2016 15:35:23 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":12680,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/12680","status":"Running","start":"26
+        May 2016 15:57:03 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Thu, 26 May 2016 15:35:26 GMT
+  recorded_at: Thu, 26 May 2016 15:57:05 GMT
 recorded_with: VCR 3.0.3
