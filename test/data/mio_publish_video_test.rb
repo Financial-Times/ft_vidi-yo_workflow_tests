@@ -5,8 +5,6 @@ require_relative '../../config/mio_constants'
 
 class MioPublishVideoTest < MioTest
 
-  include MioExceptions
-
   def setup
     @mio_export_video = FactoryGirl.build :mio_export_video
     @data_attributes = %i(:section :brand)

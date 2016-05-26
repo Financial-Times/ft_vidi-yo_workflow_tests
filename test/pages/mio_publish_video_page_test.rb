@@ -5,8 +5,6 @@ require_relative '../../lib/web_service_clients/mio_publish_panel_webservice_cli
 
 class MioPublishVideoPageTest < MioTest
 
-  include MioExceptions
-
   def setup
     @browser = Watir::Browser.new :phantomjs
     @publish_video_page = MioPublishVideoPage.new @browser
