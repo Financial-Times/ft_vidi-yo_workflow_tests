@@ -2,6 +2,8 @@ require 'page-object'
 require_relative '../mio_page'
 require_relative '../../../lib/web_service_clients/mio_create_ingest_asset_webservice_client'
 
+##
+# PageObject for Ingest Assets page
 class MioIngestAssetsPage < MioPage
 
   button :ingest_button,  id: 'TBC' # TODO: Replace with dynamic selector

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class MioFetchPanelWebserviceClient - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/web_service_clients/mio_fetch_panel_webservice_client.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="MioWebserviceClient.html">MioWebserviceClient</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-build_url_for_data_definition">#build_url_for_data_definition</a>
+    
+    <li ><a href="#method-i-extract_boolean_elements">#extract_boolean_elements</a>
+    
+    <li ><a href="#method-i-extract_elements">#extract_elements</a>
+    
+    <li ><a href="#method-i-extract_image_elements">#extract_image_elements</a>
+    
+    <li ><a href="#method-i-extract_panel_elements">#extract_panel_elements</a>
+    
+    <li ><a href="#method-i-extract_selector_elements">#extract_selector_elements</a>
+    
+    <li ><a href="#method-i-extract_text_field_elements">#extract_text_field_elements</a>
+    
+    <li ><a href="#method-i-extract_url_elements">#extract_url_elements</a>
+    
+    <li ><a href="#method-i-fetch_panel_description_by_id">#fetch_panel_description_by_id</a>
+    
+    <li ><a href="#method-i-fetch_panel_description_by_name">#fetch_panel_description_by_name</a>
+    
+    <li ><a href="#method-i-retrieve_panel_definitions">#retrieve_panel_definitions</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./MioCreateIngestAssetWebserviceClient.html">MioCreateIngestAssetWebserviceClient</a>
+  
+    <li><a href="./MioCreateProjectPanelWebserviceClient.html">MioCreateProjectPanelWebserviceClient</a>
+  
+    <li><a href="./MioCreateVideoProjectPage.html">MioCreateVideoProjectPage</a>
+  
+    <li><a href="./MioDashboard.html">MioDashboard</a>
+  
+    <li><a href="./MioFetchPanelWebserviceClient.html">MioFetchPanelWebserviceClient</a>
+  
+    <li><a href="./MioIngestAssetsPage.html">MioIngestAssetsPage</a>
+  
+    <li><a href="./MioLoginPage.html">MioLoginPage</a>
+  
+    <li><a href="./MioLoginPage/MioConstants.html">MioLoginPage::MioConstants</a>
+  
+    <li><a href="./MioMetadataDescriptionWebserviceClient.html">MioMetadataDescriptionWebserviceClient</a>
+  
+    <li><a href="./MioPage.html">MioPage</a>
+  
+    <li><a href="./MioPublishPanelWebserviceClient.html">MioPublishPanelWebserviceClient</a>
+  
+    <li><a href="./MioPublishVideoPage.html">MioPublishVideoPage</a>
+  
+    <li><a href="./MioWebserviceClient.html">MioWebserviceClient</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class MioFetchPanelWebserviceClient</h1>
+
+  <div id="description" class="description">
+    
+<p>Extracts and parses definitions from metadata.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(user, url)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="MioWebserviceClient.html#method-c-new">MioWebserviceClient.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">url</span>)
+  <span class="ruby-keyword">super</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-build_url_for_data_definition" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">build_url_for_data_definition</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns URL for individual definition requests</p>
+          
+          
+
+          
+          <div class="method-source-code" id="build_url_for_data_definition-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">build_url_for_data_definition</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">id</span> = <span class="ruby-constant">MioMetadataDescriptionWebserviceClient</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">WSUser</span>.<span class="ruby-identifier">new</span>).<span class="ruby-identifier">retrieve_id_with_name</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-node">&quot;#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- build_url_for_data_definition-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- build_url_for_data_definition-method -->
+
+    
+      <div id="method-i-extract_boolean_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_boolean_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns booleans (to implement checkboxes or radios) from description
+metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_boolean_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_boolean_elements</span>
+  <span class="ruby-identifier">extract_elements</span> <span class="ruby-string">&#39;boolean&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_boolean_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_boolean_elements-method -->
+
+    
+      <div id="method-i-extract_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_elements</span><span
+            class="method-args">(type)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="extract_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_elements</span>(<span class="ruby-identifier">type</span>)
+  <span class="ruby-identifier">elements</span> = {}
+  <span class="ruby-identifier">extract_panel_elements</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">elements</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">type</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">elements</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_elements-method -->
+
+    
+      <div id="method-i-extract_image_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_image_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns image elements from description metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_image_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_image_elements</span>
+  <span class="ruby-identifier">extract_elements</span> <span class="ruby-string">&#39;image&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_image_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_image_elements-method -->
+
+    
+      <div id="method-i-extract_panel_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_panel_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Extracts panel elements from description metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_panel_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_panel_elements</span>
+  <span class="ruby-identifier">definitions</span> = {}
+  <span class="ruby-identifier">retrieve_panel_definitions</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">element</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">definitions</span>[<span class="ruby-identifier">element</span>[<span class="ruby-string">&#39;name&#39;</span>]] = <span class="ruby-identifier">element</span>[<span class="ruby-string">&#39;type&#39;</span>]
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">definitions</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_panel_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_panel_elements-method -->
+
+    
+      <div id="method-i-extract_selector_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_selector_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns text elements from description metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_selector_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_selector_elements</span>
+  <span class="ruby-identifier">extract_elements</span> <span class="ruby-string">&#39;single-option&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_selector_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_selector_elements-method -->
+
+    
+      <div id="method-i-extract_text_field_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_text_field_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns text field elements from description metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_text_field_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_text_field_elements</span>
+  <span class="ruby-identifier">extract_elements</span> <span class="ruby-string">&#39;text&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_text_field_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_text_field_elements-method -->
+
+    
+      <div id="method-i-extract_url_elements" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">extract_url_elements</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns text url elements from description metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="extract_url_elements-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_url_elements</span>
+  <span class="ruby-identifier">extract_elements</span> <span class="ruby-string">&#39;url&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- extract_url_elements-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- extract_url_elements-method -->
+
+    
+      <div id="method-i-fetch_panel_description_by_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_panel_description_by_id</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Takes a metadata definition id and returns description for that element</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_panel_description_by_id-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_panel_description_by_id</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">mio_client</span> = <span class="ruby-constant">MioWebserviceClient</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">WSUser</span>.<span class="ruby-identifier">new</span>,
+                                       <span class="ruby-node">&quot;#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition&quot;</span>)
+  <span class="ruby-identifier">mio_client</span>.<span class="ruby-identifier">retrieve_metadata</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_panel_description_by_id-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_panel_description_by_id-method -->
+
+    
+      <div id="method-i-fetch_panel_description_by_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_panel_description_by_name</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Takes a metadata definition name and returns description for that element</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_panel_description_by_name-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 74</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_panel_description_by_name</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-ivar">@mio_metadata_service</span> = <span class="ruby-constant">MioMetadataDescriptionWebserviceClient</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">fetch_panel_description_by_id</span>(<span class="ruby-ivar">@mio_metadata_service</span>.<span class="ruby-identifier">retrieve_id_with_name</span>(<span class="ruby-identifier">name</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_panel_description_by_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_panel_description_by_name-method -->
+
+    
+      <div id="method-i-retrieve_panel_definitions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">retrieve_panel_definitions</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Parses descriptions from metadata</p>
+          
+          
+
+          
+          <div class="method-source-code" id="retrieve_panel_definitions-source">
+            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_fetch_panel_webservice_client.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">retrieve_panel_definitions</span>
+  <span class="ruby-identifier">retrieve_metadata</span>[<span class="ruby-string">&#39;definition&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- retrieve_panel_definitions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- retrieve_panel_definitions-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

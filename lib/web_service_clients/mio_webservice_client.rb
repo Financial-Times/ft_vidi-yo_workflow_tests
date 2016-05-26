@@ -7,6 +7,8 @@ class MioWebserviceClient
     @url = url
   end
 
+  ##
+  # Generic client for Mio Web Service
   def retrieve_metadata
     definition_id = @url.gsub(/[^0-9]/, '')
     VCR.use_cassette("definition_request-#{definition_id}") do

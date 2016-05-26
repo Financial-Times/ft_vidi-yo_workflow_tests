@@ -1,6 +1,8 @@
 require_relative 'mio_webservice_client'
 require_relative '../../test/data/ws_user'
 
+##
+# Parses metadata description to allow retrieval of individual definitions
 class MioMetadataDescriptionWebserviceClient
 
   def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/metadataDefinitions")
@@ -8,6 +10,8 @@ class MioMetadataDescriptionWebserviceClient
     @user = user
   end
 
+  # REST call to get definition descriptions from Web Service. Return value can then be used
+  # to fetch individual definitions
   def retrieve_description_metadata
     VCR.use_cassette('metadata_description') do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
@@ -17,6 +21,7 @@ class MioMetadataDescriptionWebserviceClient
     end
   end
 
+  # Takes name, returns definition description
   def retrieve_description_by_name(name)
     response = retrieve_description_metadata['metadataDefinitions']
     response.each do |description|
@@ -24,6 +29,7 @@ class MioMetadataDescriptionWebserviceClient
     end
   end
 
+  # Takes description name, returns ID.
   def retrieve_id_with_name(name)
     retrieve_description_by_name(name)['id']
   end
