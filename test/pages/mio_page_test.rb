@@ -13,6 +13,10 @@ class MioPageTest < MioTest
     assert_kind_of(MioPage, @base_page)
   end
 
+  def test_has_common_header
+    assert @base_page.respond_to? :site_header, "'site_header' missing from page"
+  end
+
   def teardown
     @browser.close
   end

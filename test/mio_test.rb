@@ -4,13 +4,10 @@ require_relative 'test_helper'
 
 class MioTest < Test::Unit::TestCase
 
-  def setup
-    @browser = Watir::Browser.new :phantomjs
-    @mio_page = MioPage.new @browser
-  end
-
-  def test_has_common_header
-    assert @mio_page.respond_to? :site_header, "'site_header' missing from page"
+  def random_string(length)
+    string = ""
+      length.times{string = string + ('a'..'z').to_a.sample}
+    string
   end
 
 end
