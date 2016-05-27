@@ -1,14 +1,14 @@
 require 'test-unit'
 require_relative '../mio_test'
-require_relative '../../lib/pages/in_development/mio_ingest_assets_page'
-require_relative '../../lib/web_service_clients/mio_create_ingest_asset_webservice_client'
+require_relative '../../lib/pages/in_development/ingest_page'
+require_relative '../../lib/web_service_clients/create_ingest_asset_webservice_client'
 
-class MioIngestAssetsPageTest < MioTest
+class IngestPageTest < MioTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs
-    @ingest_assets_page = MioIngestAssetsPage.new @browser
-    @retrieve_ingest_panels_client = MioCreateIngestAssetWebserviceClient.new
+    @ingest_assets_page = IngestPage.new @browser
+    @retrieve_ingest_panels_client = CreateIngestAssetWebserviceClient.new
     fetch_expected_page_elements
   end
 

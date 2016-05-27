@@ -1,8 +1,8 @@
-require_relative 'mio_fetch_panel_webservice_client'
+require_relative 'fetch_panel_webservice_client'
 
 ##
 # Retrieves metadata definition to create accessors for the Publish Panel web page
-class MioPublishPanelWebserviceClient < MioFetchPanelWebserviceClient
+class PublishPanelWebserviceClient < FetchPanelWebserviceClient
 
   attr_reader :url
 

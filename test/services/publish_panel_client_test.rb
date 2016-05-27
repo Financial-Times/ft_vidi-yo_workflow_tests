@@ -1,12 +1,12 @@
 require 'test/unit'
 require_relative '../test_helper'
-require_relative '../../lib/web_service_clients/mio_publish_panel_webservice_client'
+require_relative '../../lib/web_service_clients/publish_panel_webservice_client'
 
-class MioPublishPanelClientTest < MioTest
+class PublishPanelClientTest < MioTest
 
   def setup
-    @mio_publish_panel_client = MioPublishPanelWebserviceClient.new(WSUser.new)
-    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
+    @mio_publish_panel_client = PublishPanelWebserviceClient.new(WSUser.new)
+    @mio_metadata_service = MetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition

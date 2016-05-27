@@ -1,14 +1,14 @@
 require 'test/unit'
 require_relative '../mio_test'
-require_relative '../../lib/pages/in_development/mio_publish_video_page'
-require_relative '../../lib/web_service_clients/mio_publish_panel_webservice_client'
+require_relative '../../lib/pages/in_development/publish_video_page'
+require_relative '../../lib/web_service_clients/publish_panel_webservice_client'
 
-class MioPublishVideoPageTest < MioTest
+class PublishVideoPageTest < MioTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs
-    @publish_video_page = MioPublishVideoPage.new @browser
-    @retrieve_publish_panels_client = MioPublishPanelWebserviceClient.new
+    @publish_video_page = PublishVideoPage.new @browser
+    @retrieve_publish_panels_client = PublishPanelWebserviceClient.new
     fetch_expected_page_elements
   end
 

@@ -1,4 +1,4 @@
-require_relative '../workflow_clients/mio_project_workflow_webservice_client'
+require_relative '../workflow_clients/project_workflow_webservice_client'
 
 
 ##
@@ -8,7 +8,7 @@ class ProjectWorkflow
   attr_reader :workflow
 
   def initialize
-    @workflow = MioProjectWorkflowWebserviceClient.new.create_project_workflow
+    @workflow = ProjectWorkflowWebserviceClient.new.create_project_workflow
     raise "Workflow not created: #{@workflow.class} found" unless created?
     self
   end

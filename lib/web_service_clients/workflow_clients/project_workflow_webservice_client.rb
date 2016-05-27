@@ -1,10 +1,10 @@
-require_relative 'mio_create_workflow_webservice_client'
+require_relative 'create_workflow_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../config/mio_constants'
 
 ##
 # Handles creation of Project Workflows
-class MioProjectWorkflowWebserviceClient < MioCreateWorkflowWebserviceClient
+class ProjectWorkflowWebserviceClient < CreateWorkflowWebserviceClient
 
   def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/workflows/")
     super

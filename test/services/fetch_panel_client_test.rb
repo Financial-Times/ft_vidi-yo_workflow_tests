@@ -1,15 +1,15 @@
 require 'test/unit'
 require_relative '../../test/data/ws_user'
-require_relative '../../lib/web_service_clients/mio_fetch_panel_webservice_client'
+require_relative '../../lib/web_service_clients/fetch_panel_webservice_client'
 require_relative '../test_helper'
 
-class MioFetchPanelClientTest < MioTest
+class FetchPanelClientTest < MioTest
 
   TEST_FETCH_URL = "#{MioConstants::ROOT_URL}/api/metadataDefinitions/11312/definition".freeze
 
   def setup
-    @mio_fetch_panels_client = MioFetchPanelWebserviceClient.new(WSUser.new, TEST_FETCH_URL)
-    @mio_cached_client = MioFetchPanelWebserviceClient.new(WSUser.new, 'https://www.google.co.uk')
+    @mio_fetch_panels_client = FetchPanelWebserviceClient.new(WSUser.new, TEST_FETCH_URL)
+    @mio_cached_client = FetchPanelWebserviceClient.new(WSUser.new, 'https://www.google.co.uk')
   end
 
   def test_get_panel_elements

@@ -1,13 +1,13 @@
 require 'test/unit'
 require_relative '../test_helper'
-require_relative '../../lib/web_service_clients/mio_create_ingest_asset_webservice_client'
+require_relative '../../lib/web_service_clients/create_ingest_asset_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class MioIngestAssetsPanelClientTest < MioTest
+class IngestPanelClientTest < MioTest
 
   def setup
-    @mio_ingest_assets_panel_client = MioCreateIngestAssetWebserviceClient.new(WSUser.new)
-    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new(WSUser.new)
+    @mio_ingest_assets_panel_client = CreateIngestAssetWebserviceClient.new(WSUser.new)
+    @mio_metadata_service = MetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition

@@ -1,10 +1,10 @@
 require 'rest-client'
 require_relative 'mio_webservice_client'
-require_relative 'mio_metadata_description_webservice_client'
+require_relative 'metadata_description_webservice_client'
 
 ###
 # Extracts and parses definitions from metadata.
-class MioFetchPanelWebserviceClient < MioWebserviceClient
+class FetchPanelWebserviceClient < MioWebserviceClient
 
   def initialize(user, url)
     super(user, url)
@@ -15,7 +15,7 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   # @param name [String] :name of description to retrieve
   # @return [URI]
   def build_url_for_data_definition(name)
-    id = MioMetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
+    id = MetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
     "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition"
   end
 
@@ -99,7 +99,7 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   # @param name [String] name of element
   # @return [Hash] element
   def fetch_panel_description_by_name(name)
-    @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new
+    @mio_metadata_service = MetadataDescriptionWebserviceClient.new
     fetch_panel_description_by_id(@mio_metadata_service.retrieve_id_with_name(name))
   end
 
