@@ -1,9 +1,8 @@
-require 'create_project'
+require_relative '../lib/web_service_clients/workflows/project_workflow'
 
-RSpec.describe CreateProject do
-  context 'After creating a workflow' do
-    it 'visits the url to check the workflow' do
-
-    end
+RSpec.describe ProjectWorkflow do
+  it 'Creates a workflow' do
+    workflow = ProjectWorkflow.new
+    expect(workflow.created?).to be_truthy
   end
 end
