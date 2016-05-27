@@ -81,7 +81,7 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   #
   # @return [Hash]
   def retrieve_panel_definitions
-    retrieve_definition['definition']
+    retrieve_resource['definition']
   end
 
   # Takes a metadata definition id and returns description data
@@ -91,7 +91,7 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   def fetch_panel_description_by_id(id)
     mio_client = MioWebserviceClient.new(WSUser.new,
                                          "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition")
-    mio_client.retrieve_definition
+    mio_client.retrieve_resource
   end
 
   # Takes a metadata definition name and returns description for that element

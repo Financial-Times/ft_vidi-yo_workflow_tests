@@ -1,3 +1,6 @@
+require 'vcr'
+require 'rest-client'
+
 ##
 # Generic client for Mio Web Service
 class MioWebserviceClient
@@ -17,9 +20,9 @@ class MioWebserviceClient
   # Retrieves a Mio metadata definition.
   #
   # @return [Hash] of requested object
-  def retrieve_definition
+  def retrieve_resource
     definition_id = @url.gsub(/[^0-9]/, '')
-    VCR.use_cassette("definition_request-#{definition_id}") do
+    VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
         JSON.parse(response)
@@ -32,6 +35,7 @@ class MioWebserviceClient
   # @param payload [Hash] :payload for POST request, to be converted to JSON by RestClient
   # @return [Hash] of requested object
   def create_resource(payload)
+    puts @object_type
    VCR.use_cassette("create_#{@object_type}") do
       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                   :content_type => 'text/plain', headers: @headers, payload: payload.to_json) do |response|

@@ -1,10 +1,12 @@
 require_relative 'mio_create_workflow_webservice_client'
+require_relative '../../../test/data/ws_user'
+require_relative '../../../config/mio_constants'
 
 ##
 # Handles creation of Project Workflows
-class MioCreateProjectWorkflowWebserviceClient < MioCreateWorkflowWebserviceClient
+class MioProjectWorkflowWebserviceClient < MioCreateWorkflowWebserviceClient
 
-  def initialize(user=WSUser.new, url)
+  def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/workflows/")
     super
     @object_type = :project_workflow
   end
@@ -25,9 +27,8 @@ class MioCreateProjectWorkflowWebserviceClient < MioCreateWorkflowWebserviceClie
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_project
+  def create_project_workflow
       create_resource(create_project_workflow_payload)
   end
-
 
 end

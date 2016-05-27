@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 24 May 2016 15:22:33 GMT
+      - Fri, 27 May 2016 11:43:34 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=L1oGHgqHsraXiz6jedyeEljd.-201388908; Path=/api; Secure
+      - JSESSIONID=lU8GEUgQlvgImQNUlp3gB1KC.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -80,5 +80,5 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"SP"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"LAA"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 24 May 2016 15:22:35 GMT
+  recorded_at: Fri, 27 May 2016 11:43:36 GMT
 recorded_with: VCR 3.0.3
