@@ -11,12 +11,17 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   end
 
   # Returns URL for individual definition requests
+  #
+  # @param name [String] :name of description to retrieve
+  # @return [URI]
   def build_url_for_data_definition(name)
     id = MioMetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
     "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition"
   end
 
-  # Extracts panel elements from description metadata
+  # Processes panel elements from description data, storing them in a Hash
+  #
+  # @return [Hash] to generate CSS Selectors on page
   def extract_panel_elements
     definitions = {}
     retrieve_panel_definitions.each do |element|
@@ -25,6 +30,10 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
     definitions
   end
 
+  # Extracts elements of given type (text, single-option etc), stores in Hash
+  #
+  # @param type [String] requested element type to extract and store
+  # @return [Hash] stored elements of requested type
   def extract_elements(type)
     elements = {}
     extract_panel_elements.each do |key, value|
@@ -33,37 +42,52 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
     elements
   end
 
-  # Returns text field elements from description metadata
+  # Wrapper method to retrieve text field elements from description metadata
+  #
+  # @return [Hash]
   def extract_text_field_elements
     extract_elements 'text'
   end
 
-  # Returns text elements from description metadata
+  # Wrapper method to retrieve selector elements from description metadata
+  #
+  # @return [Hash]
   def extract_selector_elements
     extract_elements 'single-option'
   end
 
-  # Returns text url elements from description metadata
+  # Wrapper method to retrieve URL elements from description metadata
+  #
+  # @return [Hash]
   def extract_url_elements
     extract_elements 'url'
   end
 
-  # Returns booleans (to implement checkboxes or radios) from description metadata
+  # Wrapper method booleans (to implement checkboxes or radios) from description metadata
+  #
+  # @return [Hash]
   def extract_boolean_elements
     extract_elements 'boolean'
   end
 
-  # Returns image elements from description metadata
+  # Wrapper method to retrieve img elements from description metadata
+  #
+  # @return [Hash]
   def extract_image_elements
     extract_elements 'image'
   end
 
-  # Parses descriptions from metadata
+  # Retrieves panel node from webservice response
+  #
+  # @return [Hash]
   def retrieve_panel_definitions
     retrieve_definition['definition']
   end
 
-  # Takes a metadata definition id and returns description for that element
+  # Takes a metadata definition id and returns description data
+  #
+  # @param id [String] id of element
+  # @return [Hash] element
   def fetch_panel_description_by_id(id)
     mio_client = MioWebserviceClient.new(WSUser.new,
                                          "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition")
@@ -71,6 +95,9 @@ class MioFetchPanelWebserviceClient < MioWebserviceClient
   end
 
   # Takes a metadata definition name and returns description for that element
+  #
+  # @param name [String] name of element
+  # @return [Hash] element
   def fetch_panel_description_by_name(name)
     @mio_metadata_service = MioMetadataDescriptionWebserviceClient.new
     fetch_panel_description_by_id(@mio_metadata_service.retrieve_id_with_name(name))

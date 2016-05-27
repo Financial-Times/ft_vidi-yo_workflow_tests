@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
-  Class: MioDashboard
+  Class: MioDashboardPage
   
     &mdash; Documentation by YARD 0.8.7.4
   
@@ -17,7 +17,7 @@
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!MioDashboard.html";
+  framesUrl = "frames.html#!MioDashboardPage.html";
 </script>
 
 
@@ -34,7 +34,7 @@
     <a href="_index.html">Index (M)</a> &raquo;
     
     
-    <span class="title">MioDashboard</span>
+    <span class="title">MioDashboardPage</span>
   
 
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
@@ -63,9 +63,9 @@
 
     <iframe id="search_frame"></iframe>
 
-    <div id="content"><h1>Class: MioDashboard
+    <div id="content"><h1>Class: MioDashboardPage
   
-  
+  <span class="deprecated note title">Deprecated</span>
   
 </h1>
 
@@ -80,7 +80,7 @@
           
             <li class="next"><span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></li>
           
-            <li class="next">MioDashboard</li>
+            <li class="next">MioDashboardPage</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -96,12 +96,27 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/pages/mio_dashboard.rb</dd>
+    <dd class="r2 last">lib/pages/mio_dashboard_page.rb</dd>
   
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'><ul><li>
+<p>legacy page</p>
+</li></ul>
+</div></div>
 
+<p>Page Object for acceptance testing of Mio Dashboard</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -181,7 +196,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Select dashboard tab.</p>
+</div></span>
   
 </li>
 
@@ -246,15 +263,15 @@
       <pre class="lines">
 
 
-26
-27
-28
-29
 30
-31</pre>
+31
+32
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_change_section'>change_section</span><span class='lparen'>(</span><span class='id identifier rubyid_section'>section</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_previous_feature'>previous_feature</span> <span class='op'>=</span> <span class='id identifier rubyid_current_feature_container_element'>current_feature_container_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_text'>text</span>
@@ -311,12 +328,12 @@
       <pre class="lines">
 
 
-19
-20
-21</pre>
+23
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_displayed?'>displayed?</span>
   <span class='id identifier rubyid_wait_until'>wait_until</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_dashboard_container?'>dashboard_container?</span> <span class='rbrace'>}</span>
@@ -335,18 +352,67 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Select dashboard tab</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>section</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>name of tab to select</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>nil</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-33
-34
-35</pre>
+41
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_tab'>select_tab</span><span class='lparen'>(</span><span class='id identifier rubyid_section'>section</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_section'>section</span><span class='embexpr_end'>}</span><span class='tstring_content'>_tab_element</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
@@ -361,7 +427,7 @@
 </div>
 
     <div id="footer">
-  Generated on Fri May 27 11:59:01 2016 by
+  Generated on Fri May 27 12:07:26 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.0.0).
 </div>

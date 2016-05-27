@@ -1,220 +1,322 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: MioPublishPanelWebserviceClient
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
 
-<html>
-<head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 
-<title>class MioPublishPanelWebserviceClient - RDoc Documentation</title>
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
-<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
-
-<script type="text/javascript">
-  var rdoc_rel_prefix = "./";
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!MioPublishPanelWebserviceClient.html";
 </script>
 
-<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
-<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
 
-<body id="top" class="class">
-<nav id="metadata">
-  <nav id="home-section" class="section">
-  <h3 class="section-header">
-    <a href="./index.html">Home</a>
-    <a href="./table_of_contents.html#classes">Classes</a>
-    <a href="./table_of_contents.html#methods">Methods</a>
-  </h3>
-</nav>
-
-
-  <nav id="search-section" class="section project-section" class="initially-hidden">
-  <form action="#" method="get" accept-charset="utf-8">
-    <h3 class="section-header">
-      <input type="text" name="search" placeholder="Search" id="search-field"
-             title="Type to search, Up and Down to navigate, Enter to load">
-    </h3>
-  </form>
-
-  <ul id="search-results" class="initially-hidden"></ul>
-</nav>
-
-
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
   
-
-  <div id="file-metadata">
-    <nav id="file-list-section" class="section">
-  <h3 class="section-header">Defined In</h3>
-  <ul>
-    <li>lib/web_service_clients/mio_publish_panel_webservice_client.rb
-  </ul>
-</nav>
-
-    
-  </div>
-
-  <div id="class-metadata">
-    
-    <nav id="parent-class-section" class="section">
-  <h3 class="section-header">Parent</h3>
-  
-  <p class="link"><a href="MioFetchPanelWebserviceClient.html">MioFetchPanelWebserviceClient</a>
-  
-</nav>
-
+    <a href="_index.html">Index (M)</a> &raquo;
     
     
-    <!-- Method Quickref -->
-<nav id="method-list-section" class="section">
-  <h3 class="section-header">Methods</h3>
+    <span class="title">MioPublishPanelWebserviceClient</span>
+  
 
-  <ul class="link-list">
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: MioPublishPanelWebserviceClient
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="MioFetchPanelWebserviceClient.html" title="MioFetchPanelWebserviceClient (class)">MioFetchPanelWebserviceClient</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="MioWebserviceClient.html" title="MioWebserviceClient (class)">MioWebserviceClient</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="MioFetchPanelWebserviceClient.html" title="MioFetchPanelWebserviceClient (class)">MioFetchPanelWebserviceClient</a></span></li>
+          
+            <li class="next">MioPublishPanelWebserviceClient</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
     
-    <li class="calls-super" ><a href="#method-c-new">::new</a>
+  
+  
     
-  </ul>
-</nav>
-
-  </div>
-
-  <div id="project-metadata">
+  
     
-    <nav id="classindex-section" class="section project-section">
-  <h3 class="section-header">Class and Module Index</h3>
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/web_service_clients/mio_publish_panel_webservice_client.rb</dd>
+  
+</dl>
+<div class="clear"></div>
 
-  <ul class="link-list">
-  
-    <li><a href="./MioCreateIngestAssetWebserviceClient.html">MioCreateIngestAssetWebserviceClient</a>
-  
-    <li><a href="./MioCreateProjectPanelWebserviceClient.html">MioCreateProjectPanelWebserviceClient</a>
-  
-    <li><a href="./MioCreateVideoProjectPage.html">MioCreateVideoProjectPage</a>
-  
-    <li><a href="./MioDashboard.html">MioDashboard</a>
-  
-    <li><a href="./MioFetchPanelWebserviceClient.html">MioFetchPanelWebserviceClient</a>
-  
-    <li><a href="./MioIngestAssetsPage.html">MioIngestAssetsPage</a>
-  
-    <li><a href="./MioLoginPage.html">MioLoginPage</a>
-  
-    <li><a href="./MioLoginPage/MioConstants.html">MioLoginPage::MioConstants</a>
-  
-    <li><a href="./MioMetadataDescriptionWebserviceClient.html">MioMetadataDescriptionWebserviceClient</a>
-  
-    <li><a href="./MioPage.html">MioPage</a>
-  
-    <li><a href="./MioPublishPanelWebserviceClient.html">MioPublishPanelWebserviceClient</a>
-  
-    <li><a href="./MioPublishVideoPage.html">MioPublishVideoPage</a>
-  
-    <li><a href="./MioWebserviceClient.html">MioWebserviceClient</a>
-  
-  </ul>
-</nav>
-
-  </div>
-</nav>
-
-<div id="documentation">
-  <h1 class="class">class MioPublishPanelWebserviceClient</h1>
-
-  <div id="description" class="description">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
     
 <p>Retrieves metadata definition to create accessors for the Publish Panel web
 page</p>
 
-  </div><!-- description -->
 
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#url-instance_method" title="#url (instance method)">- (Object) <strong>url</strong> </a>
+    
+
+    
+  </span>
   
   
   
-  <section id="5Buntitled-5D" class="documentation-section">
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute url.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (MioPublishPanelWebserviceClient) <strong>initialize</strong>(user = WSUser.new, _url = nil) </a>
     
 
     
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
 
-    
-
-    
-    <!-- Attributes -->
-    <section id="attribute-method-details" class="method-section section">
-      <h3 class="section-header">Attributes</h3>
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of MioPublishPanelWebserviceClient.</p>
+</div></span>
+  
+</li>
 
       
-      <div id="attribute-i-url" class="method-detail">
-        <div class="method-heading attribute-method-heading">
-          <span class="method-name">url</span><span
-            class="attribute-access-type">[R]</span>
-        </div>
-
-        <div class="method-description">
-        
-        
-        
-        </div>
-      </div>
-      
-    </section><!-- attribute-method-details -->
-    
-
-    <!-- Methods -->
-    
-     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
-      <h3 class="section-header">Public Class Methods</h3>
-
-    
-      <div id="method-c-new" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">new</span><span
-            class="method-args">(user=WSUser.new, _url=nil)</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
-        </div>
-        
-
-        <div class="method-description">
-          
-          
-          
-          
-            <div class="method-calls-super">
-              Calls superclass method
-              <a href="MioFetchPanelWebserviceClient.html#method-c-new">MioFetchPanelWebserviceClient.new</a>
-            </div>
-          
-
-          
-          <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/web_service_clients/mio_publish_panel_webservice_client.rb, line 9</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>=<span class="ruby-constant">WSUser</span>.<span class="ruby-identifier">new</span>, <span class="ruby-identifier">_url</span>=<span class="ruby-keyword">nil</span>)
-  <span class="ruby-keyword">super</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">build_url_for_data_definition</span>(<span class="ruby-string">&#39;publish-metadata&#39;</span>))
-<span class="ruby-keyword">end</span></pre>
-          </div><!-- new-source -->
-          
-        </div>
-
-        
-
-        
-      </div><!-- new-method -->
-
-    
-    </section><!-- public-class-method-details -->
+    </ul>
   
-  </section><!-- 5Buntitled-5D -->
-
-</div><!-- documentation -->
 
 
-<footer id="validator-badges">
-  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
-  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
-  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
-</footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioFetchPanelWebserviceClient.html" title="MioFetchPanelWebserviceClient (class)">MioFetchPanelWebserviceClient</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="MioFetchPanelWebserviceClient.html#build_url_for_data_definition-instance_method" title="MioFetchPanelWebserviceClient#build_url_for_data_definition (method)">#build_url_for_data_definition</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_boolean_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_boolean_elements (method)">#extract_boolean_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_elements (method)">#extract_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_image_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_image_elements (method)">#extract_image_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_panel_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_panel_elements (method)">#extract_panel_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_selector_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_selector_elements (method)">#extract_selector_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_text_field_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_text_field_elements (method)">#extract_text_field_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#extract_url_elements-instance_method" title="MioFetchPanelWebserviceClient#extract_url_elements (method)">#extract_url_elements</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#fetch_panel_description_by_id-instance_method" title="MioFetchPanelWebserviceClient#fetch_panel_description_by_id (method)">#fetch_panel_description_by_id</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#fetch_panel_description_by_name-instance_method" title="MioFetchPanelWebserviceClient#fetch_panel_description_by_name (method)">#fetch_panel_description_by_name</a></span>, <span class='object_link'><a href="MioFetchPanelWebserviceClient.html#retrieve_panel_definitions-instance_method" title="MioFetchPanelWebserviceClient#retrieve_panel_definitions (method)">#retrieve_panel_definitions</a></span></p>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioWebserviceClient.html" title="MioWebserviceClient (class)">MioWebserviceClient</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="MioWebserviceClient.html#create_resource-instance_method" title="MioWebserviceClient#create_resource (method)">#create_resource</a></span>, <span class='object_link'><a href="MioWebserviceClient.html#random_string-instance_method" title="MioWebserviceClient#random_string (method)">#random_string</a></span>, <span class='object_link'><a href="MioWebserviceClient.html#retrieve_definition-instance_method" title="MioWebserviceClient#retrieve_definition (method)">#retrieve_definition</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="MioPublishPanelWebserviceClient (class)">MioPublishPanelWebserviceClient</a></span></tt>) <strong>initialize</strong>(user = WSUser.new, _url = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of MioPublishPanelWebserviceClient</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/web_service_clients/mio_publish_panel_webservice_client.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='const'>WSUser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='comma'>,</span> <span class='id identifier rubyid__url'>_url</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_build_url_for_data_definition'>build_url_for_data_definition</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>publish-metadata</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="url-instance_method">
+  
+    - (<tt>Object</tt>) <strong>url</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute url</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/web_service_clients/mio_publish_panel_webservice_client.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_url'>url</span>
+  <span class='ivar'>@url</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Fri May 27 12:07:27 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

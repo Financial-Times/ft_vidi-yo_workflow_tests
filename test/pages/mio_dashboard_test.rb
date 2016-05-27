@@ -1,4 +1,4 @@
-require_relative '../../lib/pages/mio_dashboard'
+require_relative '../../lib/pages/mio_dashboard_page'
 require 'test-unit'
 require_relative '../mio_test'
 
@@ -6,7 +6,7 @@ class MioDashboardTest < MioTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs
-    @dashboard = MioDashboard.new @browser
+    @dashboard = MioDashboardPage.new @browser
     @tabs = %i(desktop_tab assets_tab players_tab tasks_tab jobs_tab workflows_tab resources_tab)
   end
 

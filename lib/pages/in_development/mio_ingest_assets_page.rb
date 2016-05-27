@@ -10,6 +10,9 @@ class MioIngestAssetsPage < MioPage
 
   define_page_elements(MioCreateIngestAssetWebserviceClient.new)
 
+  # Complete form for Ingestion
+  #
+  # @param asset [MioVideoAsset]
   def create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))
     self.project = asset.project_name
     self.clip_type_selector = asset.clip_type

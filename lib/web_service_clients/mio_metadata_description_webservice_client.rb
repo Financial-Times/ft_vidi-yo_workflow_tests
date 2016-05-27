@@ -22,6 +22,9 @@ class MioMetadataDescriptionWebserviceClient
   end
 
   # Takes name, returns definition description
+  #
+  # @param name [String] name of parameter
+  # @
   def retrieve_description_by_name(name)
     response = retrieve_description_metadata['metadataDefinitions']
     response.each do |description|
