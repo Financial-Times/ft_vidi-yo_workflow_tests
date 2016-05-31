@@ -1,9 +1,12 @@
 require 'vcr'
 require 'rest-client'
+require_relative '../../config/mio_constants'
 
 ##
 # Generic client for Mio Web Service
 class MioWebserviceClient
+
+  include MioConstants
 
   # Init
   #
@@ -25,7 +28,7 @@ class MioWebserviceClient
     VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
-        raise "Retrieve resource #{definition_id} request failed"  unless response.code < 299
+        raise "Retrieve resource #{definition_id} request failed"  unless HTTP_SUCCESS_CODES.cover? response.code
         JSON.parse(response)
       end
     end
@@ -40,7 +43,7 @@ class MioWebserviceClient
      VCR.use_cassette("create_#{@object_type}") do
        RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                   :content_type => 'text/plain', headers: @headers, payload: payload.to_json) do |response|
-         raise "Create #{@object_type} request failed"  unless response.code < 299
+         raise "Create #{@object_type} request failed"  unless HTTP_SUCCESS_CODES.cover? response.code
          JSON.parse(response)
       end
     end
