@@ -35,11 +35,11 @@ class MioWebserviceClient
   # @param payload [Hash] :payload for POST request, to be converted to JSON by RestClient
   # @return [Hash] of requested object
   def create_resource(payload)
-    puts @object_type
-   VCR.use_cassette("create_#{@object_type}") do
-      RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
+    puts "#{@object_type} created"
+     VCR.use_cassette("create_#{@object_type}") do
+       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                   :content_type => 'text/plain', headers: @headers, payload: payload.to_json) do |response|
-        JSON.parse(response)
+         JSON.parse(response)
       end
     end
   end

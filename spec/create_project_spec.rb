@@ -4,5 +4,8 @@ RSpec.describe ProjectWorkflow do
   it 'Creates a workflow' do
     workflow = ProjectWorkflow.new
     expect(workflow.created?).to be_truthy
+    expect(workflow.status).to eql 'Running'
   end
+
+
 end

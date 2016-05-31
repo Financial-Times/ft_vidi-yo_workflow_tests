@@ -2,7 +2,7 @@ require_relative '../workflow_clients/project_workflow_webservice_client'
 
 
 ##
-# Create Project Workflow
+# Project Workflow
 class ProjectWorkflow
 
   attr_reader :workflow
@@ -13,13 +13,19 @@ class ProjectWorkflow
     self
   end
 
+  #
+
   def created?
    MioWebserviceClient.new(WSUser.new, log_url(@workflow))
        .retrieve_resource['name'] == 'workflow-create-project'
   end
 
+  def status
+    @workflow['status']
+  end
+
   ##
-  # Retrieve the link to the log record to check whether it was created
+  # Retrieve the link to the log record
   #
   # @param project [Hash]
   # @return String url of log record

@@ -19,7 +19,7 @@ class ProjectWorkflowWebserviceClient < CreateWorkflowWebserviceClient
     {
         definitionId: 12387,
         stringVariables: {projectMetadata: ("{\"project\": \"#{project_name}\","\
-        "\"<section>\": \"#{MioConstants::DEFAULT_SECTION}\","\
+        "\"section\": \"#{MioConstants::DEFAULT_SECTION}\","\
          "\"brand\": \"#{MioConstants::DEFAULT_BRAND}\"}")}
     }
   end

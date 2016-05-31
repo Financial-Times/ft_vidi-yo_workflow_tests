@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 May 2016 11:43:34 GMT
+      - Tue, 31 May 2016 10:40:21 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=lU8GEUgQlvgImQNUlp3gB1KC.-201388932; Path=/api; Secure
+      - JSESSIONID=keo+2W5z6zCaFh7mLb+1bBbO.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -51,13 +51,13 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":107565,"name":"project-metadata","definition":[{"id":107566,"name":"project","displayName":"project
-        metadata definition","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107567,"name":"section","displayName":"section","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107568,"name":"Markets
+        metadata definition","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107567,"name":"section","displayName":"section","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107568,"name":"Markets
         &amp; Investing","displayName":"Markets &amp; Investing","default":false,"value":"Markets
         &amp; Investing"},{"id":107569,"name":"Companies &amp; Management","displayName":"Companies
         &amp; Management","default":false,"value":"Companies &amp; Management"},{"id":107570,"name":"World
         &amp; Economy","displayName":"World &amp; Economy","default":false,"value":"World
         &amp; Economy"},{"id":107571,"name":"Life &amp; Arts","displayName":"Life
-        &amp; Arts","default":false,"value":"Life &amp; Arts"}]},{"id":107572,"name":"brand","displayName":"brand","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107573,"name":"SV","displayName":"Markets
+        &amp; Arts","default":false,"value":"Life &amp; Arts"}]},{"id":107572,"name":"brand","displayName":"brand","description":null,"type":"single-option","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"select","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107573,"name":"SV","displayName":"Markets
         - Short View (SV)","default":false,"value":"SV"},{"id":107574,"name":"AUTH","displayName":"Markets
         - John Authers'' Note (AUTH)","default":false,"value":"AUTH"},{"id":107575,"name":"MKTS","displayName":"Markets
         - FT Markets (MKTS)","default":false,"value":"MKTS"},{"id":107576,"name":"FTFM","displayName":"Markets
@@ -80,5 +80,5 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"SP"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"LAA"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Fri, 27 May 2016 11:43:36 GMT
+  recorded_at: Tue, 31 May 2016 10:40:11 GMT
 recorded_with: VCR 3.0.3

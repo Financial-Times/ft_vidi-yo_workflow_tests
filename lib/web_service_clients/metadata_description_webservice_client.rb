@@ -8,6 +8,7 @@ class MetadataDescriptionWebserviceClient
   def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/metadataDefinitions")
     @url = url
     @user = user
+    @headers = {'Accept' => 'application/json', 'Content-Type' => 'application/vnd.nativ.mio.v1+json'}
   end
 
   # REST call to get definition descriptions from Web Service. Return value can then be used

@@ -4,7 +4,7 @@ module MioConstants
 
   execution_environment ||= :dev
   REPORTS ||= '../../reports'.freeze
-  CONFIG ||= YAML.load_file('config/master.yml')
+  CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
   ENVIRONMENT_CONFIG ||= CONFIG[execution_environment]
   ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
   ADMIN_USER ||= ENVIRONMENT_CONFIG[:admin_user]
