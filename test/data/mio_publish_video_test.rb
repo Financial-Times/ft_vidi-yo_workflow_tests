@@ -7,7 +7,6 @@ class MioPublishVideoTest < MioTest
 
   def setup
     @mio_export_video = FactoryGirl.build :mio_export_video
-    @data_attributes = %i(:section :brand)
   end
 
   # TODO: Refactor to loop to avoid repetition - service not ready yet

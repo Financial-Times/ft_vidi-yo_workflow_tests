@@ -273,7 +273,7 @@
       <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
-  <span class='ivar'>@workflow</span> <span class='op'>=</span> <span class='const'>MioProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_create_project_workflow'>create_project_workflow</span>
+  <span class='ivar'>@workflow</span> <span class='op'>=</span> <span class='const'>ProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_create_project_workflow'>create_project_workflow</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Workflow not created: </span><span class='embexpr_beg'>#{</span><span class='ivar'>@workflow</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='embexpr_end'>}</span><span class='tstring_content'> found</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_created?'>created?</span>
   <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
@@ -470,7 +470,7 @@
 </div>
 
     <div id="footer">
-  Generated on Fri May 27 14:08:46 2016 by
+  Generated on Tue May 31 09:34:30 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>
