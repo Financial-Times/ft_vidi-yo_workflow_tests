@@ -25,6 +25,7 @@ class MioWebserviceClient
     VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
+        raise "Retrieve resource #{definition_id} request failed"  unless response.code < 299
         JSON.parse(response)
       end
     end
@@ -39,13 +40,14 @@ class MioWebserviceClient
      VCR.use_cassette("create_#{@object_type}") do
        RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                   :content_type => 'text/plain', headers: @headers, payload: payload.to_json) do |response|
+         raise "Create #{@object_type} request failed"  unless response.code < 299
          JSON.parse(response)
       end
     end
   end
 
   ##
-  # Generates a random string.
+  # Generates a random url.
   #
   # @return [String]
   def random_string(length)
