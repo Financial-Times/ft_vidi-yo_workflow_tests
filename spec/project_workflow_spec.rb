@@ -14,4 +14,11 @@ RSpec.describe ProjectWorkflow do
     retrieved_workflow = ProjectWorkflow.new.retrieve workflow.id
     expect(retrieved_workflow.id).to match workflow.id
   end
+
+  it 'can filter malformed requests' do
+    expect{ProjectWorkflowWebserviceClient.new.create_invalid_project_workflow('TEST', 'TEST', 'TEST')}
+        .to raise_error(RestClient::Exception)
+
+  end
+
 end

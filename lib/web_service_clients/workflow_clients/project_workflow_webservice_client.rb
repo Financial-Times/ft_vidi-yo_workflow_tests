@@ -20,6 +20,14 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     create_resource(payload)
   end
 
+  # Wrapper to create project with self.create_project_workflow_payload
+  #
+  # @return [Hash] created project object converted from JSON service response
+  def create_invalid_project_workflow(name=nil, section=nil, brand=nil)
+    payload = create_project_workflow_payload(name, section, brand)
+    create_resource(payload)
+  end
+
   ##
   # Retrieve an existing ProjectWorkflow by id
   #
@@ -30,19 +38,21 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     retrieve_resource
   end
 
-  private
-
   # Builds the payload to create a project workflow
   #
   # @param project_name [String] project name. Must be unique within mio
   # @return [Hash] payload for RestClient to convert to JSON and pass to Mio to create workflow
   # noinspection RubyInstanceMethodNamingConvention
-  def create_project_workflow_payload(project_name=random_string(6))
+  def create_project_workflow_payload(project_name=nil, section=nil,
+                                        brand=nil)
+    project_name ||= random_string(6)
+    section ||= MioConstants::DEFAULT_SECTION
+    brand ||=  MioConstants::DEFAULT_BRAND
+
     {
       definitionId:    12_387,
       stringVariables: {
-        projectMetadata: "{\"project\": \"#{project_name}\",\"section\": \"#{MioConstants::DEFAULT_SECTION}\","\
-    "\"brand\": \"#{MioConstants::DEFAULT_BRAND}\"}"
+        projectMetadata: "{\"project\": \"#{project_name}\",\"section\": \"#{section}\", \"brand\": \"#{brand}\"}"
       }
     }
   end
