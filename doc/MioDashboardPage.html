@@ -263,15 +263,15 @@
       <pre class="lines">
 
 
-30
 31
 32
 33
 34
-35</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_change_section'>change_section</span><span class='lparen'>(</span><span class='id identifier rubyid_section'>section</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_previous_feature'>previous_feature</span> <span class='op'>=</span> <span class='id identifier rubyid_current_feature_container_element'>current_feature_container_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_text'>text</span>
@@ -328,12 +328,12 @@
       <pre class="lines">
 
 
-23
 24
-25</pre>
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_displayed?'>displayed?</span>
   <span class='id identifier rubyid_wait_until'>wait_until</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_dashboard_container?'>dashboard_container?</span> <span class='rbrace'>}</span>
@@ -407,12 +407,12 @@
       <pre class="lines">
 
 
-41
 42
-43</pre>
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_dashboard_page.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_tab'>select_tab</span><span class='lparen'>(</span><span class='id identifier rubyid_section'>section</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_section'>section</span><span class='embexpr_end'>}</span><span class='tstring_content'>_tab_element</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
@@ -427,7 +427,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue May 31 14:59:22 2016 by
+  Generated on Wed Jun  1 13:58:34 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>
