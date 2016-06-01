@@ -1,0 +1,2 @@
+class CustomRequestData
+end
