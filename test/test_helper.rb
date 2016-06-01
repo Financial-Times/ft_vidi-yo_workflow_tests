@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'factory_girl'
 require_relative '../config/mio_constants'
 require_relative '../vcr_setup'

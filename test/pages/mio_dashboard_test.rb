@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../../lib/pages/mio_dashboard_page'
 require 'test-unit'
 require_relative '../mio_test'

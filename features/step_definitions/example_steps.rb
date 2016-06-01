@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 When(/^I run a tagged scenario$/) do
   $stdout.puts 'Hello, Tags!'
 end

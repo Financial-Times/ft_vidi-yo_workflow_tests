@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative 'fetch_panel_webservice_client'
 
 ##

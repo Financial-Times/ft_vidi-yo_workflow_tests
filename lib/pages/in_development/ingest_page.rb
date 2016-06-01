@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'page-object'
 require_relative '../mio_page'
 require_relative '../../../lib/web_service_clients/create_ingest_asset_webservice_client'
@@ -6,7 +7,7 @@ require_relative '../../../lib/web_service_clients/create_ingest_asset_webservic
 # PageObject for Ingest Assets page
 class IngestPage < MioPage
 
-  button :ingest_button,  id: 'TBC' # TODO: Replace with dynamic selector
+  button :ingest_button, id: 'TBC'
 
   define_page_elements(CreateIngestAssetWebserviceClient.new)
 

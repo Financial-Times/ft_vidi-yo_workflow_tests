@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 browser = Watir::Browser.new ENV['SESSION_BROWSER']
 
 Before do

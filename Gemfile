@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 
 group :test do
@@ -14,4 +15,5 @@ group :test do
   gem 'vcr'
   gem 'rspec'
   gem 'webmock'
+  gem 'simplecov'
 end

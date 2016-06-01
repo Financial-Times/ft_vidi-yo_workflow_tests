@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'test/unit'
 require_relative '../../test/data/ws_user'
 require_relative '../../lib/web_service_clients/fetch_panel_webservice_client'
@@ -5,7 +6,7 @@ require_relative '../test_helper'
 
 class FetchPanelClientTest < MioTest
 
-  TEST_FETCH_URL = "#{MioConstants::ROOT_URL}/api/metadataDefinitions/11312/definition".freeze
+  TEST_FETCH_URL = "#{MioConstants::ROOT_URL}/api/metadataDefinitions/11312/definition"
 
   def setup
     @mio_fetch_panels_client = FetchPanelWebserviceClient.new(WSUser.new, TEST_FETCH_URL)
@@ -41,13 +42,6 @@ class FetchPanelClientTest < MioTest
   def test_fetch_panel_description_by_id
     panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11_518)
     assert((panel_description.has_key? 'name'))
-  end
-
-  def test_fetch_panel_description_by_name
-    panel_description = @mio_fetch_panels_client.fetch_panel_description_by_name('publish-metadata')
-    assert((panel_description.has_key? 'definitionId'), 'Definition not returned')
-    assert(!panel_description['definition'].empty?, 'No definition data in definitions')
-    assert((panel_description['definition'].first.has_key? 'type'), 'No definition data in definitions')
   end
 
 end

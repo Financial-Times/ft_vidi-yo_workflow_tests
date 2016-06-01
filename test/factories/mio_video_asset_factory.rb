@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../../test/data/mio_video_asset'
 
 FactoryGirl.define do

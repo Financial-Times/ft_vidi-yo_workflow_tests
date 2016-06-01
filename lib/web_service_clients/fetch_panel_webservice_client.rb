@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'rest-client'
 require_relative 'mio_webservice_client'
 require_relative 'metadata_description_webservice_client'
@@ -30,16 +31,14 @@ class FetchPanelWebserviceClient < MioWebserviceClient
     definitions
   end
 
-  # Extracts elements of given type (text, single-option etc), stores in Hash
+  # Takes a metadata definition id and returns description data
   #
-  # @param type [String] requested element type to extract and store
-  # @return [Hash] stored elements of requested type
-  def extract_elements(type)
-    elements = {}
-    extract_panel_elements.each do |key, value|
-      elements[key] = value if value == type
-    end
-    elements
+  # @param id [String] id of element
+  # @return [Hash] element
+  def fetch_panel_description_by_id(id)
+    mio_client = MioWebserviceClient.new(WSUser.new,
+                                         "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition")
+    mio_client.retrieve_resource
   end
 
   # Wrapper method to retrieve text field elements from description metadata
@@ -84,23 +83,18 @@ class FetchPanelWebserviceClient < MioWebserviceClient
     retrieve_resource['definition']
   end
 
-  # Takes a metadata definition id and returns description data
-  #
-  # @param id [String] id of element
-  # @return [Hash] element
-  def fetch_panel_description_by_id(id)
-    mio_client = MioWebserviceClient.new(WSUser.new,
-                                         "#{MioConstants::ROOT_URL}/api/metadataDefinitions/#{id}/definition")
-    mio_client.retrieve_resource
-  end
+  private
 
-  # Takes a metadata definition name and returns description for that element
+  # Extracts elements of given type (text, single-option etc), stores in Hash
   #
-  # @param name [String] name of element
-  # @return [Hash] element
-  def fetch_panel_description_by_name(name)
-    @mio_metadata_service = MetadataDescriptionWebserviceClient.new
-    fetch_panel_description_by_id(@mio_metadata_service.retrieve_id_with_name(name))
+  # @param type [String] requested element type to extract and store
+  # @return [Hash] stored elements of requested type
+  def extract_elements(type)
+    elements = {}
+    extract_panel_elements.each do |key, value|
+      elements[key] = value if value == type
+    end
+    elements
   end
 
 end

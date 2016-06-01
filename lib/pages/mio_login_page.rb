@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative 'mio_page'
 require_relative '../../config/mio_constants'
 

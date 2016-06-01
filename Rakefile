@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
@@ -20,10 +21,14 @@ Cucumber::Rake::Task.new(:example, 'Example features') do |t|
   t.profile = 'example'
 end
 
-RSpec::Core::RakeTask.new(:spec)
+Rake::TestTask.new(:unit_tests) do |t|
+  t.libs << 'test'
+  t.test_files = FileList['test/**/*_test.rb']
+end
 
 Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList['test/test*.rb']
-  t.verbose = true
+  t.libs << 'spec'
+  t.name = 'integration_tests'
+  t.warning = true
+  t.test_files = FileList['spec/*_spec.rb']
 end

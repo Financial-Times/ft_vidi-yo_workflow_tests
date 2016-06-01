@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'test/unit'
 require_relative '../test_helper'
 require_relative '../../config/mio_constants'

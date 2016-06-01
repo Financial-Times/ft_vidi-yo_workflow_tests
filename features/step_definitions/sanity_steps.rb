@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 When(/^I log in to Mio$/) do
   (visit MioLoginPage).log_in
   expect((on MioDashboardPage).displayed?).to be_truthy, 'Login failed'

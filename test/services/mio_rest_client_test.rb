@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'test/unit'
 require 'rest-client'
 require_relative '../test_helper'

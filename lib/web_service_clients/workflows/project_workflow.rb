@@ -1,5 +1,5 @@
+# frozen_string_literal: true
 require_relative '../workflow_clients/project_workflow_webservice_client'
-
 
 ##
 # Project Workflow
@@ -48,7 +48,7 @@ class ProjectWorkflow
   # @return [Hash] project definition
   def definition(url)
     MioWebserviceClient.new(WSUser.new, url)
-        .retrieve_resource
+                       .retrieve_resource
   end
 
   ##

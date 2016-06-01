@@ -1,7 +1,8 @@
+# frozen_string_literal: true
 load('initialise.rb')
 
-USERNAME = 'masteruser'.freeze
-PASSWORD = 'masteruser'.freeze
+USERNAME = 'masteruser'
+PASSWORD = 'masteruser'
 
 @browser.text_field(id: 'j_username').set USERNAME
 @browser.text_field(id: 'j_password').set PASSWORD

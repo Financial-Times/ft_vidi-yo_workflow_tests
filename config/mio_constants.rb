@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 require 'yaml'
 
 module MioConstants
 
   execution_environment ||= :dev
-  REPORTS ||= '../../reports'.freeze
+  REPORTS ||= '../../reports'
   CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
   ENVIRONMENT_CONFIG ||= CONFIG[execution_environment]
   ROOT_URL ||= ENVIRONMENT_CONFIG[:url]

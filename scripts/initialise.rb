@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'watir-webdriver'
 ENV['SESSION_BROWSER'] = 'firefox'
 @browser = ENV['SESSION_BROWSER']

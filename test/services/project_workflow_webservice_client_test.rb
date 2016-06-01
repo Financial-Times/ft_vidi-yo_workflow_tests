@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'test/unit'
 require_relative '../../lib/web_service_clients/workflows/project_workflow'
 
@@ -26,6 +27,5 @@ class ProjectWorkflowWebserviceClientTest < Test::Unit::TestCase
   def test_workflow_has_an_id
     assert_kind_of(Fixnum, @project_workflow.id)
   end
-
 
 end

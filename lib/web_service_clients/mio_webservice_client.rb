@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'vcr'
 require 'rest-client'
 require_relative '../../config/mio_constants'
@@ -16,7 +17,7 @@ class MioWebserviceClient
   def initialize(user, url)
     @username = user.username
     @password = user.password
-    @headers = {'Accept' => 'application/json', 'Content-Type' => 'application/vnd.nativ.mio.v1+json'}
+    @headers = {Accept: 'application/json', 'Content-Type': 'application/vnd.nativ.mio.v1+json'}
     @url = url
   end
 
@@ -28,7 +29,7 @@ class MioWebserviceClient
     VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
-        raise "Retrieve resource #{definition_id} request failed"  unless HTTP_SUCCESS_CODES.cover? response.code
+        raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
         JSON.parse(response)
       end
     end
@@ -40,11 +41,11 @@ class MioWebserviceClient
   # @return [Hash] of requested object
   def create_resource(payload)
     puts "#{@object_type} created"
-     VCR.use_cassette("create_#{@object_type}") do
-       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
-                                  :content_type => 'text/plain', headers: @headers, payload: payload.to_json) do |response|
-         raise "Create #{@object_type} request failed"  unless HTTP_SUCCESS_CODES.cover? response.code
-         JSON.parse(response)
+    VCR.use_cassette("create_#{@object_type}") do
+      RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
+                                content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
+        raise "Create #{@object_type} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
+        JSON.parse(response)
       end
     end
   end
@@ -56,9 +57,8 @@ class MioWebserviceClient
   def random_string(length)
     # TODO: Doesn't really belong in here
     string = ''
-    length.times{string = string + ('a'..'z').to_a.sample}
+    length.times { string += ('a'..'z').to_a.sample }
     string
   end
 
 end
-

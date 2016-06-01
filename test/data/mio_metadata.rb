@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class MioMetadata
 
   attr_accessor :ft_office, :producer, :freelance_producer, :has_restrictions, :no_restrictions, :restriction_description,
