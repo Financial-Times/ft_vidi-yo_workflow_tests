@@ -6,8 +6,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
-        \"ztfyiz\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":
-        \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
+        \"vrmnch\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
     headers:
       Accept:
       - application/json
@@ -16,7 +16,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '244'
+      - '245'
       User-Agent:
       - Ruby
       Authorization:
@@ -27,7 +27,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Tue, 31 May 2016 13:51:10 GMT
+      - Wed, 01 Jun 2016 16:25:53 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -39,9 +39,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=aCBY4RYJDF8dgtzBPTVQs4I2.-201388908; Path=/api; Secure
+      - JSESSIONID=DWMo906uj+jiEnASp+9+5fFw.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/13425
+      - https://master.dev.nativ-systems.com/api/workflows/13694
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -50,8 +50,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":13425,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/13425","status":"Running","start":"31
-        May 2016 13:51:12 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":13694,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/13694","status":"Running","start":"01
+        Jun 2016 16:25:54 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Tue, 31 May 2016 13:51:00 GMT
+  recorded_at: Wed, 01 Jun 2016 16:25:42 GMT
 recorded_with: VCR 3.0.3

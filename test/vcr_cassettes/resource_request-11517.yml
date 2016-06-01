@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 31 May 2016 13:51:05 GMT
+      - Wed, 01 Jun 2016 16:25:51 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=yXRVVIxT1sLpBa+qrCOrdyG0.-201388908; Path=/api; Secure
+      - JSESSIONID=TxCEGnnrud3E6ifjGKjamgRX.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -60,5 +60,5 @@ http_interactions:
         Writer 3","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":100,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107852,"name":"restrictions","displayName":"Restrictions","description":null,"type":"boolean","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"checkbox","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107853,"name":"true","displayName":"true","default":false,"value":"true"},{"id":107854,"name":"false","displayName":"false","default":true,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":false,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":400,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 31 May 2016 13:50:55 GMT
+  recorded_at: Wed, 01 Jun 2016 16:25:40 GMT
 recorded_with: VCR 3.0.3
