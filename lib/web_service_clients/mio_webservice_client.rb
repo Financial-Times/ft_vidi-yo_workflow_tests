@@ -2,6 +2,7 @@
 require 'vcr'
 require 'rest-client'
 require_relative '../../config/mio_constants'
+require_relative '../../test/data/custom_request_data'
 
 ##
 # Generic client for Mio Web Service
@@ -48,17 +49,6 @@ class MioWebserviceClient
         JSON.parse(response)
       end
     end
-  end
-
-  ##
-  # Generates a random url.
-  #
-  # @return [String]
-  def random_string(length)
-    # TODO: Doesn't really belong in here
-    string = ''
-    length.times { string += ('a'..'z').to_a.sample }
-    string
   end
 
 end

@@ -2,6 +2,7 @@
 require_relative 'workflow_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../config/mio_constants'
+require_relative '../../../test/data/custom_request_data'
 
 ##
 # Handles creation of Project Workflows
@@ -41,13 +42,15 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # Builds the payload to create a project workflow
   #
   # @param project_name [String] project name. Must be unique within mio
+  # @param section [String] url
+  # @param brand [String] url
   # @return [Hash] payload for RestClient to convert to JSON and pass to Mio to create workflow
   # noinspection RubyInstanceMethodNamingConvention
   def create_project_workflow_payload(project_name=nil, section=nil,
-                                        brand=nil)
-    project_name ||= random_string(6)
+                                      brand=nil)
+    project_name ||= CustomRequestData.random_string(6)
     section ||= MioConstants::DEFAULT_SECTION
-    brand ||=  MioConstants::DEFAULT_BRAND
+    brand ||= MioConstants::DEFAULT_BRAND
 
     {
       definitionId:    12_387,

@@ -29,7 +29,9 @@ class ProjectWorkflowTest < Test::Unit::TestCase
   end
 
   def test_can_create_default_payload
-    payload = @project_workflow.payload
+    default_payload = @project_workflow.default_payload
+    assert_kind_of(Hash, default_payload)
+    assert(default_payload.has_key?(:stringVariables))
   end
 
 end

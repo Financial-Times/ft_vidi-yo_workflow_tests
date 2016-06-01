@@ -69,4 +69,12 @@ class ProjectWorkflow
     self
   end
 
+  ##
+  # Stores default payload from client
+  #
+  # @return [Hash] request payload
+  def default_payload
+    ProjectWorkflowWebserviceClient.new.create_project_workflow_payload
+  end
+
 end
