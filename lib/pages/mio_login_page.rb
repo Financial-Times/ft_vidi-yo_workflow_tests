@@ -7,7 +7,7 @@ require_relative '../../config/mio_constants'
 # @deprecated legacy page
 class MioLoginPage < MioPage
 
-  page_url MioConstants::ROOT_URL
+  page_url MioConstants::MIO_ROOT_URL
 
   text_field  :username_field, id: 'j_username'
   text_field  :password_field, id: 'j_password'
@@ -17,12 +17,12 @@ class MioLoginPage < MioPage
   # Complete login form
   #
   # @param user [Hash] user credentials
-  #       :mio_username [String]
-  #       :mio_password [String]
+  #       :username [String]
+  #       :password [String]
   def log_in(user=MioConstants::ADMIN_USER)
     true if @browser.link(title: 'Logout').present?
-    self.username_field = user[:mio_username]
-    self.password_field = user[:mio_password]
+    self.username_field = user[:username]
+    self.password_field = user[:password]
     submit_button
   end
 

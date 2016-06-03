@@ -9,7 +9,7 @@ class CreateWorkflowTest < MioTest
   end
 
   def test_create_project_workflow
-    response = ProjectWorkflowWebserviceClient.new(WSUser.new, "#{MioConstants::ROOT_URL}/api/workflows/")
+    response = ProjectWorkflowWebserviceClient.new(WSUser.new, "#{MioConstants::MIO_ROOT_URL}/api/workflows/")
                                               .create_project_workflow
     puts response
     assert_respond_to(response, :each_value)

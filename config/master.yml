@@ -1,7 +1,8 @@
 ---
 :dev:
     :url: https://master.dev.nativ-systems.com
+    :ft_url: localhost:3131
     :admin_user:
-        :mio_username: masteruser
-        :mio_password: masteruser
+        :username: masteruser
+        :password: masteruser
 

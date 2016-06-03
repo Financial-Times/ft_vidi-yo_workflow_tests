@@ -8,7 +8,7 @@ require_relative '../../../test/data/custom_request_data'
 # Handles creation of Project Workflows
 class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
 
-  def initialize(user=WSUser.new, url="#{MioConstants::ROOT_URL}/api/workflows/")
+  def initialize(user=WSUser.new, url="#{MioConstants::MIO_ROOT_URL}/api/workflows/")
     super
     @object_type = :project_workflow
     @url = url
