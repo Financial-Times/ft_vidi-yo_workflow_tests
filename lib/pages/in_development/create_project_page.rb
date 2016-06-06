@@ -8,6 +8,13 @@ class CreateProjectPage < MioPage
 
   define_page_elements(CreateProjectPanelWebserviceClient.new)
 
-  button(:create_project, id: 'TBC')
+  button(:submit_project, text: 'submit')
+
+  def create_project(project_name)
+    self.wait_until{project?}
+    project_element.when_present.value =  project_name
+    submit_project
+    Logger.new($stdout).warn('Assert not yet possible on Create Project page')
+  end
 
 end

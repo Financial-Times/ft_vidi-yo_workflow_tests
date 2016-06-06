@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+ENV['SESSION_BROWSER'] ||= 'firefox'
 browser = Watir::Browser.new ENV['SESSION_BROWSER']
 
 Before do

@@ -5,9 +5,10 @@ Watir.default_timeout = 5
 
 def log_in
   @browser.goto 'http://localhost:3131/browser'
-  @browser.link(href: /logout/).click
-  @browser.link(href: /login/).click
+  @browser.link(href: /logout/).when_present.click
+  @browser.link(href: /login/).when_present.click
   @browser.text_field(id: /Username/).set 'hello'
   @browser.text_field(id: /Password/).set 'hello'
   @browser.div(id: 'handler__login').button.click
+  sleep 1
 end

@@ -26,6 +26,10 @@ class CreateVideoProjectPageTest < MioTest
     end
   end
 
+  def test_has_submit_button
+    assert_respond_to(@create_project_page, :submit_project_element)
+  end
+
   def teardown
     @browser.close
   end
