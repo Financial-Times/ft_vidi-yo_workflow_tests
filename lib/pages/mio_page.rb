@@ -11,11 +11,21 @@ class MioPage
   element :test_element, id: 'textarea-test_element'
 
 
+  ##
+  # Extracts element type from Panel format IDs
+  #
+  # @param [String] ID tag of element <element id=<ID>
+  # @return String
   def self.element_type(element_id_value)
     puts element_id_value.split('-', 2)[0]
     element_id_value.split('-', 2)[0]
   end
 
+  ##
+  # Extracts element ID name from Panel format IDs
+  #
+  # @param [String] ID tag of element <element id=<ID>
+  # @return String
   def self.element_id(element_id_value)
     puts element_id_value.split('-', 2)[1]
     element_id_value.split('-', 2)[1]

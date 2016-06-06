@@ -10,11 +10,16 @@ class CreateProjectPage < MioPage
 
   button(:submit_project, text: 'submit')
 
+  ##
+  # Creates a bare-bones project in the web interface
+  #
+  # @param [String] project_name
+  # @return [TrueClass]
   def create_project(project_name)
     self.wait_until{project?}
     project_element.when_present.value =  project_name
-    submit_project
     Logger.new($stdout).warn('Assert not yet possible on Create Project page')
+    submit_project
   end
 
 end

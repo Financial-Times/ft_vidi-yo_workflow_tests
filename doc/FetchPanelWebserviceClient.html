@@ -6,7 +6,7 @@
 <title>
   Class: FetchPanelWebserviceClient
   
-    &mdash; Documentation by YARD 0.8.7.6
+    &mdash; Documentation by YARD 0.8.7.4
   
 </title>
 
@@ -73,12 +73,12 @@
   
     <dt class="r1">Inherits:</dt>
     <dd class="r1">
-      <span class="inheritName"><span class='object_link'><a href="MioWebserviceClient.html" title="MioWebserviceClient (class)">MioWebserviceClient</a></span></span>
+      <span class="inheritName">MioWebserviceClient</span>
       
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next"><span class='object_link'><a href="MioWebserviceClient.html" title="MioWebserviceClient (class)">MioWebserviceClient</a></span></li>
+            <li class="next">MioWebserviceClient</li>
           
             <li class="next">FetchPanelWebserviceClient</li>
           
@@ -378,17 +378,6 @@ description metadata.</p>
   
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioWebserviceClient.html" title="MioWebserviceClient (class)">MioWebserviceClient</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioWebserviceClient.html#create_resource-instance_method" title="MioWebserviceClient#create_resource (method)">#create_resource</a></span>, <span class='object_link'><a href="MioWebserviceClient.html#retrieve_resource-instance_method" title="MioWebserviceClient#retrieve_resource (method)">#retrieve_resource</a></span></p>
-
   <div id="constructor_details" class="method_details_list">
   <h2>Constructor Details</h2>
   
@@ -509,7 +498,7 @@ description metadata.</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_build_url_for_data_definition'>build_url_for_data_definition</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='const'>MetadataDescriptionWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'>WSUser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_retrieve_id_with_name'>retrieve_id_with_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
-  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>ROOT_URL</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/metadataDefinitions/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/definition</span><span class='tstring_end'>&quot;</span></span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>MIO_ROOT_URL</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/metadataDefinitions/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/definition</span><span class='tstring_end'>&quot;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -929,7 +918,7 @@ description metadata</p>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_fetch_panel_description_by_id'>fetch_panel_description_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_mio_client'>mio_client</span> <span class='op'>=</span> <span class='const'>MioWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'>WSUser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='comma'>,</span>
-                                       <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>ROOT_URL</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/metadataDefinitions/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/definition</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+                                       <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>MIO_ROOT_URL</span><span class='embexpr_end'>}</span><span class='tstring_content'>/api/metadataDefinitions/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/definition</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_mio_client'>mio_client</span><span class='period'>.</span><span class='id identifier rubyid_retrieve_resource'>retrieve_resource</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -996,9 +985,9 @@ description metadata</p>
 </div>
 
     <div id="footer">
-  Generated on Wed Jun  1 16:58:04 2016 by
+  Generated on Mon Jun  6 16:30:45 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.6 (ruby-2.3.0).
+  0.8.7.4 (ruby-2.0.0).
 </div>
 
   </body>
