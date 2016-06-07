@@ -2,7 +2,7 @@
 require 'page-object'
 require_relative '../mio_page'
 require_relative '../../../lib/web_service_clients/create_ingest_asset_webservice_client'
-require_relative '../../../test/factories/mio_video_asset_factory'
+require_relative '../../../test/factories/video_asset_factory'
 
 ##
 # PageObject for Ingest Assets page
@@ -20,9 +20,9 @@ class IngestPage < MioPage
     interviewee_element.when_present.value = asset.interviewee
     freelance_producer_element.when_present.value = asset.freelance_producer
     reporter_1_element.when_present.value = asset.reporter_writer_1
-    Logger.new($stdout).warn("Bug on restrictions buttons: can't access at present")
+    Logger.new($stderr).warn("Bug on restrictions buttons: can't access at present")
     ingest_button
-    Logger.new($stdout).warn('Assert not yet possible on Ingest page')
+    Logger.new($stderr).warn('Assert not yet possible on Ingest page')
   end
 
 end

@@ -18,7 +18,7 @@ class CreateProjectPage < MioPage
   def create_project(project_name)
     wait_until { project? }
     project_element.when_present.value = project_name
-    Logger.new($stdout).warn('Assert not yet possible on Create Project page')
+    Logger.new($stderr).warn('Assert not yet possible on Create Project page')
     submit_project_element.when_present.click
   end
 

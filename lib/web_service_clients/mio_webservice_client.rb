@@ -31,6 +31,7 @@ class MioWebserviceClient
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
         raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
+        Logger.new($stdout).info "WS request successful - resource_request-#{definition_id}"
         JSON.parse(response)
       end
     end
@@ -41,11 +42,11 @@ class MioWebserviceClient
   # @param payload [Hash] :payload for POST request, to be converted to JSON by RestClient
   # @return [Hash] of requested object
   def create_resource(payload)
-    puts "#{@object_type} created"
     VCR.use_cassette("create_#{@object_type}") do
       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                 content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
         raise "Create #{@object_type} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
+        Logger.new($stdout).info "#{@object_type} created"
         JSON.parse(response)
       end
     end

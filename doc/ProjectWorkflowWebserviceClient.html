@@ -563,14 +563,12 @@ workflow</p>
 57
 58
 59
-60
-61</pre>
+60</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflow_clients/project_workflow_webservice_client.rb', line 49</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_create_project_workflow_payload'>create_project_workflow_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_project_name'>project_name</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_section'>section</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span>
-                                    <span class='id identifier rubyid_brand'>brand</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_create_project_workflow_payload'>create_project_workflow_payload</span><span class='lparen'>(</span><span class='id identifier rubyid_project_name'>project_name</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_section'>section</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_brand'>brand</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_project_name'>project_name</span> <span class='op'>||=</span> <span class='const'>CustomRequestData</span><span class='period'>.</span><span class='id identifier rubyid_random_string'>random_string</span><span class='lparen'>(</span><span class='int'>6</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_section'>section</span> <span class='op'>||=</span> <span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>DEFAULT_SECTION</span>
   <span class='id identifier rubyid_brand'>brand</span> <span class='op'>||=</span> <span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>DEFAULT_BRAND</span>
@@ -668,7 +666,7 @@ workflow</p>
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 15:41:50 2016 by
+  Generated on Tue Jun  7 17:16:54 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>

@@ -104,6 +104,8 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
+<p>frozen_string_literal: true</p>
+
 <p>PageObject for ingteracting with Login form</p>
 
 
@@ -164,7 +166,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span>, <span class='object_link'><a href="MioPage.html#select_option-instance_method" title="MioPage#select_option (method)">#select_option</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span></p>
 
   
 
@@ -233,17 +235,17 @@
       <pre class="lines">
 
 
-20
 21
 22
 23
 24
 25
 26
-27</pre>
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ft_login_page.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ft_login_page.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_log_in'>log_in</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='const'>MioConstants</span><span class='op'>::</span><span class='const'>ADMIN_USER</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_log_out_button_element'>log_out_button_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
@@ -251,7 +253,7 @@
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='lbracket'>[</span><span class='symbol'>:username</span><span class='rbracket'>]</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='lbracket'>[</span><span class='symbol'>:password</span><span class='rbracket'>]</span>
   <span class='id identifier rubyid_login_button'>login_button</span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stdout</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Login page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Login page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -263,7 +265,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 15:41:49 2016 by
+  Generated on Tue Jun  7 17:16:54 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>

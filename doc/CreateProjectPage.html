@@ -164,7 +164,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span>, <span class='object_link'><a href="MioPage.html#select_option-instance_method" title="MioPage#select_option (method)">#select_option</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span></p>
 
   
 
@@ -237,9 +237,9 @@
       <pre class="code"><span class="info file"># File 'lib/pages/in_development/create_project_page.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_project'>create_project</span><span class='lparen'>(</span><span class='id identifier rubyid_project_name'>project_name</span><span class='rparen'>)</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_wait_until'>wait_until</span><span class='lbrace'>{</span><span class='id identifier rubyid_project?'>project?</span><span class='rbrace'>}</span>
-  <span class='id identifier rubyid_project_element'>project_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span>  <span class='id identifier rubyid_project_name'>project_name</span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stdout</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Create Project page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_wait_until'>wait_until</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_project?'>project?</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_project_element'>project_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_project_name'>project_name</span>
+  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Create Project page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_submit_project_element'>submit_project_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -252,7 +252,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 15:41:49 2016 by
+  Generated on Tue Jun  7 17:16:54 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>

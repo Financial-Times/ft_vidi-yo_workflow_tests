@@ -14,7 +14,6 @@ def log_in
 end
 
 def select_item(section, value, _sleep=0)
-  puts value
   @browser.div(id: Regexp.new(section)).when_present.click
   @browser.span(text: value).when_present.click
   sleep 0.424

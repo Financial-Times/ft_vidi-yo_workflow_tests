@@ -7,7 +7,7 @@ require_relative '../../config/mio_constants'
 class MioPublishVideoTest < MioTest
 
   def setup
-    @mio_export_video = FactoryGirl.build :mio_export_video
+    @mio_export_video = FactoryGirl.build :publish_video
   end
 
   # TODO: Refactor to loop to avoid repetition - service not ready yet

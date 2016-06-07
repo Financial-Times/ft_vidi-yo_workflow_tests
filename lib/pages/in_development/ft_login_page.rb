@@ -24,7 +24,7 @@ class FTLoginPage < MioPage
     self.username = user[:username]
     self.password = user[:password]
     login_button
-    Logger.new($stdout).warn('Assert not yet possible on Login page')
+    Logger.new($stderr).warn('Assert not yet possible on Login page')
   end
 
 end

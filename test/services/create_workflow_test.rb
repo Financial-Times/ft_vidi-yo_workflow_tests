@@ -11,7 +11,7 @@ class CreateWorkflowTest < MioTest
   def test_create_project_workflow
     response = ProjectWorkflowWebserviceClient.new(WSUser.new, "#{MioConstants::MIO_ROOT_URL}/api/workflows/")
                                               .create_project_workflow
-    puts response
+    Logger.new($stdout).info response
     assert_respond_to(response, :each_value)
     assert(!(response.has_key? 'errors'))
     assert response.has_key? 'href'

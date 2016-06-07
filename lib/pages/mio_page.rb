@@ -16,7 +16,6 @@ class MioPage
   # @param [String] ID tag of element <element id=<ID>
   # @return String
   def self.element_type(element_id_value)
-    puts element_id_value.split('-', 2)[0]
     element_id_value.split('-', 2)[0]
   end
 
@@ -26,7 +25,6 @@ class MioPage
   # @param [String] ID tag of element <element id=<ID>
   # @return String
   def self.element_id(element_id_value)
-    puts element_id_value.split('-', 2)[1]
     element_id_value.split('-', 2)[1]
   end
 
@@ -68,7 +66,7 @@ class MioPage
     # @return PageObject::Element::URL
     webservice_client.extract_url_elements.each_key do |name|
       element_name = name.tr('-', '_')
-      element(element_name, id: Regexp.new(name))
+      text_field(element_name, id: Regexp.new(name))
     end
   end
 

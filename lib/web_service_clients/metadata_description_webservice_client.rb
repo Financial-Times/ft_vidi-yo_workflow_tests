@@ -18,6 +18,7 @@ class MetadataDescriptionWebserviceClient
     VCR.use_cassette('metadata_description') do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
         @response = response
+        Logger.new($stdout).info 'WS request sueccssful: metadata description retrieved'
         JSON.parse(response)
       end
     end

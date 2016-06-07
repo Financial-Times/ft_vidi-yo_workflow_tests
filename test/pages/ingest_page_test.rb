@@ -24,7 +24,6 @@ class IngestPageTest < MioTest
     @ingest_assets_form_attributes.each_key do |attribute|
       attribute_name = attribute.tr('-', '_')
       element = "#{attribute_name}_element".to_sym
-      puts element
       assert_respond_to(@ingest_assets_page, element)
     end
   end
