@@ -16,4 +16,5 @@ group :test do
   gem 'rspec'
   gem 'webmock'
   gem 'simplecov'
+  gem 'byebug'
 end
