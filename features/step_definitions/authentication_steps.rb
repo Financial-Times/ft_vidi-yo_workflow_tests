@@ -7,7 +7,7 @@ When(/^I log in(?: to the browser panel)?$/) do
 end
 
 When(/^I log in to the prelude panel$/) do
-  visit FTLoginPage, using_params: {panel: 'browser'} do |page|
+  visit FTLoginPage, using_params: {panel: 'prelude'} do |page|
     page.log_in
   end
 end

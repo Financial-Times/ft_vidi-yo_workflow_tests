@@ -32,28 +32,35 @@ class MioPage
   end
 
   # Retrieves element descriptions from web service and defines them as
-  # PageObject::Accessors
-  # Takes a MioFetchPanelWebserviceClient object
+  # PageObject::Elements
+  #
+  # @param a webservice_client [MioFetchPanelWebserviceClient]
+  # @return PageObject::Element::TextArea
   def self.define_page_elements(webservice_client)
     webservice_client.extract_text_field_elements.each_key do |name|
-      textarea(name, id: Regexp.new(name))
-    end
-
-    webservice_client.extract_selector_elements.each_key do |name|
-      select_list(name, id: Regexp.new(name))
-    end
-
-    webservice_client.extract_url_elements.each_key do |name|
-      link(name, id: Regexp.new(name))
-    end
-
-    webservice_client.extract_boolean_elements.each_key do |name|
-      element(name, id: 'TBC') # TBC - depends on implementation
-    end
-
-    webservice_client.extract_image_elements.each_key do |name|
-      image(name, id: Regexp.new(name))
-    end
+      element_name = name.gsub('-', '_')
+      textarea(element_name, id: Regexp.new(name))
   end
+
+  # @return PageObject::Element::SelectList
+  webservice_client.extract_selector_elements.each_key do |name|
+    select_list(name, id: Regexp.new(name))
+  end
+
+  # @return PageObject::Element::Link
+  webservice_client.extract_url_elements.each_key do |name|
+    link(name, id: Regexp.new(name))
+  end
+
+  # @return PageObject::Element
+  webservice_client.extract_boolean_elements.each_key do |name|
+    element(name, id: 'TBC') # TBC - depends on implementation
+  end
+
+  # @return PageObject::Element::Image
+  webservice_client.extract_image_elements.each_key do |name|
+    image(name, id: Regexp.new(name))
+  end
+end
 
 end
