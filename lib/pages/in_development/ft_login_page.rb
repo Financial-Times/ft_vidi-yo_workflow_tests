@@ -3,7 +3,7 @@
 #
 class FTLoginPage < MioPage
 
-  page_url MioConstants::FT_ROOT_URL + '/browser'
+  page_url "#{MioConstants::FT_ROOT_URL}/<%=params[:panel]%>"
 
   link(:log_in_button, href: /login/)
   link(:log_out_button, href: /logout/)
