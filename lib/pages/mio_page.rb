@@ -39,7 +39,8 @@ class MioPage
   def self.define_page_elements(webservice_client)
     webservice_client.extract_text_field_elements.each_key do |name|
       element_name = name.gsub('-', '_')
-      textarea(element_name, id: Regexp.new(name))
+      element = textarea(element_name, id: Regexp.new(name))
+      element
   end
 
   # @return PageObject::Element::SelectList

@@ -26,8 +26,7 @@ class FetchPanelWebserviceClient < MioWebserviceClient
   def extract_panel_elements
     definitions = {}
     retrieve_panel_definitions.each do |element|
-      element_name = element['name'].gsub('-', '_')
-      definitions[element_name] = element['type']
+      definitions[element['name']] = element['type']
     end
     definitions
   end
