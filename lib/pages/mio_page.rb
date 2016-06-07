@@ -41,27 +41,33 @@ class MioPage
       element_name = name.gsub('-', '_')
       element = textarea(element_name, id: Regexp.new(name))
       element
+    end
+
+    webservice_client.extract_selector_elements.each_key do |name|
+      element_name = name.gsub('-', '_')
+      div(element_name + 'div', id: Regexp.new(name))
+      sl = div(element_name){self.method("#{element_name}div_element").call.div(id: /undefined/)}
+      sl
+    end
+
+    # @return PageObject::Element::Link
+    webservice_client.extract_url_elements.each_key do |name|
+      link(name, id: Regexp.new(name))
+    end
+
+    # @return PageObject::Element
+    webservice_client.extract_boolean_elements.each_key do |name|
+      element(name, id: 'TBC') # TBC - depends on implementation
+    end
+
+    # @return PageObject::Element::Image
+    webservice_client.extract_image_elements.each_key do |name|
+      image(name, id: Regexp.new(name))
+    end
   end
 
-  # @return PageObject::Element::SelectList
-  webservice_client.extract_selector_elements.each_key do |name|
-    select_list(name, id: Regexp.new(name))
+  def select_option(selector)
+    selector.click
   end
-
-  # @return PageObject::Element::Link
-  webservice_client.extract_url_elements.each_key do |name|
-    link(name, id: Regexp.new(name))
-  end
-
-  # @return PageObject::Element
-  webservice_client.extract_boolean_elements.each_key do |name|
-    element(name, id: 'TBC') # TBC - depends on implementation
-  end
-
-  # @return PageObject::Element::Image
-  webservice_client.extract_image_elements.each_key do |name|
-    image(name, id: Regexp.new(name))
-  end
-end
 
 end

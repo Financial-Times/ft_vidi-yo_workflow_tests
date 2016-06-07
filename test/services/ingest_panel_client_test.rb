@@ -21,7 +21,7 @@ class IngestPanelClientTest < MioTest
   def test_extract_ingest_asset_panel_elements
     ingest_panel_elements = @mio_ingest_assets_panel_client.extract_panel_elements
     assert_kind_of(Hash, ingest_panel_elements)
-    assert(ingest_panel_elements.has_key?('clip_description') || ingest_panel_elements.has_key?('text'),
+    assert(ingest_panel_elements.has_key?('clip-description') || ingest_panel_elements.has_key?('text'),
            'Does not have expected element (clip-description => text)')
   end
 

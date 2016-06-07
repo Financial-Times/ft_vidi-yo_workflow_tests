@@ -22,7 +22,8 @@ class PublishVideoPageTest < MioTest
 
   def test_has_attributes
     @publish_video_project_form_attributes.each_key do |attribute|
-      assert_respond_to(@publish_video_page, "#{attribute}_element")
+      attribute_name = attribute.gsub('-', '_')
+      assert_respond_to(@publish_video_page, "#{attribute_name}_element")
     end
   end
 
