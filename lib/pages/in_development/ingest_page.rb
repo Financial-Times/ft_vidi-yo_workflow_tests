@@ -16,10 +16,10 @@ class IngestPage < MioPage
   #
   # @param asset [MioVideoAsset]
   def create_ingestion(asset=FactoryGirl.build(:default_mio_video_asset))
-    self.clip_description_element.when_present.value = asset.description
-    self.interviewee_element.when_present.value = asset.interviewee
-    self.freelance_producer_element.when_present.value = asset.freelance_producer
-    self.reporter_1_element.when_present.value = asset.reporter_writer_1
+    clip_description_element.when_present.value = asset.description
+    interviewee_element.when_present.value = asset.interviewee
+    freelance_producer_element.when_present.value = asset.freelance_producer
+    reporter_1_element.when_present.value = asset.reporter_writer_1
     Logger.new($stdout).warn("Bug on restrictions buttons: can't access at present")
     ingest_button
     Logger.new($stdout).warn('Assert not yet possible on Ingest page')

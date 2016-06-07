@@ -366,8 +366,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     </div>
     <div class="information">
       <div class="infobox">
-        57 files inspected,
-        2 offenses detected
+        65 files inspected,
+        58 offenses detected
       </div>
     </div>
     <div id="offenses">
@@ -379,6 +379,563 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../features/step_definitions/authentication_steps.rb - 4 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">#</span> Params solution is temporary: login page will be separate in the final rendered panels</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #4</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Pass <code>&:log_in</code> as an argument to <code>visit</code> instead of a block.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: {panel: &#39;browser&#39;} <span class="highlight convention">do |page|</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #10</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Pass <code>&:log_in</code> as an argument to <code>visit</code> instead of a block.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: {panel: &#39;prelude&#39;} <span class="highlight convention">do |page|</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #16</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Pass <code>&:log_in</code> as an argument to <code>visit</code> instead of a block.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: {panel: &#39;premiere&#39;} <span class="highlight convention">do |page|</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../features/step_definitions/ingestion_steps.rb - 2 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">T</span>hen(/^I create an ingestion$/) do</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #3</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>end<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../features/step_definitions/project_steps.rb - 4 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">W</span>hen(/^I create a project$/) do</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #2</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Surrounding space missing for operator <code>=</code>.</span>
+            </div>
+            
+            <pre><code>  CreateProjectPage.new(@browser, visit<span class="highlight convention">=</span>false).create_project(&#39;TEST&#39;)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #3</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>end<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #3</span> –
+              <span class="severity warning">warning:</span>
+              <span class="message">Useless assignment to variable - <code>visit</code>.</span>
+            </div>
+            
+            <pre><code>  CreateProjectPage.new(@browser, <span class="highlight warning">visit</span> = false).create_project(&#39;TEST&#39;)</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../features/step_definitions/publish_steps.rb - 2 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">T</span>hen(/^I can publish a project$/) do</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #3</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>end<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/create_project_page.rb - 6 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">self.wait_until</span>{project?}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing to the left of {.</span>
+            </div>
+            
+            <pre><code>    self.wait_until<span class="highlight convention">{</span>project?}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside {.</span>
+            </div>
+            
+            <pre><code>    self.wait_until{<span class="highlight convention">p</span>roject?}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside }.</span>
+            </div>
+            
+            <pre><code>    self.wait_until{project?<span class="highlight convention">}</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #20</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Operator <code>=</code> should be surrounded by a single space.</span>
+            </div>
+            
+            <pre><code>    project_element.when_present.value <span class="highlight convention">=</span>  project_name</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #20</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Unnecessary spacing detected.</span>
+            </div>
+            
+            <pre><code>    project_element.when_present.value =<span class="highlight convention"> </span> project_name</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/ft_login_page.rb - 5 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">#</span>#</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing to the left of {.</span>
+            </div>
+            
+            <pre><code>  button(:login_button)<span class="highlight convention">{</span>login_container_element.button_element}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside {.</span>
+            </div>
+            
+            <pre><code>  button(:login_button){<span class="highlight convention">l</span>ogin_container_element.button_element}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside }.</span>
+            </div>
+            
+            <pre><code>  button(:login_button){login_container_element.button_element<span class="highlight convention">}</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #29</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>end<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/ingest_page.rb - 5 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #18</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Assignment Branch Condition size for create_ingestion is too high. [18.44/15]</span>
+            </div>
+            
+            <pre><code>  <span class="highlight convention">def</span> create_ingestion(asset=FactoryGirl.build(:default_mio_video_asset))</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">self.clip_description_element</span>.when_present.value = asset.description</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #20</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">self.interviewee_element</span>.when_present.value = asset.interviewee</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #21</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">self.freelance_producer_element</span>.when_present.value = asset.freelance_producer</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #22</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">self.reporter_1_element</span>.when_present.value = asset.reporter_writer_1</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/publish_video_page.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #14</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Extra empty line detected at method body beginning.</span>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/mio_page.rb - 12 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Extra blank line detected.</span>
+            </div>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #38</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Assignment Branch Condition size for define_page_elements is too high. [33.54/15]</span>
+            </div>
+            
+            <pre><code>  <span class="highlight convention">def</span> self.define_page_elements(webservice_client)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #38</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Method has too many lines. [25/20]</span>
+            </div>
+            
+            <pre><code>  <span class="highlight convention">def self.define_page_elements(webservice_client)</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #41</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      element_name = name.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #46</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      element_name = name.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #48</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing to the left of {.</span>
+            </div>
+            
+            <pre><code>      sl = div(element_name)<span class="highlight convention">{</span>self.method(&quot;#{element_name}div_element&quot;).call.div(id: /undefined/)}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #48</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Redundant <code>self</code> detected.</span>
+            </div>
+            
+            <pre><code>      sl = div(element_name){<span class="highlight convention">self.method(&quot;#{element_name}div_element&quot;)</span>.call.div(id: /undefined/)}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #48</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside {.</span>
+            </div>
+            
+            <pre><code>      sl = div(element_name){<span class="highlight convention">s</span>elf.method(&quot;#{element_name}div_element&quot;).call.div(id: /undefined/)}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #48</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside }.</span>
+            </div>
+            
+            <pre><code>      sl = div(element_name){self.method(&quot;#{element_name}div_element&quot;).call.div(id: /undefined/)<span class="highlight convention">}</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #59</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      element_name = name.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #65</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      element_name = name.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #71</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      element_name = name.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -391,17 +948,180 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/pages/in_development/ingest_page.rb - 1 offense</h3></div>
+        <div class="box-title"><h3>../scripts/create_project.rb - 6 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #17</span> –
+              <span class="location">Line #1</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Assignment Branch Condition size for create_ingestion is too high. [17.8/15]</span>
+              <span class="message">Missing frozen string literal comment.</span>
             </div>
             
-            <pre><code>  <span class="highlight convention">def</span> create_ingestion(asset=FactoryGirl.build(:full_mio_video_asset))</code></pre>
+            <pre><code><span class="highlight convention">r</span>equire &#39;watir-webdriver&#39;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #15</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Extra blank line detected.</span>
+            </div>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #16</span> –
+              <span class="severity warning">warning:</span>
+              <span class="message">Unused method argument - <code>sleep</code>. If it's necessary, use <code>_</code> or <code>_sleep</code> as an argument name to indicate that it won't be used.</span>
+            </div>
+            
+            <pre><code>def select_item(section, value, <span class="highlight warning">sleep</span>=0)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #25</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Surrounding space missing for operator <code>=</code>.</span>
+            </div>
+            
+            <pre><code>  @browser.textarea(id: /project/).when_present.value <span class="highlight convention">=</span>&#39;testProject&#39; + rand(9999).to_s</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #29</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing space after #.</span>
+            </div>
+            
+            <pre><code>  <span class="highlight convention">#@browser.link(href: /logout/).when_present.click</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #32</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>create_project(5)<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../scripts/looptest.rb - 7 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">r</span>equire_relative &#39;create_project&#39;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Surrounding space missing for operator <code>=</code>.</span>
+            </div>
+            
+            <pre><code>    fails <span class="highlight convention">=</span>+ 1</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity warning">warning:</span>
+              <span class="message">Useless assignment to variable - <code>e</code>.</span>
+            </div>
+            
+            <pre><code>  rescue Selenium::WebDriver::Error::UnknownError =&gt; <span class="highlight warning">e</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #16</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
+            </div>
+            
+            <pre><code>  puts <span class="highlight convention">&quot;&quot;</span>&quot;</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #19</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Prefer single-quoted strings when you don't need string interpolation or special symbols.</span>
+            </div>
+            
+            <pre><code>&quot;<span class="highlight convention">&quot;&quot;</span></code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #20</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Extra empty line detected at method body end.</span>
+            </div>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #23</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Final newline missing.</span>
+            </div>
+            
+            <pre><code>loop 10, 0.4<span class="highlight convention"></span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../scripts/new_login.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #1</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing frozen string literal comment.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">r</span>equire &#39;watir-webdriver&#39;</code></pre>
             
           </div>
           
@@ -444,51 +1164,24 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../test/pages/ingest_page_test.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #25</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      attribute_name = attribute.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
       
       
       
@@ -498,22 +1191,55 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../test/services/project_workflow_test.rb - 1 offense</h3></div>
+        <div class="box-title"><h3>../test/pages/mio_page_test.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #34</span> –
+              <span class="location">Line #6</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Add parentheses to nested method call <code>default_payload.has_key? :stringVariables</code>.</span>
+              <span class="message">Extra blank line detected.</span>
             </div>
-            
-            <pre><code>    assert(<span class="highlight convention">default_payload.has_key? :stringVariables</span>)</code></pre>
             
           </div>
           
         </div>
       </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../test/pages/publish_video_page_test.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #25</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Use <code>tr</code> instead of <code>gsub</code>.</span>
+            </div>
+            
+            <pre><code>      attribute_name = attribute.<span class="highlight convention">gsub(&#39;-&#39;, &#39;_&#39;)</span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       

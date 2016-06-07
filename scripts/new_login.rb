@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'watir-webdriver'
 Watir.default_timeout = 5
 

@@ -15,6 +15,7 @@ require_relative '../../config/mio_constants'
 require_relative '../../lib/pages/in_development/ft_login_page'
 require_relative '../../lib/pages/in_development/create_project_page'
 require_relative '../../lib/pages/in_development/ingest_page'
+require_relative '../../lib/pages/in_development/publish_video_page'
 
 World(PageObject::PageFactory)
 World(FactoryGirl::Syntax::Methods)

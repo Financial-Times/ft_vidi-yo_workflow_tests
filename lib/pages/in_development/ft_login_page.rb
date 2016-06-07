@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 ##
 # PageObject for ingteracting with Login form
 #
@@ -10,7 +11,7 @@ class FTLoginPage < MioPage
   text_field(:username, id: /Username/)
   text_field(:password, id: /Password/)
   div(:login_container, id: 'handler__login')
-  button(:login_button){login_container_element.button_element}
+  button(:login_button) { login_container_element.button_element }
 
   ##
   # Logs a user in through the web interface

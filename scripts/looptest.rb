@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative 'create_project'
 require_relative 'new_login'
 
@@ -10,14 +11,13 @@ def loop(iterations, sleep)
     end
 
   rescue Selenium::WebDriver::Error::UnknownError => e
-    fails =+ 1
+    fails = + 1
   end
 
-  puts """
+  puts ''"
   #{fails} / #{iterations} failed
   #{sleep} delay
-"""
-
+"''
 end
 
 loop 10, 0.4

@@ -6,7 +6,7 @@
 <title>
   Class: IngestPage
   
-    &mdash; Documentation by YARD 0.8.7.4
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
@@ -130,7 +130,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#create_ingestion-instance_method" title="#create_ingestion (instance method)">- (Object) <strong>create_ingestion</strong>(asset = FactoryGirl.build(:full_mio_video_asset)) </a>
+      <a href="#create_ingestion-instance_method" title="#create_ingestion (instance method)">- (Object) <strong>create_ingestion</strong>(asset = FactoryGirl.build(:default_mio_video_asset)) </a>
     
 
     
@@ -164,7 +164,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span>, <span class='object_link'><a href="MioPage.html#select_option-instance_method" title="MioPage#select_option (method)">#select_option</a></span></p>
 
   
 
@@ -175,7 +175,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="create_ingestion-instance_method">
   
-    - (<tt>Object</tt>) <strong>create_ingestion</strong>(asset = FactoryGirl.build(:full_mio_video_asset)) 
+    - (<tt>Object</tt>) <strong>create_ingestion</strong>(asset = FactoryGirl.build(:default_mio_video_asset)) 
   
 
   
@@ -201,7 +201,7 @@
         <span class='type'>(<tt>MioVideoAsset</tt>)</span>
       
       
-        <em class="default">(defaults to: <tt>FactoryGirl.build(:full_mio_video_asset)</tt>)</em>
+        <em class="default">(defaults to: <tt>FactoryGirl.build(:default_mio_video_asset)</tt>)</em>
       
       
     </li>
@@ -215,7 +215,6 @@
       <pre class="lines">
 
 
-17
 18
 19
 20
@@ -224,30 +223,19 @@
 23
 24
 25
-26
-27
-28
-29
-30
-31</pre>
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ingest_page.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ingest_page.rb', line 18</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_create_ingestion'>create_ingestion</span><span class='lparen'>(</span><span class='id identifier rubyid_asset'>asset</span><span class='op'>=</span><span class='const'>FactoryGirl</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='symbol'>:full_mio_video_asset</span><span class='rparen'>)</span><span class='rparen'>)</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_project'>project</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_project_name'>project_name</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_clip_type_selector'>clip_type_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_clip_type'>clip_type</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_clip_description'>clip_description</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_description'>description</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_location_selector'>location_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_location_selector'>location_selector</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_interviewee_selector'>interviewee_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_interviewee'>interviewee</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_ft_office_selector'>ft_office_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_ft_office'>ft_office</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_producer_selector'>producer_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_producer'>producer</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_freelance_producer_selector'>freelance_producer_selector</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_producer'>freelance_producer</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_1'>reporter_writer_1</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_1'>reporter_writer_1</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_2'>reporter_writer_2</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_2'>reporter_writer_2</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_3'>reporter_writer_3</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_3'>reporter_writer_3</span>
-  <span class='id identifier rubyid_select_has_restrictions'>select_has_restrictions</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_create_ingestion'>create_ingestion</span><span class='lparen'>(</span><span class='id identifier rubyid_asset'>asset</span><span class='op'>=</span><span class='const'>FactoryGirl</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='symbol'>:default_mio_video_asset</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_clip_description_element'>clip_description_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_description'>description</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_interviewee_element'>interviewee_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_interviewee'>interviewee</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_freelance_producer_element'>freelance_producer_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_producer'>freelance_producer</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_reporter_1_element'>reporter_1_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_1'>reporter_writer_1</span>
+  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stdout</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bug on restrictions buttons: can&#39;t access at present</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
   <span class='id identifier rubyid_ingest_button'>ingest_button</span>
+  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stdout</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Ingest page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -259,9 +247,9 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Jun  6 16:30:44 2016 by
+  Generated on Tue Jun  7 15:41:49 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.4 (ruby-2.0.0).
+  0.8.7.6 (ruby-2.3.0).
 </div>
 
   </body>

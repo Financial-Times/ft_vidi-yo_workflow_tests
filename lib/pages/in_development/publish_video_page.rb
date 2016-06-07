@@ -8,6 +8,9 @@ class PublishVideoPage < MioPage
 
   define_page_elements(PublishPanelWebserviceClient.new)
 
-  button :export_button, id: 'TBC'
+  span :export_button, text: 'submit'
+
+  def publish_video
+  end
 
 end
