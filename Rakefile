@@ -22,6 +22,7 @@ Cucumber::Rake::Task.new(:example, 'Example features') do |t|
 end
 
 Rake::TestTask.new(:unit_tests) do |t|
+  t.verbose = false
   t.libs << 'test'
   t.test_files = FileList['test/**/*_test.rb']
 end
@@ -32,3 +33,4 @@ Rake::TestTask.new do |t|
   t.warning = true
   t.test_files = FileList['spec/*_spec.rb']
 end
+

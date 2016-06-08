@@ -17,4 +17,5 @@ group :test do
   gem 'webmock'
   gem 'simplecov'
   gem 'byebug'
+  gem 'ci_reporter'
 end
