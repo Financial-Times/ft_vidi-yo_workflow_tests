@@ -8,3 +8,5 @@ Gemfile.lock
 
 /.bundle/
 secrets.yml
+/logs/log.txt
+integration/

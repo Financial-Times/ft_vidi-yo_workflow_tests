@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 require 'page-object'
+require_relative '../../config/config'
 
 ##
 # Base class for all Mio PageObjects
 class MioPage
 
+  include Config
   include PageObject
 
   element :site_header, id: 'TBC'

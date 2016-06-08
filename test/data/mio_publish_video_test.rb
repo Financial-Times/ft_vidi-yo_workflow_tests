@@ -2,7 +2,7 @@
 require 'test/unit'
 require_relative '../test_helper'
 require_relative 'mio_export_video'
-require_relative '../../config/mio_constants'
+require_relative '../../config/config'
 
 class MioPublishVideoTest < MioTest
 

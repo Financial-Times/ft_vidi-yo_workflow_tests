@@ -4,7 +4,9 @@
 #
 class FTLoginPage < MioPage
 
-  page_url "#{MioConstants::FT_ROOT_URL}/<%=params[:panel]%>"
+  include Logging
+
+  page_url "#{Constants::FT_ROOT_URL}/<%=params[:panel]%>"
 
   link(:log_in_button, href: /login/)
   link(:log_out_button, href: /logout/)
@@ -18,13 +20,13 @@ class FTLoginPage < MioPage
   #
   # @param [Hash] user admin user
   # @return [TrueClass]
-  def log_in(user=MioConstants::ADMIN_USER)
+  def log_in(user=Constants::ADMIN_USER)
     log_out_button_element.when_present.click
     log_in_button_element.when_present.click
     self.username = user[:username]
     self.password = user[:password]
     login_button
-    Logger.new($stderr).warn('Assert not yet possible on Login page')
+    error_logger :warn, 'Assert not yet possible on Login page'
   end
 
 end

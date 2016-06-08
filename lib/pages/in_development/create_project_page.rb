@@ -6,6 +6,8 @@ require_relative '../../../lib/web_service_clients/create_project_panel_webservi
 # PageObject for Create Video page
 class CreateProjectPage < MioPage
 
+  include Logging
+
   define_page_elements(CreateProjectPanelWebserviceClient.new)
 
   button(:submit_project, text: 'submit')
@@ -18,7 +20,7 @@ class CreateProjectPage < MioPage
   def create_project(project_name)
     wait_until { project? }
     project_element.when_present.value = project_name
-    Logger.new($stderr).warn('Assert not yet possible on Create Project page')
+    error_logger :warn, 'Assert not yet possible on Create Project page'
     submit_project_element.when_present.click
   end
 

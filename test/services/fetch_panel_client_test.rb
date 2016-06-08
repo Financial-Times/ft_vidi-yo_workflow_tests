@@ -6,7 +6,7 @@ require_relative '../test_helper'
 
 class FetchPanelClientTest < MioTest
 
-  TEST_FETCH_URL = "#{MioConstants::MIO_ROOT_URL}/api/metadataDefinitions/11312/definition"
+  TEST_FETCH_URL = "#{Config::Constants::MIO_ROOT_URL}/api/metadataDefinitions/11312/definition"
 
   def setup
     @mio_fetch_panels_client = FetchPanelWebserviceClient.new(WSUser.new, TEST_FETCH_URL)

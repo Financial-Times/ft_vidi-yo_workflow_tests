@@ -1,14 +1,15 @@
 # frozen_string_literal: true
 require 'vcr'
 require 'rest-client'
-require_relative '../../config/mio_constants'
+require_relative '../../config/config'
 require_relative '../../test/data/custom_request_data'
 
 ##
 # Generic client for Mio Web Service
 class MioWebserviceClient
 
-  include MioConstants
+  include Config::Constants
+  include Config::Logging
 
   # Init
   #
@@ -31,7 +32,7 @@ class MioWebserviceClient
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
         raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
-        Logger.new($stdout).info "WS request successful - resource_request-#{definition_id}"
+        info_logger :info, "WS request successful - resource_request-#{definition_id}"
         JSON.parse(response)
       end
     end
@@ -46,7 +47,7 @@ class MioWebserviceClient
       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                 content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
         raise "Create #{@object_type} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
-        Logger.new($stdout).info "#{@object_type} created"
+        info_logger :info, "#{@object_type} created"
         JSON.parse(response)
       end
     end

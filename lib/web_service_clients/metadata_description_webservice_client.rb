@@ -1,12 +1,16 @@
 # frozen_string_literal: true
 require_relative 'mio_webservice_client'
 require_relative '../../test/data/ws_user'
+require_relative '../../config/config'
 
 ##
 # Parses metadata description to allow retrieval of individual definitions
 class MetadataDescriptionWebserviceClient
 
-  def initialize(user=WSUser.new, url="#{MioConstants::MIO_ROOT_URL}/api/metadataDefinitions")
+  include Config::Logging
+  include Config::Constants
+
+  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/metadataDefinitions")
     @url = url
     @user = user
     @headers = {Accept: 'application/json', 'Content-Type': 'application/vnd.nativ.mio.v1+json'}
@@ -18,7 +22,7 @@ class MetadataDescriptionWebserviceClient
     VCR.use_cassette('metadata_description') do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
         @response = response
-        Logger.new($stdout).info 'WS request sueccssful: metadata description retrieved'
+        info_logger :info, 'WS request successful: metadata description retrieved'
         JSON.parse(response)
       end
     end

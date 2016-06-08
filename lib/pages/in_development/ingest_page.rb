@@ -8,6 +8,8 @@ require_relative '../../../test/factories/video_asset_factory'
 # PageObject for Ingest Assets page
 class IngestPage < MioPage
 
+  include Logging
+
   button :ingest_button
 
   define_page_elements(CreateIngestAssetWebserviceClient.new)
@@ -20,9 +22,9 @@ class IngestPage < MioPage
     interviewee_element.when_present.value = asset.interviewee
     freelance_producer_element.when_present.value = asset.freelance_producer
     reporter_1_element.when_present.value = asset.reporter_writer_1
-    Logger.new($stderr).warn("Bug on restrictions buttons: can't access at present")
+    error_logger :warn, 'Bug on restrictions buttons: can\'t access at present'
     ingest_button
-    Logger.new($stderr).warn('Assert not yet possible on Ingest page')
+    error_logger :warn, 'Assert not yet possible on Ingest page'
   end
 
 end

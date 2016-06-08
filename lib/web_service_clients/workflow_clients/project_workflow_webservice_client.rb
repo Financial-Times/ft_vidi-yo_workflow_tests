@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 require_relative 'workflow_webservice_client'
 require_relative '../../../test/data/ws_user'
-require_relative '../../../config/mio_constants'
 require_relative '../../../test/data/custom_request_data'
 
 ##
 # Handles creation of Project Workflows
 class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
 
-  def initialize(user=WSUser.new, url="#{MioConstants::MIO_ROOT_URL}/api/workflows/")
+  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
     super
     @object_type = :project_workflow
     @url = url
@@ -48,8 +47,8 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # noinspection RubyInstanceMethodNamingConvention
   def create_project_workflow_payload(project_name=nil, section=nil, brand=nil)
     project_name ||= CustomRequestData.random_string(6)
-    section ||= MioConstants::DEFAULT_SECTION
-    brand ||= MioConstants::DEFAULT_BRAND
+    section ||= Config::Constants::DEFAULT_SECTION
+    brand ||= Config::Constants::DEFAULT_BRAND
 
     {
       definitionId:    12_387,
