@@ -18,4 +18,5 @@ group :test do
   gem 'simplecov'
   gem 'byebug'
   gem 'ci_reporter'
+  gem 'ci'
 end
