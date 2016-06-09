@@ -17,6 +17,8 @@ group :test do
   gem 'webmock'
   gem 'byebug'
   gem 'ci_reporter', :git => 'git://github.com/nicksieger/ci_reporter.git'
+  gem 'ci_reporter_minitest'
   gem 'ci'
   gem 'rspec-wait'
+  gem 'minitest'
 end

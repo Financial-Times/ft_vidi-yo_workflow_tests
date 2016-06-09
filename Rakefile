@@ -6,6 +6,7 @@ require 'yaml'
 require 'watir-webdriver'
 require 'rake/testtask'
 require 'rspec/core/rake_task'
+require 'rake'
 gem 'ci_reporter'
 
 def exclude_inactive_tags
