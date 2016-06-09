@@ -73,12 +73,12 @@
   
     <dt class="r1">Inherits:</dt>
     <dd class="r1">
-      <span class="inheritName"><span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></span>
+      <span class="inheritName"><span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></span>
       
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next"><span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></li>
+            <li class="next"><span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></li>
           
             <li class="next">IngestPage</li>
           
@@ -92,11 +92,15 @@
     
   
     
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">Logging</dd>
+      
+    
   
   
   
-    <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/pages/in_development/ingest_page.rb</dd>
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/pages/in_development/ingest_page.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -163,9 +167,11 @@
   
   
   
-  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span></p>
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="PanelPage.html#define_boolean_elements-class_method" title="PanelPage.define_boolean_elements (method)">define_boolean_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_image_elements-class_method" title="PanelPage.define_image_elements (method)">define_image_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_link_elements-class_method" title="PanelPage.define_link_elements (method)">define_link_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_page_elements-class_method" title="PanelPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_selector_elements-class_method" title="PanelPage.define_selector_elements (method)">define_selector_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_text_elements-class_method" title="PanelPage.define_text_elements (method)">define_text_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_url_elements-class_method" title="PanelPage.define_url_elements (method)">define_url_elements</a></span>, <span class='object_link'><a href="PanelPage.html#element_id-class_method" title="PanelPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="PanelPage.html#element_type-class_method" title="PanelPage.element_type (method)">element_type</a></span></p>
 
+  
   
 
   <div id="instance_method_details" class="method_details_list">
@@ -198,7 +204,7 @@
         <span class='name'>asset</span>
       
       
-        <span class='type'>(<tt>MioVideoAsset</tt>)</span>
+        <span class='type'>(<tt>VideoAsset</tt>)</span>
       
       
         <em class="default">(defaults to: <tt>FactoryGirl.build(:default_mio_video_asset)</tt>)</em>
@@ -215,27 +221,27 @@
       <pre class="lines">
 
 
-18
-19
 20
 21
 22
 23
 24
 25
-26</pre>
+26
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ingest_page.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/ingest_page.rb', line 20</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_ingestion'>create_ingestion</span><span class='lparen'>(</span><span class='id identifier rubyid_asset'>asset</span><span class='op'>=</span><span class='const'>FactoryGirl</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='symbol'>:default_mio_video_asset</span><span class='rparen'>)</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_clip_description_element'>clip_description_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_description'>description</span>
   <span class='id identifier rubyid_interviewee_element'>interviewee_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_interviewee'>interviewee</span>
   <span class='id identifier rubyid_freelance_producer_element'>freelance_producer_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_producer'>freelance_producer</span>
   <span class='id identifier rubyid_reporter_1_element'>reporter_1_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_reporter_writer_1'>reporter_writer_1</span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bug on restrictions buttons: can&#39;t access at present</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Bug on restrictions buttons: can\&#39;t access at present</span><span class='tstring_end'>&#39;</span></span>
   <span class='id identifier rubyid_ingest_button'>ingest_button</span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Ingest page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Ingest page</span><span class='tstring_end'>&#39;</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -247,9 +253,9 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 17:16:54 2016 by
+  Generated on Thu Jun  9 15:05:39 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.6 (ruby-2.3.0).
+  0.8.7.6 (ruby-2.0.0).
 </div>
 
   </body>

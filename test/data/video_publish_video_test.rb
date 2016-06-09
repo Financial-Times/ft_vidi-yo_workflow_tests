@@ -4,7 +4,7 @@ require_relative '../test_helper'
 require_relative 'mio_export_video'
 require_relative '../../config/config'
 
-class MioPublishVideoTest < MioTest
+class VideoPublishVideoTest < VideoTest
 
   def setup
     @mio_export_video = FactoryGirl.build :publish_video

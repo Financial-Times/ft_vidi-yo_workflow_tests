@@ -6,7 +6,7 @@ require_relative '../../test/data/custom_request_data'
 
 ##
 # Generic client for Mio Web Service
-class MioWebserviceClient
+class VideoWebserviceClient
 
   include Config::Constants
   include Config::Logging
@@ -15,7 +15,7 @@ class MioWebserviceClient
   #
   # @param user [WSUser] the user used to log in
   # @param url [String] the url that the client will use to access the resource
-  # @return [MioWebserviceClient]
+  # @return [VideoWebserviceClient]
   def initialize(user, url)
     @username = user.username
     @password = user.password
@@ -44,10 +44,12 @@ class MioWebserviceClient
   # @return [Hash] of requested object
   def create_resource(payload)
     VCR.use_cassette("create_#{@object_type}") do
+      info_logger :info, "Payload: #{payload}"
       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                 content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
         raise "Create #{@object_type} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
         info_logger :info, "#{@object_type} created"
+        info_logger :info, JSON.parse(response)
         JSON.parse(response)
       end
     end

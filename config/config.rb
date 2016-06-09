@@ -5,7 +5,6 @@ module Config
 
   module Logging
 
-
     ERROR_LOG = 'logs/log.txt'
     INFO_LOG  = 'logs/log.txt'
 
@@ -15,7 +14,7 @@ module Config
 
     def error_logger(level, message)
       Logger.new(ERROR_LOG).method(level).call(message)
-      #Logger.new($stderr).method(level).call(message)
+      # Logger.new($stderr).method(level).call(message)
     end
 
   end

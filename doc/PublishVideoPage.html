@@ -73,12 +73,12 @@
   
     <dt class="r1">Inherits:</dt>
     <dd class="r1">
-      <span class="inheritName"><span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></span>
+      <span class="inheritName"><span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></span>
       
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next"><span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></li>
+            <li class="next"><span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></li>
           
             <li class="next">PublishVideoPage</li>
           
@@ -92,11 +92,15 @@
     
   
     
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">Logging</dd>
+      
+    
   
   
   
-    <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/pages/in_development/publish_video_page.rb</dd>
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/pages/in_development/publish_video_page.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -163,9 +167,11 @@
   
   
   
-  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="MioPage.html" title="MioPage (class)">MioPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="MioPage.html#define_page_elements-class_method" title="MioPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="MioPage.html#element_id-class_method" title="MioPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="MioPage.html#element_type-class_method" title="MioPage.element_type (method)">element_type</a></span></p>
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="PanelPage.html#define_boolean_elements-class_method" title="PanelPage.define_boolean_elements (method)">define_boolean_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_image_elements-class_method" title="PanelPage.define_image_elements (method)">define_image_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_link_elements-class_method" title="PanelPage.define_link_elements (method)">define_link_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_page_elements-class_method" title="PanelPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_selector_elements-class_method" title="PanelPage.define_selector_elements (method)">define_selector_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_text_elements-class_method" title="PanelPage.define_text_elements (method)">define_text_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_url_elements-class_method" title="PanelPage.define_url_elements (method)">define_url_elements</a></span>, <span class='object_link'><a href="PanelPage.html#element_id-class_method" title="PanelPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="PanelPage.html#element_type-class_method" title="PanelPage.element_type (method)">element_type</a></span></p>
 
+  
   
 
   <div id="instance_method_details" class="method_details_list">
@@ -198,7 +204,7 @@
         <span class='name'>asset</span>
       
       
-        <span class='type'>(<tt>MioExportVideo</tt>)</span>
+        <span class='type'>(<tt>PublishVideo</tt>)</span>
       
       
         <em class="default">(defaults to: <tt>FactoryGirl.build(:publish_video)</tt>)</em>
@@ -228,8 +234,6 @@
       <pre class="lines">
 
 
-19
-20
 21
 22
 23
@@ -241,23 +245,23 @@
 29
 30
 31
-32</pre>
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/in_development/publish_video_page.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/publish_video_page.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_publish_video'>publish_video</span><span class='lparen'>(</span><span class='id identifier rubyid_asset'>asset</span><span class='op'>=</span><span class='const'>FactoryGirl</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='symbol'>:publish_video</span><span class='rparen'>)</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span>
   <span class='id identifier rubyid_headline_element'>headline_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_headline'>headline</span>
   <span class='id identifier rubyid_long_lead_element'>long_lead_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_long_lead'>long_lead</span>
   <span class='id identifier rubyid_short_lead_element'>short_lead_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_short_lead'>short_lead</span>
   <span class='id identifier rubyid_link_1_element'>link_1_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_related_content'>related_content</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_credit_element'>credit_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_credit'>credit</span>
-  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_freelance_video_editor_element'>freelance_video_editor_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_video_editor'>freelance_video_editor</span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Cannot access Video Publish Page restrictions at present: outstanding bug</span><span class='tstring_end'>&#39;</span></span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Poster Image not implemented</span><span class='tstring_end'>&#39;</span></span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Thumbnail not implemented</span><span class='tstring_end'>&#39;</span></span>
-  <span class='const'>Logger</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='gvar'>$stderr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_warn'>warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Video Publish page</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_credit_element'>credit_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_credit'>credit</span>
+  <span class='id identifier rubyid_freelance_video_editor_element'>freelance_video_editor_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_video_editor'>freelance_video_editor</span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Cannot access Video Publish Page restrictions at present: outstanding bug</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Poster Image not implemented</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Thumbnail not implemented</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Video Publish page</span><span class='tstring_end'>&#39;</span></span>
   <span class='id identifier rubyid_export_button'>export_button</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -270,9 +274,9 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 17:16:54 2016 by
+  Generated on Thu Jun  9 15:05:39 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.6 (ruby-2.3.0).
+  0.8.7.6 (ruby-2.0.0).
 </div>
 
   </body>

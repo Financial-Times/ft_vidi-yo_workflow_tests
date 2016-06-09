@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class MioVideoProject
+class VideoProject
 
   attr_accessor :project_name, :section, :brand
 

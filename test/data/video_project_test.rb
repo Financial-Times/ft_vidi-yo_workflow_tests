@@ -3,7 +3,7 @@ require 'test/unit'
 require_relative '../test_helper'
 require_relative '../../config/config'
 
-class MioVideoProjectTest < MioTest
+class VideoProjectTest < VideoTest
 
   def setup
     @default_video_project = FactoryGirl.build :mio_video_project

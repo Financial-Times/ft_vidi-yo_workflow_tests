@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class MioMetadata
+class VideoMetadata
 
   attr_accessor :ft_office, :producer, :freelance_producer, :has_restrictions, :no_restrictions, :restriction_description,
                 :freelance_video_editor, :clip_type, :description, :location, :interviewee, :reporter_writer_1,

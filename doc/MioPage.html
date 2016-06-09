@@ -91,7 +91,7 @@
   
     
       <dt class="r2">Includes:</dt>
-      <dd class="r2">PageObject</dd>
+      <dd class="r2">Config, PageObject</dd>
       
     
   
@@ -211,6 +211,7 @@ PageObject::Elements.</p>
 
 
   
+  
 
   <div id="class_method_details" class="method_details_list">
     <h2>Class Method Details</h2>
@@ -281,8 +282,6 @@ PageObject::Elements</p>
       <pre class="lines">
 
 
-36
-37
 38
 39
 40
@@ -316,10 +315,12 @@ PageObject::Elements</p>
 68
 69
 70
-71</pre>
+71
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_define_page_elements'>define_page_elements</span><span class='lparen'>(</span><span class='id identifier rubyid_webservice_client'>webservice_client</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_webservice_client'>webservice_client</span><span class='period'>.</span><span class='id identifier rubyid_extract_text_field_elements'>extract_text_field_elements</span><span class='period'>.</span><span class='id identifier rubyid_each_key'>each_key</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span>
@@ -426,12 +427,12 @@ PageObject::Elements</p>
       <pre class="lines">
 
 
-27
-28
-29</pre>
+29
+30
+31</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_element_id'>element_id</span><span class='lparen'>(</span><span class='id identifier rubyid_element_id_value'>element_id_value</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_element_id_value'>element_id_value</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>2</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
@@ -505,12 +506,12 @@ PageObject::Elements</p>
       <pre class="lines">
 
 
-18
-19
-20</pre>
+20
+21
+22</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/mio_page.rb', line 20</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_element_type'>element_type</span><span class='lparen'>(</span><span class='id identifier rubyid_element_id_value'>element_id_value</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_element_id_value'>element_id_value</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>-</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>2</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
@@ -525,7 +526,7 @@ PageObject::Elements</p>
 </div>
 
     <div id="footer">
-  Generated on Tue Jun  7 17:16:54 2016 by
+  Generated on Thu Jun  9 14:01:54 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.3.0).
 </div>
