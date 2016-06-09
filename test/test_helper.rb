@@ -12,5 +12,7 @@ require_relative '../config/config'
 
 require 'restclient/components'
 require 'rack/cache'
+require 'ci/reporter/rake/test_unit'
+
 RestClient.enable Rack::CommonLogger, STDOUT
 RestClient.enable Rack::Cache, verbose: false
