@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative 'workflow_webservice_client'
+require_relative '../mio_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../test/data/custom_request_data'
 
 ##
 # Handles creation of Project Workflows
-class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
+class ProjectWorkflowWebserviceClient < MioWebserviceClient
 
   def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
     super
@@ -16,7 +16,8 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_project_workflow(payload=create_project_workflow_payload)
+  def create_project_workflow(payload=nil)
+    payload ||= create_project_workflow_payload
     create_resource(payload)
   end
 
