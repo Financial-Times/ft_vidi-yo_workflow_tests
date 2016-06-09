@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-require_relative '../../test/data/mio_export_video'
+require_relative '../../test/data/publish_video'
 
 FactoryGirl.define do
-  factory :publish_video, class: MioExportVideo do |video|
+  factory :publish_video, class: PublishVideo do |video|
     video.section 'World & Economy'
     video.brand 'Markets and Investing'
     video.headline 'Read This Story'

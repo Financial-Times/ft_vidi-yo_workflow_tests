@@ -4,7 +4,7 @@ require_relative '../test_helper'
 require_relative '../../lib/web_service_clients/create_ingest_asset_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class IngestPanelClientTest < MioTest
+class IngestPanelClientTest < VideoTest
 
   def setup
     @mio_ingest_assets_panel_client = CreateIngestAssetWebserviceClient.new(WSUser.new)

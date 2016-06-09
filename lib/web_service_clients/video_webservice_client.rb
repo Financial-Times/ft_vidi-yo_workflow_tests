@@ -5,7 +5,7 @@ require_relative '../../config/config'
 require_relative '../../test/data/custom_request_data'
 
 ##
-# Generic client for Mio Web Service
+# Generic client for Video Web Service
 class VideoWebserviceClient
 
   include Config::Constants

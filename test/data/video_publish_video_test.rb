@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../test_helper'
-require_relative 'mio_export_video'
+require_relative 'publish_video'
 require_relative '../../config/config'
 
 class VideoPublishVideoTest < VideoTest

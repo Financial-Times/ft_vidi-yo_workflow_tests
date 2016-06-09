@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 require_relative '../../lib/pages/mio_login_page'
-require_relative '../../lib/pages/mio_page'
+require_relative '../../lib/pages/panel_page'
 require 'test-unit'
 require_relative '../test_helper'
 
-class MioLoginPageTest < MioTest
+class MioLoginPageTest < VideoTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs

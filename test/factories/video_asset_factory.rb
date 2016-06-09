@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-require_relative '../../test/data/mio_video_asset'
+require_relative '../../test/data/video_asset'
 
 FactoryGirl.define do
-  factory :full_mio_video_asset, class: MioVideoAsset do |asset|
+  factory :full_mio_video_asset, class: VideoAsset do |asset|
     asset.clip_type 'Int'
     asset.description 'AT Test Clip'
     asset.location 'Edinburgh, Scotland'
@@ -19,7 +19,7 @@ FactoryGirl.define do
     asset.restriction_description 'AT restriction description'
   end
 
-  factory :default_mio_video_asset, class: MioVideoAsset do |asset|
+  factory :default_mio_video_asset, class: VideoAsset do |asset|
     asset.description 'AT Test Clip'
     asset.reporter_writer_1 'AT Reporter Writer 1'
     asset.no_restrictions true

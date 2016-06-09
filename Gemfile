@@ -15,8 +15,8 @@ group :test do
   gem 'vcr'
   gem 'rspec'
   gem 'webmock'
-  gem 'simplecov'
   gem 'byebug'
   gem 'ci_reporter'
   gem 'ci'
+  gem 'rspec-wait'
 end

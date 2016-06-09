@@ -3,7 +3,7 @@ require 'test/unit'
 require_relative '../test_helper'
 require_relative '../../lib/web_service_clients/publish_panel_webservice_client'
 
-class PublishPanelClientTest < MioTest
+class PublishPanelClientTest < VideoTest
 
   def setup
     @mio_publish_panel_client = PublishPanelWebserviceClient.new(WSUser.new)

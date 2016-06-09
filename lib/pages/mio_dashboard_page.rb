@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative 'mio_page'
+require_relative 'panel_page'
 
 ##
 # Page Object for acceptance testing of Mio Dashboard
 #
 # @deprecated - legacy page
-class MioDashboardPage < MioPage
+class MioDashboardPage < PanelPage
 
   link :desktop_tab, id: 'desktop_section_tab'
   link :assets_tab, id: 'assets_section_tab'

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 require 'test/unit'
-require_relative '../mio_test'
+require_relative '../video_test'
 require_relative '../../lib/pages/in_development/publish_video_page'
 require_relative '../../lib/web_service_clients/publish_panel_webservice_client'
 
-class PublishVideoPageTest < MioTest
+class PublishVideoPageTest < VideoTest
 
   def setup
     @browser = Watir::Browser.new :phantomjs

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../test_helper'
-require_relative 'mio_video_asset'
+require_relative 'video_asset'
 
 class VideoAssetTest < VideoTest
 
@@ -10,7 +10,7 @@ class VideoAssetTest < VideoTest
   end
 
   def test_asset_created
-    assert_kind_of(MioVideoAsset, @full_video_asset)
+    assert_kind_of(VideoAsset, @full_video_asset)
   end
 
   def test_attributes_present

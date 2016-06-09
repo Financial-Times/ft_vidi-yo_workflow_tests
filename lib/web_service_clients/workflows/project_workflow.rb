@@ -11,8 +11,8 @@ class ProjectWorkflow
   # Create new Project Workflow
   #
   # @return [ProjectWorkflow] object
-  def create
-    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow
+  def create(payload=nil)
+    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow payload
     raise "Workflow not created: #{@workflow_log.class} found" unless created?
     self
   end
@@ -47,8 +47,8 @@ class ProjectWorkflow
   #
   # @return [Hash] project definition
   def definition(url)
-    MioWebserviceClient.new(WSUser.new, url)
-                       .retrieve_resource
+    VideoWebserviceClient.new(WSUser.new, url)
+                         .retrieve_resource
   end
 
   ##

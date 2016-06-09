@@ -1,10 +1,10 @@
 # frozen_string_literal: true
-require_relative '../mio_page'
+require_relative '../panel_page'
 require_relative '../../../lib/web_service_clients/create_project_panel_webservice_client'
 
 ##
 # PageObject for Create Video page
-class CreateProjectPage < MioPage
+class CreateProjectPage < PanelPage
 
   include Logging
 

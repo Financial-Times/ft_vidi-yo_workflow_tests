@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 require 'rest-client'
-require_relative 'mio_webservice_client'
+require_relative 'video_webservice_client'
 require_relative 'metadata_description_webservice_client'
 require_relative '../../config/config'
 
 ###
 # Extracts and parses definitions from metadata.
-class FetchPanelWebserviceClient < MioWebserviceClient
+class FetchPanelWebserviceClient < VideoWebserviceClient
 
   include Config
 
@@ -39,8 +39,8 @@ class FetchPanelWebserviceClient < MioWebserviceClient
   # @param id [String] id of element
   # @return [Hash] element
   def fetch_panel_description_by_id(id)
-    mio_client = MioWebserviceClient.new(WSUser.new,
-                                         "#{Constants::MIO_ROOT_URL}/api/metadataDefinitions/#{id}/definition")
+    mio_client = VideoWebserviceClient.new(WSUser.new,
+                                           "#{Constants::MIO_ROOT_URL}/api/metadataDefinitions/#{id}/definition")
     mio_client.retrieve_resource
   end
 

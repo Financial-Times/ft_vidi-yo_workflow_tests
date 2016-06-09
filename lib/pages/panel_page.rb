@@ -36,14 +36,12 @@ class PanelPage
   # @param a webservice_client [MioFetchPanelWebserviceClient]
   # @return [Object]
   def self.define_page_elements(webservice_client)
-
     define_text_elements(webservice_client)
     define_selector_elements(webservice_client)
     define_link_elements(webservice_client)
     define_boolean_elements(webservice_client)
     define_image_elements(webservice_client)
     define_url_elements(webservice_client)
-
   end
 
   # @return PageObject::Element::Image

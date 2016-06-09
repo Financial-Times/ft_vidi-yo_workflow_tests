@@ -367,7 +367,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     <div class="information">
       <div class="infobox">
         65 files inspected,
-        8 offenses detected
+        7 offenses detected
       </div>
     </div>
     <div id="offenses">
@@ -425,9 +425,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #18</span> –
+              <span class="location">Line #20</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Assignment Branch Condition size for create_ingestion is too high. [18.44/15]</span>
+              <span class="message">Assignment Branch Condition size for create_ingestion is too high. [16.49/15]</span>
             </div>
             
             <pre><code>  <span class="highlight convention">def</span> create_ingestion(asset=FactoryGirl.build(:default_mio_video_asset))</code></pre>
@@ -441,39 +441,17 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/pages/in_development/publish_video_page.rb - 3 offenses</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/publish_video_page.rb - 1 offense</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #19</span> –
+              <span class="location">Line #21</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Assignment Branch Condition size for publish_video is too high. [25.71/15]</span>
+              <span class="message">Assignment Branch Condition size for publish_video is too high. [19.92/15]</span>
             </div>
             
             <pre><code>  <span class="highlight convention">def</span> publish_video(asset=FactoryGirl.build(:publish_video))</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #25</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Redundant <code>self</code> detected.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">self.credit_element</span>.value = asset.credit</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #26</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Redundant <code>self</code> detected.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">self.freelance_video_editor_element</span>.value = asset.freelance_video_editor</code></pre>
             
           </div>
           
@@ -488,28 +466,24 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/pages/mio_page.rb - 2 offenses</h3></div>
+        <div class="box-title"><h3>../lib/pages/panel_page.rb - 2 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #36</span> –
+              <span class="location">Line #39</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Assignment Branch Condition size for define_page_elements is too high. [33.54/15]</span>
+              <span class="message">Extra empty line detected at method body beginning.</span>
             </div>
-            
-            <pre><code>  <span class="highlight convention">def</span> self.define_page_elements(webservice_client)</code></pre>
             
           </div>
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #36</span> –
+              <span class="location">Line #46</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Method has too many lines. [25/20]</span>
+              <span class="message">Extra empty line detected at method body end.</span>
             </div>
-            
-            <pre><code>  <span class="highlight convention">def self.define_page_elements(webservice_client)</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -532,7 +506,24 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
-      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/web_service_clients/workflows/project_workflow.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #51</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Align <code>.retrieve_resource</code> with <code>.new</code> on line 50.</span>
+            </div>
+            
+            <pre><code>                       <span class="highlight convention">.retrieve_resource</span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
       
       
       
@@ -560,6 +551,8 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
         </div>
       </div>
+      
+      
       
       
       

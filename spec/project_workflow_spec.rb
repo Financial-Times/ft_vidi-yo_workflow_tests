@@ -1,29 +1,31 @@
 # frozen_string_literal: true
-require 'rspec'
+require 'spec_helper'
+require 'rspec/wait'
 require_relative '../test/data/custom_request_data'
 require_relative '../lib/web_service_clients/workflows/project_workflow'
 
 RSpec.describe ProjectWorkflow do
+  before :all do
+    @workflow_client = ProjectWorkflow.new
+  end
+
+  before :each do
+    @workflow = @workflow_client.create
+  end
+
   it 'can create a workflow' do
-    workflow = ProjectWorkflow.new.create
-    expect(workflow.created?).to be_truthy
-    expect(workflow.status).to eql 'Running'
+    expect(@workflow.created?).to be_truthy
+    expect(@workflow.status).to eql 'Running'
   end
 
   it 'can retrieve a previously-defined workflow' do
-    workflow = ProjectWorkflow.new.create
-    retrieved_workflow = ProjectWorkflow.new.retrieve workflow.id
-    expect(retrieved_workflow.id).to match workflow.id
+    @workflow = @workflow_client.create
+    retrieved_workflow = @workflow_client.retrieve @workflow.id
+    expect(retrieved_workflow.id).to match @workflow.id
   end
 
-  it 'can filter malformed requests' do
-    expect { ProjectWorkflowWebserviceClient.new.create_invalid_project_workflow('TEST', 'TEST', 'TEST') }
-      .to raise_error(RestClient::Exception)
-  end
-
-  it 'rejects overlong requests' do
-    big_request = CustomRequestData.extra_long_string(512)
-    expect { ProjectWorkflowWebserviceClient.new.create_invalid_project_workflow(big_request, big_request, big_request) }
-      .to raise_error(RestClient::Exception)
+  it 'can indicate that the workflow is complete' do
+    retrieved_workflow = @workflow_client.retrieve @workflow.id
+    wait_for { (@workflow_client.retrieve retrieved_workflow.id).status }.to eql 'Completed'
   end
 end

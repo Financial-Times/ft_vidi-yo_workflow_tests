@@ -4,7 +4,7 @@ require_relative '../../test/data/ws_user'
 require_relative '../../lib/web_service_clients/fetch_panel_webservice_client'
 require_relative '../test_helper'
 
-class FetchPanelClientTest < MioTest
+class FetchPanelClientTest < VideoTest
 
   TEST_FETCH_URL = "#{Config::Constants::MIO_ROOT_URL}/api/metadataDefinitions/11312/definition"
 

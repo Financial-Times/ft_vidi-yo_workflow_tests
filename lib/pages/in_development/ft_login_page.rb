@@ -2,7 +2,7 @@
 ##
 # PageObject for ingteracting with Login form
 #
-class FTLoginPage < MioPage
+class FTLoginPage < PanelPage
 
   include Logging
 

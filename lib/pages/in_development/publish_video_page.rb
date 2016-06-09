@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative '../mio_page'
+require_relative '../panel_page'
 require_relative '../../web_service_clients/publish_panel_webservice_client'
 require_relative '../../../test/factories/publish_video_factory'
 
 ##
 # PageObject for Publish Video page
-class PublishVideoPage < MioPage
+class PublishVideoPage < PanelPage
 
   include Logging
 
@@ -16,7 +16,7 @@ class PublishVideoPage < MioPage
   ##
   # Uses the web interface to publish the project
   #
-  # @param asset [MioExportVideo]
+  # @param asset [PublishVideo]
   # @return [String]
   def publish_video(asset=FactoryGirl.build(:publish_video))
     headline_element.when_present.value = asset.headline

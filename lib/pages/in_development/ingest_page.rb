@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 require 'page-object'
-require_relative '../mio_page'
+require_relative '../panel_page'
 require_relative '../../../lib/web_service_clients/create_ingest_asset_webservice_client'
 require_relative '../../../test/factories/video_asset_factory'
 
 ##
 # PageObject for Ingest Assets page
-class IngestPage < MioPage
+class IngestPage < PanelPage
 
   include Logging
 
@@ -16,7 +16,7 @@ class IngestPage < MioPage
 
   # Complete form for Ingestion
   #
-  # @param asset [MioVideoAsset]
+  # @param asset [VideoAsset]
   def create_ingestion(asset=FactoryGirl.build(:default_mio_video_asset))
     clip_description_element.when_present.value = asset.description
     interviewee_element.when_present.value = asset.interviewee

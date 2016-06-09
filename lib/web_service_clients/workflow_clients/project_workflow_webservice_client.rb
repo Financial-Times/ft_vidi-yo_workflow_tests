@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative '../mio_webservice_client'
+require_relative '../video_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../test/data/custom_request_data'
 
 ##
 # Handles creation of Project Workflows
-class ProjectWorkflowWebserviceClient < MioWebserviceClient
+class ProjectWorkflowWebserviceClient < VideoWebserviceClient
 
   def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
     super

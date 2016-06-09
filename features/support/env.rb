@@ -8,7 +8,7 @@ require 'yaml'
 require 'factory_girl'
 require 'byebug'
 
-require_relative '../../lib/pages/mio_page'
+require_relative '../../lib/pages/panel_page'
 require_relative '../../lib/pages/mio_login_page'
 require_relative '../../lib/pages/mio_dashboard_page'
 require_relative '../../config/config'

@@ -4,7 +4,7 @@ require_relative '../test_helper'
 require_relative '../../lib/web_service_clients/metadata_description_webservice_client'
 require_relative '../../test/data/ws_user'
 
-class MetadataDescriptionClientTest < MioTest
+class MetadataDescriptionClientTest < VideoTest
 
   def setup
     @mio_metadata_service = MetadataDescriptionWebserviceClient.new(WSUser.new)

@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-require_relative 'mio_page'
+require_relative 'panel_page'
 require_relative '../../config/config'
 
 # Legacy Mio Login Page, included for reference
 #
 # @deprecated legacy page
-class MioLoginPage < MioPage
+class MioLoginPage < PanelPage
 
   page_url Constants::MIO_ROOT_URL
 

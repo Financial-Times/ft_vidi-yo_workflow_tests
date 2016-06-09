@@ -1,4 +1,4 @@
 # frozen_string_literal: true
-require_relative 'mio_metadata'
+require_relative 'video_metadata'
 
-class VideoAsset < MioMetadata; end
+class VideoAsset < VideoMetadata; end
