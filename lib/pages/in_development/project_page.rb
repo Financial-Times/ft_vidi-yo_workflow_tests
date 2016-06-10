@@ -4,7 +4,7 @@ require_relative '../../../lib/web_service_clients/create_project_panel_webservi
 
 ##
 # PageObject for Create Video page
-class CreateProjectPage < PanelPage
+class ProjectPage < PanelPage
 
   include Logging
 
