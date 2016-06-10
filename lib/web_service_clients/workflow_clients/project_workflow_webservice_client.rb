@@ -2,10 +2,11 @@
 require_relative '../video_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../test/data/custom_request_data'
+require_relative 'workflow_webservice_client'
 
 ##
-# Handles creation of Project Workflows
-class ProjectWorkflowWebserviceClient < VideoWebserviceClient
+# Handles Project workflow operations
+class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
 
   def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
     super
@@ -16,9 +17,8 @@ class ProjectWorkflowWebserviceClient < VideoWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_project_workflow(payload=nil)
-    payload ||= create_project_workflow_payload
-    create_resource(payload)
+  def create_project_workflow
+    create_workflow(create_project_workflow_payload)
   end
 
   # Wrapper to create project with self.create_project_workflow_payload
@@ -27,16 +27,6 @@ class ProjectWorkflowWebserviceClient < VideoWebserviceClient
   def create_invalid_project_workflow(name=nil, section=nil, brand=nil)
     payload = create_project_workflow_payload(name, section, brand)
     create_resource(payload)
-  end
-
-  ##
-  # Retrieve an existing ProjectWorkflow by id
-  #
-  # @param id [String]
-  # @return [Hash] workflow description
-  def retrieve_project_workflow(id)
-    @url = "#{@url}#{id}"
-    retrieve_resource
   end
 
   # Builds the payload to create a project workflow

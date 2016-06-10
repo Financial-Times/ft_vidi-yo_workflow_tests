@@ -11,8 +11,8 @@ class ProjectWorkflow
   # Create new Project Workflow
   #
   # @return [ProjectWorkflow] object
-  def create(payload=nil)
-    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow payload
+  def create(_payload=nil)
+    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow
     raise "Workflow not created: #{@workflow_log.class} found" unless created?
     self
   end
@@ -22,7 +22,8 @@ class ProjectWorkflow
   #
   # @return [boolean]
   def created?
-    definition(log_url(@workflow_log))['name'] == 'workflow-create-project'
+    puts status
+    status == 'Running' || status == 'Completed'
   end
 
   ##
@@ -65,7 +66,7 @@ class ProjectWorkflow
   # @param workflow_id [String]
   # @return [ProjectWorkflow] workflow
   def retrieve(workflow_id)
-    @workflow_log = ProjectWorkflowWebserviceClient.new.retrieve_project_workflow(workflow_id)
+    @workflow_log = ProjectWorkflowWebserviceClient.new.retrieve_workflow(workflow_id)
     self
   end
 

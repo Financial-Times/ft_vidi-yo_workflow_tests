@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+require 'test/unit'
+require_relative '../video_test'
+require_relative '../../config/config'
+require_relative '../../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client'
+
 class IngestWorkflowWebserviceClientTest
 
-
-
-  # frozen_string_literal: true
-  require 'test/unit'
-  require_relative '../video_test'
-  require_relative '../../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client'
+  include Config::Logging
 
   class IngestionWorkflowWebserviceClientTest < VideoTest
 
@@ -14,25 +15,26 @@ class IngestWorkflowWebserviceClientTest
     end
 
     def test_create_valid_ingestion
-      workflow = @ingest_workflow_ws_client.create_workflow
-      # assert_respond_to(workflow, :has_key?)
-      # assert(workflow.has_key?('id'))
+      workflow = @ingest_workflow_ws_client.create_ingestion_workflow
+      assert_respond_to(workflow, :has_key?)
+      assert(workflow.has_key?('id'))
     end
 
     def test_create_default_payload
-      # payload = @ingest_workflow_ws_client.create_project_workflow_payload
-      # assert_respond_to(payload, :has_key?)
-      # assert(payload.has_key?(:definitionId))
+      payload = @ingest_workflow_ws_client.create_ingestion_workflow_payload
+      assert_respond_to(payload, :has_key?)
+      assert(payload.has_key?(:definitionId))
     end
 
     def test_create_custom_payload
-      # payload = @ingest_workflow_ws_client.create_project_workflow_payload('TEST', 'TEST', 'TEST')
-      # payload_string_variables = payload[:stringVariables][:projectMetadata]
-      # assert_respond_to(payload_string_variables, :=~)
-      # assert(payload_string_variables =~ /"project": "TEST","section": "TEST", "brand": "TEST"/)
+      payload = @ingest_workflow_ws_client.create_ingestion_workflow_payload('TEST', 'TEST', 'TEST')
+      asset = payload[:stringVariables]
+      info_logger :info, "Payload: #{payload}"
+      info_logger :info, "Asset: #{asset}"
+      assert_respond_to(asset, :=~)
+      assert(asset.has_value?('TEST'))
     end
 
   end
-
 
 end

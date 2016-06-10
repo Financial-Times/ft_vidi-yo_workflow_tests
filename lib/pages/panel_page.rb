@@ -15,7 +15,7 @@ class PanelPage
   ##
   # Extracts element type from Panel format IDs
   #
-  # @param [String] ID tag of element <element id=<ID>
+  # @param element_id_value [String] ID tag of element <element id=<ID>
   # @return String
   def self.element_type(element_id_value)
     element_id_value.split('-')[0]
@@ -24,7 +24,7 @@ class PanelPage
   ##
   # Extracts element ID name from Panel format IDs
   #
-  # @param [String] ID tag of element <element id=<ID>
+  # @param element_id_value [String] ID tag of element <element id=<ID>
   # @return String
   def self.element_id(element_id_value)
     element_id_value.split('-')[1]
@@ -33,7 +33,7 @@ class PanelPage
   # Retrieves element descriptions from web service and defines them as
   # PageObject::Elements
   #
-  # @param a webservice_client [MioFetchPanelWebserviceClient]
+  # @param webservice_client [MioFetchPanelWebserviceClient]
   # @return [Object]
   def self.define_page_elements(webservice_client)
     define_text_elements(webservice_client)
