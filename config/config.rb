@@ -5,8 +5,8 @@ module Config
 
   module Logging
 
-    ERROR_LOG = 'logs/log.txt'
-    INFO_LOG  = 'logs/log.txt'
+    ERROR_LOG = $stderr
+    INFO_LOG  = $stdout
 
     def info_logger(level, message)
       Logger.new(INFO_LOG).method(level).call(message)
