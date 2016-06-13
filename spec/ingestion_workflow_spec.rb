@@ -17,24 +17,28 @@ RSpec.describe IngestionWorkflow do
     @workflow = @workflow_client.create
   end
 
-  it 'can create a workflow' do
-    expect(@workflow.created?).to be_truthy
-    expect(@workflow.status).to eql 'Running'
+  context 'create workflow' do
+    it 'can create a workflow', :vcr do
+      expect(@workflow.created?).to be_truthy
+      expect(@workflow.status).to eql 'Running'
+    end
   end
 
-  it 'can retrieve a previously-defined workflow' do
-    @workflow = @workflow_client.create
-    retrieved_workflow = @workflow_client.retrieve @workflow.id
-    expect(retrieved_workflow.id).to match @workflow.id
+  context 'a workflow has been created' do
+    it 'can retrieve a previously-defined workflow', :vcr do
+      @workflow = @workflow_client.create
+      retrieved_workflow = @workflow_client.retrieve @workflow.id
+      expect(retrieved_workflow.id).to match @workflow.id
+    end
   end
 
-  it 'can indicate that the workflow is complete', wait: {timeout: 60} do
+  it 'can indicate that the workflow is complete', :vcr, wait: {timeout: 120} do
     retrieved_workflow = @workflow_client.retrieve @workflow.id
 
     wait_for do
       status = @workflow_client.retrieve(retrieved_workflow.id).status
       info_logger :info, 'Workflow status is: ' + status
-      raise 'Workflow did not complete' if status =~ /Failed/
+      raise 'Workflow failed' if status =~ /Failed/
       status
     end
       .to eql 'Completed'

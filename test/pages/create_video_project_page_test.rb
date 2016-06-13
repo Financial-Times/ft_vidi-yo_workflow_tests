@@ -22,7 +22,7 @@ class CreateVideoProjectPageTest < VideoTest
 
   def test_has_attributes
     @create_project_form_attributes.each_key do |attribute|
-      assert_respond_to(@create_project_page, "#{attribute}_element")
+      assert_respond_to(@create_project_page, "#{attribute.tr('-', '_')}_element")
     end
   end
 

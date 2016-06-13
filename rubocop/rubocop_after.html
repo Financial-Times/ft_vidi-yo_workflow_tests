@@ -367,36 +367,113 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
     <div class="information">
       <div class="infobox">
         70 files inspected,
-        46 offenses detected
+        27 offenses detected
       </div>
     </div>
     <div id="offenses">
       
       
+      
+      
+      
+      
+      
+      
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../Gemfile - 1 offense</h3></div>
+        <div class="box-title"><h3>../features/step_definitions/authentication_steps.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #19</span> –
+              <span class="location">Line #5</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Use the new Ruby 1.9 hash syntax.</span>
+              <span class="message">Space inside { detected.</span>
             </div>
             
-            <pre><code>  gem &#39;ci_reporter&#39;, <span class="highlight convention">:git =&gt;</span> &#39;git://github.com/nicksieger/ci_reporter.git&#39;</code></pre>
+            <pre><code>  visit FTLoginPage, using_params: {<span class="highlight convention"> </span>panel: &#39;browser&#39; }, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #5</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside } detected.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: { panel: &#39;browser&#39;<span class="highlight convention"> </span>}, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #9</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside { detected.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: {<span class="highlight convention"> </span>panel: &#39;prelude&#39; }, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #9</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside } detected.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: { panel: &#39;prelude&#39;<span class="highlight convention"> </span>}, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside { detected.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: {<span class="highlight convention"> </span>panel: &#39;premiere&#39; }, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #13</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside } detected.</span>
+            </div>
+            
+            <pre><code>  visit FTLoginPage, using_params: { panel: &#39;premiere&#39;<span class="highlight convention"> </span>}, &amp;:log_in</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #17</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside { detected.</span>
+            </div>
+            
+            <pre><code>  (visit FTLoginPage, using_params: {<span class="highlight convention"> </span>panel: &#39;browser&#39; }).log_in(username: &#39;FAILED&#39;, password: &#39;failed&#39;)</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #17</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space inside } detected.</span>
+            </div>
+            
+            <pre><code>  (visit FTLoginPage, using_params: { panel: &#39;browser&#39;<span class="highlight convention"> </span>}).log_in(username: &#39;FAILED&#39;, password: &#39;failed&#39;)</code></pre>
             
           </div>
           
         </div>
       </div>
-      
-      
-      
-      
-      
-      
       
       
       
@@ -416,7 +493,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Useless assignment to variable - <code>visit</code>.</span>
             </div>
             
-            <pre><code>  CreateProjectPage.new(@browser, <span class="highlight warning">visit</span> = false).create_project(&#39;TEST&#39;)</code></pre>
+            <pre><code>  ProjectPage.new(@browser, <span class="highlight warning">visit</span> = false).create_project(&#39;TEST&#39;)</code></pre>
             
           </div>
           
@@ -431,7 +508,24 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
-      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../features/support/hooks.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #4</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Missing space after #.</span>
+            </div>
+            
+            <pre><code><span class="highlight convention">#driver = Selenium::WebDriver.for :firefox, marionette: true</span></code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
       
       
       
@@ -450,6 +544,38 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             </div>
             
             <pre><code>  <span class="highlight convention">def</span> create_ingestion(asset=FactoryGirl.build(:default_mio_video_asset))</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../lib/pages/in_development/project_page.rb - 2 offenses</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #21</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside {.</span>
+            </div>
+            
+            <pre><code>    wait_until {<span class="highlight convention">p</span>age_displayed?}</code></pre>
+            
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #21</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Space missing inside }.</span>
+            </div>
+            
+            <pre><code>    wait_until {page_displayed?<span class="highlight convention">}</span></code></pre>
             
           </div>
           
@@ -499,7 +625,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client.rb - 17 offenses</h3></div>
+        <div class="box-title"><h3>../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client.rb - 8 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
@@ -539,32 +665,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #37</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Use 2 spaces for indentation in a hash, relative to the start of the line where the left curly brace is.</span>
-            </div>
-            
-            <pre><code>        <span class="highlight convention">definitionId:    13800</span>,</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #37</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Separate every 3 digits in the integer portion of a number with underscores(_).</span>
             </div>
             
-            <pre><code>        definitionId:    <span class="highlight convention">13800</span>,</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #38</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Align the elements of a hash literal if they span more than one line.</span>
-            </div>
-            
-            <pre><code>        <span class="highlight convention">stringVariables: {</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            <pre><code>      &#39;definitionId&#39;:    <span class="highlight convention">13800</span>,</code></pre>
             
           </div>
           
@@ -572,43 +676,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #39</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Use 2 spaces for indentation in a hash, relative to the start of the line where the left curly brace is.</span>
-            </div>
-            
-            <pre><code>          <span class="highlight convention">assetMetadata: &#39;{ &quot;clip-type&quot;:&quot;http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd&quot;,&#39;\</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #39</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use 2 spaces for indentation in a hash, relative to the start of the line where the left curly brace is.</span>
-            </div>
-            
-            <pre><code>            <span class="highlight convention">assetMetadata: &#39;{ &quot;clip-type&quot;:&quot;http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd&quot;,&#39;\</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #44</span> –
-              <span class="severity convention">convention:</span>
               <span class="message">Align the elements of a hash literal if they span more than one line.</span>
             </div>
             
-            <pre><code>          <span class="highlight convention">&quot;projectUUID&quot;: uuid</span>,</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #44</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Align the elements of a hash literal if they span more than one line.</span>
-            </div>
-            
-            <pre><code>            <span class="highlight convention">&quot;projectUUID&quot;: uuid</span>,</code></pre>
+            <pre><code>        <span class="highlight convention">&#39;assetMetadata&#39;: &#39;{ &quot;clip-type&quot;:&quot;http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd&quot;,&#39;\</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
@@ -619,18 +690,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Align the elements of a hash literal if they span more than one line.</span>
             </div>
             
-            <pre><code>          <span class="highlight convention">&quot;assetS3Path&quot;: path</span>,</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #45</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Align the elements of a hash literal if they span more than one line.</span>
-            </div>
-            
-            <pre><code>            <span class="highlight convention">&quot;assetS3Path&quot;: path</span>,</code></pre>
+            <pre><code>        <span class="highlight convention">&#39;projectUUID&#39;: uuid</span>,</code></pre>
             
           </div>
           
@@ -641,18 +701,7 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
               <span class="message">Align the elements of a hash literal if they span more than one line.</span>
             </div>
             
-            <pre><code>          <span class="highlight convention">&quot;assetTitle&quot;:  title</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #46</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Align the elements of a hash literal if they span more than one line.</span>
-            </div>
-            
-            <pre><code>            <span class="highlight convention">&quot;assetTitle&quot;: title</span></code></pre>
+            <pre><code>        <span class="highlight convention">&#39;assetS3Path&#39;: path</span>,</code></pre>
             
           </div>
           
@@ -660,30 +709,10 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
             <div class="meta">
               <span class="location">Line #47</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Indent the right brace the same as the start of the line where the left brace is.</span>
+              <span class="message">Align the elements of a hash literal if they span more than one line.</span>
             </div>
             
-            <pre><code>        <span class="highlight convention">}</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #51</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #52</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Final newline missing.</span>
-            </div>
-            
-            <pre><code>end<span class="highlight convention"></span></code></pre>
+            <pre><code>        <span class="highlight convention">&#39;assetTitle&#39;:  title</span></code></pre>
             
           </div>
           
@@ -694,139 +723,9 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       
       
-      <div class="offense-box">
-        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/web_service_clients/workflow_clients/workflow_webservice_client.rb - 2 offenses</h3></div>
-        <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing frozen string literal comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">r</span>equire_relative &#39;../../../lib/web_service_clients/video_webservice_client&#39;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #26</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Final newline missing.</span>
-            </div>
-            
-            <pre><code>end<span class="highlight convention"></span></code></pre>
-            
-          </div>
-          
-        </div>
-      </div>
       
       
       
-      <div class="offense-box">
-        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/web_service_clients/workflows/ingestion_workflow.rb - 6 offenses</h3></div>
-        <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #1</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing frozen string literal comment.</span>
-            </div>
-            
-            <pre><code><span class="highlight convention">r</span>equire_relative &#39;../../../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client&#39;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #3</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #14</span> –
-              <span class="severity warning">warning:</span>
-              <span class="message">Unused method argument - <code>payload</code>. If it's necessary, use <code>_</code> or <code>_payload</code> as an argument name to indicate that it won't be used. You can also write as <code>create(*)</code> if you want the method to accept any arguments but don't care about them.</span>
-            </div>
-            
-            <pre><code>  def create(<span class="highlight warning">payload</span>=nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #17</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Missing space after #.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">#raise &quot;Workflow not created: #{@workflow_log.class} found&quot; unless created?</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #56</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra blank line detected.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #57</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Final newline missing.</span>
-            </div>
-            
-            <pre><code>end<span class="highlight convention"></span></code></pre>
-            
-          </div>
-          
-        </div>
-      </div>
-      
-      
-      
-      <div class="offense-box">
-        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../lib/web_service_clients/workflows/project_workflow.rb - 2 offenses</h3></div>
-        <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #14</span> –
-              <span class="severity warning">warning:</span>
-              <span class="message">Unused method argument - <code>payload</code>. If it's necessary, use <code>_</code> or <code>_payload</code> as an argument name to indicate that it won't be used. You can also write as <code>create(*)</code> if you want the method to accept any arguments but don't care about them.</span>
-            </div>
-            
-            <pre><code>  def create(<span class="highlight warning">payload</span>=nil)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #26</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Inconsistent indentation detected.</span>
-            </div>
-            
-            <pre><code>     <span class="highlight convention">status == &#39;Running&#39; || status == &#39;Completed&#39;</span></code></pre>
-            
-          </div>
-          
-        </div>
-      </div>
       
       
       
@@ -861,206 +760,12 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
       
       <div class="offense-box">
         <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../spec/ingestion_workflow_spec.rb - 4 offenses</h3></div>
+        <div class="box-title"><h3>../spec/ingestion_workflow_spec.rb - 3 offenses</h3></div>
         <div class="offense-reports">
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #10</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at block body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #36</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Don't use parentheses around a method call.</span>
-            </div>
-            
-            <pre><code>      status = <span class="highlight convention">(@workflow_client.retrieve(retrieved_workflow.id))</span>.status</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #39</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Avoid chaining a method call on a do...end block.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">end</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #41</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use 2 (not 4) spaces for indenting an expression spanning multiple lines.</span>
-            </div>
-            
-            <pre><code>        <span class="highlight convention">.to</span> eql &#39;Completed&#39;</code></pre>
-            
-          </div>
-          
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      <div class="offense-box">
-        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../spec/project_workflow_spec.rb - 7 offenses</h3></div>
-        <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #9</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at block body beginning.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #35</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Don't use parentheses around a method call.</span>
-            </div>
-            
-            <pre><code>      status = <span class="highlight convention">(@workflow_client.retrieve(retrieved_workflow.id))</span>.status</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #37</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Avoid chaining a method call on a do...end block.</span>
-            </div>
-            
-            <pre><code>    <span class="highlight convention">end</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #37</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Don't use parentheses around a variable.</span>
-            </div>
-            
-            <pre><code>      <span class="highlight convention">(status)</span></code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #39</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Use 2 (not 4) spaces for indenting an expression spanning multiple lines.</span>
-            </div>
-            
-            <pre><code>        <span class="highlight convention">.to</span> eql &#39;Completed&#39;</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #41</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Extra empty line detected at block body end.</span>
-            </div>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #43</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">1 trailing blank lines detected.</span>
-            </div>
-            
-          </div>
-          
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <div class="offense-box">
-        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
-        <div class="box-title"><h3>../test/services/ingestion_workflow_webservice_client_test.rb - 3 offenses</h3></div>
-        <div class="offense-reports">
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #35</span> –
-              <span class="severity convention">convention:</span>
-              <span class="message">Add parentheses to nested method call <code>asset.has_value? 'TEST'</code>.</span>
-            </div>
-            
-            <pre><code>      assert(<span class="highlight convention">asset.has_value? &#39;TEST&#39;</span>)</code></pre>
-            
-          </div>
-          
-          <div class="report">
-            <div class="meta">
-              <span class="location">Line #40</span> –
+              <span class="location">Line #27</span> –
               <span class="severity convention">convention:</span>
               <span class="message">Extra blank line detected.</span>
             </div>
@@ -1069,17 +774,99 @@ TvFXMeuCkZPcaEBLqvgPBhCuiZo8+sAAAAAASUVORK5CYII=
           
           <div class="report">
             <div class="meta">
-              <span class="location">Line #41</span> –
+              <span class="location">Line #36</span> –
               <span class="severity convention">convention:</span>
-              <span class="message">Final newline missing.</span>
+              <span class="message">Extra blank line detected.</span>
             </div>
             
-            <pre><code>end<span class="highlight convention"></span></code></pre>
+          </div>
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #43</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Avoid chaining a method call on a do...end block.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">end</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
             
           </div>
           
         </div>
       </div>
+      
+      
+      
+      
+      
+      <div class="offense-box">
+        <div class="box-title-placeholder"><h3>&nbsp;</h3></div>
+        <div class="box-title"><h3>../spec/project_workflow_spec.rb - 1 offense</h3></div>
+        <div class="offense-reports">
+          
+          <div class="report">
+            <div class="meta">
+              <span class="location">Line #37</span> –
+              <span class="severity convention">convention:</span>
+              <span class="message">Avoid chaining a method call on a do...end block.</span>
+            </div>
+            
+            <pre><code>    <span class="highlight convention">end</span> &lt;span class=&quot;extra-code&quot;&gt;...&lt;/span&gt;</code></pre>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       

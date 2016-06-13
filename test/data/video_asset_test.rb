@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'test/unit'
+require 'minitest'
 require_relative '../test_helper'
 require_relative 'video_asset'
 
