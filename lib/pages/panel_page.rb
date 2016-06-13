@@ -6,6 +6,8 @@ require_relative '../../config/config'
 # Base class for all Panel PageObjects
 class PanelPage
 
+  NO_OF_LOGIN_TEXTBOXES = 2
+
   include Config
   include PageObject
 
@@ -91,6 +93,15 @@ class PanelPage
       element_name = name.tr('-', '_')
       textarea(element_name, id: Regexp.new(name))
     end
+  end
+
+  ##
+  #User is logged in?
+  #
+  # @return [Boolean]
+  def logged_in?
+    # TODO: Currently counts text fields. Improved when login is implemented
+    @browser.textareas.count > NO_OF_LOGIN_TEXTBOXES
   end
 
 end

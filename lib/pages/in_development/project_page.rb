@@ -18,10 +18,18 @@ class ProjectPage < PanelPage
   # @param [String] project_name
   # @return [TrueClass]
   def create_project(project_name)
-    wait_until { project? }
+    wait_until { page_displayed? }
     project_element.when_present.value = project_name
     error_logger :warn, 'Assert not yet possible on Create Project page'
     submit_project_element.when_present.click
+  end
+
+  ##
+  # Checks whether the panel is displayed
+  #
+  # @return [Boolean]
+  def page_displayed?
+    project?
   end
 
 end

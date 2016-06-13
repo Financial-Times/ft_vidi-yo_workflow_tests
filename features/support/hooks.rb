@@ -1,5 +1,7 @@
 # frozen_string_literal: true
-ENV['SESSION_BROWSER'] ||= 'firefox'
+ENV['SESSION_BROWSER'] ||= 'chrome'
+Selenium::WebDriver::Chrome::Service.executable_path = '/Users/Dazzla/src/chromedriver'
+# driver = Selenium::WebDriver.for :firefox, marionette: true
 browser = Watir::Browser.new ENV['SESSION_BROWSER']
 
 Before do

@@ -23,10 +23,10 @@ class FTLoginPage < PanelPage
   def log_in(user=Constants::ADMIN_USER)
     log_out_button_element.when_present.click
     log_in_button_element.when_present.click
+    log_in_button_element.when_present.click
     self.username = user[:username]
     self.password = user[:password]
     login_button
-    error_logger :warn, 'Assert not yet possible on Login page'
   end
 
 end
