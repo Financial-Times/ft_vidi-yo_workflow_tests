@@ -27,6 +27,7 @@ class FTLoginPage < PanelPage
     self.username = user[:username]
     self.password = user[:password]
     login_button
+    error_logger :warn, 'Login Failed' unless logged_in?
   end
 
 end

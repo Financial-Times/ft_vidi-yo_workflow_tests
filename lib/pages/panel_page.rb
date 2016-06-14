@@ -6,6 +6,9 @@ require_relative '../../config/config'
 # Base class for all Panel PageObjects
 class PanelPage
 
+  BLUE = /51, 153, 204/
+  GREY = /158, 158, 158/
+
   NO_OF_LOGIN_TEXTBOXES = 2
 
   include Config
@@ -100,8 +103,7 @@ class PanelPage
   #
   # @return [Boolean]
   def logged_in?
-    # TODO: Currently counts text fields. Improved when login is implemented
-    @browser.textareas.count > NO_OF_LOGIN_TEXTBOXES
+    !!(@browser.svgs[1].attribute_value('style') =~ BLUE)
   end
 
 end
