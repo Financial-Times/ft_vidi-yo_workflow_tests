@@ -69,6 +69,10 @@ class ProjectWorkflow
     self
   end
 
+  def uuid(id)
+    (retrieve id).workflow_log['definition']['uuid']
+  end
+
   ##
   # Stores default payload from client
   #

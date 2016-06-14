@@ -37,4 +37,11 @@ RSpec.describe ProjectWorkflow do
     end
       .to eql 'Completed'
   end
+
+  it 'has a uuid', :vcr do
+    retrieved_workflow_uuid = @workflow_client.uuid @workflow.id
+    puts retrieved_workflow_uuid
+    expect((retrieved_workflow_uuid).is_regexp?).to be_truthy
+  end
+
 end
