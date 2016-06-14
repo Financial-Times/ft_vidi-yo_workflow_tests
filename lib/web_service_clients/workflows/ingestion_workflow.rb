@@ -8,7 +8,7 @@ class IngestionWorkflow
   attr_reader :workflow_log
 
   ##
-  # Create new Project Workflow
+  # Create new Ingestion Workflow
   #
   # @return [IngestionWorkflow] object
   def create(_payload=nil)
@@ -51,6 +51,10 @@ class IngestionWorkflow
   def retrieve(workflow_id)
     @workflow_log = IngestionWorkflowWebserviceClient.new.retrieve_workflow(workflow_id)
     self
+  end
+
+  def payload(params={uuid: nil, path: nil, title: nil})
+    IngestionWorkflowWebserviceClient.new.create_ingestion_workflow_payload(params)
   end
 
 end

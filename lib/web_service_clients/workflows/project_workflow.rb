@@ -69,8 +69,8 @@ class ProjectWorkflow
     self
   end
 
-  def uuid(id)
-    (retrieve id).workflow_log['definition']['uuid']
+  def uuid
+    (retrieve self.id).workflow_log['definition']['uuid']
   end
 
   ##

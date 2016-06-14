@@ -40,7 +40,7 @@ RSpec.describe ProjectWorkflow do
 
   it 'has a uuid', :vcr do
     retrieved_workflow_uuid = @workflow_client.uuid @workflow.id
-    expect((retrieved_workflow_uuid).is_regexp?).to be_truthy
+    expect((retrieved_workflow_uuid).contains_uuid?).to be_truthy
   end
 
 end

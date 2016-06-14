@@ -17,8 +17,8 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_ingestion_workflow
-    create_workflow(create_ingestion_workflow_payload)
+  def create_ingestion_workflow(payload=create_ingestion_workflow_payload)
+    create_workflow(payload)
   end
 
   # Builds the payload to create an ingestion workflow
@@ -28,10 +28,10 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # @param title [String] url
   # @return [Hash] payload for RestClient to convert to JSON and create workflow
   # noinspection RubyInstanceMethodNamingConvention
-  def create_ingestion_workflow_payload(uuid=nil, path=nil, title=nil)
-    uuid ||= '06035926-2479-4f6a-bcfe-0f330d5b2815'
-    path ||= '/FTArts_Birdsong_001.mp4'
-    title ||= 'FT Art Birdsong'
+  def create_ingestion_workflow_payload(params={uuid: nil, path: nil, title: nil})
+    params[:uuid] ||= '06035926-2479-4f6a-bcfe-0f330d5b2815'
+    params[:path] ||= '/FTArts_Birdsong_001.mp4'
+    params[:title] ||= 'FT Art Birdsong'
 
     {
       'definitionId':    13_800,
@@ -42,9 +42,9 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
 '"producer": "http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884","freelance-producer": "James Condron",'\
 '"reporter-1": "Darren Bown", "restrictions": "false"}',
         'project-thing-url': 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159',
-        'projectUUID':       uuid,
-        'assetS3Path':       path,
-        'assetTitle':        title
+        'projectUUID':       params[:uuid],
+        'assetS3Path':       params[:path],
+        'assetTitle':        params[:title]
       }
     }
   end
