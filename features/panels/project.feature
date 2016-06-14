@@ -1,4 +1,7 @@
 Feature: Project
+
   Scenario: Create Project
-    When I log in to the browser panel
-    Then I create a project
+    * I create a project
+
+  Scenario: Cannot create invalid project
+    When I create a project with invalid values

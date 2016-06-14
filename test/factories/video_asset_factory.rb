@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require_relative '../../test/data/video_asset'
+require_relative '../../test/data/custom_request_data'
 
 FactoryGirl.define do
   factory :full_mio_video_asset, class: VideoAsset do |asset|
@@ -27,4 +28,5 @@ FactoryGirl.define do
     asset.interviewee 'Michael Bloomberg'
     asset.has_restrictions false
   end
+
 end

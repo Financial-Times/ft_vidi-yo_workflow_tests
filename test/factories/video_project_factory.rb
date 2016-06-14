@@ -7,4 +7,8 @@ FactoryGirl.define do
     asset.section 'Markets and Investment'
     asset.brand 'FT World'
   end
+
+  factory :fails_validation, class: VideoAsset do |asset|
+    asset.project_name random_string(4)
+  end
 end
