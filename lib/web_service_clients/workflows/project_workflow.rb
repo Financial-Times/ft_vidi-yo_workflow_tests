@@ -22,7 +22,8 @@ class ProjectWorkflow
   #
   # @return [boolean]
   def created?
-    status == 'Running' || status == 'Completed'
+    puts "Status: #{status}"
+    status == 'Running' || status == 'Complete'
   end
 
   ##

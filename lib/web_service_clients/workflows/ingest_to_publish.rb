@@ -11,8 +11,12 @@ class IngestToPublish
 
 
   def create_ingestion(uuid=create_project)
-    @ingestion_workflow = IngestionWorkflow.new
-    @ingestion_workflow.payload(params={uuid: uuid, path: nil, title: nil})
+    @ingestion_workflow = IngestionWorkflow.new.create(
+    payload =
+        IngestionWorkflowWebserviceClient.new
+            .create_ingestion_workflow_payload(params={uuid: uuid, path: nil, title: nil})
+    )
+    @ingestion_workflow.create(payload)
   end
 
 end

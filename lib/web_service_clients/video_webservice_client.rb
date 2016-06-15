@@ -28,6 +28,7 @@ class VideoWebserviceClient
   # @return [Hash] of requested object
   def retrieve_resource
     definition_id = @url.gsub(/[^0-9]/, '')
+    puts @url
     VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
@@ -44,7 +45,9 @@ class VideoWebserviceClient
   # @return [Hash] of requested object
   def create_resource(payload)
     VCR.use_cassette("create_#{@object_type}") do
-      info_logger :info, "Payload: #{payload}"
+      info_logger :info, "Request Url: #{@url}"
+      info_logger :info, "Headers: #{@headers}"
+      info_logger :info, "Payload: #{payload.to_json}"
       RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                                 content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
         raise "Create #{@object_type} request failed" unless HTTP_SUCCESS_CODES.cover? response.code

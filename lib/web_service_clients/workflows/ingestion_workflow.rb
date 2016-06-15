@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 require_relative '../../../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client'
+require_relative '../../../config/config'
 
 ##
 # Ingestion Workflow
 class IngestionWorkflow
 
+  include Config::Logging
   attr_reader :workflow_log
 
   ##
@@ -22,9 +24,19 @@ class IngestionWorkflow
   # Check the ProjectWorkflow
   #
   # @return [boolean]
-  def created?
+  def started?
+    status == 'Running' || status == 'Complete'
+  end
+
+  def completed?
+    # TODO: Refactor. Spaghetti.
     puts status
-    status == 'Running' || status == 'Completed'
+    info_logger :info, status
+    if status == 'Failed'
+      error_logger :error, 'Workflow failed'
+      raise 'Workflow failed'
+    end
+    status == 'Completed'
   end
 
   ##

@@ -29,9 +29,9 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # @return [Hash] payload for RestClient to convert to JSON and create workflow
   # noinspection RubyInstanceMethodNamingConvention
   def create_ingestion_workflow_payload(params={uuid: nil, path: nil, title: nil})
-    params[:uuid] ||= '06035926-2479-4f6a-bcfe-0f330d5b2815'
-    params[:path] ||= '/FTArts_Birdsong_001.mp4'
-    params[:title] ||= 'FT Art Birdsong'
+    params[:uuid] ||=  'b0778312-7686-49bc-a720-0551709ad37b'
+    params[:path] ||= 'b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4'
+    params[:title] ||= 'Missing.mp4'
 
     {
       'definitionId':    13_800,

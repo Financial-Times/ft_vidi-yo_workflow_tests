@@ -12,14 +12,27 @@ RSpec.describe IngestToPublish do
 
   before :all do
     @project = ProjectWorkflow.new.create
+    @uuid = @project.uuid
+    info_logger :info, "Project ID: #{@uuid}"
   end
 
-  it 'creates an ingestion' do
-    uuid = @project.uuid
-    info_logger :info, "ACTUAL #{uuid}"
-    @ingestion = IngestToPublish.new.create_ingestion(uuid)
-    info_logger :info, "EXPECTED: #{@ingestion[:stringVariables][:projectUUID]}"
-    expect(@ingestion[:stringVariables][:projectUUID]).to match uuid
+  it 'can create an ingestion' do
+    @ingestion = IngestToPublish.new.create_ingestion(@uuid)
+    info_logger :info, "INGESTION: #{@ingestion}"
+    info_logger :info, "STATUS: #{@ingestion.status}"
+    expect(@ingestion.started?).to be_truthy
+  end
+
+  it 'confirms that the ingestion was successful', wait: {timeout: 120} do
+    @ingestion = IngestToPublish.new.create_ingestion(@uuid)
+    retrieved_workflow = @ingestion.retrieve @ingestion.id
+    wait_for do
+      ingestion_status = @ingestion.retrieve(retrieved_workflow.id).status
+      info_logger :info, ingestion_status
+      ingestion_status
+    end
+        .to eql 'Complete'
+
   end
 
 
