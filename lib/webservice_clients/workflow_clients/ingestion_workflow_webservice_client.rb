@@ -17,7 +17,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_ingestion_workflow(payload=create_ingestion_workflow_payload)
+  def create_ingestion_workflow(live:false, payload:create_ingestion_workflow_payload)
     create_workflow(payload)
   end
 

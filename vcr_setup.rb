@@ -7,8 +7,5 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.ignore_localhost = true
   c.configure_rspec_metadata!
-  c.ignore_request do |req|
-    #Temprarily excluding workflow requests
-    #req.uri =~ /workflow/
-  end
+  c.allow_http_connections_when_no_cassette = true
 end

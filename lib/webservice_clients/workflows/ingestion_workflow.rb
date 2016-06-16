@@ -13,7 +13,7 @@ class IngestionWorkflow
   # Create new Ingestion Workflow
   #
   # @return [IngestionWorkflow] object
-  def create(_payload=nil)
+  def create(live:false, payload:nil)
     @workflow_log = IngestionWorkflowWebserviceClient.new.create_ingestion_workflow
     puts @workflow_log
     # raise "Workflow not created: #{@workflow_log.class} found" unless created?
@@ -36,7 +36,7 @@ class IngestionWorkflow
       error_logger :error, 'Workflow failed'
       raise 'Workflow failed'
     end
-    status == 'Completed'
+    status =~ /Completed/
   end
 
   ##
