@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative '../panel_page'
-require_relative '../../../lib/web_service_clients/create_project_panel_webservice_client'
+require_relative '../../../lib/webservice_clients/create_project_panel_webservice_client'
 
 ##
 # PageObject for Create Video page

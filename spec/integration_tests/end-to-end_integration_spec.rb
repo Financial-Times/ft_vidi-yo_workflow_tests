@@ -1,16 +1,12 @@
-require 'spec_helper'
-require 'rspec/wait'
-require_relative '../lib/webservice_clients/workflows/ingestion_workflow'
-require_relative '../lib/webservice_clients/workflows/project_workflow'
-require_relative '../test/data/custom_request_data'
-require_relative '../config/config'
-require_relative '../lib/webservice_clients/workflows/ingest_to_publish'
+require_relative '../../config/config'
+require_relative '../../lib/webservice_clients/workflows/ingest_to_publish'
 
 RSpec.describe IngestToPublish do
 
   include Config::Logging
 
   before :all do
+    raise 'Not implemented'
     @project = ProjectWorkflow.new.create
     @uuid = @project.uuid
     info_logger :info, "Project ID: #{@uuid}"
@@ -34,6 +30,5 @@ RSpec.describe IngestToPublish do
         .to eql 'Complete'
 
   end
-
 
 end

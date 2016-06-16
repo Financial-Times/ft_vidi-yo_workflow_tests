@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'spec_helper'
 require_relative '../test/data/custom_request_data'
-require_relative '../lib/web_service_clients/workflows/project_workflow'
+require_relative '../lib/webservice_clients/workflows/project_workflow'
 require_relative '../config/config'
 
 RSpec.describe ProjectWorkflow, :vcr => { :allow_unused_http_interactions => false } do

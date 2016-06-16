@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require 'test/unit'
-require_relative '../../lib/web_service_clients/workflows/project_workflow'
+require_relative '../../lib/webservice_clients/workflows/project_workflow'
 
 class ProjectWorkflowTest < Test::Unit::TestCase
 

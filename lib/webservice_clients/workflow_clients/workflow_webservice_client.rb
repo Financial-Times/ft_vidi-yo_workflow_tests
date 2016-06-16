@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require_relative '../../../lib/web_service_clients/video_webservice_client'
+require_relative '../../../lib/webservice_clients/video_webservice_client'
 
 ##
 # Handles workflow operations

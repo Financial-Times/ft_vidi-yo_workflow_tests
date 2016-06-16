@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../../test/data/ws_user'
-require_relative '../../lib/web_service_clients/fetch_panel_webservice_client'
+require_relative '../../lib/webservice_clients/fetch_panel_webservice_client'
 require_relative '../test_helper'
 
 class FetchPanelClientTest < VideoTest

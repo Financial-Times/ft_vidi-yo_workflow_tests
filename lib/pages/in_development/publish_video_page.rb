@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative '../panel_page'
-require_relative '../../web_service_clients/publish_panel_webservice_client'
+require_relative '../../webservice_clients/publish_panel_webservice_client'
 require_relative '../../../test/factories/publish_video_factory'
 
 ##

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'page-object'
 require_relative '../panel_page'
-require_relative '../../../lib/web_service_clients/create_ingest_asset_webservice_client'
+require_relative '../../../lib/webservice_clients/create_ingest_asset_webservice_client'
 require_relative '../../../test/factories/video_asset_factory'
 
 ##

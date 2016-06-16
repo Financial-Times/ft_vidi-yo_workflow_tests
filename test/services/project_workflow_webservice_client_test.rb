@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../video_test'
-require_relative '../../lib/web_service_clients/workflow_clients/project_workflow_webservice_client'
+require_relative '../../lib/webservice_clients/workflow_clients/project_workflow_webservice_client'
 
 class ProjectWorkflowWebserviceClientTest < VideoTest
 

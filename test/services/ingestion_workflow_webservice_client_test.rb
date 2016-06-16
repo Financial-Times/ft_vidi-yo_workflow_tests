@@ -2,7 +2,7 @@
 require 'test/unit'
 require_relative '../video_test'
 require_relative '../../config/config'
-require_relative '../../lib/web_service_clients/workflow_clients/ingestion_workflow_webservice_client'
+require_relative '../../lib/webservice_clients/workflow_clients/ingestion_workflow_webservice_client'
 
 class IngestWorkflowWebserviceClientTest
 

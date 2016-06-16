@@ -2,7 +2,7 @@
 require 'test/unit'
 require_relative '../video_test'
 require_relative '../../lib/pages/in_development/publish_video_page'
-require_relative '../../lib/web_service_clients/publish_panel_webservice_client'
+require_relative '../../lib/webservice_clients/publish_panel_webservice_client'
 
 class PublishVideoPageTest < VideoTest
 
