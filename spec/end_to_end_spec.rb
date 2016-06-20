@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative 'spec_helper'
 require 'rspec/wait'
 require_relative '../lib/webservice_clients/workflows/ingestion_workflow'
 require_relative '../lib/webservice_clients/workflows/project_workflow'
@@ -11,28 +11,26 @@ RSpec.describe IngestToPublish do
   include Config::Logging
 
   before :all do
-    @project = ProjectWorkflow.new.create
-    @uuid = @project.uuid
+    VCR.use_cassette 'new project workflow' do
+      @project = ProjectWorkflow.new.create
+    end
+    VCR.use_cassette 'uuid' do
+      @uuid = @project.uuid
+    end
     info_logger :info, "Project ID: #{@uuid}"
   end
 
-  it 'can create an ingestion' do
+  it 'can create an ingestion', :vcr do
     @ingestion = IngestToPublish.new.create_ingestion
     info_logger :info, "INGESTION: #{@ingestion}"
     info_logger :info, "STATUS: #{@ingestion.status}"
     expect(@ingestion.started?).to be_truthy
   end
 
-  it 'confirms that the ingestion was successful', wait: {timeout: 120} do
+  it 'confirms that the ingestion was successful', :vcr, wait: {timeout: 120} do
     @ingestion = IngestToPublish.new.create_ingestion(uuid: @uuid)
     retrieved_workflow = @ingestion.retrieve @ingestion.id
-    wait_for do
-      ingestion_status = @ingestion.retrieve(retrieved_workflow.id).status
-      info_logger :info, ingestion_status
-      ingestion_status
-    end
-        .to eql 'Complete'
-
+    wait_for_complete @ingestion, retrieved_workflow
   end
 
 

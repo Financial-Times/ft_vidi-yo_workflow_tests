@@ -14,34 +14,44 @@ class FetchPanelClientTest < VideoTest
   end
 
   def test_get_panel_elements
-    elements = @mio_fetch_panels_client.extract_panel_elements
-    raise "Element #{elements.class} is not a Hash" unless
-        elements.class.equal? Hash
+    VCR.use_cassette 'get panel elements' do
+      @elements = @mio_fetch_panels_client.extract_panel_elements
+    end
+    raise "Element #{@elements.class} is not a Hash" unless
+        @elements.class.equal? Hash
   end
 
   def test_get_text_fields
-    text_fields = @mio_fetch_panels_client.extract_text_field_elements
-    text_fields.each do |key, value|
+    VCR.use_cassette 'get text elements' do
+      @text_fields = @mio_fetch_panels_client.extract_text_field_elements
+    end
+    @text_fields.each do |key, value|
       raise "#{key} is not a text field (#{value}" unless value == 'text'
     end
   end
 
   def test_get_selectors
-    selectors = @mio_fetch_panels_client.extract_selector_elements
-    selectors.each do |key, value|
+    VCR.use_cassette 'get selectors' do
+      @selectors = @mio_fetch_panels_client.extract_selector_elements
+    end
+    @selectors.each do |key, value|
       raise "#{key} is not a selector (#{value}" unless value == 'single-option'
     end
   end
 
   def test_retrieve_panel_definitions
-    definitions = @mio_fetch_panels_client.retrieve_panel_definitions
-    raise "Element #{definitions.class} is not an Array" unless
-        definitions.class.equal? Array
+    VCR.use_cassette 'get panel definitions' do
+      @definitions = @mio_fetch_panels_client.retrieve_panel_definitions
+    end
+    raise "Element #{@definitions.class} is not an Array" unless
+        @definitions.class.equal? Array
   end
 
   def test_fetch_panel_description_by_id
-    panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11_518)
-    assert((panel_description.has_key? 'name'))
+    VCR.use_cassette 'get panel definition by id' do
+      @panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11_518)
+    end
+    assert((@panel_description.has_key? 'name'))
   end
 
 end

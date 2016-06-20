@@ -37,7 +37,7 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # @param brand [String] url
   # @return [Hash] payload for RestClient to convert to JSON and pass to Mio to create workflow
   # noinspection RubyInstanceMethodNamingConvention
-  def create_project_workflow_payload(project_name=nil, section=nil, brand=nil)
+  def   create_project_workflow_payload(project_name=nil, section=nil, brand=nil)
     project_name ||= CustomRequestData.random_string(6)
     section ||= Config::Constants::DEFAULT_SECTION
     brand ||= Config::Constants::DEFAULT_BRAND

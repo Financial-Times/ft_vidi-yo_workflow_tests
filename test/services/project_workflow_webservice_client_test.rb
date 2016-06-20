@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require 'test/unit'
+require_relative '../test_helper'
 require_relative '../video_test'
 require_relative '../../lib/webservice_clients/workflow_clients/project_workflow_webservice_client'
 
@@ -12,9 +13,11 @@ class ProjectWorkflowWebserviceClientTest < VideoTest
   end
 
   def test_create_valid_project
-    workflow = @project_workflow_ws_client.create_project_workflow
-    assert_respond_to(workflow, :has_key?)
-    assert(workflow.has_key?('id'))
+    VCR.use_cassette 'unit test project client' do
+      @workflow = @project_workflow_ws_client.create_project_workflow
+    end
+    assert_respond_to(@workflow, :has_key?)
+    assert(@workflow.has_key?('id'))
   end
 
   def test_create_default_payload

@@ -11,19 +11,25 @@ class MetadataDescriptionClientTest < VideoTest
   end
 
   def test_retrieves_description_config
-    response = @mio_metadata_service.retrieve_description_metadata
-    assert((response.respond_to? :each_key), "Data returned in invalid format (#{response.class})")
-    assert((response.has_key? 'metadataDefinitions'), 'data returned has no definitions')
+    VCR.use_cassette 'metadata description' do
+      @response = @mio_metadata_service.retrieve_description_metadata
+    end
+    assert((@response.respond_to? :each_key), "Data returned in invalid format (#{@response.class})")
+    assert((@response.has_key? 'metadataDefinitions'), 'data returned has no definitions')
   end
 
   def test_can_retrieve_description_by_name
-    description = @mio_metadata_service.retrieve_description_by_name('project-metadata')
-    assert((description['name'] == 'project-metadata'), "Name in response incorrect (#{description['name']})")
+    VCR.use_cassette 'metadata description project-metadata' do
+      @description = @mio_metadata_service.retrieve_description_by_name('project-metadata')
+    end
+    assert((@description['name'] == 'project-metadata'), "Name in response incorrect (#{@description['name']})")
   end
 
   def test_can_retrieve_id_with_name
-    id = @mio_metadata_service.retrieve_id_with_name('project-metadata')
-    assert((id.respond_to? :+))
+    VCR.use_cassette 'metadata description project-metadata by id' do
+      @id = @mio_metadata_service.retrieve_id_with_name('project-metadata')
+    end
+    assert((@id.respond_to? :+))
   end
 
 end

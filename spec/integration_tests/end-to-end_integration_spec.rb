@@ -1,3 +1,4 @@
+require_relative '../spec_helper'
 require_relative '../../config/config'
 require_relative '../../lib/webservice_clients/workflows/ingest_to_publish'
 require 'rspec/wait'
@@ -28,14 +29,7 @@ RSpec.describe IngestToPublish do
     it 'confirms that the ingestion was successful', wait: {timeout: 120} do
       @ingestion = IngestToPublish.new.create_ingestion(uuid: @uuid, live:true)
       retrieved_workflow = @ingestion.retrieve @ingestion.id
-      wait_for do
-        sleep 5
-        ingestion_status = @ingestion.retrieve(retrieved_workflow.id).status
-        info_logger :info, ingestion_status
-        ingestion_status
-      end
-          .to match /Complete/
-
+      wait_for_complete @ingestion, retrieved_workflow
     end
 
   end

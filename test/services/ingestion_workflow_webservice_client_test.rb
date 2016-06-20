@@ -15,9 +15,11 @@ class IngestWorkflowWebserviceClientTest
     end
 
     def test_create_valid_ingestion
-      workflow = @ingest_workflow_ws_client.create_ingestion_workflow
-      assert_respond_to(workflow, :has_key?)
-      assert(workflow.has_key?('id'))
+      VCR.use_cassette 'unit create ingestion' do
+        @workflow = @ingest_workflow_ws_client.create_ingestion_workflow
+      end
+      assert_respond_to(@workflow, :has_key?)
+      assert(@workflow.has_key?('id'))
     end
 
     def test_create_default_payload

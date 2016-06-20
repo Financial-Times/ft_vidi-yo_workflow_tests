@@ -8,7 +8,7 @@ require 'rspec/wait'
 DEFAULT_TIMEOUT = 240
 
 def wait_for_complete(workflow_object, stored_workflow)
-  start  =Time.now
+  start  ||= Time.now
   wait_for do
     begin
       workflow_status = workflow_object.retrieve(stored_workflow.id).status
@@ -21,8 +21,11 @@ def wait_for_complete(workflow_object, stored_workflow)
     workflow_status
     if workflow_status =~ /Complete/
       return workflow_status
+    elsif workflow_status =~ /Failed/
+      raise "Workflow #{stored_workflow} failed with #{workflow_status} status"
     else
       sleep 10
+      workflow_status
     end
   end
       .to match /Complete/

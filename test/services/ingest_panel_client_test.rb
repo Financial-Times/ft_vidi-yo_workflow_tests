@@ -7,27 +7,38 @@ require_relative '../../test/data/ws_user'
 class IngestPanelClientTest < VideoTest
 
   def setup
-    @mio_ingest_assets_panel_client = CreateIngestAssetWebserviceClient.new(WSUser.new)
+    VCR.use_cassette 'new ingest webservice client' do
+      @mio_ingest_assets_panel_client = CreateIngestAssetWebserviceClient.new(WSUser.new)
+    end
+
     @mio_metadata_service = MetadataDescriptionWebserviceClient.new(WSUser.new)
   end
 
   def test_build_url_for_data_definition
     panel_name = 'ingest-metadata'
-    id = @mio_metadata_service.retrieve_id_with_name(panel_name)
-    url = @mio_ingest_assets_panel_client.build_url_for_data_definition panel_name
-    assert_match(%r{/api/metadataDefinitions/#{id}/definition}, url)
+    VCR.use_cassette 'get id from name' do
+      @id = @mio_metadata_service.retrieve_id_with_name(panel_name)
+    end
+    VCR.use_cassette 'data definition url' do
+      @url = @mio_ingest_assets_panel_client.build_url_for_data_definition panel_name
+    end
+    assert_match(%r{/api/metadataDefinitions/#{@id}/definition}, @url)
   end
 
   def test_extract_ingest_asset_panel_elements
-    ingest_panel_elements = @mio_ingest_assets_panel_client.extract_panel_elements
-    assert_kind_of(Hash, ingest_panel_elements)
-    assert(ingest_panel_elements.has_key?('clip-description') || ingest_panel_elements.has_key?('text'),
+    VCR.use_cassette 'get ingest panel elements' do
+      @ingest_panel_elements = @mio_ingest_assets_panel_client.extract_panel_elements
+    end
+    assert_kind_of(Hash, @ingest_panel_elements)
+    assert(@ingest_panel_elements.has_key?('clip-description') || @ingest_panel_elements.has_key?('text'),
            'Does not have expected element (clip-description => text)')
   end
 
   def test_retrieve_ingest_panel_definitions
-    ingest_panel_definitions = @mio_ingest_assets_panel_client.retrieve_panel_definitions
-    assert_kind_of(Array, ingest_panel_definitions)
+    VCR.use_cassette 'get ingest panel definitions' do
+      @ingest_panel_definitions = @mio_ingest_assets_panel_client.retrieve_panel_definitions
+    end
+    assert_kind_of(Array, @ingest_panel_definitions)
   end
 
 end

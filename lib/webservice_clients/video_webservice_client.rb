@@ -28,14 +28,12 @@ class VideoWebserviceClient
   # @return [Hash] of requested object
   def retrieve_resource
     definition_id = @url.gsub(/[^0-9]/, '')
-    VCR.use_cassette("resource_request-#{definition_id}") do
       RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                   headers: @headers) do |response|
         raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
         info_logger :info, "WS request successful - resource_request-#{definition_id}"
         JSON.parse(response)
       end
-    end
   end
 
   # Creates a new Mio resource
@@ -43,7 +41,6 @@ class VideoWebserviceClient
   # @param payload [Hash] :payload for POST request, to be converted to JSON by RestClient
   # @return [Hash] of requested object
   def create_resource(payload)
-    VCR.use_cassette("create_#{@object_type}") do
       info_logger :info, "Request Url: #{@url}"
       info_logger :info, "Headers: #{@headers}"
       info_logger :info, "Username: #{@username}"
@@ -56,7 +53,6 @@ class VideoWebserviceClient
         info_logger :info, JSON.parse(response)
         JSON.parse(response)
       end
-    end
   end
 
   # Creates a new Mio resource, bypassing VCR
