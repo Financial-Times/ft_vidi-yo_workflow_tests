@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://master.dev.nativ-systems.com/api/workflows/
+    body:
+      encoding: UTF-8
+      string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
+        \"udcidv\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Content-Length:
+      - '245'
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 13:34:54 GMT
+      Server:
+      - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+      Set-Cookie:
+      - JSESSIONID=LZp6YSCrorrMF336GtkOnqlg.-201388932; Path=/api; Secure
+      Location:
+      - https://master.dev.nativ-systems.com/api/workflows/21313
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":21313,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/21313","status":"Running","start":"20
+        Jun 2016 13:34:54 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 13:34:16 GMT
+recorded_with: VCR 3.0.3

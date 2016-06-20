@@ -12,5 +12,4 @@ secrets.yml
 integration/
 /reports/json/cucumber_report.json
 
-/test/vcr_cassettes/*.yml
 /test/data/secrets.yml
