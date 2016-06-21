@@ -4,15 +4,15 @@ require 'rspec/wait'
 require 'vcr'
 require_relative '../test/data/custom_request_data'
 require_relative '../lib/webservice_clients/workflow_clients/ingestion_workflow_webservice_client'
-require_relative '../lib/webservice_clients/workflows/ingestion_workflow'
+require_relative '../lib/webservice_clients/workflows/ingest_workflow'
 require_relative '../config/config'
 
-RSpec.describe IngestionWorkflow do
+RSpec.describe IngestWorkflow do
   include Config::Logging
   include Config::Constants
 
   before :all do
-    @ingestion = IngestionWorkflow.new
+    @ingestion = IngestWorkflow.new
   end
 
   before :each do

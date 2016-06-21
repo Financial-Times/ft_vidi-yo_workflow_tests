@@ -11,8 +11,8 @@ class ProjectWorkflow
   # Create new Project Workflow
   #
   # @return [ProjectWorkflow] object
-  def create(live=false)
-    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow live
+  def create
+    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow
     raise "Workflow not created: #{@workflow_log['status']} found" unless created?
     self
   end

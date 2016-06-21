@@ -4,7 +4,7 @@ require_relative '../../../config/config'
 
 ##
 # Ingestion Workflow
-class IngestionWorkflow
+class IngestWorkflow
 
   include Config::Logging
   attr_reader :workflow_log
@@ -12,9 +12,11 @@ class IngestionWorkflow
   ##
   # Create new Ingestion Workflow
   #
-  # @return [IngestionWorkflow] object
-  def create(live: false, payload: nil)
-    @workflow_log = IngestionWorkflowWebserviceClient.new.create_ingestion_workflow
+  # @return [IngestWorkflow] object
+  def create(uuid=nil)
+    @workflow_log = IngestionWorkflowWebserviceClient
+                        .new
+                        .create_ingestion_workflow({uuid: uuid, path: nil, title: nil})
     puts @workflow_log
     # raise "Workflow not created: #{@workflow_log.class} found" unless created?
     self

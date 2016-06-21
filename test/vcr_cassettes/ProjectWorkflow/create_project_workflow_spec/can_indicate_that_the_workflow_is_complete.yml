@@ -50,7 +50,7 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":21065,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/21065","status":"Running","start":"20
+      string: '{"id":21065,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/21065","status":"Complete","start":"20
         Jun 2016 11:57:14 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
   recorded_at: Mon, 20 Jun 2016 11:56:35 GMT

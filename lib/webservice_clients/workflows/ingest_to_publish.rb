@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require_relative 'project_workflow'
-require_relative 'ingestion_workflow'
+require_relative 'ingest_workflow'
 
 class IngestToPublish
 
@@ -10,10 +10,9 @@ class IngestToPublish
     @project_workflow.uuid
   end
 
-  def create_ingestion(uuid: create_project, live: false)
-    @ingestion_workflow = IngestionWorkflow.new.create(payload:
-                                                                IngestionWorkflowWebserviceClient.new.create_ingestion_workflow_payload(params = {uuid: uuid, path: nil, title: nil}))
-    # @ingestion_workflow.create(:payload, live: false)
+  def create_ingestion(uuid: create_project)
+    @ingestion_workflow = IngestWorkflow.new
+    @ingestion_workflow.create(uuid)
   end
 
 end

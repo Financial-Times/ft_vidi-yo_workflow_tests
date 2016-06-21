@@ -11,13 +11,8 @@ class WorkflowWebserviceClient < VideoWebserviceClient
   # @param payload [JSON object as String]
   # @param live [Boolean] use mock?
   # Return [Hash] response to Web Service call
-  # TODO: Refactor to use polymorphism, not boolean
-  def create_workflow(payload, live=false)
-    if live
-      live_create_resource payload
-    else
-      create_resource payload
-    end
+  def create_workflow(payload)
+    create_resource payload
   end
 
   ##

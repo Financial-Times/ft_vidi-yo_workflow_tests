@@ -17,8 +17,8 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_project_workflow(live=false)
-    create_workflow(create_project_workflow_payload, live)
+  def create_project_workflow
+    create_workflow(create_project_workflow_payload)
   end
 
   # Wrapper to create project with self.create_project_workflow_payload

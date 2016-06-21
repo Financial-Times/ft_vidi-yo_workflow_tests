@@ -3,10 +3,13 @@ require_relative '../video_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../test/data/custom_request_data'
 require_relative 'workflow_webservice_client'
+require_relative '../../../config/config'
 
 ##
 # Handles Ingestion workflow operations
 class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
+
+  include Config::Constants
 
   def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
     super
@@ -17,7 +20,8 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_ingestion_workflow(live: false, payload: create_ingestion_workflow_payload)
+  def create_ingestion_workflow(params={})
+    payload=create_ingestion_workflow_payload(params)
     create_workflow(payload)
   end
 
@@ -28,10 +32,11 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # @param title [String] url
   # @return [Hash] payload for RestClient to convert to JSON and create workflow
   # noinspection RubyInstanceMethodNamingConvention
-  def create_ingestion_workflow_payload(params={uuid: nil, path: nil, title: nil})
-    params[:uuid] ||= 'b0778312-7686-49bc-a720-0551709ad37b'
-    params[:path] ||= 'b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4'
-    params[:title] ||= 'Missing.mp4'
+  def create_ingestion_workflow_payload(params={})
+    params[:uuid] ||= Config::Constants::ASSET_UUID
+    params[:path] ||= Config::Constants::ASSET_PATH
+    params[:title] ||= Config::Constants::ASSET_TITLE
+    params[:url] ||= Config::Constants::ASSET_URL
 
     {
       'definitionId':    13_800,
@@ -41,7 +46,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
 '"interviewee": "Jem Rayfield","office": "http://api.ft.com/things/a29a5f4f-b4ff-46f7-b597-a30437783e1e",'\
 '"producer": "http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884","freelance-producer": "James Condron",'\
 '"reporter-1": "Darren Bown", "restrictions": "false"}',
-        'project-thing-url': 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159',
+        'project-thing-url': params[:url],
         'projectUUID':       params[:uuid],
         'assetS3Path':       params[:path],
         'assetTitle':        params[:title]

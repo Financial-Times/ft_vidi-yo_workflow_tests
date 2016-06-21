@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require_relative 'spec_helper'
 require 'rspec/wait'
-require_relative '../lib/webservice_clients/workflows/ingestion_workflow'
+require_relative '../lib/webservice_clients/workflows/ingest_workflow'
 require_relative '../lib/webservice_clients/workflows/project_workflow'
 require_relative '../test/data/custom_request_data'
 require_relative '../config/config'
@@ -28,7 +28,7 @@ RSpec.describe IngestToPublish do
   end
 
   it 'confirms that the ingestion was successful', :vcr, wait: {timeout: 120} do
-    @ingestion = IngestToPublish.new.create_ingestion(uuid: @uuid)
+    @ingestion = IngestToPublish.new.create_ingestion
     retrieved_workflow = @ingestion.retrieve @ingestion.id
     wait_for_complete @ingestion, retrieved_workflow
   end
