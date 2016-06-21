@@ -28,5 +28,4 @@ FactoryGirl.define do
     asset.interviewee 'Michael Bloomberg'
     asset.has_restrictions false
   end
-
 end

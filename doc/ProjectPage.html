@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
-  Class: PublishVideoPage
+  Class: ProjectPage
   
     &mdash; Documentation by YARD 0.8.7.4
   
@@ -17,7 +17,7 @@
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!PublishVideoPage.html";
+  framesUrl = "frames.html#!ProjectPage.html";
 </script>
 
 
@@ -34,7 +34,7 @@
     <a href="_index.html">Index (P)</a> &raquo;
     
     
-    <span class="title">PublishVideoPage</span>
+    <span class="title">ProjectPage</span>
   
 
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
@@ -63,7 +63,7 @@
 
     <iframe id="search_frame"></iframe>
 
-    <div id="content"><h1>Class: PublishVideoPage
+    <div id="content"><h1>Class: ProjectPage
   
   
   
@@ -80,7 +80,7 @@
           
             <li class="next"><span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></li>
           
-            <li class="next">PublishVideoPage</li>
+            <li class="next">ProjectPage</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -100,7 +100,7 @@
   
   
     <dt class="r1 last">Defined in:</dt>
-    <dd class="r1 last">lib/pages/in_development/publish_video_page.rb</dd>
+    <dd class="r1 last">lib/pages/in_development/project_page.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -108,7 +108,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>PageObject for Publish Video page</p>
+<p>PageObject for Create Video page</p>
 
 
   </div>
@@ -143,7 +143,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#publish_video-instance_method" title="#publish_video (instance method)">- (String) <strong>publish_video</strong>(asset = FactoryGirl.build(:publish_video)) </a>
+      <a href="#create_project-instance_method" title="#create_project (instance method)">- (TrueClass) <strong>create_project</strong>(project_name) </a>
     
 
     
@@ -158,7 +158,31 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Uses the web interface to publish the project.</p>
+<p>Creates a bare-bones project in the web interface.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#page_displayed%3F-instance_method" title="#page_displayed? (instance method)">- (Boolean) <strong>page_displayed?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Checks whether the panel is displayed.</p>
 </div></span>
   
 </li>
@@ -188,9 +212,9 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="publish_video-instance_method">
+  <h3 class="signature first" id="create_project-instance_method">
   
-    - (<tt><span class='object_link'><a href="String.html" title="String (class)">String</a></span></tt>) <strong>publish_video</strong>(asset = FactoryGirl.build(:publish_video)) 
+    - (<tt>TrueClass</tt>) <strong>create_project</strong>(project_name) 
   
 
   
@@ -199,7 +223,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Uses the web interface to publish the project</p>
+<p>Creates a bare-bones project in the web interface</p>
 
 
   </div>
@@ -210,13 +234,11 @@
   
     <li>
       
-        <span class='name'>asset</span>
+        <span class='name'>project_name</span>
       
       
-        <span class='type'>(<tt>PublishVideo</tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="String.html" title="String (class)">String</a></span></tt>)</span>
       
-      
-        <em class="default">(defaults to: <tt>FactoryGirl.build(:publish_video)</tt>)</em>
       
       
     </li>
@@ -229,7 +251,7 @@
     <li>
       
       
-        <span class='type'>(<tt><span class='object_link'><a href="String.html" title="String (class)">String</a></span></tt>)</span>
+        <span class='type'>(<tt>TrueClass</tt>)</span>
       
       
       
@@ -243,35 +265,75 @@
       <pre class="lines">
 
 
+20
 21
 22
 23
 24
-25
-26
-27
-28
-29
-30
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/project_page.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_project'>create_project</span><span class='lparen'>(</span><span class='id identifier rubyid_project_name'>project_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_wait_until'>wait_until</span><span class='lparen'>(</span><span class='int'>5</span><span class='rparen'>)</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_page_displayed?'>page_displayed?</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_project_element'>project_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_project_name'>project_name</span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Create Project page</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_submit_project_element'>submit_project_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="page_displayed?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>page_displayed?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks whether the panel is displayed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
 31
 32
 33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/pages/in_development/publish_video_page.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'lib/pages/in_development/project_page.rb', line 31</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_publish_video'>publish_video</span><span class='lparen'>(</span><span class='id identifier rubyid_asset'>asset</span><span class='op'>=</span><span class='const'>FactoryGirl</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span><span class='symbol'>:publish_video</span><span class='rparen'>)</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_headline_element'>headline_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_headline'>headline</span>
-  <span class='id identifier rubyid_long_lead_element'>long_lead_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_long_lead'>long_lead</span>
-  <span class='id identifier rubyid_short_lead_element'>short_lead_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_short_lead'>short_lead</span>
-  <span class='id identifier rubyid_link_1_element'>link_1_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_related_content'>related_content</span>
-  <span class='id identifier rubyid_credit_element'>credit_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_credit'>credit</span>
-  <span class='id identifier rubyid_freelance_video_editor_element'>freelance_video_editor_element</span><span class='period'>.</span><span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='id identifier rubyid_asset'>asset</span><span class='period'>.</span><span class='id identifier rubyid_freelance_video_editor'>freelance_video_editor</span>
-  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Cannot access Video Publish Page restrictions at present: outstanding bug</span><span class='tstring_end'>&#39;</span></span>
-  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Poster Image not implemented</span><span class='tstring_end'>&#39;</span></span>
-  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Video Publish Page: Thumbnail not implemented</span><span class='tstring_end'>&#39;</span></span>
-  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Video Publish page</span><span class='tstring_end'>&#39;</span></span>
-  <span class='id identifier rubyid_export_button'>export_button</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_page_displayed?'>page_displayed?</span>
+  <span class='id identifier rubyid_project?'>project?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>

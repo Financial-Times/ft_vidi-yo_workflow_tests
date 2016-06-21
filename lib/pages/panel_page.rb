@@ -99,7 +99,7 @@ class PanelPage
   end
 
   ##
-  #User is logged in?
+  # User is logged in?
   #
   # @return [Boolean]
   def logged_in?

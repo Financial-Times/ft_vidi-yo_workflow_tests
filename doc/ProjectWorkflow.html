@@ -6,7 +6,7 @@
 <title>
   Class: ProjectWorkflow
   
-    &mdash; Documentation by YARD 0.8.7.6
+    &mdash; Documentation by YARD 0.8.7.4
   
 </title>
 
@@ -94,7 +94,7 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/web_service_clients/workflows/project_workflow.rb</dd>
+    <dd class="r2 last">lib/webservice_clients/workflows/project_workflow.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -162,7 +162,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#create-instance_method" title="#create (instance method)">- (ProjectWorkflow) <strong>create</strong>(payload = nil) </a>
+      <a href="#create-instance_method" title="#create (instance method)">- (ProjectWorkflow) <strong>create</strong>(live = false) </a>
     
 
     
@@ -351,6 +351,28 @@
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uuid-instance_method" title="#uuid (instance method)">- (Object) <strong>uuid</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -391,7 +413,7 @@
 10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_workflow_log'>workflow_log</span>
   <span class='ivar'>@workflow_log</span>
@@ -411,7 +433,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="create-instance_method">
   
-    - (<tt><span class='object_link'><a href="" title="ProjectWorkflow (class)">ProjectWorkflow</a></span></tt>) <strong>create</strong>(payload = nil) 
+    - (<tt><span class='object_link'><a href="" title="ProjectWorkflow (class)">ProjectWorkflow</a></span></tt>) <strong>create</strong>(live = false) 
   
 
   
@@ -459,11 +481,11 @@
 18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 14</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='id identifier rubyid_payload'>payload</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
-  <span class='ivar'>@workflow_log</span> <span class='op'>=</span> <span class='const'>ProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_create_project_workflow'>create_project_workflow</span>
-  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Workflow not created: </span><span class='embexpr_beg'>#{</span><span class='ivar'>@workflow_log</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='embexpr_end'>}</span><span class='tstring_content'> found</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_created?'>created?</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='id identifier rubyid_live'>live</span><span class='op'>=</span><span class='kw'>false</span><span class='rparen'>)</span>
+  <span class='ivar'>@workflow_log</span> <span class='op'>=</span> <span class='const'>ProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_create_project_workflow'>create_project_workflow</span> <span class='id identifier rubyid_live'>live</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Workflow not created: </span><span class='embexpr_beg'>#{</span><span class='ivar'>@workflow_log</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>status</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_content'> found</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_created?'>created?</span>
   <span class='kw'>self</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -516,11 +538,11 @@
 27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_created?'>created?</span>
-  <span class='id identifier rubyid_puts'>puts</span> <span class='id identifier rubyid_status'>status</span>
-   <span class='id identifier rubyid_status'>status</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Running</span><span class='tstring_end'>&#39;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_status'>status</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Completed</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Status: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status'>status</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_status'>status</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Running</span><span class='tstring_end'>&#39;</span></span> <span class='op'>||</span> <span class='id identifier rubyid_status'>status</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>Complete</span><span class='regexp_end'>/</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -571,12 +593,12 @@
       <pre class="lines">
 
 
-77
-78
-79</pre>
+81
+82
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default_payload'>default_payload</span>
   <span class='const'>ProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_create_project_workflow_payload'>create_project_workflow_payload</span>
@@ -636,11 +658,11 @@
 53</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_definition'>definition</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
-  <span class='const'>VideoWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'>WSUser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
-                       <span class='period'>.</span><span class='id identifier rubyid_retrieve_resource'>retrieve_resource</span>
+  <span class='const'>VideoWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='const'>WSUser</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span><span class='period'>
+</span><span class='id identifier rubyid_                       .retrieve_resource'>                       .retrieve_resource</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -696,7 +718,7 @@
 61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@workflow_log</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
@@ -770,7 +792,7 @@
 44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_log_url'>log_url</span><span class='lparen'>(</span><span class='id identifier rubyid_project'>project</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_project'>project</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>href</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
@@ -806,7 +828,7 @@
         <span class='name'>workflow_id</span>
       
       
-        <span class='type'>(<tt>String</tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="String.html" title="String (class)">String</a></span></tt>)</span>
       
       
       
@@ -845,7 +867,7 @@
 71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 68</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_retrieve'>retrieve</span><span class='lparen'>(</span><span class='id identifier rubyid_workflow_id'>workflow_id</span><span class='rparen'>)</span>
   <span class='ivar'>@workflow_log</span> <span class='op'>=</span> <span class='const'>ProjectWorkflowWebserviceClient</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_retrieve_workflow'>retrieve_workflow</span><span class='lparen'>(</span><span class='id identifier rubyid_workflow_id'>workflow_id</span><span class='rparen'>)</span>
@@ -905,10 +927,40 @@
 35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/web_service_clients/workflows/project_workflow.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_status'>status</span>
   <span class='ivar'>@workflow_log</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>status</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uuid-instance_method">
+  
+    - (<tt>Object</tt>) <strong>uuid</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webservice_clients/workflows/project_workflow.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_uuid'>uuid</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_retrieve'>retrieve</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_workflow_log'>workflow_log</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>definition</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>uuid</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -920,9 +972,9 @@
 </div>
 
     <div id="footer">
-  Generated on Fri Jun 10 12:13:32 2016 by
+  Generated on Mon Jun 20 16:06:13 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.6 (ruby-2.3.0).
+  0.8.7.4 (ruby-2.0.0).
 </div>
 
   </body>

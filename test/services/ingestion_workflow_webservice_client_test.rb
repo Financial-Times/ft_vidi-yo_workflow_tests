@@ -29,7 +29,7 @@ class IngestWorkflowWebserviceClientTest
     end
 
     def test_create_custom_payload
-      payload = @ingest_workflow_ws_client.create_ingestion_workflow_payload({uuid: 'TEST', path: 'TEST', title: 'TEST'})
+      payload = @ingest_workflow_ws_client.create_ingestion_workflow_payload(uuid: 'TEST', path: 'TEST', title: 'TEST')
       asset = payload[:stringVariables]
       info_logger :info, "Payload: #{payload}"
       info_logger :info, "Asset: #{asset}"

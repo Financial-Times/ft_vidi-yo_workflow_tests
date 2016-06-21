@@ -12,7 +12,7 @@ class CreateWorkflowTest < VideoTest
   def test_create_project_workflow
     VCR.use_cassette 'unit test project' do
       @response = ProjectWorkflowWebserviceClient.new(WSUser.new, "#{MIO_ROOT_URL}/api/workflows/")
-                     .create_project_workflow
+                                                 .create_project_workflow
     end
 
     info_logger :info, @response

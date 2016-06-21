@@ -13,7 +13,7 @@ class WorkflowWebserviceClient < VideoWebserviceClient
   # Return [Hash] response to Web Service call
   # TODO: Refactor to use polymorphism, not boolean
   def create_workflow(payload, live=false)
-    if(live)
+    if live
       live_create_resource payload
     else
       create_resource payload

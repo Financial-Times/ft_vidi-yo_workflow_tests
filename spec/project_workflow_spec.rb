@@ -32,8 +32,7 @@ RSpec.describe ProjectWorkflow do
     end
 
     it 'has a uuid' do
-      expect((@project.uuid).contains_uuid?).to be_truthy
+      expect(@project.uuid.contains_uuid?).to be_truthy
     end
   end
-
 end

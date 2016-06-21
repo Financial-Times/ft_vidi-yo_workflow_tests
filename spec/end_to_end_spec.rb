@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative 'spec_helper'
 require 'rspec/wait'
 require_relative '../lib/webservice_clients/workflows/ingestion_workflow'
@@ -7,7 +8,6 @@ require_relative '../config/config'
 require_relative '../lib/webservice_clients/workflows/ingest_to_publish'
 
 RSpec.describe IngestToPublish do
-
   include Config::Logging
 
   before :all do
@@ -32,6 +32,4 @@ RSpec.describe IngestToPublish do
     retrieved_workflow = @ingestion.retrieve @ingestion.id
     wait_for_complete @ingestion, retrieved_workflow
   end
-
-
 end

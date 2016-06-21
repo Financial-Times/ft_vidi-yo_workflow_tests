@@ -20,6 +20,6 @@ RSpec.describe ProjectWorkflowWebserviceClient do
   end
 
   after :each do
-    expect(@response['status']== 'Running' || @response['status'] == 'Complete').to be_truthy
+    expect(@response['status'] == 'Running' || @response['status'] == 'Complete').to be_truthy
   end
 end

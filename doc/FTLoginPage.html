@@ -6,7 +6,7 @@
 <title>
   Class: FTLoginPage
   
-    &mdash; Documentation by YARD 0.8.7.6
+    &mdash; Documentation by YARD 0.8.7.4
   
 </title>
 
@@ -119,7 +119,16 @@
   
 
 </div>
+  <h2>Constant Summary</h2>
+  
 
+
+
+  <h2>Constant Summary</h2>
+  
+  <h3 class="inherited">Constants inherited
+     from <span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="PanelPage.html#BLUE-constant" title="PanelPage::BLUE (constant)">PanelPage::BLUE</a></span>, <span class='object_link'><a href="PanelPage.html#GREY-constant" title="PanelPage::GREY (constant)">PanelPage::GREY</a></span>, <span class='object_link'><a href="PanelPage.html#NO_OF_LOGIN_TEXTBOXES-constant" title="PanelPage::NO_OF_LOGIN_TEXTBOXES (constant)">PanelPage::NO_OF_LOGIN_TEXTBOXES</a></span></p>
 
 
 
@@ -171,7 +180,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="PanelPage.html" title="PanelPage (class)">PanelPage</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="PanelPage.html#define_boolean_elements-class_method" title="PanelPage.define_boolean_elements (method)">define_boolean_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_image_elements-class_method" title="PanelPage.define_image_elements (method)">define_image_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_link_elements-class_method" title="PanelPage.define_link_elements (method)">define_link_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_page_elements-class_method" title="PanelPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_selector_elements-class_method" title="PanelPage.define_selector_elements (method)">define_selector_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_text_elements-class_method" title="PanelPage.define_text_elements (method)">define_text_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_url_elements-class_method" title="PanelPage.define_url_elements (method)">define_url_elements</a></span>, <span class='object_link'><a href="PanelPage.html#element_id-class_method" title="PanelPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="PanelPage.html#element_type-class_method" title="PanelPage.element_type (method)">element_type</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="PanelPage.html#define_boolean_elements-class_method" title="PanelPage.define_boolean_elements (method)">define_boolean_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_image_elements-class_method" title="PanelPage.define_image_elements (method)">define_image_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_link_elements-class_method" title="PanelPage.define_link_elements (method)">define_link_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_page_elements-class_method" title="PanelPage.define_page_elements (method)">define_page_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_selector_elements-class_method" title="PanelPage.define_selector_elements (method)">define_selector_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_text_elements-class_method" title="PanelPage.define_text_elements (method)">define_text_elements</a></span>, <span class='object_link'><a href="PanelPage.html#define_url_elements-class_method" title="PanelPage.define_url_elements (method)">define_url_elements</a></span>, <span class='object_link'><a href="PanelPage.html#element_id-class_method" title="PanelPage.element_id (method)">element_id</a></span>, <span class='object_link'><a href="PanelPage.html#element_type-class_method" title="PanelPage.element_type (method)">element_type</a></span>, <span class='object_link'><a href="PanelPage.html#logged_in%3F-instance_method" title="PanelPage#logged_in? (method)">#logged_in?</a></span></p>
 
   
   
@@ -248,7 +257,8 @@
 27
 28
 29
-30</pre>
+30
+31</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/pages/in_development/ft_login_page.rb', line 23</span>
@@ -256,10 +266,11 @@
 <span class='kw'>def</span> <span class='id identifier rubyid_log_in'>log_in</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='op'>=</span><span class='const'>Constants</span><span class='op'>::</span><span class='const'>ADMIN_USER</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_log_out_button_element'>log_out_button_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
   <span class='id identifier rubyid_log_in_button_element'>log_in_button_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
+  <span class='id identifier rubyid_log_in_button_element'>log_in_button_element</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='lbracket'>[</span><span class='symbol'>:username</span><span class='rbracket'>]</span>
   <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='lbracket'>[</span><span class='symbol'>:password</span><span class='rbracket'>]</span>
   <span class='id identifier rubyid_login_button'>login_button</span>
-  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Assert not yet possible on Login page</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_error_logger'>error_logger</span> <span class='symbol'>:warn</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Login Failed</span><span class='tstring_end'>&#39;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_logged_in?'>logged_in?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -271,9 +282,9 @@
 </div>
 
     <div id="footer">
-  Generated on Fri Jun 10 12:13:32 2016 by
+  Generated on Mon Jun 20 16:06:13 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.6 (ruby-2.3.0).
+  0.8.7.4 (ruby-2.0.0).
 </div>
 
   </body>

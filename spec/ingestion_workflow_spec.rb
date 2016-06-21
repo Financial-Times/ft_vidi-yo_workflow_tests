@@ -39,6 +39,4 @@ RSpec.describe IngestionWorkflow do
       wait_for_complete @ingestion, retrieved_ingestion
     end
   end
-
 end
-

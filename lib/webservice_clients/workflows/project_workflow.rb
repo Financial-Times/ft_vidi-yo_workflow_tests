@@ -13,7 +13,7 @@ class ProjectWorkflow
   # @return [ProjectWorkflow] object
   def create(live=false)
     @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow live
-    raise "Workflow not created: #{@workflow_log["status"]} found" unless created?
+    raise "Workflow not created: #{@workflow_log['status']} found" unless created?
     self
   end
 
@@ -71,7 +71,7 @@ class ProjectWorkflow
   end
 
   def uuid
-    (retrieve self.id).workflow_log['definition']['uuid']
+    (retrieve id).workflow_log['definition']['uuid']
   end
 
   ##

@@ -4,7 +4,6 @@ When(/^I create a project$/) do
   (on ProjectPage).create_project('12345')
 end
 
-
 When(/^I create a project with invalid values$/) do
   pending 'Incomplete - blocked do to defect'
   visit FTLoginPage, using_params: {panel: 'browser'}, &:log_in

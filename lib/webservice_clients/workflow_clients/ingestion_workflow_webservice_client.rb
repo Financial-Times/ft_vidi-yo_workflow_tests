@@ -17,7 +17,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_ingestion_workflow(live:false, payload:create_ingestion_workflow_payload)
+  def create_ingestion_workflow(live: false, payload: create_ingestion_workflow_payload)
     create_workflow(payload)
   end
 
@@ -29,7 +29,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
   # @return [Hash] payload for RestClient to convert to JSON and create workflow
   # noinspection RubyInstanceMethodNamingConvention
   def create_ingestion_workflow_payload(params={uuid: nil, path: nil, title: nil})
-    params[:uuid] ||=  'b0778312-7686-49bc-a720-0551709ad37b'
+    params[:uuid] ||= 'b0778312-7686-49bc-a720-0551709ad37b'
     params[:path] ||= 'b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4'
     params[:title] ||= 'Missing.mp4'
 

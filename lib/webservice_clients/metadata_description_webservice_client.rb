@@ -19,13 +19,13 @@ class MetadataDescriptionWebserviceClient
   # REST call to get definition descriptions from Web Service. Return value can then be used
   # to fetch individual definitions
   def retrieve_description_metadata
-    #VCR.use_cassette('metadata_description') do
-      RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
-        @response = response
-        info_logger :info, 'WS request successful: metadata description retrieved'
-        JSON.parse(response)
-      end
-    #end
+    # VCR.use_cassette('metadata_description') do
+    RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
+      @response = response
+      info_logger :info, 'WS request successful: metadata description retrieved'
+      JSON.parse(response)
+    end
+    # end
   end
 
   # Takes name, returns definition description

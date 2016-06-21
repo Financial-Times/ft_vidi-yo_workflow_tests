@@ -13,7 +13,7 @@ class IngestionWorkflow
   # Create new Ingestion Workflow
   #
   # @return [IngestionWorkflow] object
-  def create(live:false, payload:nil)
+  def create(live: false, payload: nil)
     @workflow_log = IngestionWorkflowWebserviceClient.new.create_ingestion_workflow
     puts @workflow_log
     # raise "Workflow not created: #{@workflow_log.class} found" unless created?
