@@ -37,8 +37,9 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
           " \"brightcove-metadata\": \"freetext metadata nonsense\" }",
            'project-thing-url': params[:url],
            'assetS3Path':       params[:path],
-           'assetTitle':        params[:title]
-         }
+           'assetTitle':        params[:title],
+           'brightcovePublish': false
+    }
     }
   end
 
