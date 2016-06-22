@@ -24,7 +24,7 @@ def wait_for_complete(workflow_object, stored_workflow)
     elsif workflow_status =~ /Failed/
       raise "Workflow #{stored_workflow} failed with #{workflow_status} status"
     else
-      sleep 10
+      sleep 5
       workflow_status
     end
   end
