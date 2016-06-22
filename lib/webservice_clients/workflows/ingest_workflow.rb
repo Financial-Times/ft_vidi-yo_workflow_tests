@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 require_relative '../../../lib/webservice_clients/workflow_clients/ingestion_workflow_webservice_client'
 require_relative '../../../config/config'
+require_relative 'workflow'
 
 ##
 # Ingestion Workflow
-class IngestWorkflow
+class IngestWorkflow < Workflow
 
   include Config::Logging
   attr_reader :workflow_log
@@ -22,14 +23,6 @@ class IngestWorkflow
     self
   end
 
-  ##
-  # Check the ProjectWorkflow
-  #
-  # @return [boolean]
-  def started?
-    status == 'Running' || status == 'Complete'
-  end
-
   def completed?
     # TODO: Refactor. Spaghetti.
     puts status
@@ -39,22 +32,6 @@ class IngestWorkflow
       raise 'Workflow failed'
     end
     status =~ /Completed/
-  end
-
-  ##
-  # Retrieve the link to the log record
-  #
-  # @return String status of workflow
-  def status
-    @workflow_log['status']
-  end
-
-  ##
-  # Retrieve id for created object
-  #
-  # @return [Fixnum] id
-  def id
-    @workflow_log['id']
   end
 
   ##

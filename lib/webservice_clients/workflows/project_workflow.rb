@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 require_relative '../workflow_clients/project_workflow_webservice_client'
+require_relative 'workflow'
 
 ##
 # Project Workflow
-class ProjectWorkflow
+class ProjectWorkflow < Workflow
 
   attr_reader :workflow_log
 
@@ -17,31 +18,6 @@ class ProjectWorkflow
     self
   end
 
-  ##
-  # Check the ProjectWorkflow
-  #
-  # @return [boolean]
-  def created?
-    puts "Status: #{status}"
-    status == 'Running' || status =~ /Complete/
-  end
-
-  ##
-  # Retrieve the link to the log record
-  #
-  # @return String status of workflow
-  def status
-    @workflow_log['status']
-  end
-
-  ##
-  # Retrieve the link to the log record
-  #
-  # @param project [Hash]
-  # @return String url of log record
-  def log_url(project)
-    project['href']
-  end
 
   ##
   # Retrieve definition using log url
@@ -50,14 +26,6 @@ class ProjectWorkflow
   def definition(url)
     VideoWebserviceClient.new(WSUser.new, url)
                          .retrieve_resource
-  end
-
-  ##
-  # Retrieve id for created object
-  #
-  # @return [Fixnum] id
-  def id
-    @workflow_log['id']
   end
 
   ##
@@ -70,16 +38,16 @@ class ProjectWorkflow
     self
   end
 
-  def uuid
-    (retrieve id).workflow_log['definition']['uuid']
-  end
-
   ##
   # Stores default payload from client
   #
   # @return [Hash] request payload
   def default_payload
     ProjectWorkflowWebserviceClient.new.create_project_workflow_payload
+  end
+
+  def uuid
+    (retrieve id).workflow_log['definition']['uuid']
   end
 
 end
