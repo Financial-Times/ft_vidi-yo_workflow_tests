@@ -19,5 +19,5 @@ When(/^I log in with an invalid account$/) do
 end
 
 Then(/^I cannot log in$/) do
-  expect((on ProjectPage).logged_in?).to be_falsey
+  expect((on ProjectPage).logged_in?).to be_falsey, 'Login allowed with invalid credentials'
 end

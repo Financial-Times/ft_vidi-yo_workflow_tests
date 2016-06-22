@@ -103,6 +103,7 @@ class PanelPage
   #
   # @return [Boolean]
   def logged_in?
+    self.wait_until{@browser.svgs[1].attribute_value('style') =~ BLUE}
     !!(@browser.svgs[1].attribute_value('style') =~ BLUE)
   end
 
