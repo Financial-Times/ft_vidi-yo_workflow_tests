@@ -34,7 +34,7 @@ RSpec.describe IngestWorkflow do
   end
 
   context 'end-to-end testing', :vcr do
-    it 'can indicate that the ingestion is complete', :vcr, wait: {timeout: 240} do
+    it 'can indicate that the ingestion is complete', wait: {timeout: 240} do
       retrieved_ingestion = @ingestion.retrieve @ingestion.id
       wait_for_complete @ingestion, retrieved_ingestion
     end

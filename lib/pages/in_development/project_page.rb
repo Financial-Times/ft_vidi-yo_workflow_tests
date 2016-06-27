@@ -18,7 +18,6 @@ class ProjectPage < PanelPage
   # @param [String] project_name
   # @return [TrueClass]
   def create_project(project_name)
-    puts self.methods.sort
     wait_until(5) { page_displayed? }
     project_element.when_present.value = project_name
     thing_url_element.when_present.value = 'http://www.example.com'

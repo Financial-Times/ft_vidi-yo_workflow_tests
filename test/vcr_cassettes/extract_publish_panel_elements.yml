@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Jun 2016 13:35:20 GMT
+      - Mon, 27 Jun 2016 09:37:06 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=-yYc7Xh3BBCbJgUK3LolP8Ls.-201388932; Path=/api; Secure
+      - JSESSIONID=1n8bVGNRbXN6zBunW6QjF-SQ.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -122,10 +122,10 @@ http_interactions:
         Rayfield","default":false,"value":"http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884"},{"id":110949,"name":"freelance","displayName":"Freelance","default":false,"value":"http://api.ft.com/things/d97cfd42-ee13-4fbe-8612-6ceb0bd7f955"}]},{"id":107730,"name":"freelance-video-editor","displayName":"Freelance
         Video Editor","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107731,"name":"restrictions","displayName":"Restrictions","description":null,"type":"boolean","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"checkbox","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":null,"valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[],"options":[{"id":107732,"name":"true","displayName":"Restricted","default":false,"value":"true"},{"id":107733,"name":"false","displayName":"Not
         Restricted","default":false,"value":"false"}]},{"id":110950,"name":"restriction-description","displayName":"Restriction
-        Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":107735,"name":"poster-image","displayName":"Poster
-        Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110951,"name":"thumbnail-image","displayName":"Thumbnail
+        Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":111818,"name":"poster-image","displayName":"Poster
+        Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":111821,"name":"thumbnail-image","displayName":"Thumbnail
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Mon, 20 Jun 2016 13:34:42 GMT
+  recorded_at: Mon, 27 Jun 2016 09:36:25 GMT
 recorded_with: VCR 3.0.3
