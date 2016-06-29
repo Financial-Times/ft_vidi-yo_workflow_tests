@@ -50,7 +50,7 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Running","start":"27
+      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Complete","start":"27
         Jun 2016 09:42:35 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
   recorded_at: Mon, 27 Jun 2016 09:41:55 GMT
@@ -104,7 +104,7 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"27
+      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Complete","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"27
         Jun 2016 09:42:35 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","email":"jem.rayfield@gmail.com","accountId":4},"definition":{"id":12387,"uuid":"06035926-2479-4f6a-bcfe-0f330d5b2815","name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":11,"name":"workflow-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false},"href":"https://master.dev.nativ-systems.com/api/workflowDefinitions/12387","owner":"masteruser
@@ -167,7 +167,7 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"27
+      string: '{"id":26212,"name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/26212","status":"Complete","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"27
         Jun 2016 09:42:35 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","email":"jem.rayfield@gmail.com","accountId":4},"definition":{"id":12387,"uuid":"06035926-2479-4f6a-bcfe-0f330d5b2815","name":"workflow-create-project","displayName":"workflow-create-project","objectType":{"id":11,"name":"workflow-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false},"href":"https://master.dev.nativ-systems.com/api/workflowDefinitions/12387","owner":"masteruser

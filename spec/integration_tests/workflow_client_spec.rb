@@ -8,13 +8,13 @@ RSpec.describe ProjectWorkflowWebserviceClient do
     @workflow = ProjectWorkflowWebserviceClient.new
   end
 
-  it 'can handle malformed requests' do
+  it 'can handle malformed requests', :vcr do
     malformed_request = '</FAILED>'
     @response = @workflow.create_invalid_project_workflow(malformed_request,
                                                           malformed_request, malformed_request)
   end
 
-  it 'can handle large requests' do
+  it 'can handle large requests', :vcr do
     big_request = CustomRequestData.extra_long_string(100_000)
     @response = @workflow.create_invalid_project_workflow(big_request, big_request, big_request)
   end
