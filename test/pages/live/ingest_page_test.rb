@@ -10,7 +10,9 @@ class IngestPageTest < VideoTest
     @browser = Watir::Browser.new :phantomjs
     @ingest_assets_page = IngestPage.new @browser
     @retrieve_ingest_panels_client = CreateIngestAssetWebserviceClient.new
-    fetch_expected_page_elements
+    VCR.use_cassette 'expected ingest page elements' do
+      fetch_expected_page_elements
+    end
   end
 
   def fetch_expected_page_elements
