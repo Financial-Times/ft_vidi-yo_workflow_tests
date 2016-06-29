@@ -9,7 +9,9 @@ class CreateVideoProjectPageTest < VideoTest
     @browser = Watir::Browser.new :phantomjs
     @create_project_page = ProjectPage.new @browser
     @mio_fetch_panels_client = CreateProjectPanelWebserviceClient.new
-    fetch_expected_page_elements
+    VCR.use_cassette 'expected_page_elements' do
+      fetch_expected_page_elements
+    end
   end
 
   def fetch_expected_page_elements

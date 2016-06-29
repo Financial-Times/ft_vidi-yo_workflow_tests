@@ -12,7 +12,9 @@ class IngestPage < PanelPage
 
   button :ingest_button
 
-  define_page_elements(CreateIngestAssetWebserviceClient.new)
+  VCR.use_cassette 'ingest page elements' do
+    define_page_elements(CreateIngestAssetWebserviceClient.new)
+  end
 
   # Complete form for Ingestion
   #

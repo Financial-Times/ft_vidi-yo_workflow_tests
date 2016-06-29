@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'factory_girl'
 require_relative '../../test/data/video_asset'
 require_relative '../../test/data/custom_request_data'
 

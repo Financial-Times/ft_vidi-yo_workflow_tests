@@ -2,6 +2,8 @@
 require_relative 'video_webservice_client'
 require_relative '../../test/data/ws_user'
 require_relative '../../config/config'
+require 'vcr'
+require_relative '../../vcr_setup'
 
 ##
 # Parses metadata description to allow retrieval of individual definitions
@@ -19,13 +21,11 @@ class MetadataDescriptionWebserviceClient
   # REST call to get definition descriptions from Web Service. Return value can then be used
   # to fetch individual definitions
   def retrieve_description_metadata
-    # VCR.use_cassette('metadata_description') do
     RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
       @response = response
       info_logger :info, 'WS request successful: metadata description retrieved'
       JSON.parse(response)
     end
-    # end
   end
 
   # Takes name, returns definition description
@@ -33,8 +33,10 @@ class MetadataDescriptionWebserviceClient
   # @param name [String] name of parameter
   # @
   def retrieve_description_by_name(name)
-    response = retrieve_description_metadata['metadataDefinitions']
-    response.each do |description|
+    VCR.use_cassette 'description_metadata' do
+      @response = retrieve_description_metadata['metadataDefinitions']
+    end
+    @response.each do |description|
       return description if description['name'] == name
     end
   end

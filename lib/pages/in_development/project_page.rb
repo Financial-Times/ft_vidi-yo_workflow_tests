@@ -8,7 +8,9 @@ class ProjectPage < PanelPage
 
   include Logging
 
-  define_page_elements(CreateProjectPanelWebserviceClient.new)
+  VCR.use_cassette 'project page elements' do
+    define_page_elements(CreateProjectPanelWebserviceClient.new)
+  end
 
   button(:submit_project, text: 'submit workflow')
 
