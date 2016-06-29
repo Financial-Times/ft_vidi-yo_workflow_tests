@@ -23,7 +23,7 @@ RSpec.describe PublishWorkflow do
   end
 
   context 'end-to-end testing', :vcr do
-    it 'can indicate that the publish workflow is complete', wait: {timeout: 240} do
+    it 'can indicate that the publish workflow is complete', :vcr, wait: {timeout: 240} do
       retrieved_publish_workflow = @publish_workflow.retrieve @publish_workflow.id
       wait_for_complete @publish_workflow, retrieved_publish_workflow
     end

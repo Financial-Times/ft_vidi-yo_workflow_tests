@@ -31,7 +31,7 @@ RSpec.describe ProjectWorkflow do
       wait_for_complete @project, retrieved_project
     end
 
-    it 'has a uuid' do
+    it 'has a uuid', :vcr do
       expect(@project.uuid.contains_uuid?).to be_truthy
     end
   end

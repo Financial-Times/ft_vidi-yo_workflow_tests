@@ -11,9 +11,9 @@ class IngestionWorkflowWebserviceClientTest < VideoTest
   end
 
   def test_can_create_valid_ingestion_workflow
-    #VCR.use_cassette 'unit create valid ingestion' do
+    VCR.use_cassette 'unit create valid ingestion' do
       @workflow = @ingest_workflow_ws_client.create_ingestion_workflow
-    #end
+    end
     assert_respond_to(@workflow, :has_key?)
     assert(@workflow.has_key?('id'))
   end

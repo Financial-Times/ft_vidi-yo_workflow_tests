@@ -29,7 +29,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Tue, 28 Jun 2016 14:01:32 GMT
+      - Wed, 29 Jun 2016 13:05:51 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=FEtLwJWUxpEIQZ-+2Pa5pDmw.-201388932; Path=/api; Secure
+      - JSESSIONID=+1+m6eGJvh7uvsuZhB34VMUT.-201388932; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/27710
+      - https://master.dev.nativ-systems.com/api/workflows/27813
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -52,8 +52,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":27710,"name":"ingest-raw-workflow-99","displayName":"ingest-raw-workflow-99","href":"https://master.dev.nativ-systems.com/api/workflows/27710","status":"Running","start":"28
-        Jun 2016 14:01:32 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":27813,"name":"ingest-raw-workflow-99","displayName":"ingest-raw-workflow-99","href":"https://master.dev.nativ-systems.com/api/workflows/27813","status":"Completed","start":"29
+        Jun 2016 13:05:51 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Tue, 28 Jun 2016 14:00:51 GMT
+  recorded_at: Wed, 29 Jun 2016 13:05:10 GMT
 recorded_with: VCR 3.0.3

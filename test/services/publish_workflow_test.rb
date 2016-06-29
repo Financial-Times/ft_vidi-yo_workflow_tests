@@ -1,11 +1,15 @@
 require 'test/unit'
 require_relative '../../lib/webservice_clients/workflows/publish_workflow'
+require 'vcr'
+require_relative '../../vcr_setup'
 
 class PublishWorkflowTest < Test::Unit::TestCase
 
 
   def setup
-    @publish_workflow = PublishWorkflow.new.create
+    VCR.use_cassette 'create publish workflow' do
+      @publish_workflow = PublishWorkflow.new.create
+    end
   end
 
   def test_can_create_workflow

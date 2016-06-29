@@ -2,6 +2,8 @@
 require_relative '../../../lib/webservice_clients/workflow_clients/ingestion_workflow_webservice_client'
 require_relative '../../../config/config'
 require_relative 'workflow'
+require 'vcr'
+require_relative '../../../vcr_setup'
 
 ##
 # Ingestion Workflow
@@ -15,11 +17,14 @@ class IngestWorkflow < Workflow
   #
   # @return [IngestWorkflow] object
   def create(uuid=nil)
-    @workflow_log = IngestionWorkflowWebserviceClient
-                        .new
-                        .create_ingestion_workflow({uuid: uuid, path: nil, title: nil})
-    puts @workflow_log
-    # raise "Workflow not created: #{@workflow_log.class} found" unless created?
+    VCR.use_cassette 'create ingestion' do
+      @workflow_log = IngestionWorkflowWebserviceClient
+                          .new
+                          .create_ingestion_workflow({uuid: uuid, path: nil, title: nil})
+    end
+
+    info_logger :info, @workflow_log
+    raise "Workflow not created: #{@workflow_log.class} found" unless created?
     self
   end
 

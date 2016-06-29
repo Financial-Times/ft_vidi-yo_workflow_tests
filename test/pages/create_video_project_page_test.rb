@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require 'test/unit'
 require_relative '../video_test'
 require_relative '../../lib/pages/in_development/project_page'

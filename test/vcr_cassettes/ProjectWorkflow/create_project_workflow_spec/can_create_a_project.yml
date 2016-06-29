@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
-        \"tznovb\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"ejpzuj\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
         \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
     headers:
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Mon, 27 Jun 2016 09:42:33 GMT
+      - Wed, 29 Jun 2016 13:54:32 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -39,9 +39,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=O-KJSrtKw+mggIj0YeIZOCQI.-201388908; Path=/api; Secure
+      - JSESSIONID=6dgHkoqA+pR62FXCOIxK+ZqY.-201388932; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/26206
+      - https://master.dev.nativ-systems.com/api/workflows/28292
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -50,8 +50,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":26206,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/26206","status":"Running","start":"27
-        Jun 2016 09:42:32 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":28292,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/28292","status":"Running","start":"29
+        Jun 2016 13:54:32 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 27 Jun 2016 09:41:52 GMT
+  recorded_at: Wed, 29 Jun 2016 13:53:51 GMT
 recorded_with: VCR 3.0.3

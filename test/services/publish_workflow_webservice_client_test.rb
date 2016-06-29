@@ -36,8 +36,9 @@ class PublishWorkflowWebserviceClientTest < VideoTest
   end
 
   def test_can_create_valid_publish_workflow
-   @publish_workflow = @publish_workflow_ws_client.create_publish_workflow
+    VCR.use_cassette 'unit create publish workflow' do
+      @publish_workflow = @publish_workflow_ws_client.create_publish_workflow
+    end
   end
-
 
 end

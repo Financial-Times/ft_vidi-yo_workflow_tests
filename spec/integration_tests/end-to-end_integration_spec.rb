@@ -7,13 +7,14 @@ require 'rspec/wait'
 RSpec.describe IngestToPublish do
   include Config::Logging
 
-  context 'live integration tests' do
-    before :all do
-      @project = ProjectWorkflow.new.create
-      @uuid = @project.uuid
-      info_logger :info, "Project ID: #{@uuid}"
-    end
 
+  before :all do
+    @project = ProjectWorkflow.new.create
+    @uuid = @project.uuid
+    info_logger :info, "Project ID: #{@uuid}"
+  end
+
+  context 'live integration tests' do
     it 'can create a project' do
       expect(@project.created?).to be_truthy
     end
@@ -31,4 +32,5 @@ RSpec.describe IngestToPublish do
       wait_for_complete @ingestion, retrieved_workflow
     end
   end
+
 end

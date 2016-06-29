@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 28 Jun 2016 14:11:42 GMT
+      - Wed, 29 Jun 2016 13:05:43 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=N+wCFoXirDDfdUeNZV42z5hO.-201388932; Path=/api; Secure
+      - JSESSIONID=s1F+5C2Mk3gBh-20TT4kycz2.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -182,5 +182,5 @@ http_interactions:
         Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
         masteruser","accountId":4},"revision":"2-15db3793e56fa1906a06701bcee43ccae207b5b1"}],"totalCount":16,"offset":0,"limit":100}'
     http_version: 
-  recorded_at: Tue, 28 Jun 2016 14:11:01 GMT
+  recorded_at: Wed, 29 Jun 2016 13:05:02 GMT
 recorded_with: VCR 3.0.3
