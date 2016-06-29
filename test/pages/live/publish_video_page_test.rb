@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 require 'test/unit'
-require_relative '../video_test'
-require_relative '../../lib/pages/in_development/publish_video_page'
-require_relative '../../lib/webservice_clients/publish_panel_webservice_client'
+require_relative '../../../test/video_test'
+require_relative '../../../lib/pages/in_development/publish_video_page'
+require_relative '../../../lib/webservice_clients/publish_panel_webservice_client'
 
 class PublishVideoPageTest < VideoTest
 
@@ -10,7 +10,10 @@ class PublishVideoPageTest < VideoTest
     @browser = Watir::Browser.new :phantomjs
     @publish_video_page = PublishVideoPage.new @browser
     @retrieve_publish_panels_client = PublishPanelWebserviceClient.new
-    fetch_expected_page_elements
+
+    VCR.use_cassette 'expected publish page elements' do
+      fetch_expected_page_elements
+    end
   end
 
   def fetch_expected_page_elements

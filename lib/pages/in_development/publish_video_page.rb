@@ -9,7 +9,9 @@ class PublishVideoPage < PanelPage
 
   include Logging
 
-  define_page_elements(PublishPanelWebserviceClient.new)
+  VCR.use_cassette 'publish page elements' do
+    define_page_elements(PublishPanelWebserviceClient.new)
+  end
 
   span :export_button, text: 'submit'
 

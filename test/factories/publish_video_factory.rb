@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require_relative '../../test/data/publish_video'
+require 'factory_girl'
 
 FactoryGirl.define do
   factory :publish_video, class: PublishVideo do |video|
