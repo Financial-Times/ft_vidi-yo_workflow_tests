@@ -1,7 +1,7 @@
 require 'test/unit'
-require_relative '../video_test'
-require_relative '../../lib/pages/in_development/project_page'
-require_relative '../../lib/webservice_clients/create_project_panel_webservice_client'
+require_relative '../../../test/video_test'
+require_relative '../../../lib/pages/in_development/project_page'
+require_relative '../../../lib/webservice_clients/create_ingest_asset_webservice_client'
 
 class CreateVideoProjectPageTest < VideoTest
 
