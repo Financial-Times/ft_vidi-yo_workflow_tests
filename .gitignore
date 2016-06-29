@@ -11,3 +11,4 @@ secrets.yml
 /logs/log.txt
 integration/
 /reports/json/cucumber_report.json
+/logs/vcr_log.log
