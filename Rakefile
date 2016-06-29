@@ -29,9 +29,11 @@ Rake::TestTask.new(:unit_tests) do |t|
   t.test_files = FileList['test/**/*_test.rb']
 end
 
-Rake::TestTask.new do |t|
-  t.libs << 'spec'
-  t.name = 'integration_tests'
-  t.warning = true
-  t.test_files = FileList['spec/*_spec.rb']
+
+RSpec::Core::RakeTask.new(:specs) do |t|
+  t.exclude_pattern = 'spec/integration_tests/*_spec.rb'
+end
+
+RSpec::Core::RakeTask.new(:integration) do |t|
+  t.pattern = 'spec/integration_tests/*_spec.rb'
 end
