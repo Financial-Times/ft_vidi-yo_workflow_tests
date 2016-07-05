@@ -2,11 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://master.dev.nativ-systems.com/api/workflows/
+    uri: https://master.dev.nativ-systems.com//api/workflows/
     body:
       encoding: UTF-8
       string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
-        \"hnutfw\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"htyfwv\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
         \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
     headers:
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Wed, 29 Jun 2016 13:06:19 GMT
+      - Tue, 05 Jul 2016 08:38:03 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -39,9 +39,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=mKQis5J20Ne+kC4HUF6ESRhQ.-201388932; Path=/api; Secure
+      - JSESSIONID=Og+BxTqunrEHIbJ5ZqCBy26e.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/27825
+      - https://master.dev.nativ-systems.com/api/workflows/29329
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -50,8 +50,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":27825,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/27825","status":"Completed","start":"29
-        Jun 2016 13:06:20 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":29329,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/29329","status":"Completed","start":"05
+        Jul 2016 08:38:02 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 13:05:39 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:57 GMT
 recorded_with: VCR 3.0.3

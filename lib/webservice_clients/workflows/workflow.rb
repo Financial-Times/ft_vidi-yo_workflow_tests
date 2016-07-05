@@ -18,7 +18,7 @@ class Workflow
   #
   # @return [boolean]
   def started?
-    status == 'Running' || status == 'Complete'
+    status == 'Running' || status =~  /Complete/
   end
 
 

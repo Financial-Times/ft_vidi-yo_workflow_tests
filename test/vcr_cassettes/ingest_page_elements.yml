@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:54 GMT
+      - Tue, 05 Jul 2016 08:37:22 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=GZPacELGGXNdYVLxHvC4b39u.-201388932; Path=/api; Secure
+      - JSESSIONID=9JPJ5EXtu1HOmRVqQfPyGctH.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -84,10 +84,10 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:13 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:15 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -108,7 +108,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:54 GMT
+      - Tue, 05 Jul 2016 08:37:22 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -126,7 +126,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=r88uTKiN2u2kvQXlD5WiC8G8.-201388932; Path=/api; Secure
+      - JSESSIONID=4QKz6BJgj7-Wh9ANcBgKgh1a.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -169,10 +169,10 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:13 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:16 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -193,7 +193,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:55 GMT
+      - Tue, 05 Jul 2016 08:37:23 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -211,7 +211,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Rupj2DLQAdvfPNpdJQ7ikFO6.-201388932; Path=/api; Secure
+      - JSESSIONID=HTrXy46aLAU0728qSXSKyxOH.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -254,10 +254,10 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:13 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:17 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -278,7 +278,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:55 GMT
+      - Tue, 05 Jul 2016 08:37:23 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -296,7 +296,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Jqd1R910cFR51zCvqrQMoWnU.-201388932; Path=/api; Secure
+      - JSESSIONID=v-opVaMStEd9VFJFsx8qe8tA.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -339,10 +339,10 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:13 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:17 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -363,7 +363,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:55 GMT
+      - Tue, 05 Jul 2016 08:37:24 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -381,7 +381,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=WbyQj3dS3yjHydSf+bkHjL9C.-201388932; Path=/api; Secure
+      - JSESSIONID=9D8gIgr6dvirxH4i3YSRiCIX.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -424,10 +424,10 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:14 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:18 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11517/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -448,7 +448,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:22:56 GMT
+      - Tue, 05 Jul 2016 08:37:24 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -466,7 +466,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=LAKA6goGQKIXUxxhaDK5TYgB.-201388932; Path=/api; Secure
+      - JSESSIONID=uuKyc3mzxtItMVpiZ1GbND2m.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -509,5 +509,5 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:22:14 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:18 GMT
 recorded_with: VCR 3.0.3

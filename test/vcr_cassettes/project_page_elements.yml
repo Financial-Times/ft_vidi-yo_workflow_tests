@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:50 GMT
+      - Tue, 05 Jul 2016 08:37:18 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=yPl17SZjFajGqZIsAIvjYtFO.-201388932; Path=/api; Secure
+      - JSESSIONID=Nt3FJjsl--+VGfT1pnRwDntg.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -78,10 +78,10 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:08 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:12 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -102,7 +102,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:51 GMT
+      - Tue, 05 Jul 2016 08:37:19 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -120,7 +120,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=3cx8qkdIf619zJ8SSAXsJkqx.-201388932; Path=/api; Secure
+      - JSESSIONID=SXjkv9nIlK1Sb-WoIRX0GiE6.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -157,10 +157,10 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:09 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:12 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -181,7 +181,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:51 GMT
+      - Tue, 05 Jul 2016 08:37:19 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -199,7 +199,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=bHkTKbilgosXbdqHBqtCwF+Q.-201388932; Path=/api; Secure
+      - JSESSIONID=B9aPDJ9WkNEaSRoJdTtmqzz5.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -236,10 +236,10 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:09 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:13 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -260,7 +260,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:52 GMT
+      - Tue, 05 Jul 2016 08:37:20 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -278,7 +278,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=O3N-atdQVkkIKAxYux3c1I-V.-201388932; Path=/api; Secure
+      - JSESSIONID=o95sI9E+aWcumjLftcIUYPgS.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -315,10 +315,10 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:10 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:14 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -339,7 +339,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:52 GMT
+      - Tue, 05 Jul 2016 08:37:20 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -357,7 +357,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=CajamnB75rM7DJ7v2Yp+IxLc.-201388932; Path=/api; Secure
+      - JSESSIONID=Pol5PJkPj1931f9NPuVDfWSM.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -394,10 +394,10 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:10 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:14 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -418,7 +418,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 16:14:53 GMT
+      - Tue, 05 Jul 2016 08:37:21 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -436,7 +436,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Qaoxr0Q1V0-XEMMR7shAF4L0.-201388932; Path=/api; Secure
+      - JSESSIONID=sFTc8vFonh3oVYZKcfPOLs1w.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -473,5 +473,5 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 16:14:11 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:15 GMT
 recorded_with: VCR 3.0.3

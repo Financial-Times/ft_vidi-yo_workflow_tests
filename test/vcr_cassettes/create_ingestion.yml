@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://master.dev.nativ-systems.com/api/workflows/
+    uri: https://master.dev.nativ-systems.com//api/workflows/
     body:
       encoding: UTF-8
       string: '{"definitionId":13800,"stringVariables":{"assetMetadata":"{ \"clip-type\":\"http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd\",\"clip-description\":
@@ -29,7 +29,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Wed, 29 Jun 2016 13:28:24 GMT
+      - Tue, 05 Jul 2016 08:37:29 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=7bRa5CoA-sZO43Ym+1CMBvX4.-201388932; Path=/api; Secure
+      - JSESSIONID=RnvoPfxHe9yxfIICSdY35wxe.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/28153
+      - https://master.dev.nativ-systems.com/api/workflows/29313
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -52,8 +52,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":28153,"name":"ingest-raw-workflow-99","displayName":"ingest-raw-workflow-99","href":"https://master.dev.nativ-systems.com/api/workflows/28153","status":"Complete","start":"29
-        Jun 2016 13:28:25 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":29313,"name":"ingest-raw-workflow-99","displayName":"ingest-raw-workflow-99","href":"https://master.dev.nativ-systems.com/api/workflows/29313","status":"Completed","start":"05
+        Jul 2016 08:37:28 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 13:27:45 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:24 GMT
 recorded_with: VCR 3.0.3

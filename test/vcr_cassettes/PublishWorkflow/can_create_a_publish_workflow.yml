@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://master.dev.nativ-systems.com/api/workflows/
+    uri: https://master.dev.nativ-systems.com//api/workflows/
     body:
       encoding: UTF-8
       string: '{"definitionId":20897,"stringVariables":{"assetMetadata":"{ \"section\":
@@ -39,7 +39,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Wed, 29 Jun 2016 13:54:43 GMT
+      - Tue, 05 Jul 2016 08:38:56 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -51,9 +51,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=WZiOP-EKbYc4IQKrgLpw4Wm4.-201388932; Path=/api; Secure
+      - JSESSIONID=rpZb4C5HBQnuX2T5SN+PR+IZ.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/28302
+      - https://master.dev.nativ-systems.com/api/workflows/29354
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -62,8 +62,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":28302,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/28302","status":"Running","start":"29
-        Jun 2016 13:54:43 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":29354,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/29354","status":"Completed","start":"05
+        Jul 2016 08:38:54 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 13:54:02 GMT
+  recorded_at: Tue, 05 Jul 2016 08:37:50 GMT
 recorded_with: VCR 3.0.3

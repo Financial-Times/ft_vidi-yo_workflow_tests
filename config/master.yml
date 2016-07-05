@@ -1,8 +1,23 @@
 ---
 :dev:
-    :url: https://master.dev.nativ-systems.com
-    :ft_url: localhost:3131
+
+    :ws_url: https://master.dev.nativ-systems.com/api
+    :url: https://master.dev.nativ-systems.com/
+
     :admin_user:
         :username: masteruser
         :password: masteruser
+
+    :panel_id: 11_518
+    :project_metadata_name: project-metadata
+
+:stubs:
+    :ws_url: http://localhost:32773
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :panel_id: 1
+    :project_metadata_name: projectMetadata
 

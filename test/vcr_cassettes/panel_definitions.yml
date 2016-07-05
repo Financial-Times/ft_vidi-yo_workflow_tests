@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11312/definition
+    uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 29 Jun 2016 13:05:55 GMT
+      - Tue, 05 Jul 2016 08:37:35 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=K2vJV8mgSOqItIDIAeT2+LQD.-201388932; Path=/api; Secure
+      - JSESSIONID=7DbRePTcvmDBtj5wk87vtr7m.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -78,5 +78,5 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 29 Jun 2016 13:05:14 GMT
+  recorded_at: Tue, 05 Jul 2016 08:36:30 GMT
 recorded_with: VCR 3.0.3
