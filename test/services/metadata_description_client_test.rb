@@ -20,14 +20,14 @@ class MetadataDescriptionClientTest < VideoTest
 
   def test_can_retrieve_description_by_name
     VCR.use_cassette 'metadata description project-metadata' do
-      @description = @mio_metadata_service.retrieve_description_by_name('project-metadata')
+      @description = @mio_metadata_service.retrieve_description_by_name(PROJECT_METADATA_NAME)
     end
-    assert((@description['name'] == 'project-metadata'), "Name in response incorrect (#{@description['name']})")
+    assert((@description['name'] == PROJECT_METADATA_NAME), "Name in response incorrect (#{@description['name']})")
   end
 
   def test_can_retrieve_id_with_name
     VCR.use_cassette 'metadata description project-metadata by id' do
-      @id = @mio_metadata_service.retrieve_id_with_name('project-metadata')
+      @id = @mio_metadata_service.retrieve_id_with_name(PROJECT_METADATA_NAME)
     end
     assert((@id.respond_to? :+))
   end

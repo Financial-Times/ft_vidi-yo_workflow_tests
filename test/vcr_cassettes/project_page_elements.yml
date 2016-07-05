@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:18 GMT
+      - Tue, 05 Jul 2016 09:37:28 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Nt3FJjsl--+VGfT1pnRwDntg.-201388908; Path=/api; Secure
+      - JSESSIONID=71I-6rEnPTb-BYAwEW5P4oEf.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -78,7 +78,7 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:12 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:22 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
@@ -102,7 +102,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:19 GMT
+      - Tue, 05 Jul 2016 09:37:28 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -120,7 +120,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=SXjkv9nIlK1Sb-WoIRX0GiE6.-201388908; Path=/api; Secure
+      - JSESSIONID=LstuAgYnpWl9H019m88B3vNh.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -157,7 +157,7 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:12 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:22 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
@@ -181,7 +181,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:19 GMT
+      - Tue, 05 Jul 2016 09:37:28 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -199,7 +199,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=B9aPDJ9WkNEaSRoJdTtmqzz5.-201388908; Path=/api; Secure
+      - JSESSIONID=y-FvDL-9z9h4qyvwGjsD0HAR.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -236,7 +236,7 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:13 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:22 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
@@ -260,7 +260,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:20 GMT
+      - Tue, 05 Jul 2016 09:37:28 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -278,7 +278,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=o95sI9E+aWcumjLftcIUYPgS.-201388908; Path=/api; Secure
+      - JSESSIONID=lekh9ErDy8nAYWnbuprFZeic.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -315,7 +315,7 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:14 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:23 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
@@ -339,7 +339,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:20 GMT
+      - Tue, 05 Jul 2016 09:37:30 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -357,7 +357,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Pol5PJkPj1931f9NPuVDfWSM.-201388908; Path=/api; Secure
+      - JSESSIONID=nfbeLIAm4qS6B5+Smt3T5o4H.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -394,7 +394,7 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:14 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:24 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com//api/metadataDefinitions/11312/definition
@@ -418,7 +418,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 05 Jul 2016 08:37:21 GMT
+      - Tue, 05 Jul 2016 09:37:30 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -436,7 +436,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=sFTc8vFonh3oVYZKcfPOLs1w.-201388908; Path=/api; Secure
+      - JSESSIONID=I1Zx3I-+YIuSBPaPZXTqU1j3.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -473,5 +473,5 @@ http_interactions:
         - Special Projects (SP)","default":false,"value":"http://api.ft.com/things/5c9a6095-11dd-41ac-8b10-07355c0b599f"},{"id":107593,"name":"LAA","displayName":"Life
         - FT Life &amp; Arts (LAA)","default":false,"value":"http://api.ft.com/things/d743fcb9-9fea-4e4d-a550-8b786b0dda5c"}]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 05 Jul 2016 08:36:15 GMT
+  recorded_at: Tue, 05 Jul 2016 09:36:24 GMT
 recorded_with: VCR 3.0.3

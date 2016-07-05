@@ -15,7 +15,7 @@ class IngestPanelClientTest < VideoTest
   end
 
   def test_build_url_for_data_definition
-    panel_name = 'ingest-metadata'
+    panel_name = INGEST_METADATA_NAME
     VCR.use_cassette 'get id from name' do
       @id = @mio_metadata_service.retrieve_id_with_name(panel_name)
     end

@@ -10,6 +10,8 @@
 
     :panel_id: 11_518
     :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
 
 :stubs:
     :ws_url: http://localhost:32773
@@ -20,4 +22,6 @@
 
     :panel_id: 1
     :project_metadata_name: projectMetadata
+    :ingest_metadata_name: ingestMetadata
+    :publish_metadata_name: publishMetadata
 

@@ -14,7 +14,7 @@ class CreateProjectPanelClientTest < VideoTest
   end
 
   def test_build_url_for_data_definition
-    panel_name = 'project-metadata'
+    panel_name = PROJECT_METADATA_NAME
     VCR.use_cassette 'get id from name' do
       @id = @mio_metadata_service.retrieve_id_with_name(panel_name)
     end

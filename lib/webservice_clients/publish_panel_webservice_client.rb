@@ -8,7 +8,8 @@ class PublishPanelWebserviceClient < FetchPanelWebserviceClient
   attr_reader :url
 
   def initialize(user=WSUser.new, _url=nil)
-    super(user, build_url_for_data_definition('publish-metadata'))
+    info_logger :info, "Initialized Client for #{Constants::PUBLISH_METADATA_NAME}"
+    super(user, build_url_for_data_definition(PUBLISH_METADATA_NAME))
   end
 
 end

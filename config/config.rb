@@ -21,7 +21,7 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT ||= :dev
+    EXECUTION_ENVIRONMENT ||= :stubs
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
@@ -38,6 +38,9 @@ module Config
     ASSET_TITLE = 'Missing.mp4'
     ASSET_UUID = 'b0778312-7686-49bc-a720-0551709ad37b'
     ASSET_URL = 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159'
+    PROJECT_METADATA_NAME = ENVIRONMENT_CONFIG[:project_metadata_name]
+    INGEST_METADATA_NAME = ENVIRONMENT_CONFIG[:ingest_metadata_name]
+    PUBLISH_METADATA_NAME = ENVIRONMENT_CONFIG[:publish_metadata_name]
 
   end
 
