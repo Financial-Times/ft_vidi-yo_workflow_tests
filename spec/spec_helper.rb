@@ -16,7 +16,7 @@ def wait_for_complete(workflow_object, stored_workflow)
       raise e
     end
 
-    info_logger :info, workflow_status
+    info_logger :info, "Workflow Status: #{workflow_status}"
     info_logger :info, "Elapsed time: #{Time.now - start}"
     if workflow_status =~ /Complete/
       return workflow_status

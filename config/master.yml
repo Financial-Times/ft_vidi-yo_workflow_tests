@@ -15,6 +15,7 @@
 
 :stubs:
     :ws_url: http://localhost:32773
+    :url: http://localhost:32773
 
     :admin_user:
         :username: masteruser

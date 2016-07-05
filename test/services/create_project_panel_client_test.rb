@@ -22,7 +22,7 @@ class CreateProjectPanelClientTest < VideoTest
     VCR.use_cassette 'panel name' do
       @url = @mio_fetch_panels_client.build_url_for_data_definition panel_name
     end
-    assert_match(%r{/api/metadataDefinitions/#{@id}/definition}, @url)
+    assert_match(%r{metadataDefinitions/#{@id}/definition}, @url)
   end
 
   def test_extract_create_project_panel_elements

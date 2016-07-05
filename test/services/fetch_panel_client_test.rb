@@ -6,11 +6,10 @@ require_relative '../test_helper'
 
 class FetchPanelClientTest < VideoTest
 
-  TEST_FETCH_URL = "#{Config::Constants::MIO_ROOT_URL}/api/metadataDefinitions/11312/definition"
+  TEST_FETCH_URL = "#{Config::Constants::MIO_WS_URL}/metadataDefinitions/#{PANEL_ID}/definition"
 
   def setup
     @mio_fetch_panels_client = FetchPanelWebserviceClient.new(WSUser.new, TEST_FETCH_URL)
-    @mio_cached_client = FetchPanelWebserviceClient.new(WSUser.new, 'https://www.google.co.uk')
   end
 
   def test_get_panel_elements
@@ -49,7 +48,7 @@ class FetchPanelClientTest < VideoTest
 
   def test_fetch_panel_description_by_id
     VCR.use_cassette 'get panel definition by id' do
-      @panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(11_518)
+      @panel_description = @mio_fetch_panels_client.fetch_panel_description_by_id(PANEL_ID)
     end
     assert((@panel_description.has_key? 'name'))
   end

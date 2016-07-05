@@ -20,7 +20,7 @@ class FetchPanelWebserviceClient < VideoWebserviceClient
   # @return [URI]
   def build_url_for_data_definition(name)
     id = MetadataDescriptionWebserviceClient.new(WSUser.new).retrieve_id_with_name(name)
-    "#{Constants::MIO_ROOT_URL}/api/metadataDefinitions/#{id}/definition"
+    "#{Constants::MIO_WS_URL}/metadataDefinitions/#{id}/definition"
   end
 
   # Processes panel elements from description data, storing them in a Hash
@@ -40,7 +40,7 @@ class FetchPanelWebserviceClient < VideoWebserviceClient
   # @return [Hash] element
   def fetch_panel_description_by_id(id)
     mio_client = VideoWebserviceClient.new(WSUser.new,
-                                           "#{Constants::MIO_ROOT_URL}/api/metadataDefinitions/#{id}/definition")
+                                           "#{Constants::MIO_WS_URL}/metadataDefinitions/#{id}/definition")
     mio_client.retrieve_resource
   end
 

@@ -11,7 +11,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
 
   include Config::Constants
 
-  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
+  def initialize(user=WSUser.new, url="#{MIO_WS_URL}/workflows")
     super
     @object_type = :ingest_workflow
     @url = url

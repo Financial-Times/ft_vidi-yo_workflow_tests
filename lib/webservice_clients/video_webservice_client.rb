@@ -28,6 +28,9 @@ class VideoWebserviceClient
   # @return [Hash] of requested object
   def retrieve_resource
     definition_id = @url.gsub(/[^0-9]/, '')
+    info_logger :info, "RETRIEVE RESOURCE: URL: #{@url}"
+    info_logger :info, "RETRIEVE RESOURCE: HEADERS: #{@headers}"
+    info_logger :info, "RETRIEVE RESOURCE: definition_ID: #{definition_id}"
     RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                 headers: @headers) do |response|
       raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code

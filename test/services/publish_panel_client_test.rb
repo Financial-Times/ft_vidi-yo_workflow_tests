@@ -20,7 +20,7 @@ class PublishPanelClientTest < VideoTest
     VCR.use_cassette 'url for data definition' do
       @url = @mio_publish_panel_client.build_url_for_data_definition panel_name
     end
-    assert_match(%r{/api/metadataDefinitions/#{@id}/definition}, @url)
+    assert_match(%r{metadataDefinitions/#{@id}/definition}, @url)
   end
 
   def test_extract_publish_panel_elements
@@ -28,7 +28,7 @@ class PublishPanelClientTest < VideoTest
       @elements = @mio_publish_panel_client.extract_panel_elements
     end
     assert_kind_of(Hash, @elements)
-    assert(@elements.has_key?('headline') || @elements.has_key?('text'),
+    assert(@elements.has_key?('brand') || @elements.has_key?('text'),
            'Does not have expected element (headline => text)')
   end
 

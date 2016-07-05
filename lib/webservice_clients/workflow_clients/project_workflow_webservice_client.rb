@@ -8,8 +8,9 @@ require_relative 'workflow_webservice_client'
 # Handles Project workflow operations
 class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
 
-  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
+  def initialize(user=WSUser.new, url="#{MIO_WS_URL}/workflows")
     super
+    info_logger :info, "URL: #{url}"
     @object_type = :project_workflow
     @url = url
   end

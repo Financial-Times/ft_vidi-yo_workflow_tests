@@ -22,7 +22,7 @@ class IngestPanelClientTest < VideoTest
     VCR.use_cassette 'data definition url' do
       @url = @mio_ingest_assets_panel_client.build_url_for_data_definition panel_name
     end
-    assert_match(%r{/api/metadataDefinitions/#{@id}/definition}, @url)
+    assert_match(%r{metadataDefinitions/#{@id}/definition}, @url)
   end
 
   def test_extract_ingest_asset_panel_elements
@@ -30,8 +30,10 @@ class IngestPanelClientTest < VideoTest
       @ingest_panel_elements = @mio_ingest_assets_panel_client.extract_panel_elements
     end
     assert_kind_of(Hash, @ingest_panel_elements)
-    assert(@ingest_panel_elements.has_key?('clip-description') || @ingest_panel_elements.has_key?('text'),
-           'Does not have expected element (clip-description => text)')
+    info_logger :info, "Ingest panel elements: #{@ingest_panel_elements.each{|k,v| puts k,v}}"
+    assert(@ingest_panel_elements.has_key?('clip-type') || @ingest_panel_elements.has_value?('text') ||
+               @ingest_panel_elements.has_key?('project') || @ingest_panel_elements.has_value?('single-option') )
+
   end
 
   def test_retrieve_ingest_panel_definitions

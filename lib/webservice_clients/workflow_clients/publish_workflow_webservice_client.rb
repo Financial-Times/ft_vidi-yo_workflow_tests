@@ -4,7 +4,7 @@ require_relative '../../../test/data/ws_user'
 class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
 
 
-  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/workflows/")
+  def initialize(user=WSUser.new, url="#{MIO_WS_URL}/workflows")
     super
     @object_type = :publish_workflow
     @url = url

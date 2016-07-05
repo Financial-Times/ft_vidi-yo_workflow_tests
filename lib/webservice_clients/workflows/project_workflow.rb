@@ -34,6 +34,7 @@ class ProjectWorkflow < Workflow
   # @param workflow_id [String]
   # @return [ProjectWorkflow] workflow
   def retrieve(workflow_id)
+    info_logger :info, "Project Workflow ID: #{workflow_id}"
     @workflow_log = ProjectWorkflowWebserviceClient.new.retrieve_workflow(workflow_id)
     self
   end

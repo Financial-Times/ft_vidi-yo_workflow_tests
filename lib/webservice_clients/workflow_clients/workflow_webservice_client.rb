@@ -21,7 +21,7 @@ class WorkflowWebserviceClient < VideoWebserviceClient
   # @param id [String]
   # @return [Hash] workflow description
   def retrieve_workflow(id)
-    @url = "#{@url}#{id}"
+    @url = "#{@url}/#{id}"
     retrieve_resource
   end
 

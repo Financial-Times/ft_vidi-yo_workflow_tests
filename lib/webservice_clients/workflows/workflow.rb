@@ -1,4 +1,8 @@
+require_relative '../../../config/config'
+
 class Workflow
+
+  include Config::Logging
 
   def created?
     puts "Status: #{status}"

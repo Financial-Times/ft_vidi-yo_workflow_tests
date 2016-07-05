@@ -12,7 +12,7 @@ class MetadataDescriptionWebserviceClient
   include Config::Logging
   include Config::Constants
 
-  def initialize(user=WSUser.new, url="#{MIO_ROOT_URL}/api/metadataDefinitions")
+  def initialize(user=WSUser.new, url="#{MIO_WS_URL}/metadataDefinitions")
     @url = url
     @user = user
     @headers = {Accept: 'application/json', 'Content-Type': 'application/vnd.nativ.mio.v1+json'}
