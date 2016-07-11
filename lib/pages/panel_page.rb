@@ -16,6 +16,7 @@ class PanelPage
 
   element :site_header, id: 'TBC'
   element :test_element, id: 'textarea-test_element'
+  div(:submit_success_indicator, id: 'success-handler')
 
   ##
   # Extracts element type from Panel format IDs
@@ -103,8 +104,13 @@ class PanelPage
   #
   # @return [Boolean]
   def logged_in?
-    self.wait_until{@browser.svgs[1].attribute_value('style') =~ BLUE}
+    self.wait_until(60){@browser.svgs[1].attribute_value('style') =~ BLUE}
     !!(@browser.svgs[1].attribute_value('style') =~ BLUE)
+  end
+
+  def submit_successful?
+    wait_until(5, false){submit_success_indicator?}
+    submit_success_indicator?
   end
 
 end
