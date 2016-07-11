@@ -21,4 +21,5 @@ group :test do
   gem 'ci'
   gem 'rspec-wait'
   gem 'minitest'
+  gem 'rotp'
 end

@@ -2,7 +2,7 @@
 :dev:
 
     :ws_url: https://master.dev.nativ-systems.com/api
-    :url: https://master.dev.nativ-systems.com/
+    :url: http://localhost:3131
 
     :admin_user:
         :username: masteruser
@@ -13,9 +13,11 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
+    :secrets_file: secrets.yml
+
 :stubs:
-    :ws_url: http://localhost:32773
-    :url: http://localhost:32773
+    :ws_url: http://localhost:32770
+    :url: http://localhost:32770
 
     :admin_user:
         :username: masteruser
@@ -25,4 +27,6 @@
     :project_metadata_name: projectMetadata
     :ingest_metadata_name: ingestMetadata
     :publish_metadata_name: publishMetadata
+
+    :secrets_file: secrets.yml
 

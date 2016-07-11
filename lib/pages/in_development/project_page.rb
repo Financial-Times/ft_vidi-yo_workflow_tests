@@ -12,6 +12,7 @@ class ProjectPage < PanelPage
     define_page_elements(CreateProjectPanelWebserviceClient.new)
   end
 
+  div(:form, id: 'handler__formBuilder')
   button(:submit_project, text: 'submit workflow')
 
   ##
@@ -20,11 +21,10 @@ class ProjectPage < PanelPage
   # @param [String] project_name
   # @return [TrueClass]
   def create_project(project_name)
-    wait_until(5) { page_displayed? }
+    sleep 0.5
     project_element.when_present.value = project_name
     thing_url_element.when_present.value = 'http://www.example.com'
-    error_logger :warn, 'Assert not yet possible on Create Project page'
-    submit_project_element.when_present.click
+    submit_project
   end
 
   ##
