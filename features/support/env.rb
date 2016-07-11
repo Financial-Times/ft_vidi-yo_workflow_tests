@@ -7,6 +7,8 @@ require 'test-unit'
 require 'yaml'
 require 'factory_girl'
 require 'byebug'
+require 'rotp'
+
 
 require_relative '../../lib/pages/panel_page'
 require_relative '../../lib/pages/mio_login_page'
@@ -20,3 +22,4 @@ require_relative '../../lib/pages/in_development/publish_video_page'
 World(PageObject::PageFactory)
 World(FactoryGirl::Syntax::Methods)
 World(Config)
+World(ROTP)
