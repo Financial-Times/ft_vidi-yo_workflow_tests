@@ -30,7 +30,8 @@ class ProjectWorkflowWebserviceClientTest < VideoTest
     payload = @project_workflow_ws_client.create_project_workflow_payload('TEST', 'TEST', 'TEST')
     payload_string_variables = payload[:stringVariables][:projectMetadata]
     assert_respond_to(payload_string_variables, :=~)
-    assert(payload_string_variables =~ /"project": "TEST","section": "TEST", "brand": "TEST"/)
+    info_logger :info, "Payload String Variables: #{payload_string_variables}"
+    assert(payload_string_variables =~ /"project": "RESTCLIENTTEST","section": "TEST", "brand": "TEST"/)
   end
 
 end

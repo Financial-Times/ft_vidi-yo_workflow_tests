@@ -45,7 +45,7 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     {
       definitionId:    12_387,
       stringVariables: {
-        projectMetadata: "{\"project\": \"#{project_name}\",\"section\": \"#{section}\", \"brand\": \"#{brand}\"}"
+        projectMetadata: "{\"project\": \"RESTCLIENT#{project_name}\",\"section\": \"#{section}\", \"brand\": \"#{brand}\"}"
       }
     }
   end
