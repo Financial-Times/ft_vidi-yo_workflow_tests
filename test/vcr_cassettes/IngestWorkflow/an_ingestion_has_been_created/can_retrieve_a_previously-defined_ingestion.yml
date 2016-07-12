@@ -29,7 +29,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Mon, 11 Jul 2016 08:06:18 GMT
+      - Tue, 12 Jul 2016 16:17:35 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,9 +41,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=UpX4f6hH4ee6vraV2i8StfBz.-201388908; Path=/api; Secure
+      - JSESSIONID=qj7Xg6WjY3n9pvl+ei7cZOIK.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/32334
+      - https://master.dev.nativ-systems.com/api/workflows/35092
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -52,10 +52,10 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":32334,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/32334","status":"Running","start":"11
-        Jul 2016 08:06:16 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":35092,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/35092","status":"Running","start":"12
+        Jul 2016 16:17:33 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 11 Jul 2016 08:05:13 GMT
+  recorded_at: Tue, 12 Jul 2016 16:16:30 GMT
 - request:
     method: post
     uri: https://master.dev.nativ-systems.com/api/workflows
@@ -85,7 +85,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Mon, 11 Jul 2016 08:06:19 GMT
+      - Tue, 12 Jul 2016 16:17:36 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -97,9 +97,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=XKNVJ1rXsmW+oZOhpZwpA0mE.-201388932; Path=/api; Secure
+      - JSESSIONID=QzNwCY4npxo3ZhJ3GWNOK809.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/32243
+      - https://master.dev.nativ-systems.com/api/workflows/35094
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -108,13 +108,13 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":32243,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/32243","status":"Running","start":"11
-        Jul 2016 08:06:19 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":35094,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/35094","status":"Running","start":"12
+        Jul 2016 16:17:34 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 11 Jul 2016 08:05:14 GMT
+  recorded_at: Tue, 12 Jul 2016 16:16:31 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/workflows/32243
+    uri: https://master.dev.nativ-systems.com/api/workflows/35094
     body:
       encoding: US-ASCII
       string: ''
@@ -135,7 +135,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 11 Jul 2016 08:06:20 GMT
+      - Tue, 12 Jul 2016 16:17:37 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -153,7 +153,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=MzPvBGU8KV5Osaf5MK3r+bIA.-201388908; Path=/api; Secure
+      - JSESSIONID=UVAL1gfxVM7-1Cp-4+NYA3PA.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -162,17 +162,17 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":32243,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/32243","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"11
-        Jul 2016 08:06:20 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":35094,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/35094","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"12
+        Jul 2016 16:17:34 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","email":"videyo+test@ft.com","accountId":4},"definition":{"id":13707,"uuid":"9d919e45-ee8c-48d2-a836-9669cae2d0c5","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false},"href":"https://master.dev.nativ-systems.com/api/workflowDefinitions/13707","owner":"masteruser
-        masteruser","accountId":4},"definitionVersion":54,"created":"11 Jul 2016 08:06:20
-        +0000","lastModified":"11 Jul 2016 08:06:20 +0000","account":{"id":4,"name":"Master
+        masteruser","accountId":4},"definitionVersion":54,"created":"12 Jul 2016 16:17:34
+        +0000","lastModified":"12 Jul 2016 16:17:35 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
         masteruser","accountId":4},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master.dev.nativ-systems.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false},"owner":"masteruser
         masteruser","accountId":4}}'
     http_version: 
-  recorded_at: Mon, 11 Jul 2016 08:05:15 GMT
+  recorded_at: Tue, 12 Jul 2016 16:16:31 GMT
 recorded_with: VCR 3.0.3

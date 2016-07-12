@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":12387,"stringVariables":{"projectMetadata":"{\"project\":
-        \"RESTCLIENTxfvwsg\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"RESTCLIENTauzgmv\",\"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
         \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\"}"}}'
     headers:
       Accept:
@@ -27,7 +27,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Mon, 11 Jul 2016 08:06:00 GMT
+      - Tue, 12 Jul 2016 16:17:16 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -39,9 +39,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=QqTTUS-qly+612J7otchJXGB.-201388932; Path=/api; Secure
+      - JSESSIONID=2-Y46AJ3uP3taYu2KtFkn1Bd.-201388908; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/32234
+      - https://master.dev.nativ-systems.com/api/workflows/35079
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -50,8 +50,8 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":32234,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/32234","status":"Running","start":"11
-        Jul 2016 08:06:00 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":35079,"name":"workflow-create-project","displayName":"workflow-create-project","href":"https://master.dev.nativ-systems.com/api/workflows/35079","status":"Running","start":"12
+        Jul 2016 16:17:14 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 11 Jul 2016 08:04:55 GMT
+  recorded_at: Tue, 12 Jul 2016 16:16:10 GMT
 recorded_with: VCR 3.0.3

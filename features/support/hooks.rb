@@ -4,16 +4,11 @@ Selenium::WebDriver::Chrome::Service.executable_path = '/Users/Dazzla/src/chrome
 # driver = Selenium::WebDriver.for :firefox, marionette: true
 
 Before do
-  browser = Watir::Browser.new ENV['SESSION_BROWSER']
-  @browser = browser
+  @browser = Watir::Browser.new ENV['SESSION_BROWSER']
 end
 
 After do
   @browser.link(title: 'Logout').click if
     @browser.link(title: 'Logout').present?
   @browser.close
-end
-
-at_exit do
-  browser.close
 end
