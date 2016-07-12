@@ -17,12 +17,9 @@ class IngestWorkflow < Workflow
   #
   # @return [IngestWorkflow] object
   def create(uuid=nil)
-    VCR.use_cassette 'create ingestion' do
       @workflow_log = IngestionWorkflowWebserviceClient
                           .new
                           .create_ingestion_workflow({uuid: uuid, path: nil, title: nil})
-    end
-
     info_logger :info, @workflow_log
     raise "Workflow not created: #{@workflow_log.class} found" unless created?
     self
