@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:36 GMT
+      - Tue, 12 Jul 2016 18:03:04 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +41,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=Q5BEl1gAa4HpdSkuQBCSUWyE.-201388908; Path=/api; Secure
+      - JSESSIONID=+ivbPWJRfMeimhAn98FLImJi.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -127,7 +127,7 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:30 GMT
+  recorded_at: Tue, 12 Jul 2016 18:01:58 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11518/definition
@@ -151,7 +151,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:37 GMT
+      - Tue, 12 Jul 2016 18:03:04 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -169,7 +169,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=q8u3puWmqo-okUe5N1T5LBBc.-201388908; Path=/api; Secure
+      - JSESSIONID=Si1rM9KjY0l8hw4AafikD90L.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -255,7 +255,7 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:31 GMT
+  recorded_at: Tue, 12 Jul 2016 18:01:58 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11518/definition
@@ -279,7 +279,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:37 GMT
+      - Tue, 12 Jul 2016 18:03:05 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -297,7 +297,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=elcBGMN2q0TU8sZ-6JZOlfbh.-201388908; Path=/api; Secure
+      - JSESSIONID=WT3vNIVzNbRbURETaUMwnPkF.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -383,7 +383,7 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:31 GMT
+  recorded_at: Tue, 12 Jul 2016 18:01:59 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11518/definition
@@ -407,7 +407,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:37 GMT
+      - Tue, 12 Jul 2016 18:03:05 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -425,7 +425,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=G0EI9bQNTO+b8owdgWP5N1UH.-201388908; Path=/api; Secure
+      - JSESSIONID=4bZnWomMKb3BCeV8VGjzFg3d.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -511,7 +511,7 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:31 GMT
+  recorded_at: Tue, 12 Jul 2016 18:01:59 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11518/definition
@@ -535,7 +535,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:38 GMT
+      - Tue, 12 Jul 2016 18:03:05 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -553,7 +553,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=PB0KgKYt4c-vLyGaYQjuSFEy.-201388908; Path=/api; Secure
+      - JSESSIONID=1R8vIj1pumhG6ozeQhU0WGwv.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -639,7 +639,7 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:32 GMT
+  recorded_at: Tue, 12 Jul 2016 18:01:59 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11518/definition
@@ -663,7 +663,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jul 2016 16:15:38 GMT
+      - Tue, 12 Jul 2016 18:03:06 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -681,7 +681,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=3kv5ExdZM4-6Hu2rKXQ4ycgy.-201388908; Path=/api; Secure
+      - JSESSIONID=RFHWKpd84XW+RH9jg9DjAjDH.-201388908; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -767,5 +767,5 @@ http_interactions:
         Image","description":null,"type":"image","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"file","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.resource.def.MioFileVariable.FileValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]},{"id":110952,"name":"brightcove-metadata","displayName":"Brightcove
         Metadata","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Tue, 12 Jul 2016 16:14:32 GMT
+  recorded_at: Tue, 12 Jul 2016 18:02:00 GMT
 recorded_with: VCR 3.0.3

@@ -22,13 +22,6 @@ module Config
 
   module Constants
 
-    secrets_file_location = 'config/secrets.yml'
-
-    if File.exist?(secrets_file_location)
-      @secrets ||= YAML.load_file(secrets_file_location)
-      ENV['app_key'] ||= @secrets[:otl_secret]
-    end
-
     EXECUTION_ENVIRONMENT ||= :dev
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
@@ -50,7 +43,7 @@ module Config
     INGEST_METADATA_NAME = ENVIRONMENT_CONFIG[:ingest_metadata_name]
     PUBLISH_METADATA_NAME = ENVIRONMENT_CONFIG[:publish_metadata_name]
     SECRETS ||= @secrets
-    OTP = ROTP::TOTP.new(ENV['app_key'])
+    OTP = ROTP::TOTP.new(ENV['MIO_APP_KEY'])
   end
 
 end

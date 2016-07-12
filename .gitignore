@@ -7,7 +7,7 @@
 Gemfile.lock
 
 /.bundle/
-secrets.yml
+config/secrets.yml
 /logs/log.txt
 integration/
 /reports/json/cucumber_report.json

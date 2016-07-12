@@ -5,7 +5,9 @@ class IngestWorkflowTest < Test::Unit::TestCase
 
 
   def setup
-    @ingest_workflow = IngestWorkflow.new.create
+    VCR.use_cassette 'unit create valid ingestion' do
+      @ingest_workflow = IngestWorkflow.new.create
+    end
   end
 
   def test_project_is_not_empty

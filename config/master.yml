@@ -13,7 +13,6 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
-    :secrets_file: secrets.yml
 
 :stubs:
     :ws_url: http://localhost:32770
@@ -28,5 +27,4 @@
     :ingest_metadata_name: ingestMetadata
     :publish_metadata_name: publishMetadata
 
-    :secrets_file: secrets.yml
 
