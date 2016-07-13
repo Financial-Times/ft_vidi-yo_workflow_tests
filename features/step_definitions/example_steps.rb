@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 When(/^I run a tagged scenario$/) do
-  $stdout.puts 'Hello, Tags!'
+  info_logger :info, 'Hello, Tags!'
 end
 
 Then(/^I know the test set is running without error$/) do

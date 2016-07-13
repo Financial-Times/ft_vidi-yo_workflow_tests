@@ -6,7 +6,6 @@ class IngestToPublish
 
   def create_project
     @project_workflow = ProjectWorkflow.new.create
-    puts "ACTUAL: #{@project_workflow.uuid}"
     @project_workflow.uuid
   end
 

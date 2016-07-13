@@ -30,7 +30,6 @@ class IngestPanelClientTest < VideoTest
       @ingest_panel_elements = @mio_ingest_assets_panel_client.extract_panel_elements
     end
     assert_kind_of(Hash, @ingest_panel_elements)
-    info_logger :info, "Ingest panel elements: #{@ingest_panel_elements.each{|k,v| puts k,v}}"
     assert(@ingest_panel_elements.has_key?('clip-type') || @ingest_panel_elements.has_value?('text') ||
                @ingest_panel_elements.has_key?('project') || @ingest_panel_elements.has_value?('single-option') )
 

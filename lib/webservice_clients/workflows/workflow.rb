@@ -5,7 +5,7 @@ class Workflow
   include Config::Logging
 
   def created?
-    puts "Status: #{status}"
+    info_logger :info, "Status: #{status}"
     status == 'Running' || status =~ /Complete/
   end
 

@@ -15,12 +15,10 @@ RSpec.describe IngestWorkflow do
     @ingestion = IngestWorkflow.new
   end
 
-  before :each do
-    @ingestion = @ingestion.create
-  end
 
   context 'create ingestion', :vcr do
     it 'can create an ingestion' do
+      @ingestion = @ingestion.create
       expect(@ingestion.started?).to be_truthy
     end
   end
@@ -35,6 +33,7 @@ RSpec.describe IngestWorkflow do
 
   context 'end-to-end testing', :vcr do
     it 'can indicate that the ingestion is complete', wait: {timeout: 240} do
+      @ingestion = @ingestion.create
       retrieved_ingestion = @ingestion.retrieve @ingestion.id
       wait_for_complete @ingestion, retrieved_ingestion
     end
