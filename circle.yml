@@ -8,14 +8,3 @@ machine:
   ruby:
     version:
       2.3.1
-
-## Customize dependencies
-dependencies:
-  override:
-    - bundle install:
-        timeout: 180
-
-## Customize test commands
-test:
-  minitest_globs:
-    - bundle exec rake unit_tests
