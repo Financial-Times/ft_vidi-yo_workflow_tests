@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://master.dev.nativ-systems.com/api/workflows
+    body:
+      encoding: UTF-8
+      string: '{"definitionId":20897,"stringVariables":{"assetMetadata":"{ \"section\":
+        \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":
+        \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\", \"headline\":
+        \"PHEW WHAT A SCORCHER!!\", \"long-lead\": \"its a short lead\", \"short-lead\":
+        \"nah its never a long lead no it is\", \"link-1\": \"http://link-1\", \"link-2\":
+        \"http://link-2\", \"link-3\": \"http://link-3\", \"credit\": \"Credits?\",
+        \"office\": \"http://api.ft.com/things/66fc881d-4a93-4672-8d88-1fa86e5ec5a2\",
+        \"producer\": \"http://api.ft.com/things/ce989f93-8572-4136-a0c0-a7bb44f94c7b\",
+        \"video-editor\": \"http://api.ft.com/things/67b8180e-9cb3-4694-8bfd-08b9871bc4d1\",
+        \"freelance-video-editor\": \"Jem Rayfield The Video pro\", \"restrictions\":
+        \"true\", \"restriction-description\": \"Dazzla''s vid\", \"poster-image\":
+        { \"file-name\": \"test\", \"file-path\": \"s3://s3-eu-west-1.amazonaws.com/video-final-edit/poster.jpeg\"},
+        \"thumbnail-image\": { \"file-name\": \"test\", \"file-path\": \"https://s3-eu-west-1.amazonaws.com/video-final-edit/thumbnail.jpeg\"},
+        \"brightcove-metadata\": \"freetext metadata nonsense\" }","project-thing-url":"https://api.ft.com/thing/b0778312-7686-49bc-a720-0551709ad37b","assetS3Path":"2221711291001_4691472776001_4691406811001.mp4","assetTitle":"RestClient
+        Agent","brightcovePublish":false}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Content-Length:
+      - '1378'
+      Host:
+      - master.dev.nativ-systems.com
+      Authorization:
+      - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Mon, 18 Jul 2016 14:47:39 GMT
+      Server:
+      - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+      Set-Cookie:
+      - JSESSIONID=Nz9L5HLWL1uZ31r0Lf39GlUj.-201388908; Path=/api; Secure
+      Location:
+      - https://master.dev.nativ-systems.com/api/workflows/38813
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":38813,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/38813","status":"Running","start":"18
+        Jul 2016 14:47:36 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+    http_version: 
+  recorded_at: Mon, 18 Jul 2016 14:46:34 GMT
+- request:
+    method: get
+    uri: https://master.dev.nativ-systems.com/api/workflows/38813
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Host:
+      - master.dev.nativ-systems.com
+      Authorization:
+      - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jul 2016 14:47:40 GMT
+      Server:
+      - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Max-Age:
+      - '1000'
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+      Pragma:
+      - No-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Set-Cookie:
+      - JSESSIONID=zwRP2BJbD6LLP9YQvJ6hQGjB.-201388908; Path=/api; Secure
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":38813,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/38813","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"18
+        Jul 2016 14:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","email":"videyo+test@ft.com","accountId":4},"definition":{"id":20897,"uuid":"8a714dac-08fe-4109-a67a-79188b7aeac3","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false},"href":"https://master.dev.nativ-systems.com/api/workflowDefinitions/20897","owner":"masteruser
+        masteruser","accountId":4},"definitionVersion":165,"created":"18 Jul 2016
+        14:47:36 +0000","lastModified":"18 Jul 2016 14:47:37 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master.dev.nativ-systems.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false},"owner":"masteruser
+        masteruser","accountId":4}}'
+    http_version: 
+  recorded_at: Mon, 18 Jul 2016 14:46:35 GMT
+recorded_with: VCR 3.0.3
