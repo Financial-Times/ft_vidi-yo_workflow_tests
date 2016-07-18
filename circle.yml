@@ -18,7 +18,4 @@ dependencies:
 ## Customize test commands
 test:
   minitest_globs:
-    - test/data/**/*.rb
-    - test/pages/**/*.rb
-    - test/services/**/*.rb
-    - test/extra-dir/**/*.rb
+    - bundle exec rake unit_tests
