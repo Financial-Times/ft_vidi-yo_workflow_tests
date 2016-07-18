@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'rspec_junit_formatter'
 require_relative '../config/config'
 require_relative '../lib/string'
 require_relative '../vcr_setup'

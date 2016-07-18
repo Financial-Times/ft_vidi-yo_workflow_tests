@@ -7,15 +7,16 @@ module Config
   module Logging
 
     ERROR_LOG = $stderr
-    INFO_LOG  = File.new((Dir.pwd + '/logs/log.txt'), 'w')
+    INFO_LOG = File.new((File.expand_path(File.join(File.dirname(__FILE__), 'logs.txt'))), 'w+')
 
 
-    def info_logger(level, message)
+
+        def info_logger(level, message)
       Logger.new(INFO_LOG).method(level).call(message)
     end
 
     def error_logger(level, message)
-      Logger.new(ERROR_LOG).method(level).call(message)
+      #Logger.new(ERROR_LOG).method(level).call(message)
     end
 
   end
@@ -42,7 +43,6 @@ module Config
     PROJECT_METADATA_NAME = ENVIRONMENT_CONFIG[:project_metadata_name]
     INGEST_METADATA_NAME = ENVIRONMENT_CONFIG[:ingest_metadata_name]
     PUBLISH_METADATA_NAME = ENVIRONMENT_CONFIG[:publish_metadata_name]
-    SECRETS ||= @secrets
     OTP = ROTP::TOTP.new(ENV['MIO_APP_KEY'])
   end
 

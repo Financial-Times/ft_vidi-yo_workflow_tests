@@ -10,7 +10,6 @@ group :test do
   gem 'test-unit'
   gem 'factory_girl'
   gem 'rest-client'
-  gem 'rest-client-components'
   gem 'rack-cache'
   gem 'vcr'
   gem 'rspec'
@@ -18,8 +17,10 @@ group :test do
   gem 'byebug'
   gem 'ci_reporter', git: 'git://github.com/nicksieger/ci_reporter.git'
   gem 'ci_reporter_minitest'
+  gem 'minitest-ci', :git => 'git@github.com:circleci/minitest-ci.git'
   gem 'ci'
   gem 'rspec-wait'
   gem 'minitest'
   gem 'rotp'
+  gem 'rspec_junit_formatter'
 end
