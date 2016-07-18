@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../../lib/webservice_clients/workflows/project_workflow'
-require_relative '../test_helper'
 
 class ProjectWorkflowTest < Test::Unit::TestCase
 
   def setup
     VCR.use_cassette 'unit new project workflow' do
-      @project_workflow = ProjectWorkflow.new.create
+      project = ProjectWorkflow.new
+      @project_workflow = project.create
     end
   end
 

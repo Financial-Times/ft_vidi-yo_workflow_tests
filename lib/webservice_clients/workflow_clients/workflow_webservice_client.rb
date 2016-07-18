@@ -9,9 +9,9 @@ class WorkflowWebserviceClient < VideoWebserviceClient
   # Create workflow with payload from subclass
   #
   # @param payload [JSON object as String]
-  # @param live [Boolean] use mock?
   # Return [Hash] response to Web Service call
   def create_workflow(payload)
+    info_logger :info, "#{self.class} payload is #{payload}"
     create_resource payload
   end
 
