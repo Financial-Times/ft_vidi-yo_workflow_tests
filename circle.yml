@@ -17,7 +17,8 @@ dependencies:
 
 ## Customize test commands
 test:
-  override:
-    - mkdir -p $CIRCLE_TEST_REPORTS/rspec
-    - bundle exec rspec -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
-
+  minitest_globs:
+    - test/data/**/*.rb
+    - test/pages/**/*.rb
+    - test/services/**/*.rb
+    - test/extra-dir/**/*.rb

@@ -23,6 +23,10 @@ Cucumber::Rake::Task.new(:example, 'Example features') do |t|
   t.profile = 'example'
 end
 
+Rake::TestTask.new(:ci_circle_unit_tests) do |t|
+  t.profile = 'ci_circle_report'
+end
+
 Rake::TestTask.new(:unit_tests) do |t|
   t.libs << 'test'
   t.test_files = FileList['test/**/*_test.rb']
