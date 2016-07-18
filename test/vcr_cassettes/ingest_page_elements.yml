@@ -11,10 +11,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -23,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:34 GMT
+      - Mon, 18 Jul 2016 12:52:53 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -41,7 +43,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=OUlU2t-8G120Jj+-+IOoaoCg.-201388908; Path=/api; Secure
+      - JSESSIONID=6XkGyl1QwUvxVGM6-2hE7Vjx.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -84,7 +86,7 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:30 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:49 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
@@ -96,10 +98,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -108,7 +112,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:35 GMT
+      - Mon, 18 Jul 2016 12:52:54 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -126,7 +130,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=LrXPyalWHrOiiknKXMFRR4gT.-201388908; Path=/api; Secure
+      - JSESSIONID=UHgW24CAZOQw+-qVMxnwGTk1.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -169,7 +173,7 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:30 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:49 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
@@ -181,10 +185,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -193,7 +199,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:35 GMT
+      - Mon, 18 Jul 2016 12:52:54 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -211,7 +217,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=zFM7ZP4xdOTzGjdSp0xxAYZ3.-201388908; Path=/api; Secure
+      - JSESSIONID=1NLqeDnG8q1kqYuvoGl0RYMP.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -254,7 +260,7 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:30 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:50 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
@@ -266,10 +272,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -278,7 +286,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:35 GMT
+      - Mon, 18 Jul 2016 12:52:55 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -296,7 +304,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=G2dRjGNAFlm4X4Js6t61HaAl.-201388908; Path=/api; Secure
+      - JSESSIONID=tBXlzG3EnJAmY7PIZX6JHbJU.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -339,7 +347,7 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:31 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:50 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
@@ -351,10 +359,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -363,7 +373,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:36 GMT
+      - Mon, 18 Jul 2016 12:52:55 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -381,7 +391,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=dMsdwJfZ3oG8LBRVC8j3cXpA.-201388908; Path=/api; Secure
+      - JSESSIONID=xYlNWjmB82cI9HJtn08ek72E.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -424,7 +434,7 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:31 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:50 GMT
 - request:
     method: get
     uri: https://master.dev.nativ-systems.com/api/metadataDefinitions/11517/definition
@@ -436,10 +446,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -448,7 +460,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:58:36 GMT
+      - Mon, 18 Jul 2016 12:52:55 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -466,7 +478,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=mh7d5+ZOK5YFVqhv+XufoXbQ.-201388908; Path=/api; Secure
+      - JSESSIONID=FcXCh1n8plmfZ1Lp91QeGMsW.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -509,5 +521,5 @@ http_interactions:
         Restricted","default":false,"value":"false"}]},{"id":107855,"name":"restriction-description","displayName":"Restriction
         Description","description":null,"type":"text","multiplicity":"1","searchable":true,"editable":true,"required":true,"formType":"textarea","format":null,"formatDescription":null,"validation":null,"maxLength":-1,"expressionEnabled":false,"validationDescription":null,"validationHandler":"tv.nativ.mio.metadata.variable.def.validation.MaxLengthValidationHandler","valueGeneratorType":null,"unitString":null,"commentable":false,"isVisible":true,"preProcessors":[]}],"rules":[]}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:57:31 GMT
+  recorded_at: Mon, 18 Jul 2016 12:51:51 GMT
 recorded_with: VCR 3.0.3

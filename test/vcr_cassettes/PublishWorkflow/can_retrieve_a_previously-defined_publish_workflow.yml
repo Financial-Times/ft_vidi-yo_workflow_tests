@@ -25,12 +25,14 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
       - '1378'
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -39,7 +41,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:34:52 GMT
+      - Mon, 18 Jul 2016 12:49:14 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -51,9 +53,9 @@ http_interactions:
       Access-Control-Allow-Headers:
       - x-requested-with, Content-Type, origin, authorization, accept, client-security-token
       Set-Cookie:
-      - JSESSIONID=PwYxvTkqaTd2PLqpS1eCBIdC.-201388908; Path=/api; Secure
+      - JSESSIONID=XvcJQNANdU16dRI48GbE14zR.-201388932; Path=/api; Secure
       Location:
-      - https://master.dev.nativ-systems.com/api/workflows/35806
+      - https://master.dev.nativ-systems.com/api/workflows/38469
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -62,13 +64,13 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":35806,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/35806","status":"Running","start":"13
-        Jul 2016 13:34:50 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":38469,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master.dev.nativ-systems.com/api/workflows/38469","status":"Running","start":"18
+        Jul 2016 12:49:15 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:33:48 GMT
+  recorded_at: Mon, 18 Jul 2016 12:48:10 GMT
 - request:
     method: get
-    uri: https://master.dev.nativ-systems.com/api/workflows/35806
+    uri: https://master.dev.nativ-systems.com/api/workflows/38469
     body:
       encoding: US-ASCII
       string: ''
@@ -77,10 +79,12 @@ http_interactions:
       - application/json
       Accept-Encoding:
       - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
       Content-Type:
       - application/vnd.nativ.mio.v1+json
-      User-Agent:
-      - Ruby
+      Host:
+      - master.dev.nativ-systems.com
       Authorization:
       - Basic bWFzdGVydXNlcjptNHN0M3J1czNy
   response:
@@ -89,7 +93,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 13:34:53 GMT
+      - Mon, 18 Jul 2016 12:49:15 GMT
       Server:
       - Apache/2.4.10 (Unix) OpenSSL/1.0.1e-fips
       Access-Control-Allow-Origin:
@@ -107,7 +111,7 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Set-Cookie:
-      - JSESSIONID=9fRGEili1xv8IzyAoyl4RbzG.-201388908; Path=/api; Secure
+      - JSESSIONID=SI64xYqLqVu5ajk+odsaGLuo.-201388932; Path=/api; Secure
       Content-Type:
       - application/json
       Access-Control-Allow-Credentials:
@@ -116,17 +120,17 @@ http_interactions:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":35806,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/35806","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"13
-        Jul 2016 13:34:51 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":38469,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master.dev.nativ-systems.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false},"deleted":false,"href":"https://master.dev.nativ-systems.com/api/workflows/38469","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"18
+        Jul 2016 12:49:15 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master.dev.nativ-systems.com/api/users/5","email":"videyo+test@ft.com","accountId":4},"definition":{"id":20897,"uuid":"8a714dac-08fe-4109-a67a-79188b7aeac3","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master.dev.nativ-systems.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false},"href":"https://master.dev.nativ-systems.com/api/workflowDefinitions/20897","owner":"masteruser
-        masteruser","accountId":4},"definitionVersion":153,"created":"13 Jul 2016
-        13:34:50 +0000","lastModified":"13 Jul 2016 13:34:50 +0000","account":{"id":4,"name":"Master
+        masteruser","accountId":4},"definitionVersion":165,"created":"18 Jul 2016
+        12:49:15 +0000","lastModified":"18 Jul 2016 12:49:15 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master.dev.nativ-systems.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false},"owner":"masteruser
         masteruser","accountId":4},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master.dev.nativ-systems.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false},"owner":"masteruser
         masteruser","accountId":4}}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 13:33:49 GMT
+  recorded_at: Mon, 18 Jul 2016 12:48:11 GMT
 recorded_with: VCR 3.0.3

@@ -40,9 +40,9 @@ RSP
   # @param name [String] name of parameter
   # @
   def retrieve_description_by_name(name)
-    VCR.use_cassette 'metadata definitions' do
+    #VCR.use_cassette 'metadata definitions' do
       @response = retrieve_description_metadata['metadataDefinitions']
-    end
+    #end
     @response.each do |description|
       return description if description['name'] == name
     end
