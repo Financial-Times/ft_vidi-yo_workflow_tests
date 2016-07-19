@@ -14,7 +14,7 @@ machine:
 
 test:
   override:
-    - bundle exec rake unit_tests TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS":
+    - bundle exec rake test TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS":
         parallel: true
         files:
           - test/**/*.rb

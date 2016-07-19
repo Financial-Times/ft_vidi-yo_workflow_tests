@@ -35,3 +35,8 @@ end
 RSpec::Core::RakeTask.new(:integration) do |t|
   t.pattern = 'spec/integration_tests/*_spec.rb'
 end
+
+task :ci_cleanup do
+  require 'minitest/ci'
+  Minitest::Ci.new.start
+end

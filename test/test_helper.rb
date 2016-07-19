@@ -11,4 +11,4 @@
  require_relative '../test/data/publish_video'
  require_relative '../config/config'
 
-# require 'restclient/components'
+ Minitest::Ci.clean = false
