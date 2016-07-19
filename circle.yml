@@ -15,7 +15,7 @@ machine:
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/minitest
-    - bundle exec rake unit_tests TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS/minitest":
+    - bundle exec rake test TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS/minitest":
         parallel: true
         files:
           - test/**/*.rb
