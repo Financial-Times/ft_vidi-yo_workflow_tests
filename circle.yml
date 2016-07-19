@@ -11,3 +11,10 @@ machine:
 
   hosts:
     master.dev.nativ-systems.com: 54.171.26.34
+
+test:
+  override:
+    - bundle exec rake unit_tests TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS":
+        parallel: true
+        files:
+          - test/**/*.rb
