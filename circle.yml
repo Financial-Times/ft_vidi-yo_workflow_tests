@@ -19,3 +19,5 @@ test:
         parallel: true
         files:
           - test/**/*.rb
+    - mkdir -p $CIRCLE_TEST_REPORTS/rspec/
+    - bundle exec rspec -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
