@@ -46,6 +46,7 @@ class VideoWebserviceClient
   def create_resource(payload)
     info_logger :info, "Request Url: #{@url}"
     info_logger :info, "Headers: #{@headers}"
+    info_logger :info, "Username #{@username}"
     info_logger :info, "Payload: #{payload}"
     RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
                               content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
