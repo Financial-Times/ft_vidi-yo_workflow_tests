@@ -8,3 +8,6 @@ machine:
   ruby:
     version:
       2.3.1
+
+  hosts:
+    master.dev.nativ-systems.com: 54.171.26.34
