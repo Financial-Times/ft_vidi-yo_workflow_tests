@@ -1,6 +1,6 @@
 # frozen_string_literal: true
-require 'rubygems'
 require 'cucumber'
+require 'rubygems'
 require 'cucumber/rake/task'
 require 'yaml'
 require 'watir-webdriver'
