@@ -10,8 +10,6 @@ class VideoPublishVideoTest < VideoTest
     @mio_export_video = FactoryGirl.build :publish_video
   end
 
-  # TODO: Refactor to loop to avoid repetition - service not ready yet
-
   def test_has_section
     assert_respond_to(@mio_export_video, :section)
   end

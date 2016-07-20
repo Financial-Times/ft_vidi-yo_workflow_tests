@@ -26,7 +26,6 @@ class IngestWorkflow < Workflow
   end
 
   def completed?
-    # TODO: Refactor. Spaghetti.
     info_logger :info, status
     if status == 'Failed'
       error_logger :error, 'Workflow failed'
