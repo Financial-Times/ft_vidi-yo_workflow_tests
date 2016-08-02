@@ -41,11 +41,12 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     project_name ||= CustomRequestData.random_string(6)
     section ||= Config::Constants::DEFAULT_SECTION
     brand ||= Config::Constants::DEFAULT_BRAND
+    thing_url ||= Config::Constants::THING_URL
 
     {
       definitionId:    12_387,
       stringVariables: {
-        projectMetadata: "{\"project\": \"RESTCLIENT#{project_name}\",\"section\": \"#{section}\", \"brand\": \"#{brand}\"}"
+        projectMetadata: "{\"project\": \"RESTCLIENT#{project_name}\",\"section\": \"#{section}\", \"brand\": \"#{brand}\", \"thing_url\": \"#{thing_url}\"}"
       }
     }
   end
