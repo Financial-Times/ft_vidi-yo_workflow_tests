@@ -32,11 +32,12 @@ module Config
     ADMIN_USER ||= ENVIRONMENT_CONFIG[:admin_user]
     PANEL_ID ||= ENVIRONMENT_CONFIG[:panel_id]
     DEFAULT_SECTION = 'http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499'
-    DEFAULT_BRAND = 'http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009'
+    DEFAULT_BRAND ||= 'http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009'
     PROJECT_METADATA_NAME = ENVIRONMENT_CONFIG[:project_metadata_name]
     PUBLISH_METADATA_NAME = ENVIRONMENT_CONFIG[:publish_metadata_name]
     INGEST_METADATA_NAME = ENVIRONMENT_CONFIG[:ingest_metadata_name]
     HTTP_SUCCESS_CODES = (200...299)
+    THING_URL = 'http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b'
     ASSET_TITLE = 'Missing.mp4'
     ASSET_UUID = 'b0778312-7686-49bc-a720-0551709ad37b'
     ASSET_PATH = 'b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4'

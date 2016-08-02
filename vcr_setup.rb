@@ -5,7 +5,7 @@ require 'rspec'
 LOG_FILE = File.expand_path(File.join(File.dirname(__FILE__), 'logs/vcr_log.log'))
 
 VCR.configure do |c|
-  c.cassette_library_dir = File.expand_path(File.join(File.dirname(__FILE__), 'test/vcr_cassettes'))
+  c.cassette_library_dir = File.expand_path(File.join(File.dirname(__FILE__), 'vcr_cassettes'))
   c.hook_into :webmock
   #c.ignore_hosts 'master.dev.nativ-systems.com'
   c.ignore_localhost = true
