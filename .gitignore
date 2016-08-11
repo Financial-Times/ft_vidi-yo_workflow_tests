@@ -16,3 +16,5 @@ integration/
 reports/junit.xml
 
 config/logs.txt
+
+*.mp4
