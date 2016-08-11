@@ -1,2 +1,1 @@
-rvm use 2.3.1
-ruby ./otp_now.rb
+rvm use 2.3.1; ruby /Users/Dazzla/src/financial_times/ft_video_stories/scripts/otp_now.rb
