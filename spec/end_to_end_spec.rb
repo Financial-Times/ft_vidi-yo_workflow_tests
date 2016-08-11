@@ -29,7 +29,14 @@ RSpec.describe IngestToPublish do
 
   it 'confirms that the ingestion was successful', :vcr, wait: {timeout: 120} do
     @ingestion = IngestToPublish.new.create_ingestion
-    retrieved_workflow = @ingestion.retrieve @ingestion.id
-    wait_for_complete @ingestion, retrieved_workflow
+    retrieved_ingestion = @ingestion.retrieve @ingestion.id
+    wait_for_complete @ingestion, retrieved_ingestion
   end
+
+  it 'can publish', :vcr do
+    @publish_workflow = IngestToPublish.new.do_publish
+    retrieved_publish_workflow = @publish_workflow.retrieve @publish_workflow.id
+    wait_for_complete @publish_workflow, retrieved_publish_workflow
+  end
+
 end
