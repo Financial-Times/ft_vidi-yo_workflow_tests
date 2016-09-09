@@ -18,3 +18,11 @@ reports/junit.xml
 config/logs.txt
 
 *.mp4
+
+scripts/.DS_Store
+
+spec/.DS_Store
+
+test/.DS_Store
+
+.DS_Store

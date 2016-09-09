@@ -6,12 +6,29 @@
 
     :admin_user:
         :username: masteruser
-        :password: masteruser
+        :password: m4st3rus3r
 
-    :panel_id: 11_518
     :project_metadata_name: project-metadata
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
+
+    :project_workflow_metadata_id: 31061
+
+
+:master_flex:
+
+    :ws_url: https://master-flex-jspcdev.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
+    :project_workflow_metadata_id: 10106
 
 
 :stubs:

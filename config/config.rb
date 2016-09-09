@@ -23,15 +23,17 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT ||= :dev
+    EXECUTION_ENVIRONMENT ||= :master_flex
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
+    puts CONFIG
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
+    puts ENVIRONMENT_CONFIG[:admin_user][:username]
+    puts ENVIRONMENT_CONFIG[:admin_user][:password]
     MIO_ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
     MIO_WS_URL ||= ENVIRONMENT_CONFIG[:ws_url]
     FT_ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
     ADMIN_USER ||= ENVIRONMENT_CONFIG[:admin_user]
-    PANEL_ID ||= ENVIRONMENT_CONFIG[:panel_id]
     DEFAULT_SECTION ||= 'http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499'
     DEFAULT_BRAND ||= 'http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009'
     PROJECT_METADATA_NAME ||= ENVIRONMENT_CONFIG[:project_metadata_name]
@@ -45,6 +47,7 @@ module Config
     WAIT_DELAY ||= 5
     ASSET_URL ||= 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159'
     OTP ||= ROTP::TOTP.new(ENV['MIO_APP_KEY'])
+    PROJECT_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:project_workflow_metadata_id]
   end
 
 end

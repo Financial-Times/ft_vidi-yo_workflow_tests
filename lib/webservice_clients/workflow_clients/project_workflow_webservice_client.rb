@@ -42,7 +42,7 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     section ||= Config::Constants::DEFAULT_SECTION
     brand ||= Config::Constants::DEFAULT_BRAND
     thing_url ||= Config::Constants::THING_URL
-    {"definitionId": 31061,
+    {"definitionId": PROJECT_WORKFLOW_METADATA_ID,
      "stringVariables":
      {"projectMetadata":
      "{ \"project\": \"#{project_name}\", \"section\": \"#{section}\", \"brand\": \"#{brand}\", \"thing-url\": \"#{thing_url}\"}"
