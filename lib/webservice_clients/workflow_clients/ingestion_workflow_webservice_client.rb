@@ -39,7 +39,7 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
     params[:url] ||= Config::Constants::ASSET_URL
 
     {
-      'definitionId':    13_707,
+      'definitionId':    Config::Constants::INGESTION_WORKFLOW_METADATA_ID,
       'stringVariables': {
         'assetMetadata':     '{ "clip-type":"http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd",'\
 '"clip-description": "FT Art Birdsong ", "location":"http://api.ft.com/things/f4ef81c6-765c-4f04-a8c7-b637f49f7e61",'\

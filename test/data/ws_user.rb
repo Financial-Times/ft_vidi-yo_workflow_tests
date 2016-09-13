@@ -11,7 +11,6 @@ class WSUser
   def initialize(uname=nil, pwd=nil)
     @username = uname.nil? ? ENVIRONMENT_CONFIG[:admin_user][:username] : uname
     @password = pwd.nil?   ? ENVIRONMENT_CONFIG[:admin_user][:password]  : pwd
-    puts "WS_USER: #{@username}, #{@password}"
   end
 
 end

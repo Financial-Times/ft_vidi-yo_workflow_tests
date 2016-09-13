@@ -13,6 +13,8 @@
     :publish_metadata_name: publish-metadata
 
     :project_workflow_metadata_id: 31061
+    :ingestion_workflow_metadata_id: 13707
+    :publish_workflow_metadata_id: 20897
 
 
 :master_flex:
@@ -29,6 +31,8 @@
     :publish_metadata_name: publish-metadata
 
     :project_workflow_metadata_id: 10106
+    :ingestion_workflow_metadata_id: 10124
+    :publish_workflow_metadata_id: 10145
 
 
 :stubs:

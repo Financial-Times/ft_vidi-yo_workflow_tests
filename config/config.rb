@@ -16,20 +16,18 @@ module Config
     end
 
     def error_logger(level, message)
-      #Logger.new(ERROR_LOG).method(level).call(message)
+      Logger.new(ERROR_LOG).method(level).call(message)
     end
 
   end
 
   module Constants
 
-    EXECUTION_ENVIRONMENT ||= :master_flex
+    EXECUTION_ENVIRONMENT ||= :dev
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
     puts CONFIG
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
-    puts ENVIRONMENT_CONFIG[:admin_user][:username]
-    puts ENVIRONMENT_CONFIG[:admin_user][:password]
     MIO_ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
     MIO_WS_URL ||= ENVIRONMENT_CONFIG[:ws_url]
     FT_ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
@@ -48,6 +46,8 @@ module Config
     ASSET_URL ||= 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159'
     OTP ||= ROTP::TOTP.new(ENV['MIO_APP_KEY'])
     PROJECT_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:project_workflow_metadata_id]
+    INGESTION_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:ingestion_workflow_metadata_id]
+    PUBLISH_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:publish_workflow_metadata_id]
   end
 
 end

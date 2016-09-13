@@ -20,7 +20,7 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
     params[:title] ||= 'RestClient Agent'
     params[:url] ||= 'https://api.ft.com/thing/b0778312-7686-49bc-a720-0551709ad37b'
 
-    {"definitionId": 20897,
+    {"definitionId": Config::Constants::PUBLISH_WORKFLOW_METADATA_ID,
      "stringVariables": {
          "assetMetadata": "{ \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\","\
           "\"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\", \"headline\": \"PHEW WHAT A SCORCHER!!\""\
