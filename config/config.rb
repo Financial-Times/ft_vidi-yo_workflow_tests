@@ -23,10 +23,9 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT ||= :dev
+    EXECUTION_ENVIRONMENT ||= :master_flex_staging
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
-    puts CONFIG
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
     MIO_ROOT_URL ||= ENVIRONMENT_CONFIG[:url]
     MIO_WS_URL ||= ENVIRONMENT_CONFIG[:ws_url]

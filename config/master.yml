@@ -48,4 +48,21 @@
     :ingest_metadata_name: ingestMetadata
     :publish_metadata_name: publishMetadata
 
+:master_flex_staging:
+
+    :ws_url: https://master-flex-staging.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
+    :project_workflow_metadata_id: 10202
+    :ingestion_workflow_metadata_id: 10213
+    :publish_workflow_metadata_id: 10323
+
 
