@@ -36,8 +36,8 @@
 
 
 :stubs:
-    :ws_url: http://localhost:32770
-    :url: http://localhost:32770
+    :ws_url: localhost:32768
+    :url: localhost:32768
 
     :admin_user:
         :username: masteruser

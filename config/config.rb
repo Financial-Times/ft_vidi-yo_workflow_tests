@@ -23,7 +23,7 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT ||= :master_flex_staging
+    EXECUTION_ENVIRONMENT = :dev
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
