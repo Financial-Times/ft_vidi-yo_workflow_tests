@@ -2,7 +2,6 @@
 source 'https://rubygems.org'
 
 group :test do
-  gem 'ft_video_webservice_client', '>=0.1.5'
   gem 'rake'
   gem 'cucumber'
   gem 'watir-webdriver'

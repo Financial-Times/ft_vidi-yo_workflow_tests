@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'test/unit'
 require_relative '../test_helper'
-require 'ft_video_webservice_client'
+require_relative '../../lib/ft_video_webservice_client/ft_video_webservice_client'
 require_relative '../../test/data/ws_user'
 
 class MetadataDescriptionClientTest < VideoTest

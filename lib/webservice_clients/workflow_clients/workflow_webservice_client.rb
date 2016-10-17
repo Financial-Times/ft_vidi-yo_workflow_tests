@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require 'ft_video_webservice_client'
+require_relative '../../webservice_clients/metadata_description_webservice_client'
+require_relative '../../ft_video_webservice_client/ft_video_webservice_client'
 
 ##
 # Handles workflow operations

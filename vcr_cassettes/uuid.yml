@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/12837
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 17 Oct 2016 11:32:53 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":12837,"name":"project-workflow","displayName":"project-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/12837","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"17
+        Oct 2016 11:32:52 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","accountId":4},"definition":{"id":10106,"uuid":"e7245f55-5908-45bc-9aef-1560fcb549a3","name":"project-workflow","displayName":"project-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10106","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:22:39 +0000","lastModified":"11
+        Oct 2016 14:49:51 +0000"},"definitionVersion":52,"created":"17 Oct 2016 11:32:52
+        +0000","lastModified":"17 Oct 2016 11:32:52 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Mon, 17 Oct 2016 11:32:53 GMT
+recorded_with: VCR 3.0.3

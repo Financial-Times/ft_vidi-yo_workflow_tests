@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'ft_video_webservice_client'
+require_relative '../../ft_video_webservice_client/ft_video_webservice_client'
 require_relative '../../../test/data/ws_user'
 require_relative '../../../test/data/custom_request_data'
 require_relative 'workflow_webservice_client'

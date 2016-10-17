@@ -6,20 +6,16 @@
 
     :admin_user:
         :username: masteruser
-        :password: m4st3rus3r
+        :password: masteruser
 
+    :panel_id: 11_518
     :project_metadata_name: project-metadata
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
-    :project_workflow_metadata_id: 31061
-    :ingestion_workflow_metadata_id: 13707
-    :publish_workflow_metadata_id: 20897
-
-
 :master_flex:
 
-    :ws_url: https://master-flex-jspcdev.ft.com/api
+    :ws_url: https://master-flex-jemdev.ft.com/api
     :url: http://localhost:3131
 
     :admin_user:
@@ -30,14 +26,27 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
-    :project_workflow_metadata_id: 10106
+
+:jemdev:
+
+    :ws_url: https://master-flex-jemdev.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
     :ingestion_workflow_metadata_id: 10124
+    :project_workflow_metadata_id: 10106
     :publish_workflow_metadata_id: 10145
 
-
 :stubs:
-    :ws_url: localhost:32768
-    :url: localhost:32768
+    :ws_url: http://localhost:32770
+    :url: http://localhost:32770
 
     :admin_user:
         :username: masteruser
@@ -47,22 +56,3 @@
     :project_metadata_name: projectMetadata
     :ingest_metadata_name: ingestMetadata
     :publish_metadata_name: publishMetadata
-
-:master_flex_staging:
-
-    :ws_url: https://master-flex-staging.ft.com/api
-    :url: http://localhost:3131
-
-    :admin_user:
-        :username: masteruser
-        :password: masteruser
-
-    :project_metadata_name: project-metadata
-    :ingest_metadata_name: ingest-metadata
-    :publish_metadata_name: publish-metadata
-
-    :project_workflow_metadata_id: 10202
-    :ingestion_workflow_metadata_id: 10213
-    :publish_workflow_metadata_id: 10323
-
-
