@@ -38,14 +38,16 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
     params[:title] ||= Config::Constants::ASSET_TITLE
     params[:url] ||= Config::Constants::ASSET_URL
 
+
     {
       'definitionId':    Config::Constants::INGESTION_WORKFLOW_METADATA_ID,
       'stringVariables': {
         'assetMetadata':     '{ "clip-type":"http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd",'\
-'"clip-description": "FT Art Birdsong ", "location":"http://api.ft.com/things/f4ef81c6-765c-4f04-a8c7-b637f49f7e61",'\
+'"clip-description": "10 Seconds", "location":"http://sws.geonames.org/6619890/",'\
 '"interviewee": "Jem Rayfield","office": "http://api.ft.com/things/a29a5f4f-b4ff-46f7-b597-a30437783e1e",'\
 '"producer": "http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884","freelance-producer": "James Condron",'\
-'"reporter-1": "Darren Bown", "restrictions": "false"}',
+'"reporter-1": "Darren Bown", "reporter-2":"Dario Villanueva","reporter-3":"Jon Best", "restrictions": '\
+'"true", "restriction-description":"Sensitive Video....classified top secret"}',
         'project-thing-url': params[:url],
         'projectUUID':       params[:uuid],
         'assetS3Path':       params[:path],

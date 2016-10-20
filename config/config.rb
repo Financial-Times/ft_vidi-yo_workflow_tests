@@ -38,11 +38,11 @@ module Config
     INGEST_METADATA_NAME ||= ENVIRONMENT_CONFIG[:ingest_metadata_name]
     HTTP_SUCCESS_CODES ||= (200...299)
     THING_URL ||= 'http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b'
-    ASSET_TITLE ||= 'Missing.mp4'
+    ASSET_TITLE ||= '10 seconds'
     ASSET_UUID ||= 'b0778312-7686-49bc-a720-0551709ad37b'
-    ASSET_PATH ||= 'b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4'
+    ASSET_PATH ||= '12345/10SecondCountdown.mp4'
     WAIT_DELAY ||= 5
-    ASSET_URL ||= 'https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159'
+    ASSET_URL ||= 'http://api.ft.com/things/4444'
     OTP ||= ROTP::TOTP.new(ENV['MIO_APP_KEY'])
     PROJECT_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:project_workflow_metadata_id]
     INGESTION_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:ingestion_workflow_metadata_id]

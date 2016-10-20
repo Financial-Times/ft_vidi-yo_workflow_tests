@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":10106,"stringVariables":{"projectMetadata":"{ \"project\":
-        \"lmmoiw\", \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"cucarn\", \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
         \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",
         \"thing-url\": \"http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b\"}"}}'
     headers:
@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:32:56 GMT
+      - Thu, 20 Oct 2016 13:40:06 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/12848
+      - https://master-flex-jemdev.ft.com/api/workflows/15479
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -41,13 +41,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12848,"name":"project-workflow","displayName":"project-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/12848","status":"Running","start":"17
-        Oct 2016 11:32:56 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":15479,"name":"project-workflow","displayName":"project-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/15479","status":"Completed","start":"20
+        Oct 2016 13:40:06 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:32:57 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:11 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/12848
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15479
     body:
       encoding: US-ASCII
       string: ''
@@ -72,7 +72,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:32:58 GMT
+      - Thu, 20 Oct 2016 13:40:09 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -85,13 +85,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12848,"name":"project-workflow","displayName":"project-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/12848","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"17
-        Oct 2016 11:32:57 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","accountId":4},"definition":{"id":10106,"uuid":"e7245f55-5908-45bc-9aef-1560fcb549a3","name":"project-workflow","displayName":"project-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+      string: '{"id":15479,"name":"project-workflow","displayName":"project-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15479","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:07 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10106,"uuid":"e7245f55-5908-45bc-9aef-1560fcb549a3","name":"project-workflow","displayName":"project-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10106","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:22:39 +0000","lastModified":"11
-        Oct 2016 14:49:51 +0000"},"definitionVersion":52,"created":"17 Oct 2016 11:32:57
-        +0000","lastModified":"17 Oct 2016 11:32:57 +0000","account":{"id":4,"name":"Master
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:22:39 +0000","lastModified":"20
+        Oct 2016 09:00:33 +0000"},"definitionVersion":57,"asset":{"id":15483,"name":"test-create-project-group-placeholder","displayName":"test-create-project-group-placeholder","type":"Group
+        Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15483","variant":{"id":1,"name":"project-variant","href":"https://master-flex-jemdev.ft.com/api/variants/1"},"accountId":4,"workspaceId":3},"created":"20
+        Oct 2016 13:40:07 +0000","lastModified":"20 Oct 2016 13:40:07 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
@@ -100,17 +101,20 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:32:58 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:12 GMT
 - request:
     method: post
     uri: https://master-flex-jemdev.ft.com/api/workflows
     body:
       encoding: UTF-8
       string: '{"definitionId":10124,"stringVariables":{"assetMetadata":"{ \"clip-type\":\"http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd\",\"clip-description\":
-        \"FT Art Birdsong \", \"location\":\"http://api.ft.com/things/f4ef81c6-765c-4f04-a8c7-b637f49f7e61\",\"interviewee\":
+        \"10 Seconds\", \"location\":\"http://sws.geonames.org/6619890/\",\"interviewee\":
         \"Jem Rayfield\",\"office\": \"http://api.ft.com/things/a29a5f4f-b4ff-46f7-b597-a30437783e1e\",\"producer\":
         \"http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884\",\"freelance-producer\":
-        \"James Condron\",\"reporter-1\": \"Darren Bown\", \"restrictions\": \"false\"}","project-thing-url":"https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159","projectUUID":"e7245f55-5908-45bc-9aef-1560fcb549a3","assetS3Path":"b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4","assetTitle":"Missing.mp4"}}'
+        \"James Condron\",\"reporter-1\": \"Darren Bown\", \"reporter-2\":\"Dario
+        Villanueva\",\"reporter-3\":\"Jon Best\", \"restrictions\": \"true\", \"restriction-description\":\"Sensitive
+        Video....classified top secret\"}","project-thing-url":"http://api.ft.com/things/4444","projectUUID":"e7245f55-5908-45bc-9aef-1560fcb549a3","assetS3Path":"12345/10SecondCountdown.mp4","assetTitle":"10
+        seconds"}}'
     headers:
       Accept:
       - application/json
@@ -121,7 +125,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '790'
+      - '839'
       Authorization:
       - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
   response:
@@ -132,9 +136,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:32:58 GMT
+      - Thu, 20 Oct 2016 13:40:09 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/12854
+      - https://master-flex-jemdev.ft.com/api/workflows/15485
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -143,13 +147,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12854,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/12854","status":"Running","start":"17
-        Oct 2016 11:32:58 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:32:59 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:13 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/12854
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
     body:
       encoding: US-ASCII
       string: ''
@@ -174,7 +178,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:33:00 GMT
+      - Thu, 20 Oct 2016 13:40:10 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -187,13 +191,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12854,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/12854","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"17
-        Oct 2016 11:32:58 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"11
-        Oct 2016 14:50:28 +0000"},"definitionVersion":50,"created":"17 Oct 2016 11:32:58
-        +0000","lastModified":"17 Oct 2016 11:32:58 +0000","account":{"id":4,"name":"Master
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:10 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
@@ -202,10 +206,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:33:00 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:13 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/12854
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
     body:
       encoding: US-ASCII
       string: ''
@@ -230,7 +234,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:33:01 GMT
+      - Thu, 20 Oct 2016 13:40:11 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -243,13 +247,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12854,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/12854","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"17
-        Oct 2016 11:32:58 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"11
-        Oct 2016 14:50:28 +0000"},"definitionVersion":50,"created":"17 Oct 2016 11:32:58
-        +0000","lastModified":"17 Oct 2016 11:32:58 +0000","account":{"id":4,"name":"Master
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:10 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
@@ -258,10 +262,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:33:01 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:14 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/12854
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
     body:
       encoding: US-ASCII
       string: ''
@@ -286,7 +290,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:33:06 GMT
+      - Thu, 20 Oct 2016 13:40:17 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -299,13 +303,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12854,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/12854","status":"Failed","priority":"Normal","running":false,"ended":false,"cancelled":false,"cancelling":false,"failed":true,"start":"17
-        Oct 2016 11:32:58 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"11
-        Oct 2016 14:50:28 +0000"},"definitionVersion":50,"created":"17 Oct 2016 11:32:58
-        +0000","lastModified":"17 Oct 2016 11:33:04 +0000","account":{"id":4,"name":"Master
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:15 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
@@ -314,5 +318,570 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:33:06 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:19 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:22 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:19 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:24 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:27 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"asset":{"id":15495,"name":"10
+        seconds","displayName":"10 seconds","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15495","variant":{"id":2,"name":"video-asset-raw-pre-edit","href":"https://master-flex-jemdev.ft.com/api/variants/2"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"20
+        Oct 2016 13:40:10 +0000","lastModified":"20 Oct 2016 13:40:26 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:29 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:33 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"asset":{"id":15495,"name":"10
+        seconds","displayName":"10 seconds","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15495","variant":{"id":2,"name":"video-asset-raw-pre-edit","href":"https://master-flex-jemdev.ft.com/api/variants/2"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"20
+        Oct 2016 13:40:10 +0000","lastModified":"20 Oct 2016 13:40:29 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:35 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:38 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"asset":{"id":15495,"name":"10
+        seconds","displayName":"10 seconds","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15495","variant":{"id":2,"name":"video-asset-raw-pre-edit","href":"https://master-flex-jemdev.ft.com/api/variants/2"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"20
+        Oct 2016 13:40:10 +0000","lastModified":"20 Oct 2016 13:40:29 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:40 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:43 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"asset":{"id":15495,"name":"10
+        seconds","displayName":"10 seconds","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15495","variant":{"id":2,"name":"video-asset-raw-pre-edit","href":"https://master-flex-jemdev.ft.com/api/variants/2"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3,"masterKeyframeId":102976},"created":"20
+        Oct 2016 13:40:10 +0000","lastModified":"20 Oct 2016 13:40:42 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:45 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:48 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:45 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:51 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:54 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:45 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:40:56 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:40:58 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:40:45 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:41:01 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:41:04 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"created":"20 Oct 2016 13:40:10
+        +0000","lastModified":"20 Oct 2016 13:41:01 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:41:06 GMT
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/workflows/15485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Oct 2016 13:41:09 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":15485,"name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/15485","status":"Completed","priority":"Normal","running":false,"ended":true,"cancelled":false,"cancelling":false,"failed":false,"start":"20
+        Oct 2016 13:40:10 +0000","end":"20 Oct 2016 13:41:06 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10124,"uuid":"87cd933e-0bf6-4148-8a47-e6251e9d6768","name":"ingest-workflow","displayName":"ingest-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10124","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"19 Sep 2016 11:23:20 +0000","lastModified":"19
+        Oct 2016 15:28:26 +0000"},"definitionVersion":53,"asset":{"id":15512,"name":"10
+        seconds","displayName":"10 seconds","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/15512","variant":{"id":3,"name":"proxy-video-asset-variant-pre-edit","href":"https://master-flex-jemdev.ft.com/api/variants/3"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"20
+        Oct 2016 13:40:10 +0000","lastModified":"20 Oct 2016 13:41:06 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"19
+        Sep 2016 11:03:56 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Thu, 20 Oct 2016 13:41:12 GMT
 recorded_with: VCR 3.0.3

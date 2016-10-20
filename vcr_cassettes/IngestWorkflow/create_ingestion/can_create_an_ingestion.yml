@@ -6,10 +6,13 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":10124,"stringVariables":{"assetMetadata":"{ \"clip-type\":\"http://api.ft.com/things/a0e8ca2e-03b4-4321-9b50-4a85b38298cd\",\"clip-description\":
-        \"FT Art Birdsong \", \"location\":\"http://api.ft.com/things/f4ef81c6-765c-4f04-a8c7-b637f49f7e61\",\"interviewee\":
+        \"10 Seconds\", \"location\":\"http://sws.geonames.org/6619890/\",\"interviewee\":
         \"Jem Rayfield\",\"office\": \"http://api.ft.com/things/a29a5f4f-b4ff-46f7-b597-a30437783e1e\",\"producer\":
         \"http://api.ft.com/things/a4fda01e-dd90-490b-a7be-7c74eafd3884\",\"freelance-producer\":
-        \"James Condron\",\"reporter-1\": \"Darren Bown\", \"restrictions\": \"false\"}","project-thing-url":"https://api.ft.com/thing/5d24e298-c1da-4831-8332-74941875a159","projectUUID":"b0778312-7686-49bc-a720-0551709ad37b","assetS3Path":"b0778312-7686-49bc-a720-0551709ad37b/Missing.mp4","assetTitle":"Missing.mp4"}}'
+        \"James Condron\",\"reporter-1\": \"Darren Bown\", \"reporter-2\":\"Dario
+        Villanueva\",\"reporter-3\":\"Jon Best\", \"restrictions\": \"true\", \"restriction-description\":\"Sensitive
+        Video....classified top secret\"}","project-thing-url":"http://api.ft.com/things/4444","projectUUID":"b0778312-7686-49bc-a720-0551709ad37b","assetS3Path":"12345/10SecondCountdown.mp4","assetTitle":"10
+        seconds"}}'
     headers:
       Accept:
       - application/json
@@ -20,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '790'
+      - '839'
       Authorization:
       - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
   response:
@@ -31,9 +34,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:33:15 GMT
+      - Thu, 20 Oct 2016 13:41:59 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/12865
+      - https://master-flex-jemdev.ft.com/api/workflows/15526
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -42,8 +45,8 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12865,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/12865","status":"Running","start":"17
-        Oct 2016 11:33:15 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":15526,"name":"ingest-workflow","displayName":"ingest-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/15526","status":"Completed","start":"20
+        Oct 2016 13:41:59 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:33:16 GMT
+  recorded_at: Thu, 20 Oct 2016 13:42:02 GMT
 recorded_with: VCR 3.0.3

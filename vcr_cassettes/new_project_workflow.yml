@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"definitionId":10106,"stringVariables":{"projectMetadata":"{ \"project\":
-        \"iwhqcb\", \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"jfbhda\", \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
         \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",
         \"thing-url\": \"http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b\"}"}}'
     headers:
@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 17 Oct 2016 11:32:51 GMT
+      - Thu, 20 Oct 2016 13:40:02 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/12837
+      - https://master-flex-jemdev.ft.com/api/workflows/15468
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -41,8 +41,8 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12837,"name":"project-workflow","displayName":"project-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/12837","status":"Running","start":"17
-        Oct 2016 11:32:51 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":15468,"name":"project-workflow","displayName":"project-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/15468","status":"Completed","start":"20
+        Oct 2016 13:40:02 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Mon, 17 Oct 2016 11:32:53 GMT
+  recorded_at: Thu, 20 Oct 2016 13:40:05 GMT
 recorded_with: VCR 3.0.3
