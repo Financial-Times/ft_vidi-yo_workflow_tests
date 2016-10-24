@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://master-flex-jemdev.ft.com/api/metadataDefinitions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Host:
+      - master-flex-jemdev.ft.com
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 24 Oct 2016 11:11:05 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"metadataDefinitions":[{"id":10126,"uuid":"ef0ad402-7d7f-46f4-aadf-d22e4ccdc33b","name":"publish-metadata-asset","displayName":"publish-metadata-asset","externalIds":[],"enabled":true,"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/metadataDefinitions/10126","created":"21
+        Oct 2016 14:18:14 +0000","lastModified":"21 Oct 2016 14:18:15 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"},"revision":"1-3ae7470bcedd0feae6a33aa59518788a82dfe96d","locked":false},{"id":10125,"uuid":"e688ce7f-e112-4c5c-a1d6-58e83b035d49","name":"publish-metadata","displayName":"publish-metadata","externalIds":[],"enabled":true,"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/metadataDefinitions/10125","created":"21
+        Oct 2016 14:18:12 +0000","lastModified":"21 Oct 2016 14:18:13 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"},"revision":"1-84cfc5be41f40ccb390c1f5025953a407fbcaaa2","locked":false},{"id":10108,"uuid":"b05e1065-80cd-4fd8-9c1f-d9338521e6c3","name":"ingest-metadata-asset","displayName":"ingest-metadata-asset","externalIds":[],"enabled":true,"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/metadataDefinitions/10108","created":"21
+        Oct 2016 14:17:16 +0000","lastModified":"21 Oct 2016 14:17:17 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"},"revision":"1-3e72f0a141ea6db995be29d6d1fa366c5d7d1872","locked":false},{"id":10107,"uuid":"306222a1-6320-4f9c-bdf2-424808e104c5","name":"ingest-metadata","displayName":"ingest-metadata","externalIds":[],"enabled":true,"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/metadataDefinitions/10107","created":"21
+        Oct 2016 14:17:14 +0000","lastModified":"21 Oct 2016 14:17:15 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"},"revision":"1-a7ad6f02696b40a6782ce9d89008ba6588327910","locked":false},{"id":10100,"uuid":"f8147d04-d41e-46cd-ac07-4827b0203a30","name":"project-metadata","displayName":"project-metadata","externalIds":[],"enabled":true,"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/metadataDefinitions/10100","created":"21
+        Oct 2016 14:16:47 +0000","lastModified":"21 Oct 2016 14:23:30 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"visibility":[{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"}],"account":{"id":4,"name":"Master Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
+        Oct 2016 14:11:19 +0000"},"revision":"1-147651c8582914b52659e2af0fced0ad5edc88a0","locked":false}],"totalCount":5,"offset":0,"limit":100}'
+    http_version: 
+  recorded_at: Mon, 24 Oct 2016 11:11:05 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://master-flex-jemdev.ft.com/api/workflows
+    body:
+      encoding: UTF-8
+      string: '{"definitionId":10106,"stringVariables":{"projectMetadata":"{ \"project\":
+        \"mlnsme\", \"section\": \"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",
+        \"brand\": \"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",
+        \"thing-url\": \"http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b\"}"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Content-Length:
+      - '341'
+      Host:
+      - master-flex-jemdev.ft.com
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 24 Oct 2016 11:11:01 GMT
+      Location:
+      - https://master-flex-jemdev.ft.com/api/workflows/10422
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":10422,"name":"project-workflow","displayName":"project-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/10422","status":"Running","start":"24
+        Oct 2016 11:11:01 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+    http_version: 
+  recorded_at: Mon, 24 Oct 2016 11:11:01 GMT
+recorded_with: VCR 3.0.3

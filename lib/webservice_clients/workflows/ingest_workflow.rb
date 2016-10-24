@@ -25,15 +25,6 @@ class IngestWorkflow < Workflow
     self
   end
 
-  def completed?
-    info_logger :info, status
-    if status == 'Failed'
-      error_logger :error, 'Workflow failed'
-      raise 'Workflow failed'
-    end
-    status =~ /Completed/
-  end
-
   ##
   # Retrieve an existing ProjectWorkflow by id
   #
