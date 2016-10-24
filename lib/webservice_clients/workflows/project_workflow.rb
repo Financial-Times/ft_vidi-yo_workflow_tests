@@ -15,7 +15,6 @@ class ProjectWorkflow < Workflow
   def create
     @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow
     raise "Workflow not created: #{@workflow_log['status']} found" unless created?
-    puts @workflow_log
     self
   end
 

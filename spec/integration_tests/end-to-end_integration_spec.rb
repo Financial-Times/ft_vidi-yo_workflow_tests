@@ -7,21 +7,21 @@ require 'rspec/wait'
 RSpec.describe IngestToPublish do
   include Config::Logging
 
-  before :all do
-    @project = ProjectWorkflow.new.create
-    @uuid = @project.uuid
-    info_logger :info, "Project ID: #{@uuid}"
-  end
+  # before :all do
+  #   @project = ProjectWorkflow.new.create
+  #   @uuid = @project.uuid
+  #   info_logger :info, "Project ID: #{@uuid}"
+  # end
 
   it 'can create an ingestion' do
-    @ingestion = IngestToPublish.new.create_ingestion
+    @ingestion = IngestToPublish.new.create_ingestion 'a1ffa48e-cb8a-4deb-92dc-7b7d1747e8f9'
     info_logger :info, "INGESTION: #{@ingestion}"
     info_logger :info, "STATUS: #{@ingestion.status}"
     expect(@ingestion.started?).to be_truthy
   end
 
   it 'confirms that the ingestion was successful', wait: {timeout: 120} do
-    @ingestion = IngestToPublish.new.create_ingestion
+    @ingestion = IngestToPublish.new.create_ingestion 'a1ffa48e-cb8a-4deb-92dc-7b7d1747e8f9'
     retrieved_ingestion = @ingestion.retrieve @ingestion.id
     wait_for_complete @ingestion, retrieved_ingestion
   end

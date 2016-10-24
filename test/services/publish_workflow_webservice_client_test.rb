@@ -28,7 +28,7 @@ class PublishWorkflowWebserviceClientTest < VideoTest
     )
     string_variables = custom_payload[:stringVariables]
     info_logger :info, "Custom Payload: #{string_variables.keys}"
-    assert_equal('http://api.ft.com/things/4444', string_variables[:'project-thing-url'])
+    assert_equal(Config::Constants::ASSET_URL, string_variables[:'project-thing-url'])
     assert_equal('test_path', string_variables[:assetS3Path])
     assert_equal('custom_title', string_variables[:assetTitle])
 

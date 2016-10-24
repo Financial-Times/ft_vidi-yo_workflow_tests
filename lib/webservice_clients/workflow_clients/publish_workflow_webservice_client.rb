@@ -26,7 +26,7 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
          'assetS3Path':       params[:path],
          'assetTitle':        params[:title],
          'brightcovePublish': false,
-         'project-thing-url': 'http://api.ft.com/things/4444'
+         'project-thing-url': Config::Constants::ASSET_URL
     }
     }
   end

@@ -42,7 +42,7 @@ module Config
     ASSET_UUID ||= 'b0778312-7686-49bc-a720-0551709ad37b'
     ASSET_PATH ||= '12345/10SecondCountdown.mp4'
     WAIT_DELAY ||= 5
-    ASSET_URL ||= 'http://api.ft.com/things/4444'
+    ASSET_URL ||= 'http://api.ft.com/things/0909033'
     OTP ||= ROTP::TOTP.new(ENV['MIO_APP_KEY'])
     PROJECT_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:project_workflow_metadata_id]
     INGESTION_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:ingestion_workflow_metadata_id]
