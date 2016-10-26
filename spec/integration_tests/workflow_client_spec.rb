@@ -9,7 +9,7 @@ RSpec.describe ProjectWorkflowWebserviceClient do
     @workflow = ProjectWorkflowWebserviceClient.new
   end
 
-  context 'live integration tests' do
+  context 'live negative tests' do
     it 'can handle malformed requests' do
       malformed_request = '</FAILED>'
       @response = @workflow.create_invalid_project_workflow(malformed_request,

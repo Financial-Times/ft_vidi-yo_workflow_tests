@@ -4,7 +4,7 @@ require_relative 'project_workflow'
 require_relative 'ingest_workflow'
 require_relative 'publish_workflow'
 
-class IngestToPublish
+class EndToEndWorkflow
 
   include Config::Logging
 
@@ -15,7 +15,7 @@ class IngestToPublish
     @project_workflow.uuid
   end
 
-  def create_ingestion(uuid: create_project)
+  def create_ingestion(uuid=create_project)
     @ingestion_workflow = IngestWorkflow.new
     @ingestion_workflow.create(uuid)
   end
