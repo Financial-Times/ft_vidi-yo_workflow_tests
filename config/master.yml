@@ -13,6 +13,10 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
+    :ingestion_workflow_metadata_id: 10107
+    :project_workflow_metadata_id: 10205
+    :publish_workflow_metadata_id: 10145
+
 :master_flex:
 
     :ws_url: https://master-flex-jemdev.ft.com/api
