@@ -49,7 +49,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":10439,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/10439","status":"Running","start":"24
+      string: '{"id":10439,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/10439","status":"Completed","start":"24
         Oct 2016 11:11:05 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
   recorded_at: Mon, 24 Oct 2016 11:11:06 GMT
