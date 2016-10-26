@@ -33,7 +33,7 @@ class VideoWebserviceClient
     info_logger :info, "RETRIEVE RESOURCE: definition_ID: #{definition_id}"
     RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @username, password: @password,
                                 headers: @headers) do |response|
-      raise "Retrieve resource #{definition_id} request failed" unless HTTP_SUCCESS_CODES.cover? response.code
+      raise "Retrieve resource #{definition_id} request failed with code #{response.code}" unless HTTP_SUCCESS_CODES.cover? response.code
       info_logger :info, "WS request successful - resource_request-#{definition_id}"
       JSON.parse(response)
     end
