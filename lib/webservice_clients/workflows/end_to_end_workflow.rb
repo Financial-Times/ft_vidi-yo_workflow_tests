@@ -25,4 +25,9 @@ class EndToEndWorkflow
     @publish_workflow.create
   end
 
+  def end_to_end
+    create_ingestion
+    do_publish
+  end
+
 end
