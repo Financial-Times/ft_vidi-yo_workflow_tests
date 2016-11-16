@@ -42,7 +42,8 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
     project_name ||= CustomRequestData.random_string(6)
     section ||= Config::Constants::DEFAULT_SECTION
     brand ||= Config::Constants::DEFAULT_BRAND
-    thing_url ||= Config::Constants::THING_URL
+    thing_url ||= "http://api.ft.com/things/#{SecureRandom.uuid}/"
+    info_logger :info, "thing_url: #{thing_url}"
     {"definitionId": PROJECT_WORKFLOW_METADATA_ID,
      "stringVariables":
      {"projectMetadata":
