@@ -9,7 +9,9 @@ RSpec.describe EndToEndWorkflow do
 
   context 'live integration testing' do
     it 'can publish' do
-      @publish_workflow = EndToEndWorkflow.new.end_to_end
+      workflow = EndToEndWorkflow.new
+      @ingest_workflow = workflow.create_ingestion
+      @publish_workflow = workflow.do_publish
       retrieved_publish_workflow = @publish_workflow.retrieve @publish_workflow.id
       wait_for_complete @publish_workflow, retrieved_publish_workflow
     end
