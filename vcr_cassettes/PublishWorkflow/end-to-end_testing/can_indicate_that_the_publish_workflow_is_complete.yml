@@ -42,9 +42,9 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:43:54 GMT
+      - Wed, 16 Nov 2016 17:47:35 GMT
       Location:
-      - https://master-flex-qadev.ft.com/api/workflows/12049
+      - https://master-flex-qadev.ft.com/api/workflows/12162
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -53,13 +53,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","start":"16
+        Nov 2016 17:47:36 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:43:57 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:38 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -90,7 +90,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:43:55 GMT
+      - Wed, 16 Nov 2016 17:47:37 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -103,13 +103,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:43:55 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:47:37 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -118,10 +118,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:43:57 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:38 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -152,7 +152,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:43:55 GMT
+      - Wed, 16 Nov 2016 17:47:37 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -165,13 +165,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:43:55 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:47:37 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -180,10 +180,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:43:57 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:39 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -214,7 +214,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:01 GMT
+      - Wed, 16 Nov 2016 17:47:43 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -227,13 +227,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:43:58 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:47:39 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -242,10 +242,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:02 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:44 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -276,7 +276,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:06 GMT
+      - Wed, 16 Nov 2016 17:47:48 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -289,14 +289,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12053,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12053","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
-        Nov 2016 17:43:55 +0000","lastModified":"16 Nov 2016 17:44:05 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:47:39 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -305,10 +304,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:08 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:50 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -339,7 +338,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:12 GMT
+      - Wed, 16 Nov 2016 17:47:53 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -352,14 +351,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12053,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12053","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
-        Nov 2016 17:43:55 +0000","lastModified":"16 Nov 2016 17:44:05 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12171,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12171","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:47:53 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -368,10 +367,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:13 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:55 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -402,7 +401,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:17 GMT
+      - Wed, 16 Nov 2016 17:47:59 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -415,14 +414,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12053,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12053","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
-        Nov 2016 17:43:55 +0000","lastModified":"16 Nov 2016 17:44:05 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12171,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12171","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:47:53 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -431,10 +430,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:18 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:01 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -465,7 +464,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:22 GMT
+      - Wed, 16 Nov 2016 17:48:05 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -478,13 +477,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:44:20 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12171,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12171","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:47:53 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -493,10 +493,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:24 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:06 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -527,7 +527,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:27 GMT
+      - Wed, 16 Nov 2016 17:48:10 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -540,13 +540,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:44:20 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12171,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12171","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:47:53 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -555,10 +556,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:29 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:12 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -589,7 +590,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:33 GMT
+      - Wed, 16 Nov 2016 17:48:16 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -602,13 +603,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:44:20 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12171,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12171","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:47:53 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -617,10 +619,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:34 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:18 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -651,7 +653,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:38 GMT
+      - Wed, 16 Nov 2016 17:48:21 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -664,13 +666,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:43:55
-        +0000","lastModified":"16 Nov 2016 17:44:20 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:48:20 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -679,10 +681,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:39 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:23 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -713,7 +715,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:44 GMT
+      - Wed, 16 Nov 2016 17:48:27 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -726,14 +728,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12061,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12061","variant":{"id":7,"name":"proxy-final-video-asset-variant","href":"https://master-flex-qadev.ft.com/api/variants/7"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"16
-        Nov 2016 17:43:55 +0000","lastModified":"16 Nov 2016 17:44:42 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:48:20 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -742,10 +743,10 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:45 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:28 GMT
 - request:
     method: get
-    uri: https://master-flex-qadev.ft.com/api/workflows/12049
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
     body:
       encoding: US-ASCII
       string: ''
@@ -776,7 +777,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 16 Nov 2016 17:44:48 GMT
+      - Wed, 16 Nov 2016 17:48:32 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -789,14 +790,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":12049,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12049","status":"Completed","priority":"Normal","running":false,"ended":true,"cancelled":false,"cancelling":false,"failed":false,"start":"16
-        Nov 2016 17:43:55 +0000","end":"16 Nov 2016 17:44:46 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
         masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
         Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
-        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12061,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12061","variant":{"id":7,"name":"proxy-final-video-asset-variant","href":"https://master-flex-qadev.ft.com/api/variants/7"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"16
-        Nov 2016 17:43:55 +0000","lastModified":"16 Nov 2016 17:44:46 +0000","account":{"id":4,"name":"Master
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:47:37
+        +0000","lastModified":"16 Nov 2016 17:48:31 +0000","account":{"id":4,"name":"Master
         Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
@@ -805,5 +805,68 @@ http_interactions:
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 16 Nov 2016 17:44:51 GMT
+  recorded_at: Wed, 16 Nov 2016 17:48:34 GMT
+- request:
+    method: get
+    uri: https://master-flex-qadev.ft.com/api/workflows/12162
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Type:
+      - application/vnd.nativ.mio.v1+json
+      Authorization:
+      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 16 Nov 2016 17:48:37 GMT
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 UTC
+      Pragma:
+      - No-cache
+      Server:
+      - Apache-Coyote/1.1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":12162,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/12162","status":"Completed","priority":"Normal","running":false,"ended":true,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:47:37 +0000","end":"16 Nov 2016 17:48:36 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":12191,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/12191","variant":{"id":7,"name":"proxy-final-video-asset-variant","href":"https://master-flex-qadev.ft.com/api/variants/7"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:47:37 +0000","lastModified":"16 Nov 2016 17:48:36 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
+        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
+        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
+        Jun 2015 10:26:05 +0000"},"visibility":[]}'
+    http_version: 
+  recorded_at: Wed, 16 Nov 2016 17:48:39 GMT
 recorded_with: VCR 3.0.3

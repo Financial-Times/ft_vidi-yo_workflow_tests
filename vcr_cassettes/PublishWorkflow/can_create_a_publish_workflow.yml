@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://master-flex-jemdev.ft.com/api/workflows
+    uri: https://master-flex-qadev.ft.com/api/workflows
     body:
       encoding: UTF-8
-      string: '{"definitionId":10145,"stringVariables":{"assetMetadata":"{\"section\":\"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":\"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",\"headline\":\"Hello
+      string: '{"definitionId":10155,"stringVariables":{"assetMetadata":"{\"section\":\"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":\"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",\"headline\":\"Hello
         Hello its a headline\",\"long-lead\":\"QA its never a long lead no it is\",\"short-lead\":\"its
         a short QA\",\"link-1\":\"http://link-1\",\"link-1-text\":\"link1 text\",\"link-2\":\"http://link-2\",\"link-2-text\":\"link2
         text\",\"link-3\":\"http://link-3\",\"link-3-text\":\"link3 text\",\"credit\":\"Credit
@@ -13,8 +13,8 @@ http_interactions:
         Rayfield The Video pro\",\"restrictions\":\"true\",\"restriction-description\":\"well
         suspect innit\",\"poster-image\": { \"file-name\":\"test\",\"file-path\":\"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10SecPoster.jpeg\"},\"thumbnail-image\":
         { \"file-name\":\"test\",\"file-path\":\"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10Secthumbnail.jpeg\"},\"brightcove-metadata-tags\":
-        [ { \"brightcove-tag\":\"test\" }, { \"brightcove-tag\":\"test2\" } ] }","assetS3Path":"12345/10SecondCountdown.mp4","assetTitle":"RestClient
-        Agent","brightcovePublish":false,"project-thing-url":"http://api.ft.com/things/4444"}}'
+        [ { \"brightcove-tag\":\"test\" }, { \"brightcove-tag\":\"test2\" } ] }","assetS3Path":"12345/short.MOV","assetTitle":"RestClient
+        Agent","brightcovePublish":false,"project-thing-url":"http://api.ft.com/things/05751ceb-cb2a-4c4a-a804-9d830214bb91"}}'
     headers:
       Accept:
       - application/json
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '1477'
+      - '1497'
       Authorization:
       - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
   response:
@@ -33,12 +33,18 @@ http_interactions:
       code: 201
       message: Created
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Content-Type:
       - application/json
       Date:
-      - Thu, 20 Oct 2016 13:45:22 GMT
+      - Wed, 16 Nov 2016 17:47:34 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/15654
+      - https://master-flex-qadev.ft.com/api/workflows/12157
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -47,8 +53,8 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":15654,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/15654","status":"Completed","start":"20
-        Oct 2016 13:45:23 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":12157,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-qadev.ft.com/api/workflows/12157","status":"Running","start":"16
+        Nov 2016 17:47:35 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 13:45:27 GMT
+  recorded_at: Wed, 16 Nov 2016 17:47:37 GMT
 recorded_with: VCR 3.0.3
