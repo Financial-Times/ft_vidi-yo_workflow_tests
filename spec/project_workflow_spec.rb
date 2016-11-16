@@ -12,26 +12,12 @@ RSpec.describe ProjectWorkflow do
       @project_workflow_client = ProjectWorkflow.new
     end
 
-    it 'can create a project', :vcr do
+    it 'can complete a project workflow', :vcr, wait: {timeout: 120} do
       project = @project_workflow_client.create
-      expect(project.created?).to be_truthy
-    end
-
-    it 'can retrieve a previously-defined project', :vcr do
-      project = @project_workflow_client.create
-      retrieved_project = project.retrieve project.id
-      expect(retrieved_project.id).to match project.id
-    end
-
-    it 'can indicate that the workflow is complete', :vcr, wait: {timeout: 120} do
-      project = @project_workflow_client.create
+      expect(project.uuid.contains_uuid?).to be_truthy
       retrieved_project = project.retrieve project.id
       wait_for_complete project, retrieved_project
     end
 
-    it 'has a uuid', :vcr do
-      project = @project_workflow_client.create
-      expect(project.uuid.contains_uuid?).to be_truthy
-    end
   end
 end
