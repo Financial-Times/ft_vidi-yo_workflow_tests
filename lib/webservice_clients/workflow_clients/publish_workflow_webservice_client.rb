@@ -16,7 +16,7 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
   end
 
   def create_publish_workflow_payload(params={})
-    params[:path] ||= '12345/10SecondCountdown.mp4'
+    params[:path] ||= '12345/short.MOV'
     params[:title] ||= 'RestClient Agent'
     params[:url] ||= 'https://api.ft.com/thing/b0778312-7686-49bc-a720-0551709ad37b'
 
