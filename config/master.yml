@@ -30,6 +30,38 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
+:darrendev:
+    :ws_url: https://master-flex-darrendev.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
+    :ingestion_workflow_metadata_id: 10122
+    :project_workflow_metadata_id: 10116
+    :publish_workflow_metadata_id: 10155
+
+:staging:
+    :ws_url: https://master-flex-staging.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
+    :ingestion_workflow_metadata_id: 10119
+    :project_workflow_metadata_id: 10203
+    :publish_workflow_metadata_id: 10145
+
 
 :jemdev:
 
@@ -60,3 +92,19 @@
     :project_metadata_name: projectMetadata
     :ingest_metadata_name: ingestMetadata
     :publish_metadata_name: publishMetadata
+
+:qadev:
+    :ws_url: https://master-flex-qadev.ft.com/api
+    :url: http://localhost:3131
+
+    :admin_user:
+        :username: masteruser
+        :password: masteruser
+
+    :project_metadata_name: project-metadata
+    :ingest_metadata_name: ingest-metadata
+    :publish_metadata_name: publish-metadata
+
+    :ingestion_workflow_metadata_id: 10134
+    :project_workflow_metadata_id: 10116
+    :publish_workflow_metadata_id: 10155

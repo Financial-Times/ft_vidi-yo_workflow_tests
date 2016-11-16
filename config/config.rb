@@ -23,7 +23,7 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT = :jemdev
+    EXECUTION_ENVIRONMENT = :qadev
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]
@@ -37,12 +37,12 @@ module Config
     PUBLISH_METADATA_NAME ||= ENVIRONMENT_CONFIG[:publish_metadata_name]
     INGEST_METADATA_NAME ||= ENVIRONMENT_CONFIG[:ingest_metadata_name]
     HTTP_SUCCESS_CODES ||= (200...299)
-    THING_URL ||= 'http://api.ft.com/things/JAMESISADICKb0778312-7686-49bc-a720-0551709ad37b'
-    ASSET_TITLE ||= '10 seconds'
+    THING_URL ||= 'http://api.ft.com/things/0778312-7686-49bc-a720-0551709ad37b'
+    ASSET_TITLE ||= 'Short Video'
     ASSET_UUID ||= 'b0778312-7686-49bc-a720-0551709ad37b'
-    ASSET_PATH ||= '12345/10SecondCountdown.mp4'
+    ASSET_PATH ||= '12345/short.MOV'
     WAIT_DELAY ||= 5
-    ASSET_URL ||= 'http://api.ft.com/things/0909033'
+    ASSET_URL ||= 'http://api.ft.com/things/05751ceb-cb2a-4c4a-a804-9d830214bb91'
     OTP ||= ROTP::TOTP.new(ENV['MIO_APP_KEY'])
     PROJECT_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:project_workflow_metadata_id]
     INGESTION_WORKFLOW_METADATA_ID = ENVIRONMENT_CONFIG[:ingestion_workflow_metadata_id]

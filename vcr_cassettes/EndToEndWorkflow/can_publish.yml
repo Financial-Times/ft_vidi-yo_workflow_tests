@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://master-flex-jemdev.ft.com/api/workflows
+    uri: https://master-flex-qadev.ft.com/api/workflows
     body:
       encoding: UTF-8
-      string: '{"definitionId":10145,"stringVariables":{"assetMetadata":"{\"section\":\"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":\"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",\"headline\":\"Hello
+      string: '{"definitionId":10155,"stringVariables":{"assetMetadata":"{\"section\":\"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499\",\"brand\":\"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009\",\"headline\":\"Hello
         Hello its a headline\",\"long-lead\":\"QA its never a long lead no it is\",\"short-lead\":\"its
         a short QA\",\"link-1\":\"http://link-1\",\"link-1-text\":\"link1 text\",\"link-2\":\"http://link-2\",\"link-2-text\":\"link2
         text\",\"link-3\":\"http://link-3\",\"link-3-text\":\"link3 text\",\"credit\":\"Credit
@@ -13,8 +13,8 @@ http_interactions:
         Rayfield The Video pro\",\"restrictions\":\"true\",\"restriction-description\":\"well
         suspect innit\",\"poster-image\": { \"file-name\":\"test\",\"file-path\":\"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10SecPoster.jpeg\"},\"thumbnail-image\":
         { \"file-name\":\"test\",\"file-path\":\"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10Secthumbnail.jpeg\"},\"brightcove-metadata-tags\":
-        [ { \"brightcove-tag\":\"test\" }, { \"brightcove-tag\":\"test2\" } ] }","assetS3Path":"12345/10SecondCountdown.mp4","assetTitle":"RestClient
-        Agent","brightcovePublish":false,"project-thing-url":"http://api.ft.com/things/0909033"}}'
+        [ { \"brightcove-tag\":\"test\" }, { \"brightcove-tag\":\"test2\" } ] }","assetS3Path":"12345/short.MOV","assetTitle":"RestClient
+        Agent","brightcovePublish":false,"project-thing-url":"http://api.ft.com/things/05751ceb-cb2a-4c4a-a804-9d830214bb91"}}'
     headers:
       Accept:
       - application/json
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/vnd.nativ.mio.v1+json
       Content-Length:
-      - '1480'
+      - '1497'
       Authorization:
       - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
   response:
@@ -33,12 +33,18 @@ http_interactions:
       code: 201
       message: Created
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:38 GMT
+      - Wed, 16 Nov 2016 17:12:37 GMT
       Location:
-      - https://master-flex-jemdev.ft.com/api/workflows/11532
+      - https://master-flex-qadev.ft.com/api/workflows/11550
       Server:
       - Apache-Coyote/1.1
       Transfer-Encoding:
@@ -47,13 +53,13 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":"masteruser masteruser","accountId":4,"workspaceId":3}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:41 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:39 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -73,12 +79,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:41 GMT
+      - Wed, 16 Nov 2016 17:12:38 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -91,25 +103,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:55:39 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:12:38 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:42 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:40 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -129,12 +141,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:41 GMT
+      - Wed, 16 Nov 2016 17:12:38 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -147,25 +165,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:55:39 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:12:38 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:42 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:40 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -185,12 +203,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:47 GMT
+      - Wed, 16 Nov 2016 17:12:44 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -203,25 +227,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:55:43 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:12:41 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:49 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:45 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -241,12 +265,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:53 GMT
+      - Wed, 16 Nov 2016 17:12:49 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -259,25 +289,26 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:55:50 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":11554,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/11554","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:12:38 +0000","lastModified":"16 Nov 2016 17:12:49 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:54 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:50 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -297,12 +328,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:55:57 GMT
+      - Wed, 16 Nov 2016 17:12:53 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -315,26 +352,26 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11536,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11536","variant":{"id":4,"name":"final-edit-asset-publish","href":"https://master-flex-jemdev.ft.com/api/variants/4"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:55:58 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":11554,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/11554","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:12:38 +0000","lastModified":"16 Nov 2016 17:12:49 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:55:59 GMT
+  recorded_at: Wed, 16 Nov 2016 17:12:56 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -354,12 +391,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:03 GMT
+      - Wed, 16 Nov 2016 17:13:00 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -372,26 +415,26 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11536,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11536","variant":{"id":4,"name":"final-edit-asset-publish","href":"https://master-flex-jemdev.ft.com/api/variants/4"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:56:02 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":11554,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/11554","variant":{"id":6,"name":"final-edit-asset-publish","href":"https://master-flex-qadev.ft.com/api/variants/6"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:12:38 +0000","lastModified":"16 Nov 2016 17:12:49 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:04 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:01 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -411,12 +454,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:08 GMT
+      - Wed, 16 Nov 2016 17:13:05 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -429,26 +478,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11536,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11536","variant":{"id":4,"name":"final-edit-asset-publish","href":"https://master-flex-jemdev.ft.com/api/variants/4"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:56:05 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:13:05 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:10 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:06 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -468,12 +516,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:14 GMT
+      - Wed, 16 Nov 2016 17:13:10 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -486,26 +540,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11536,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11536","variant":{"id":4,"name":"final-edit-asset-publish","href":"https://master-flex-jemdev.ft.com/api/variants/4"},"assetOrigin":"Ingest","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:56:05 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:13:05 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:15 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:11 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -525,12 +578,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:19 GMT
+      - Wed, 16 Nov 2016 17:13:15 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -543,25 +602,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:56:20 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:13:05 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:20 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:17 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -581,12 +640,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:25 GMT
+      - Wed, 16 Nov 2016 17:13:20 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -599,25 +664,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:56:20 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:13:05 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:26 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:22 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -637,12 +702,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:30 GMT
+      - Wed, 16 Nov 2016 17:13:26 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -655,25 +726,25 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:56:20 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Running","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"created":"16 Nov 2016 17:12:38
+        +0000","lastModified":"16 Nov 2016 17:13:26 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:31 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:27 GMT
 - request:
     method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
+    uri: https://master-flex-qadev.ft.com/api/workflows/11550
     body:
       encoding: US-ASCII
       string: ''
@@ -693,12 +764,18 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Max-Age:
+      - '10000'
       Cache-Control:
       - no-cache
       Content-Type:
       - application/json
       Date:
-      - Wed, 26 Oct 2016 13:56:35 GMT
+      - Wed, 16 Nov 2016 17:13:31 GMT
       Expires:
       - Thu, 01 Jan 1970 00:00:00 UTC
       Pragma:
@@ -711,190 +788,21 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:56:20 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
+      string: '{"id":11550,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-qadev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-qadev.ft.com/api/workflows/11550","status":"Completed","priority":"Normal","running":false,"ended":true,"cancelled":false,"cancelling":false,"failed":false,"start":"16
+        Nov 2016 17:12:38 +0000","end":"16 Nov 2016 17:13:30 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
+        masteruser","href":"https://master-flex-qadev.ft.com/api/users/5","accountId":4},"definition":{"id":10155,"uuid":"12d5f8d5-ddc7-4590-b111-8a5c9f330947","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-qadev.ft.com/api/objectTypes/11","displayName":"Workflow
+        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-qadev.ft.com/api/workflowDefinitions/10155","enabled":true,"owner":"masteruser
+        masteruser","ownerId":5,"accountId":4,"created":"15 Nov 2016 11:42:44 +0000","lastModified":"16
+        Nov 2016 10:54:20 +0000"},"definitionVersion":6,"asset":{"id":11562,"name":"RestClient
+        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-qadev.ft.com/api/assets/11562","variant":{"id":7,"name":"proxy-final-video-asset-variant","href":"https://master-flex-qadev.ft.com/api/variants/7"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"16
+        Nov 2016 17:12:38 +0000","lastModified":"16 Nov 2016 17:13:30 +0000","account":{"id":4,"name":"Master
+        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-qadev.ft.com/api/objectTypes/24","displayName":"Master
         Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
+        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"11
+        Nov 2016 11:43:23 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-qadev.ft.com/api/objectTypes/30","displayName":"Account
         Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
         masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
         Jun 2015 10:26:05 +0000"},"visibility":[]}'
     http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:36 GMT
-- request:
-    method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
-      Content-Type:
-      - application/vnd.nativ.mio.v1+json
-      Authorization:
-      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 26 Oct 2016 13:56:41 GMT
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 UTC
-      Pragma:
-      - No-cache
-      Server:
-      - Apache-Coyote/1.1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"created":"26 Oct 2016 13:55:39
-        +0000","lastModified":"26 Oct 2016 13:56:37 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
-        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
-        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
-        Jun 2015 10:26:05 +0000"},"visibility":[]}'
-    http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:42 GMT
-- request:
-    method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
-      Content-Type:
-      - application/vnd.nativ.mio.v1+json
-      Authorization:
-      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 26 Oct 2016 13:56:47 GMT
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 UTC
-      Pragma:
-      - No-cache
-      Server:
-      - Apache-Coyote/1.1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":true,"ended":false,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":null,"owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11543,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11543","variant":{"id":5,"name":"proxy-final-video-asset-variant","href":"https://master-flex-jemdev.ft.com/api/variants/5"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:56:45 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
-        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
-        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
-        Jun 2015 10:26:05 +0000"},"visibility":[]}'
-    http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:49 GMT
-- request:
-    method: get
-    uri: https://master-flex-jemdev.ft.com/api/workflows/11532
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
-      Content-Type:
-      - application/vnd.nativ.mio.v1+json
-      Authorization:
-      - Basic bWFzdGVydXNlcjptYXN0ZXJ1c2Vy
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json
-      Date:
-      - Wed, 26 Oct 2016 13:56:53 GMT
-      Expires:
-      - Thu, 01 Jan 1970 00:00:00 UTC
-      Pragma:
-      - No-cache
-      Server:
-      - Apache-Coyote/1.1
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":11532,"name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":7,"name":"workflow","href":"https://master-flex-jemdev.ft.com/api/objectTypes/7","displayName":"Workflow","pluralName":"Workflows","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"externalIds":[],"deleted":false,"href":"https://master-flex-jemdev.ft.com/api/workflows/11532","status":"Completed","priority":"Normal","running":false,"ended":true,"cancelled":false,"cancelling":false,"failed":false,"start":"26
-        Oct 2016 13:55:39 +0000","end":"26 Oct 2016 13:56:50 +0000","owner":{"id":5,"name":"masteruser","displayName":"masteruser
-        masteruser","href":"https://master-flex-jemdev.ft.com/api/users/5","email":"jem.rayfield@ft.com","accountId":4},"definition":{"id":10145,"uuid":"9ab49788-4e5c-482f-9c13-565d919f4e25","name":"publish-workflow","displayName":"publish-workflow","objectType":{"id":11,"name":"workflow-definition","href":"https://master-flex-jemdev.ft.com/api/objectTypes/11","displayName":"Workflow
-        Definition","pluralName":"Workflow Definitions","userDefined":false,"attachmentsSupported":true,"commentsSupported":true,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"href":"https://master-flex-jemdev.ft.com/api/workflowDefinitions/10145","enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"21 Oct 2016 14:19:12 +0000","lastModified":"26
-        Oct 2016 10:30:14 +0000"},"definitionVersion":4,"asset":{"id":11543,"name":"RestClient
-        Agent","displayName":"RestClient Agent","type":"Media Asset","href":"https://master-flex-jemdev.ft.com/api/assets/11543","variant":{"id":5,"name":"proxy-final-video-asset-variant","href":"https://master-flex-jemdev.ft.com/api/variants/5"},"assetOrigin":"Proxy","referenceName":"Proxy","accountId":4,"workspaceId":3},"created":"26
-        Oct 2016 13:55:39 +0000","lastModified":"26 Oct 2016 13:56:50 +0000","account":{"id":4,"name":"Master
-        Account","objectType":{"id":24,"name":"master-account","href":"https://master-flex-jemdev.ft.com/api/objectTypes/24","displayName":"Master
-        Account","pluralName":"Master Accounts","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"21
-        Oct 2016 14:11:19 +0000"},"workspace":{"id":3,"name":"Master Account","objectType":{"id":30,"name":"account-workspace","href":"https://master-flex-jemdev.ft.com/api/objectTypes/30","displayName":"Account
-        Workspace","pluralName":"Account Workspaces","userDefined":false,"attachmentsSupported":false,"commentsSupported":false,"objectDataSupported":false,"contentMetadataSupported":false,"metadataSupported":false},"enabled":true,"owner":"masteruser
-        masteruser","ownerId":5,"accountId":4,"created":"10 Jun 2015 10:26:05 +0000","lastModified":"10
-        Jun 2015 10:26:05 +0000"},"visibility":[]}'
-    http_version: 
-  recorded_at: Wed, 26 Oct 2016 13:56:54 GMT
+  recorded_at: Wed, 16 Nov 2016 17:13:32 GMT
 recorded_with: VCR 3.0.3
