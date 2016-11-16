@@ -22,6 +22,8 @@ class MetadataDescriptionClientTest < VideoTest
     VCR.use_cassette 'metadata description project-metadata' do
       @description = @mio_metadata_service.retrieve_description_by_name(PROJECT_METADATA_NAME)
     end
+    info_logger :info, PROJECT_METADATA_NAME
+    info_logger :info, @description
     assert((@description['name'] == PROJECT_METADATA_NAME), "Name in response incorrect (#{@description['name']})")
   end
 
