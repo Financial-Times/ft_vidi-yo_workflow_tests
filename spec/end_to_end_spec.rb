@@ -11,7 +11,7 @@ RSpec.describe EndToEndWorkflow do
   include Config::Logging
 
 
-  it 'confirms that the ingestion was successful', wait: {timeout: 120} do
+  it 'confirms that the ingestion was successful', :vcr, wait: {timeout: 120} do
     @ingestion = EndToEndWorkflow.new.create_ingestion
     info_logger :info, "INGESTION: #{@ingestion}"
     info_logger :info, "STATUS: #{@ingestion.status}"
