@@ -4,6 +4,10 @@ require 'rotp'
 
 module Config
 
+  puts ARGV
+
+  ARGV.each{|arg| puts arg}
+
   module Logging
 
     ERROR_LOG = $stderr
@@ -23,7 +27,10 @@ module Config
 
   module Constants
 
-    EXECUTION_ENVIRONMENT = :qadev
+    DEFAULT_EXECUTION_ENVIRONMENT = :staging
+     EXECUTION_ENVIRONMENT = ENV['EXECUTION_ENVIRONMENT'].nil? ?
+         DEFAULT_EXECUTION_ENVIRONMENT : ENV['EXECUTION_ENVIRONMENT'].to_sym
+    $stdout.puts "ENV: #{EXECUTION_ENVIRONMENT}"
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
     ENVIRONMENT_CONFIG ||= CONFIG[EXECUTION_ENVIRONMENT]

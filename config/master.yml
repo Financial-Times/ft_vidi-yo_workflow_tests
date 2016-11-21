@@ -78,7 +78,7 @@
 
     :ingestion_workflow_metadata_id: 10124
     :project_workflow_metadata_id: 10106
-    :publish_workflow_metadata_id: 10145
+    :publish_workflow_metadata_id: 10155
 
 :stubs:
     :ws_url: http://localhost:32770
