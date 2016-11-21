@@ -8,7 +8,14 @@ RSpec.describe EndToEndWorkflow do
   include Config::Logging
 
   context 'live integration testing' do
-    it 'can publish' do
+
+    it 'can retrieve metadata' do
+      metadata = MetadataDescriptionWebserviceClient.new.retrieve_description_metadata
+      expect(metadata).to respond_to :each
+    end
+
+
+    it 'can create a project, ingest and publish' do
       workflow = EndToEndWorkflow.new
       @ingest_workflow = workflow.create_ingestion
       @publish_workflow = workflow.do_publish
