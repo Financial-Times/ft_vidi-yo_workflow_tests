@@ -27,16 +27,14 @@ class IngestionWorkflowWebserviceClient < WorkflowWebserviceClient
 
   # Builds the payload to create an ingestion workflow
   #
-  # @param uuid [String] project name. Must be unique within mio
-  # @param path [String] url
-  # @param title [String] url
+  # @param params Hash
   # @return [Hash] payload for RestClient to convert to JSON and create workflow
   # noinspection RubyInstanceMethodNamingConvention
   def create_ingestion_workflow_payload(params={})
     params[:uuid] ||= Config::Constants::ASSET_UUID
     params[:path] ||= Config::Constants::ASSET_PATH
     params[:title] ||= Config::Constants::ASSET_TITLE
-    params[:url] ||= Config::Constants::ASSET_URL
+    params[:url] ||= Config::Constants::ASSET_URL + params[:uuid] + '/'
 
 
     {

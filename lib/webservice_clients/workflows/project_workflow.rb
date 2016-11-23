@@ -12,8 +12,8 @@ class ProjectWorkflow < Workflow
   # Create new Project Workflow
   #
   # @return [ProjectWorkflow] object
-  def create
-    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow
+  def create(uuid=nil)
+    @workflow_log = ProjectWorkflowWebserviceClient.new.create_project_workflow uuid
     raise "Workflow not created: #{@workflow_log['status']} found" unless created?
     self
   end

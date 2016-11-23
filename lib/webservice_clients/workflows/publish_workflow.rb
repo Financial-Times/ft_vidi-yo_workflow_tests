@@ -17,8 +17,8 @@ class PublishWorkflow < Workflow
     self
   end
 
-  def create
-    @workflow_log = PublishWorkflowWebserviceClient.new.create_publish_workflow
+  def create(uuid)
+    @workflow_log = PublishWorkflowWebserviceClient.new.create_publish_workflow uuid
     self
   end
 

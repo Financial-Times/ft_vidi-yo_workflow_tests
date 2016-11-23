@@ -15,10 +15,11 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
     create_workflow(payload)
   end
 
-  def create_publish_workflow_payload(params={})
-    params[:path] ||= '12345/short.MOV'
+  def create_publish_workflow_payload(uuid=nil, params={path:nil, title:nil, url:nil})
+    params[:path] ||= Config::Constants::ASSET_PATH
     params[:title] ||= 'RestClient Agent'
-    params[:url] ||= 'https://api.ft.com/thing/b0778312-7686-49bc-a720-0551709ad37b'
+    uuid ||= Config::Constants::ASSET_UUID
+    params[:url] ||= Config::Constants::ASSET_URL + uuid + '/'
 
     {'definitionId': Config::Constants::PUBLISH_WORKFLOW_METADATA_ID,
      'stringVariables': {
@@ -26,7 +27,7 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
          'assetS3Path':       params[:path],
          'assetTitle':        params[:title],
          'brightcovePublish': false,
-         'project-thing-url': Config::Constants::ASSET_URL
+         'project-thing-url': params[:url]
     }
     }
   end

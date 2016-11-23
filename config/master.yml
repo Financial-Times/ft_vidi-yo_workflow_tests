@@ -58,13 +58,12 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
-    :ingestion_workflow_metadata_id: 10119
-    :project_workflow_metadata_id: 10203
-    :publish_workflow_metadata_id: 10145
+    :ingestion_workflow_metadata_id: 10134
+    :project_workflow_metadata_id: 10116
+    :publish_workflow_metadata_id: 10155
 
 
 :jemdev:
-
     :ws_url: https://master-flex-jemdev.ft.com/api
     :url: http://localhost:3131
 
@@ -76,8 +75,8 @@
     :ingest_metadata_name: ingest-metadata
     :publish_metadata_name: publish-metadata
 
-    :ingestion_workflow_metadata_id: 10124
-    :project_workflow_metadata_id: 10106
+    :ingestion_workflow_metadata_id: 10134
+    :project_workflow_metadata_id: 10116
     :publish_workflow_metadata_id: 10155
 
 :stubs:

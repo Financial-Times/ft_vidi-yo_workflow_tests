@@ -18,8 +18,8 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # Wrapper to create project with self.create_project_workflow_payload
   #
   # @return [Hash] created project object converted from JSON service response
-  def create_project_workflow
-    payload = create_project_workflow_payload
+  def create_project_workflow uuid=nil
+    payload = create_project_workflow_payload uuid
     create_workflow(payload)
   end
 
@@ -38,11 +38,11 @@ class ProjectWorkflowWebserviceClient < WorkflowWebserviceClient
   # @param brand [String] url
   # @return [Hash] payload for RestClient to convert to JSON and pass to Mio to create workflow
   # noinspection RubyInstanceMethodNamingConvention
-  def create_project_workflow_payload(project_name=nil, section=nil, brand=nil)
+  def create_project_workflow_payload(uuid=nil, project_name=nil, section=nil, brand=nil)
     project_name ||= CustomRequestData.random_string(6)
     section ||= Config::Constants::DEFAULT_SECTION
     brand ||= Config::Constants::DEFAULT_BRAND
-    thing_url ||= "http://api.ft.com/things/#{SecureRandom.uuid}/"
+    thing_url ||= "http://api.ft.com/things/#{uuid}/"
     info_logger :info, "thing_url: #{thing_url}"
     {"definitionId": PROJECT_WORKFLOW_METADATA_ID,
      "stringVariables":

@@ -27,6 +27,11 @@ class MetadataDescriptionWebserviceClient
 RSP
 
     RestClient::Request.execute(method: :get, url: @url, timeout: 10, user: @user.username, password: @user.password, headers: @headers) do |response|
+      info_logger :info, <<LOGINFO
+      Initiating RestClient
+      URL: #{@url}
+      URL CLASS: #{@url.class}
+LOGINFO
       @response = response
       info_logger :info, 'WS request successful: metadata description retrieved'
       JSON.parse(response)
