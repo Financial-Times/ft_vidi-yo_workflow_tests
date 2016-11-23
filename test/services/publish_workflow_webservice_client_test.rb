@@ -5,6 +5,7 @@ require_relative '../../lib/webservice_clients/workflow_clients/publish_workflow
 class PublishWorkflowWebserviceClientTest < VideoTest
 
   def setup
+    @project_uuid = SecureRandom.uuid
     @publish_workflow_ws_client = PublishWorkflowWebserviceClient.new
   end
 
@@ -19,8 +20,9 @@ class PublishWorkflowWebserviceClientTest < VideoTest
 
   def test_can_create_custom_payload
     custom_payload = @publish_workflow_ws_client.create_publish_workflow_payload(
+        @project_uuid,
         {
-            url: 'http://example.com',
+            url: 'http://api.ft.com/things/',
             path: 'test_path',
             title: 'custom_title'
         }
@@ -37,7 +39,7 @@ class PublishWorkflowWebserviceClientTest < VideoTest
 
   def test_can_create_valid_publish_workflow
     VCR.use_cassette 'unit create publish workflow' do
-      @publish_workflow = @publish_workflow_ws_client.create_publish_workflow
+      @publish_workflow = @publish_workflow_ws_client.create_publish_workflow @project_uuid
     end
   end
 

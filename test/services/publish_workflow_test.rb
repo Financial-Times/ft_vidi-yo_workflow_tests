@@ -7,8 +7,9 @@ class PublishWorkflowTest < Test::Unit::TestCase
 
 
   def setup
+    @project_uuid = SecureRandom.uuid
     VCR.use_cassette 'create publish workflow' do
-      @publish_workflow = PublishWorkflow.new.create
+      @publish_workflow = PublishWorkflow.new.create @project_uuid
     end
   end
 
