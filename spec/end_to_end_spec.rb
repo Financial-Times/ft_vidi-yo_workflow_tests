@@ -10,19 +10,39 @@ require_relative '../lib/webservice_clients/workflows/end_to_end_workflow'
 RSpec.describe EndToEndWorkflow do
   include Config::Logging
 
-
-  it 'confirms that the ingestion was successful', :vcr, wait: {timeout: 120} do
-    @ingestion = EndToEndWorkflow.new.create_ingestion
-    info_logger :info, "INGESTION: #{@ingestion}"
-    info_logger :info, "STATUS: #{@ingestion.status}"
-    retrieved_ingestion = @ingestion.retrieve @ingestion.id
-    wait_for_complete @ingestion, retrieved_ingestion
+  before :each do
+    @project_uuid = SecureRandom.uuid
+    info_logger :info, 'CREATED UUID: ' + @project_uuid
+    @project_workflow_client = ProjectWorkflow.new
+    @project = @project_workflow_client.create @project_uuid
+    expect(@project.uuid.contains_uuid?).to be_truthy
+    retrieved_project = @project.retrieve @project.id
+    wait_for_complete @project, retrieved_project
   end
 
-  it 'can publish', :vcr do
-    @publish_workflow = EndToEndWorkflow.new.do_publish
-    retrieved_publish_workflow = @publish_workflow.retrieve @publish_workflow.id
-    wait_for_complete @publish_workflow, retrieved_publish_workflow
+  it 'can retrieve metadata' do
+    metadata = MetadataDescriptionWebserviceClient.new.retrieve_description_metadata
+    expect(metadata).to respond_to :each
   end
+
+
+  it 'can complete a project workflow', :vcr, wait: {timeout: 120} do
+    true
+  end
+
+  it 'can complete an ingestion workflow', :vcr, wait: {timeout: 120} do
+    ingestion_workflow_client = IngestWorkflow.new
+    ingestion_workflow = ingestion_workflow_client.create @project_uuid
+    retrieved_ingestion = ingestion_workflow.retrieve ingestion_workflow.id
+    wait_for_complete ingestion_workflow, retrieved_ingestion
+  end
+
+  it 'can complete a publish workflow', :vcr, wait: {timeout: 120} do
+    publish_workflow_client = PublishWorkflow.new
+    publish_workflow = publish_workflow_client.create @project_uuid
+    retrieved_publish_workflow = publish_workflow.retrieve publish_workflow.id
+    wait_for_complete publish_workflow, retrieved_publish_workflow
+  end
+
 
 end

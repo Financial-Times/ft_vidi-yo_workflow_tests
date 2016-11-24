@@ -6,8 +6,12 @@ RSpec.describe PublishWorkflow do
   include Config::Logging
 
   before :all do
+    @project_uuid = SecureRandom.uuid
+    info_logger :info, 'CREATED UUID: ' + @project_uuid
+    @project_workflow_client = ProjectWorkflow.new
+    @project = @project_workflow_client.create @project_uuid
     @publish_workflow_client = PublishWorkflow.new
-    @publish_workflow = @publish_workflow_client.create
+    @publish_workflow = @publish_workflow_client.create @project_uuid
   end
 
   it 'can retrieve a previously-defined publish workflow', :vcr do

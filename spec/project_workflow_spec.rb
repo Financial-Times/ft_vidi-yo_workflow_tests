@@ -9,11 +9,12 @@ RSpec.describe ProjectWorkflow do
 
   describe 'create_project_workflow_spec', :vcr do
     before :all do
+      @project_uuid = SecureRandom.uuid
       @project_workflow_client = ProjectWorkflow.new
     end
 
     it 'can complete a project workflow', :vcr, wait: {timeout: 120} do
-      project = @project_workflow_client.create
+      project = @project_workflow_client.create @project_uuid
       expect(project.uuid.contains_uuid?).to be_truthy
       retrieved_project = project.retrieve project.id
       wait_for_complete project, retrieved_project
