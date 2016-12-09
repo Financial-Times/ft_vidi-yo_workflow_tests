@@ -18,7 +18,9 @@ class WorkflowStatusTest < Test::Unit::TestCase
   end
 
   def test_workflow_summary_retrieved
-    $stdout.puts @workflow_status_client.retrieve_workflow_summary
+    VCR.use_cassette 'retrieve workflow summary' do
+      $stdout.puts @workflow_status_client.retrieve_workflow_summary
+    end
   end
 
 end
