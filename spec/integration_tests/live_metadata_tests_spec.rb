@@ -4,7 +4,7 @@ require_relative '../../config/config'
 require_relative '../../lib/webservice_clients/workflows/end_to_end_workflow'
 require 'rspec/wait'
 
-RSpec.describe EndToEndWorkflow do
+RSpec.describe MetadataDescriptionWebserviceClient do
   include Config::Logging
 
   context 'live integration testing' do

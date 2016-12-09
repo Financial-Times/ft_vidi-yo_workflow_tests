@@ -10,15 +10,15 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
     @url = url
   end
 
-  def create_publish_workflow(params={})
-    payload=create_publish_workflow_payload(params)
+  def create_publish_workflow(uuid, params={})
+    payload=create_publish_workflow_payload(uuid, params)
     create_workflow(payload)
   end
 
   def create_publish_workflow_payload(uuid=nil, params={path:nil, title:nil, url:nil})
     params[:path] ||= Config::Constants::ASSET_PATH
-    params[:title] ||= 'RestClient Agent'
-    uuid ||= Config::Constants::ASSET_UUID
+    params[:title] ||= "RestClient Agent #{Time.now}"
+    uuid ||=  Config::Constants::ASSET_UUID
     params[:url] ||= Config::Constants::ASSET_URL + uuid + '/'
 
     {'definitionId': Config::Constants::PUBLISH_WORKFLOW_METADATA_ID,
@@ -26,8 +26,9 @@ class PublishWorkflowWebserviceClient < WorkflowWebserviceClient
          'assetMetadata': '{"section":"http://api.ft.com/things/12bcffe1-f9f1-47ce-a3aa-e2dcdfaf7499","brand":"http://api.ft.com/things/d4991c65-5e03-471c-bbba-fdb20d9d1009","headline":"Hello Hello its a headline","long-lead":"QA its never a long lead no it is","short-lead":"its a short QA","link-1":"http://link-1","link-1-text":"link1 text","link-2":"http://link-2","link-2-text":"link2 text","link-3":"http://link-3","link-3-text":"link3 text","credit":"Credit goes to Jem of course","office":"http://api.ft.com/things/66fc881d-4a93-4672-8d88-1fa86e5ec5a2","producer":"http://api.ft.com/things/ce989f93-8572-4136-a0c0-a7bb44f94c7b","video-editor":"http://api.ft.com/things/67b8180e-9cb3-4694-8bfd-08b9871bc4d1","freelance-video-editor":"Jem Rayfield The Video pro","restrictions":"true","restriction-description":"well suspect innit","poster-image": { "file-name":"test","file-path":"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10SecPoster.jpeg"},"thumbnail-image": { "file-name":"test","file-path":"https://s3-eu-west-1.amazonaws.com/mio-edit-jemdev/12345/10Secthumbnail.jpeg"},"brightcove-metadata-tags": [ { "brightcove-tag":"test" }, { "brightcove-tag":"test2" } ] }',
          'assetS3Path':       params[:path],
          'assetTitle':        params[:title],
-         'brightcovePublish': false,
-         'project-thing-url': params[:url]
+         'brightcovePublish': true,
+         'project-thing-url': params[:url],
+         'active': true
     }
     }
   end

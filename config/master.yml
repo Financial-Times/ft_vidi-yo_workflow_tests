@@ -1,6 +1,5 @@
 ---
 :dev:
-
     :ws_url: https://master.dev.nativ-systems.com/api
     :url: http://localhost:3131
 
@@ -18,7 +17,6 @@
     :publish_workflow_metadata_id: 10145
 
 :master_flex:
-
     :ws_url: https://master-flex-jemdev.ft.com/api
     :url: http://localhost:3131
 

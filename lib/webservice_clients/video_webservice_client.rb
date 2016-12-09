@@ -19,7 +19,7 @@ class VideoWebserviceClient
   def initialize(user, url)
     @username = user.username
     @password = user.password
-    @headers = {Accept: 'application/json', 'Content-Type': 'application/vnd.nativ.mio.v1+json'}
+    @headers = {Accept: 'application/json', :'Content-Type' => 'application/vnd.nativ.mio.v1+json'}
     @url = url
   end
 
@@ -48,14 +48,18 @@ class VideoWebserviceClient
     info_logger :info, "Headers: #{@headers}"
     info_logger :info, "Username #{@username}"
     info_logger :info, "Payload: #{payload}"
-    RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
-                              content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
-      info_logger :info, "CREATE PROJECT RESPONSE: #{response}"
-      raise "Create #{@object_type} request failed, HTTP STATUS: #{response}" unless HTTP_SUCCESS_CODES.cover? response.code
-      info_logger :info, "#{@object_type} created"
-      info_logger :info, JSON.parse(response)
-      JSON.parse(response)
+    begin
+      RestClient::Request.execute(method: :post, url: @url, timeout: 10, user: @username, password: @password,
+                                  content_type: 'text/plain', headers: @headers, payload: payload.to_json) do |response|
+        info_logger :info, "CREATE PROJECT RESPONSE: #{response}"
+        raise "Create #{@object_type} request failed, HTTP STATUS: #{response}" unless HTTP_SUCCESS_CODES.cover? response.code
+        info_logger :info, "#{@object_type} created"
+        info_logger :info, JSON.parse(response)
+        JSON.parse(response)
+      end
+    rescue Exception => e
+      $stdout.puts "ERROR: #{e}"
     end
-  end
 
+    end
 end

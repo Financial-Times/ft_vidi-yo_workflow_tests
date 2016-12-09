@@ -27,13 +27,13 @@ module Config
 
   module Constants
 
-    DEFAULT_EXECUTION_ENVIRONMENT = :qadev
+    DEFAULT_EXECUTION_ENVIRONMENT = :jemdev
      EXECUTION_ENVIRONMENT = if ENV['EXECUTION_ENVIRONMENT'].nil?
                                DEFAULT_EXECUTION_ENVIRONMENT
                              else
                                ENV['EXECUTION_ENVIRONMENT'].to_sym
                              end
-    EXECUTION_ENVIRONMENT = :jemdev
+    EXECUTION_ENVIRONMENT=:jemdev
     $stdout.puts "ENV: #{EXECUTION_ENVIRONMENT}"
     REPORTS ||= '../../reports'
     CONFIG ||= YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'master.yml')))
