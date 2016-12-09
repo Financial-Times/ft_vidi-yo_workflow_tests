@@ -7,11 +7,11 @@ require 'rspec/wait'
 
 DEFAULT_TIMEOUT = 240
 
-def wait_for_complete(workflow_object, stored_workflow)
+def wait_for_complete(workflow_object)
   start ||= Time.now
     begin
 
-      workflow = workflow_object.retrieve(stored_workflow.id)
+      workflow = workflow_object.retrieve(workflow_object.id)
       info_logger :info, "WFC WF OBJECT: #{workflow.workflow_log}"
       workflow_status = workflow.status
     rescue StandardError => e
@@ -25,9 +25,9 @@ def wait_for_complete(workflow_object, stored_workflow)
       return true
     elsif workflow_status =~ /Failed/
       info_logger :info, "FAILED WF: #{workflow.workflow_log}"
-      raise "Workflow #{stored_workflow} failed with #{workflow_status} status"
+      raise "Workflow #{workflow} failed with #{workflow_status} status"
     else
       sleep 5
-      wait_for_complete(workflow_object, stored_workflow)
+      wait_for_complete(workflow_object)
     end
 end

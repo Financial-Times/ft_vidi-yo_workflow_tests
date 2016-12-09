@@ -16,8 +16,7 @@ RSpec.describe ProjectWorkflow do
     it 'can complete a project workflow', :vcr, wait: {timeout: 120} do
       project = @project_workflow_client.create @project_uuid
       expect(project.uuid.contains_uuid?).to be_truthy
-      retrieved_project = project.retrieve project.id
-      wait_for_complete project, retrieved_project
+      wait_for_complete project
     end
 
   end

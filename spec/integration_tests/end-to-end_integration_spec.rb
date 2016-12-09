@@ -15,8 +15,7 @@ RSpec.describe EndToEndWorkflow do
       @project_workflow_client = ProjectWorkflow.new
       @project = @project_workflow_client.create @project_uuid
       expect(@project.uuid.contains_uuid?).to be_truthy
-      retrieved_project = @project.retrieve @project.id
-      wait_for_complete @project, retrieved_project
+      wait_for_complete @project
     end
 
     it 'can complete a project workflow' do
@@ -26,15 +25,13 @@ RSpec.describe EndToEndWorkflow do
     it 'can complete an ingestion workflow' do
       ingestion_workflow_client = IngestWorkflow.new
       ingestion_workflow = ingestion_workflow_client.create @project_uuid
-      retrieved_ingestion = ingestion_workflow.retrieve ingestion_workflow.id
-      wait_for_complete ingestion_workflow, retrieved_ingestion
+      wait_for_complete ingestion_workflow
     end
 
     it 'can complete a publish workflow' do
       publish_workflow_client = PublishWorkflow.new
       publish_workflow = publish_workflow_client.create @project_uuid
-      retrieved_publish_workflow = publish_workflow.retrieve publish_workflow.id
-      wait_for_complete publish_workflow, retrieved_publish_workflow
+      wait_for_complete publish_workflow
     end
 
   end
