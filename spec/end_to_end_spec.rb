@@ -20,7 +20,7 @@ RSpec.describe EndToEndWorkflow do
     wait_for_complete @project, retrieved_project
   end
 
-  it 'can retrieve metadata' do
+  it 'can retrieve metadata', :vcr, wait: {timeout: 120} do
     metadata = MetadataDescriptionWebserviceClient.new.retrieve_description_metadata
     expect(metadata).to respond_to :each
   end
