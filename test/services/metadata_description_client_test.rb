@@ -34,9 +34,4 @@ class MetadataDescriptionClientTest < VideoTest
     assert((@id.respond_to? :+))
   end
 
-  def test_can_count_workflows_by_name
-    ingest_workflow_count = @mio_metadata_service.count_workflows_by_name('ingest-workflow')
-    assert(ingest_workflow_count).respond_to?(:%)
-  end
-
 end
