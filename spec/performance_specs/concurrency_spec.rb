@@ -7,6 +7,8 @@ require 'rspec'
 
 RSpec.describe 'concurrency' do
   include Config::Logging
+
+  #TODO: Refactor to allow command-line control
   CONCURRENCY_LEVEL=1
 
   before :each do
