@@ -7,7 +7,6 @@ class CustomRequestData
   #
   # @return [String]
   def self.random_string(length)
-    # TODO: Doesn't really belong in here
     string = ''
     length.times { string += ('a'..'z').to_a.sample }
     string

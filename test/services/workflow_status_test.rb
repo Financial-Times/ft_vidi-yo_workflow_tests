@@ -19,8 +19,19 @@ class WorkflowStatusTest < Test::Unit::TestCase
 
   def test_workflow_summary_retrieved
     VCR.use_cassette 'retrieve workflow summary' do
-      $stdout.puts @workflow_status_client.retrieve_workflow_summary
+    workflow_statuses = @workflow_status_client.retrieve_workflow_summary
+      assert_respond_to(workflow_statuses, :each_key)
     end
+  end
+
+  def test_can_count_workflows
+    workflow_count = @workflow_status_client.count_workflows_by_status('Cancelled')
+    assert(workflow_count > 0)
+  end
+
+  def test_can_count_workflows_by_name
+    project_summary_count = @workflow_status_client.count_workflows_by_name 'project-workflow'
+    assert(project_summary_count > 0)
   end
 
 end

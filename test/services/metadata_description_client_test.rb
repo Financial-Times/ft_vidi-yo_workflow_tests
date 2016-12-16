@@ -7,7 +7,7 @@ require_relative '../../test/data/ws_user'
 class MetadataDescriptionClientTest < VideoTest
 
   def setup
-    @mio_metadata_service = MetadataDescriptionWebserviceClient.new(WSUser.new)
+    @mio_metadata_service = MetadataDescriptionWebserviceClient.new
   end
 
   def test_retrieves_description_config
@@ -32,6 +32,11 @@ class MetadataDescriptionClientTest < VideoTest
       @id = @mio_metadata_service.retrieve_id_with_name(PROJECT_METADATA_NAME)
     end
     assert((@id.respond_to? :+))
+  end
+
+  def test_can_count_workflows_by_name
+    ingest_workflow_count = @mio_metadata_service.count_workflows_by_name('ingest-workflow')
+    assert(ingest_workflow_count).respond_to?(:%)
   end
 
 end
