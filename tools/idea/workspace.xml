@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc9d3bdb-1f30-43e6-86d1-f73d68474a80" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/webservice_clients/video_webservice_client.rb" afterPath="$PROJECT_DIR$/lib/webservice_clients/video_webservice_client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/webservice_clients/workflow_status_client.rb" afterPath="$PROJECT_DIR$/lib/webservice_clients/workflow_status_client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb" afterPath="$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/custom_request_data.rb" afterPath="$PROJECT_DIR$/test/data/custom_request_data.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/services/metadata_description_client_test.rb" afterPath="$PROJECT_DIR$/test/services/metadata_description_client_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/services/workflow_status_test.rb" afterPath="$PROJECT_DIR$/test/services/workflow_status_test.rb" />
     </list>
     <ignored path="video_stories.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +33,10 @@
     <SUITE FILE_PATH="coverage/ft_workflow_tests@Run_test__workflow_status_test___video_stories.coverage" NAME="Run test 'workflow_status_test': video_stories Coverage Results" MODIFIED="1480950725483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/services" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@Run_test__PublishWorkflowWebserviceClientTest___video_stories.coverage" NAME="Run test 'PublishWorkflowWebserviceClientTest': video_stories Coverage Results" MODIFIED="1479918733817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/services" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@IngestWorkflow_create_ingestion_can_create_an_ingestion__video_stories.coverage" NAME="IngestWorkflow create ingestion can create an ingestion: video_stories Coverage Results" MODIFIED="1473689568818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
-    <SUITE FILE_PATH="coverage/ft_workflow_tests@Live__End_to_end.coverage" NAME="Live: End-to-end Coverage Results" MODIFIED="1481199891106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="video_stories" />
+    <SUITE FILE_PATH="coverage/ft_workflow_tests@Live__End_to_end.coverage" NAME="Live: End-to-end Coverage Results" MODIFIED="1481886562627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@concurrency_can_publish_concurrently__video_stories.coverage" NAME="concurrency can publish concurrently: video_stories Coverage Results" MODIFIED="1481299449890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@ProjectWorkflow_create_project_workflow_spec_can_create_a_project__video_stories.coverage" NAME="ProjectWorkflow create_project_workflow_spec can create a project: video_stories Coverage Results" MODIFIED="1479130711974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
-    <SUITE FILE_PATH="coverage/ft_workflow_tests@concurrency_can_run_concurrent_end_to_end_workflows__video_stories.coverage" NAME="concurrency can run concurrent end-to-end workflows: video_stories Coverage Results" MODIFIED="1481813931969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
+    <SUITE FILE_PATH="coverage/ft_workflow_tests@concurrency_can_run_concurrent_end_to_end_workflows__video_stories.coverage" NAME="Concurrency: End-to-End Coverage Results" MODIFIED="1481890287379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@end_to_end_workflow.coverage" NAME="end_to_end_workflow Coverage Results" MODIFIED="1479124397688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/webservice_clients/workflows" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@EndToEndWorkflow_live_integration_testing_can_retrieve_metadata__video_stories.coverage" NAME="EndToEndWorkflow live integration testing can retrieve metadata: video_stories Coverage Results" MODIFIED="1479982486779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@EndToEndWorkflow_live_integration_testing_can_run_concurrent_workflows__video_stories.coverage" NAME="EndToEndWorkflow live integration testing can run concurrent workflows: video_stories Coverage Results" MODIFIED="1480679867449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
@@ -73,7 +68,7 @@
     <SUITE FILE_PATH="coverage/ft_video_stories@Run_test__metadata_description_client_test___video_stories.coverage" NAME="Run test 'metadata_description_client_test': video_stories Coverage Results" MODIFIED="1468590484908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/services" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@IngestToPublish__video_stories__1_.coverage" NAME="IngestToPublish: video_stories (1) Coverage Results" MODIFIED="1470843309360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@PublishWorkflow_can_create_a_publish_workflow__video_stories.coverage" NAME="PublishWorkflow can create a publish workflow: video_stories Coverage Results" MODIFIED="1479402734980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
-    <SUITE FILE_PATH="coverage/ft_workflow_tests@concurrency__video_stories.coverage" NAME="concurrency: video_stories Coverage Results" MODIFIED="1481881112213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
+    <SUITE FILE_PATH="coverage/ft_workflow_tests@concurrency__video_stories.coverage" NAME="concurrency: video_stories Coverage Results" MODIFIED="1481888734002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@test_can_retrieve_description_by_name__video_stories.coverage" NAME="test_can_retrieve_description_by_name: video_stories Coverage Results" MODIFIED="1481718837507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@IngestToPublish_confirms_that_the_ingestion_was_successful__video_stories__1_.coverage" NAME="IngestToPublish confirms that the ingestion was successful: video_stories (1) Coverage Results" MODIFIED="1477321362814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@test_can_create_custom_payload__video_stories.coverage" NAME="test_can_create_custom_payload: video_stories Coverage Results" MODIFIED="1477307504828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/services" MODULE_NAME="video_stories" />
@@ -133,10 +128,10 @@
     <SUITE FILE_PATH="coverage/ft_workflow_tests@IngestToPublish_can_create_an_ingestion__video_stories.coverage" NAME="IngestToPublish can create an ingestion: video_stories Coverage Results" MODIFIED="1477489957352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@IngestWorkflow_end_to_end_testing_can_indicate_that_the_ingestion_is_complete__video_stories.coverage" NAME="IngestWorkflow end-to-end testing can indicate that the ingestion is complete: video_stories Coverage Results" MODIFIED="1478020606934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@Run_test__ingest_page_test___video_stories.coverage" NAME="Run test 'ingest_page_test': video_stories Coverage Results" MODIFIED="1468835763168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/pages/live" MODULE_NAME="video_stories" />
-    <SUITE FILE_PATH="coverage/ft_workflow_tests@EndToEndWorkflow__video_stories.coverage" NAME="EndToEndWorkflow: video_stories Coverage Results" MODIFIED="1481200033859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@Live__Publish.coverage" NAME="Live: Publish Coverage Results" MODIFIED="1481885236467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
+    <SUITE FILE_PATH="coverage/ft_workflow_tests@EndToEndWorkflow__video_stories.coverage" NAME="EndToEndWorkflow: video_stories Coverage Results" MODIFIED="1481886657701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@publish_concurrently_can_run_concurrent_workflows__video_stories.coverage" NAME="publish concurrently can run concurrent workflows: video_stories Coverage Results" MODIFIED="1480685218642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
-    <SUITE FILE_PATH="coverage/ft_workflow_tests@All_specs.coverage" NAME="All specs Coverage Results" MODIFIED="1481280313461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="video_stories" />
+    <SUITE FILE_PATH="coverage/ft_workflow_tests@All_specs.coverage" NAME="All specs Coverage Results" MODIFIED="1481889177415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_workflow_tests@environment_ping__video_stories.coverage" NAME="environment ping: video_stories Coverage Results" MODIFIED="1479898089772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@ProjectWorkflow_create_project_workflow_spec_can_indicate_that_the_workflow_is_complete__video_stories.coverage" NAME="ProjectWorkflow create_project_workflow_spec can indicate that the workflow is complete: video_stories Coverage Results" MODIFIED="1477317888014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="video_stories" />
     <SUITE FILE_PATH="coverage/ft_video_stories@Run_test__IngestWorkflowTest___video_stories.coverage" NAME="Run test 'IngestWorkflowTest': video_stories Coverage Results" MODIFIED="1476703056583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/services" MODULE_NAME="video_stories" />
@@ -165,11 +160,11 @@
     <splitter split-orientation="vertical" split-proportion="0.6156522">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="concurrency_spec.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="concurrency_spec.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+                <state relative-caret-position="75">
+                  <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -179,7 +174,7 @@
             <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="231">
-                  <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+                  <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -199,7 +194,7 @@
             <entry file="file://$PROJECT_DIR$/lib/webservice_clients/metadata_description_webservice_client.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="73" />
+                  <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="73" />
                   <folding />
                 </state>
               </provider>
@@ -225,7 +220,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ingest_workflow.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ingest_workflow.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/webservice_clients/workflows/ingest_workflow.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="61">
@@ -239,7 +234,7 @@
             <entry file="file://$PROJECT_DIR$/lib/webservice_clients/video_webservice_client.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="21">
-                  <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+                  <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -253,7 +248,7 @@
             <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
-                  <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+                  <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -269,21 +264,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="end-to-end_integration_spec.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="end-to-end_integration_spec.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/integration_tests/end-to-end_integration_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+                <state relative-caret-position="14">
+                  <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="end_to_end_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="end_to_end_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/end_to_end_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="74">
-                  <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+                  <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
@@ -551,36 +546,7 @@
       <recent name="$PROJECT_DIR$/lib/webservice_clients" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Live: Ingest">
-    <configuration default="false" name="test_workflow_summary_retrieved: video_stories" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="video_stories" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/services/workflow_status_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_workflow_summary_retrieved" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Concurrency: End-to-End">
     <configuration default="false" name="test_can_count_by_name: video_stories" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="video_stories" />
@@ -666,39 +632,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method />
-    </configuration>
-    <configuration default="false" name="concurrency can run concurrent end-to-end workflows: video_stories" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="video_stories" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/performance_specs/concurrency_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="concurrency can run concurrent end-to-end workflows" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -891,13 +824,46 @@
       <envs />
       <method />
     </configuration>
-    <list size="27">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Live: Create Project" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Live: Ingest" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Live: Publish" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Live: End-to-end" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.No-Request specs" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.All specs" />
+    <configuration default="false" name="Live: End-to-End" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="video_stories" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/integration_tests/end-to-end_integration_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="EndToEndWorkflow" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <list size="26">
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Concurrency: End-to-End" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.All specs" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.Live: Create Project" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Live: Ingest" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Live: Publish" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.No-Request specs" />
       <item index="6" class="java.lang.String" itemvalue="RSpec.Run spec 'workflow_client_spec': video_stories" />
       <item index="7" class="java.lang.String" itemvalue="RSpec.Run spec 'project_workflow_spec': video_stories" />
       <item index="8" class="java.lang.String" itemvalue="RSpec.ProjectWorkflow create_project_workflow_spec can create a project: video_stories" />
@@ -905,28 +871,25 @@
       <item index="10" class="java.lang.String" itemvalue="RSpec.Concurrency: Publish" />
       <item index="11" class="java.lang.String" itemvalue="RSpec.concurrency: video_stories" />
       <item index="12" class="java.lang.String" itemvalue="RSpec.Concurrency: Ingestions" />
-      <item index="13" class="java.lang.String" itemvalue="Rake.circle_ci_unit" />
-      <item index="14" class="java.lang.String" itemvalue="Rake.circle_ci_specs" />
-      <item index="15" class="java.lang.String" itemvalue="Rake.Unit tests" />
-      <item index="16" class="java.lang.String" itemvalue="Rake.Specs" />
-      <item index="17" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Unit Tests" />
-      <item index="18" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: video_stories" />
-      <item index="19" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_create_default_payload: video_stories" />
-      <item index="20" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'create_video_project_page_test': video_stories" />
-      <item index="21" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'VideoTest': video_stories" />
-      <item index="22" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_workflow_summary_retrieved: video_stories" />
+      <item index="13" class="java.lang.String" itemvalue="RSpec.Live: End-to-End" />
+      <item index="14" class="java.lang.String" itemvalue="Rake.circle_ci_unit" />
+      <item index="15" class="java.lang.String" itemvalue="Rake.circle_ci_specs" />
+      <item index="16" class="java.lang.String" itemvalue="Rake.Unit tests" />
+      <item index="17" class="java.lang.String" itemvalue="Rake.Specs" />
+      <item index="18" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Unit Tests" />
+      <item index="19" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: video_stories" />
+      <item index="20" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_create_default_payload: video_stories" />
+      <item index="21" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'create_video_project_page_test': video_stories" />
+      <item index="22" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'VideoTest': video_stories" />
       <item index="23" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_by_name: video_stories" />
       <item index="24" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows: video_stories" />
       <item index="25" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows_by_name: video_stories (1)" />
-      <item index="26" class="java.lang.String" itemvalue="RSpec.concurrency can run concurrent end-to-end workflows: video_stories" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.concurrency can run concurrent end-to-end workflows: video_stories" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows_by_name: video_stories (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows: video_stories" />
-        <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_by_name: video_stories" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_workflow_summary_retrieved: video_stories" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows_by_name: video_stories (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_workflows: video_stories" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_can_count_by_name: video_stories" />
       </list>
     </recent_temporary>
   </component>
@@ -1006,28 +969,25 @@
       <workItem from="1481538436403" duration="65000" />
       <workItem from="1481538511938" duration="12431000" />
       <workItem from="1481621271335" duration="18322000" />
-      <workItem from="1481794373693" duration="13882000" />
+      <workItem from="1481794373693" duration="16615000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Concurrency__Ingestions - 2016.12.15 at 16h 04m 22s.xml">
-      <configuration name="Concurrency: Ingestions" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs - 2016.12.16 at 11h 53m 02s.xml">
+      <configuration name="All specs" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Concurrency__Projects - 2016.12.15 at 15h 33m 25s.xml">
-      <configuration name="Concurrency: Projects" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Concurrency__End-to-End - 2016.12.16 at 12h 11m 29s.xml">
+      <configuration name="Concurrency: End-to-End" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Live__Create_Project - 2016.12.16 at 10h 40m 23s.xml">
-      <configuration name="Live: Create Project" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Live__Create_Project - 2016.12.16 at 10h 43m 27s.xml">
-      <configuration name="Live: Create Project" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="EndToEndWorkflow__video_stories - 2016.12.16 at 11h 10m 59s.xml">
+      <configuration name="EndToEndWorkflow: video_stories" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="Live__Create_Project - 2016.12.16 at 10h 46m 52s.xml">
       <configuration name="Live: Create Project" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Live__Ingest - 2016.12.16 at 10h 46m 45s.xml">
-      <configuration name="Live: Ingest" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Live__End-to-end - 2016.12.16 at 11h 09m 27s.xml">
+      <configuration name="Live: End-to-end" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="Live__Ingest - 2016.12.16 at 10h 47m 01s.xml">
       <configuration name="Live: Ingest" configurationId="RSpecRunConfigurationType" />
@@ -1038,12 +998,15 @@
     <history-entry file="Live__Publish - 2016.12.16 at 10h 47m 17s.xml">
       <configuration name="Live: Publish" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="concurrency__video_stories - 2016.12.16 at 09h 38m 34s.xml">
+    <history-entry file="concurrency__video_stories - 2016.12.16 at 11h 45m 36s.xml">
       <configuration name="concurrency: video_stories" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="concurrency_can_run_concurrent_end-to-end_workflows__video_stories - 2016.12.16 at 11h 45m 44s.xml">
+      <configuration name="concurrency can run concurrent end-to-end workflows: video_stories" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="420326000" />
+    <option name="totallyTimeSpent" value="423059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1056,7 +1019,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38689217" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32823366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1064,7 +1027,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5529891" sideWeight="0.23326287" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61196107" sideWeight="0.6645525" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43206522" sideWeight="0.76673716" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43206522" sideWeight="0.76673716" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495637" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24756606" sideWeight="0.4975978" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1231,32 +1194,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>116</line>
+          <line>118</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>112</line>
+          <line>114</line>
           <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>113</line>
+          <line>115</line>
           <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>26</line>
+          <line>28</line>
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="222" />
         </line-breakpoint>
       </breakpoints>
@@ -1434,6 +1397,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1539,7 +1503,7 @@
     <entry file="file://$PROJECT_DIR$/lib/webservice_clients/metadata_description_webservice_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="73" />
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1555,7 +1519,7 @@
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1563,7 +1527,7 @@
     <entry file="file://$PROJECT_DIR$/lib/webservice_clients/video_webservice_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1571,7 +1535,7 @@
     <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1584,26 +1548,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/integration_tests/end-to-end_integration_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/end_to_end_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
-          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/integration_tests/end-to-end_integration_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="14">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1612,6 +1568,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/performance_specs/concurrency_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding />
         </state>
       </provider>
